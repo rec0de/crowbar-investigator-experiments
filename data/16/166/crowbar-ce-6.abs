@@ -1,0 +1,51 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 4;
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(4)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String syncRequest = "fut_?(5)";
+		// End of setup
+		
+		while((False && True)){} 
+		// Known true:
+		// Negated loop guard: !((False && True))
+		// Loop invariant: true
+		
+		if(!True){}
+		else{
+			// I dataNode = new D();
+			String dataNode = "object_1";
+			// Int listAmount = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			Int listAmount = 0;
+			Bool stateEnabled = (this.ff == this.ff);
+			dataNode = dataNode;
+			// this.fb = (syncRequest).get;
+			this.fb = True;
+			// J tree = new E();
+			String tree = "object_2";
+			// I person = new D();
+			String person = "object_3";
+		}
+		this.fint = 936;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_54";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fb_f, valueOf(syncRequest)), this.fint_f, 936), this.ffb_f, fut_54), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

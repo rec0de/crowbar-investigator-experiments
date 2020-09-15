@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int eventAmount = 946;
+		// End of setup
+		
+		while((946 < eventAmount)){} 
+		// Known true:
+		// Negated loop guard: !((946 < eventAmount))
+		// Loop invariant: true
+		
+		Int processDepth = ((eventAmount * eventAmount) * eventAmount);
+		this.fint = 294;
+		println(toString(240)); // return statement
+		// Evaluates to: 240
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 240=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

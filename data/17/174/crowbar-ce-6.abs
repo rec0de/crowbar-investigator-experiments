@@ -1,0 +1,26 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		Int i = 941;
+		if((-(i + -661) >= 742)){}
+		else{
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

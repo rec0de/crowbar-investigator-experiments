@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -2;
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int arg = 0;
+		Int systemDepth = 0;
+		Int l = 0;
+		String packet = null;
+		// End of setup
+		
+		while(((((352 * this.fint) + ((((l * arg) + arg) - -488) + ((arg * -arg) * systemDepth))) * -70) < 681)){} 
+		// Known true:
+		// Negated loop guard: !(((((352 * this.fint) + ((((l * arg) + arg) - -488) + ((arg * -arg) * systemDepth))) * -70) < 681))
+		// Loop invariant: true
+		
+		// Fut syncReload = this.fi!n();
+		String syncReload = "fut_41";
+		String node = packet;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !packet=0
+		// Failed to show the following sub-obligations:
+		// !packet=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

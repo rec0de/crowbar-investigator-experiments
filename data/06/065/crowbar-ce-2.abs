@@ -1,0 +1,63 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(5)";
+	Bool fb = True;
+	String fj = "object_?(5)";
+	String ff = "fut_?(11)";
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fj = this.fj;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(6)";
+		this.fb = True;
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(6)";
+		// End assignments
+		
+		this.fb = False;
+		if((!this.fb || False)){
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fi = "object_?(7)";
+			this.fb = True;
+			this.fj = "object_?(7)";
+			this.ff = "fut_?(7)";
+			// End assignments
+			
+			// this.ff = this.fi!n();
+			this.ff = "fut_11";
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fb = True;
+			this.fj = "object_?(9)";
+			this.ff = "fut_?(9)";
+			// End assignments
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(anon(store(anon(store(store(store(heap, this.fj_f, NEW4_0), this.fj_f, NEW4_0), this.fj_f, select(store(store(heap, this.fj_f, NEW4_0), this.fj_f, NEW4_0), this.fj_f))), this.fb_f, 0)), this.ff_f, fut_11)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

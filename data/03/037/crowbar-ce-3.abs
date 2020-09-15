@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String fi = "object_?(6)";
+
+	Unit ce() {
+		
+		while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// I tree = new D();
+		String tree = "object_1";
+		if((((True && False) || this.fb) || True)){
+			// tree = new D();
+			tree = "object_2";
+			this.fint = 658;
+		}
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(7)";
+		this.fint = 8;
+		this.fb = True;
+		this.fi = "object_?(7)";
+		// End assignments
+		
+		// this.fi = new D();
+		this.fi = "object_3";
+		this.fb = False;
+		// this.fj = new E();
+		this.fj = "object_4";
+		String node = this.fj;
+		Bool processFlag = this.fb;
+		println(toString((298 * this.fint))); // return statement
+		// Evaluates to: 2384
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 298*select(store(store(store(store(store(anon(store(heap, this.fint_f, 658)), this.fi_f, NEW17_0), this.fi_f, NEW17_0), this.fb_f, 0), this.fj_f, NEW18_0), this.fj_f, NEW18_0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

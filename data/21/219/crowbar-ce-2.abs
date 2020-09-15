@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(3)";
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int stackCounter = 693;
+		String resultInfo = this.ffb;
+		this.fb = False;
+		// Fut y = this.fi!n();
+		String y = "fut_7";
+		resultInfo = this.ffb;
+		String packet = this.fj;
+		y = this.ff;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_8";
+		if((459 == 252885)){}
+		else{
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fb_f, 0), this.ffb_f, fut_8), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

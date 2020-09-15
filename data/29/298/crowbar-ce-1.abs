@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String ff = "fut_?(6)";
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		this.ff = this.ff;
+		this.ff = this.ff;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fint = 1236;
+		this.fb = True;
+		this.ff = "fut_?(7)";
+		this.ffb = "fut_?(7)";
+		// End assignments
+		
+		this.fi = this.fi;
+		this.fint = -this.fint;
+		this.ffb = this.ffb;
+		this.fb = (this.fint <= this.fint);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f, select(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f)), this.fb_f, select(store(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f, select(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f)), this.fint_f)<=select(store(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f, select(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f, -(select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.ff_f))), this.fi_f)), this.fint_f))), this.ffb_f)), this.fint_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

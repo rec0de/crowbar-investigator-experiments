@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	String fi = null;
+	String fj = "object_?(5)";
+	String ff = "fut_?(5)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int eventDepth = this.fint;
+		this.fint = 692;
+		String q = this.ffb;
+		this.fj = this.fj;
+		this.ff = this.ff;
+		// eventDepth = (this.ff).get;
+		eventDepth = 0;
+		this.fint = this.fint;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(heap, this.fint_f, 692), this.fj_f, select(store(heap, this.fint_f, 692), this.fj_f)), this.ff_f, select(store(store(heap, this.fint_f, 692), this.fj_f, select(store(heap, this.fint_f, 692), this.fj_f)), this.ff_f)), this.fint_f, select(store(store(store(heap, this.fint_f, 692), this.fj_f, select(store(heap, this.fint_f, 692), this.fj_f)), this.ff_f, select(store(store(heap, this.fint_f, 692), this.fj_f, select(store(heap, this.fint_f, 692), this.fj_f)), this.ff_f)), this.fint_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

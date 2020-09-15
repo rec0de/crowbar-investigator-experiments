@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(7)";
+	String ff = "fut_?(7)";
+	Int fint = 17;
+	String fi = "object_?(7)";
+	Bool fb = True;
+	String ffb = "fut_?(7)";
+
+	Unit ce() {
+		
+		while((963 > (59 * this.fint))){} 
+		// Known true:
+		// Negated loop guard: !((963 > (59 * this.fint)))
+		// Loop invariant: true
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_14";
+		if(this.fb){}
+		else{
+			// this.ff = this.fi!n();
+			this.ff = "fut_25";
+			this.fj = this.fj;
+			String packet = this.fi;
+			this.fb = this.fb;
+			// packet = new D();
+			packet = "object_1";
+			this.fb = ((!False || True) || (this.fb && False));
+		}
+		if((!False && (False && this.fb))){}
+		else{
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(10)";
+			this.ff = "fut_?(10)";
+			this.fint = 2437;
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(10)";
+			// End assignments
+			
+			this.fint = -this.fint;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(anon(store(store(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f, select(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f)), this.fb_f, !(0)||1||select(store(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f, select(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f)), this.fb_f)&&0)), this.fint_f, -(select(anon(store(store(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f, select(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f)), this.fb_f, !(0)||1||select(store(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f, select(store(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f, select(store(store(heap, this.ffb_f, fut_14), this.ff_f, fut_25), this.fj_f)), this.fb_f)), this.fb_f)&&0)), this.fint_f))), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

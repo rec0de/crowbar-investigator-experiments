@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		this.fb = (-5 == this.fint);
+		this.fb = (!this.fb == !False);
+		this.fb = !this.fb;
+		this.fi = this.fi;
+		// Fut a = this.fi!b();
+		String a = "fut_0";
+		println(toString(-174368775)); // return statement
+		// Evaluates to: -174368775
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -174368775=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

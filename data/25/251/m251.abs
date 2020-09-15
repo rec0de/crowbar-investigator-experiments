@@ -1,0 +1,178 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+Bool execFlag = this.fb;
+if( execFlag == False || False) {
+	Int systemDepth = - 380;
+	this.fb = False &&!(execFlag) && False;
+	
+}
+else {
+	execFlag = False;
+	
+}
+this.fb = False || False;
+this.fj = new E();
+if( this.fb) {
+	J node = this.fj;
+	
+}
+else {
+	Bool isSave = False;
+	while( this.fint == - 149) {
+		execFlag = this.ffb.get;
+		this.ff =(this.fi )!n();
+		await this.ffb?;
+		
+	}
+	
+}
+if( this.ffb == this.ffb) {
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	this.fint = this.ff.get;
+	execFlag = True;
+	this.ffb = this.fi!b();
+	
+}
+else {
+	Bool sendOverride = this.ffb.get;
+	this.fint = this.ff.get;
+	Fut<Int> resultInfo =(this.fi )!n();
+	this.ffb = this.fi!b();
+	
+}
+this.fint = - 412;
+await this.ffb?;
+this.fj = this.fj;
+Int eventDepth = 207 + - 97;
+this.ff = this.fi!n();
+this.fj = this.fj;
+if( - 264 != 537) {
+	this.fb = True;
+	this.fj = this.fj;
+	execFlag = execFlag;
+	this.fint = 800;
+	this.fint = 707 * - 246 +(11) * eventDepth;
+	while( this.fb) {
+		this.ffb = this.ffb;
+		this.ffb = this.ffb;
+		this.ff =(this.fi )!n();
+		this.fint = this.ff.get;
+		await 425 - - 373 != 953;
+		execFlag =(this.ffb ).get;
+		I packet = this.fi;
+		packet = this.fi;
+		this.ff = packet!n();
+		await this.ffb?;
+		if( packet == packet) {
+			J serverObject = new E();
+			this.ff = packet!n();
+			this.ff = this.fi!n();
+			this.fb =(False);
+			this.fj = new E();
+			this.fb = - this.fint >= 777;
+			
+		}
+		else {
+			I serverObject = this.fi;
+			
+		}
+		Fut<Int> a =(packet )!n();
+		I clientRepresentation = new D();
+		await this.ffb?;
+		this.fi = clientRepresentation;
+		if( True) {
+			this.fint = - 279 + 134;
+			a = packet!n();
+			eventDepth = eventDepth + 337 - 274;
+			Int eventCount = eventDepth - 18;
+			
+		}
+		
+	}
+	
+}
+else {
+	this.fj = new E();
+	if( execFlag) {
+		while(! this.fb) {
+			await this.ff?;
+			
+		}
+		execFlag = True && False;
+		Bool restoreOverride = 874 > 122;
+		while((this.fj == this.fj) && this.fb) {
+			execFlag =! False && restoreOverride && execFlag;
+			this.ff = this.ff;
+			await False || True;
+			await this.ffb?;
+			this.ff = this.fi!n();
+			
+		}
+		this.ff = this.fi!n();
+		this.fi = new D();
+		if(! True) {
+			this.fi = new D();
+			
+		}
+		else {
+			this.fb = this.fb;
+			this.fint = 429;
+			eventDepth = this.fint * 622;
+			
+		}
+		this.ffb = this.fi!b();
+		restoreOverride = this.ffb.get;
+		this.fi =(this.fi);
+		this.fi = this.fi;
+		while( execFlag && this.fb) {
+			await this.ff?;
+			
+		}
+		Bool isRead = this.ffb.get;
+		execFlag =(True ||! this.fb);
+		execFlag = 798 != - 300 * - 454;
+		Bool canSave = this.ffb == this.ffb;
+		this.ff = this.fi!n();
+		await! False && canSave || True;
+		this.fint = 155;
+		
+	}
+	
+}
+this.fint = - 325 * this.fint;
+I tree =(this.fi);
+if( True) {
+	J node = this.fj;
+	
+}
+else {
+	this.fint = 300;
+	Bool isReady = 33 == this.fint;
+	
+}
+tree = new D();
+this.fj = this.fj;
+return 5;
+}
+}
+{}

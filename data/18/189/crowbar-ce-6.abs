@@ -1,0 +1,53 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(6)";
+	String ff = "fut_?(6)";
+	Int fint = 8;
+	String ffb = "fut_?(6)";
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		while((True && False)){} 
+		// Known true:
+		// Negated loop guard: !((True && False))
+		// Loop invariant: true
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_25";
+		this.ff = this.ff;
+		Bool readyToggle = True;
+		if(((-946 * this.fint) == -this.fint)){}
+		else{
+			// this.fi = new D();
+			this.fi = "object_2";
+			// this.fj = new E();
+			this.fj = "object_3";
+			this.fb = ((readyToggle || (False && (!True == !True))) || False);
+			// this.ff = this.fi!n();
+			this.ff = "fut_26";
+		}
+		this.fint = 47150;
+		readyToggle = False;
+		// Bool configOverride = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool configOverride = False;
+		println(toString(396)); // return statement
+		// Evaluates to: 396
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 396=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		
+		Int processCounter = 31429;
+		// this.fj = new E();
+		this.fj = "object_1";
+		// processCounter = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		processCounter = 0;
+		Int stackDepth = -processCounter;
+		processCounter = stackDepth;
+		// this.ff = this.fi!n();
+		this.ff = "fut_3";
+		processCounter = 885;
+		this.fb = True;
+		if((False && !True)){}
+		else{
+		
+		}
+		println(toString((924 * -processCounter))); // return statement
+		// Evaluates to: -817740
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 924*-(885)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		// Bool writeOverride = (this.ffb).get;
+		Bool writeOverride = False;
+		this.fb = (53 < 521);
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_2";
+		Bool execFlag = writeOverride;
+		// this.fi = new D();
+		this.fi = "object_1";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(8)";
+		this.fint = 9;
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End assignments
+		
+		this.fb = !True;
+		Bool isReady = (True || !this.fb);
+		println(toString((-this.fint * 898))); // return statement
+		// Evaluates to: -8082
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(anon(store(store(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fb_f, 53<521), this.ffb_f, fut_2), this.fi_f, NEW0_0), this.fi_f, NEW0_0)), this.fb_f, !(1)), this.fint_f))*898=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = "object_?(6)";
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ff = "fut_?(6)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		while((this.fint == 365)){} 
+		// Known true:
+		// Negated loop guard: !((this.fint == 365))
+		// Loop invariant: true
+		
+		this.fj = this.fj;
+		this.fint = 488;
+		}
+		if((!False && (False && this.fb))){}
+		else{
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fint = 2437;
+			this.fi = null;
+			this.fb = True;
+			this.fj = "object_?(8)";
+			this.ff = "fut_?(8)";
+			// End assignments
+			
+			this.fint = -this.fint;
+			// this.ff = this.fi!n();
+			this.ff = "fut_21";
+			Bool restoreOverride = (this.fb && True);
+			Int listCounter = this.fint;
+			this.ff = this.ff;
+			// Bool restoreToggle = (this.ffb).get;
+			// Future value irrelevant or unavailable, using default:
+			Bool restoreToggle = False;
+			this.fb = (this.fb || (False == True));
+			listCounter = 951;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f, -(select(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f))), this.ff_f, fut_21), this.ff_f, select(store(store(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f, -(select(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f))), this.ff_f, fut_21), this.ff_f)), this.fb_f, select(store(store(store(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f, -(select(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f))), this.ff_f, fut_21), this.ff_f, select(store(store(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f, -(select(anon(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 488)), this.fint_f))), this.ff_f, fut_21), this.ff_f)), this.fb_f)||0=1), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

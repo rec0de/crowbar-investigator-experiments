@@ -1,0 +1,61 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String tree = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.fi == tree)
+		// Loop invariant: true
+		// while((this.fi == tree)) {
+		{
+			Bool isWrite = True;
+			// this.fj = new E();
+			this.fj = "object_1";
+			if((False || True)){
+				this.fb = ((((820 * value) - 73) + 56) != 768);
+			}
+			this.fint = 531;
+			if((900 >= 882)){
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_34";
+				// this.fi = new D();
+				this.fi = "object_2";
+				Int value = 851;
+				String serverUnit = this.fj;
+				isWrite = !False;
+				Bool isSaveed = (isWrite && False);
+				Int listAmount = 794;
+				// Int res = (this.ff).get;
+				// Future value irrelevant or unavailable, using default:
+				Int res = 0;
+				// J packetStruct = new E();
+				String packetStruct = "object_3";
+				String syncFlag = this.ffb;
+				// serverUnit = new E();
+				serverUnit = "object_4";
+				res = -243714;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !tree=0
+		// Failed to show the following sub-obligations:
+		// !tree=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

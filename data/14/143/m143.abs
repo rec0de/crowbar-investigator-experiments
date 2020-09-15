@@ -1,0 +1,132 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = this.fint + 312;
+this.ffb = this.ffb;
+while(!(False && this.fb) || True && False && this.fb && True && True) {
+	J node = new E();
+	this.fint = this.ff.get;
+	
+}
+this.ffb = this.fi!b();
+this.fj = this.fj;
+this.ffb = this.fi!b();
+while((554 >=(156 + 929) + 518)) {
+	I packet = this.fi;
+	
+}
+Int systemDepth = - this.fint - - 727;
+while( this.fj == this.fj) {
+	systemDepth = 211;
+	Bool readToggle = True;
+	this.ffb = this.fi!b();
+	this.fi = this.fi;
+	readToggle =! readToggle;
+	if( False &&((False) )) {
+		await this.ff?;
+		if( True && False) {
+			this.fint = 253;
+			readToggle =!(this.fb);
+			await this.ff?;
+			this.fi = this.fi;
+			this.fi = new D();
+			this.fj = new E();
+			this.ff = this.fi!n();
+			this.fi = this.fi;
+			await this.ffb?;
+			
+		}
+		else {
+			systemDepth = 561 * systemDepth;
+			this.fi = this.fi;
+			this.ff = this.fi!n();
+			
+		}
+		this.ffb = this.fi!b();
+		if( - 621 *(264) * 692 * - 452 - 597 == 517) {
+			this.fb = 245 - 870 == 601;
+			this.fint =(- systemDepth + 110 + systemDepth * this.fint + - 94 + - 618) * 151 * 774;
+			this.ff = this.fi!n();
+			Fut<Int> p = this.fi!n();
+			this.fb =(! False);
+			systemDepth = p.get;
+			await p?;
+			this.fint = systemDepth * - 551;
+			await p?;
+			readToggle = 535 > 107 * 482 * - this.fint;
+			p = this.fi!n();
+			Int systemCount = systemDepth;
+			
+		}
+		else {
+			await this.ff?;
+			await this.ff?;
+			
+		}
+		
+	}
+	else {
+		while((753 == - 105) || True || False) {
+			this.fint = systemDepth + 965;
+			this.ffb =(this.fi )!b();
+			J tree = new E();
+			
+		}
+		Fut<Int> a = this.fi!n();
+		if( - this.fint != 756) {
+			I serverNode = this.fi;
+			this.fi = serverNode;
+			this.fi = new D();
+			this.ff =(a);
+			serverNode = this.fi;
+			Bool canSave =! True;
+			
+		}
+		this.ff = a;
+		
+	}
+	
+}
+this.fi = this.fi;
+this.fint = this.ff.get;
+this.fb = this.ffb.get;
+this.ff = this.fi!n();
+this.fj = this.fj;
+this.ff = this.fi!n();
+await this.ff?;
+Fut<Int> resData = this.fi!n();
+if( 527 < 926) {
+	J serverObject = this.fj;
+	await! False;
+	
+}
+while((this.fi) == this.fi) {
+	Int res = systemDepth;
+	
+}
+Fut<Int> resetReload = this.fi!n();
+I tree = new D();
+systemDepth = 396;
+await this.ffb?;
+resData = resetReload;
+return systemDepth * 512;
+}
+}
+{}

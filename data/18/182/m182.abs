@@ -1,0 +1,53 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.fi = new D();
+this.fb = True;
+this.ffb = this.fi!b();
+this.ffb = this.ffb;
+this.fint = 888;
+Int stackCount = 274;
+Bool canRead = True &&! True && False;
+canRead = False;
+if( this.fint - stackCount == - 163 * 802 + - stackCount) {
+	stackCount = - this.fint - - 944;
+	this.fi = new D();
+	this.ffb = this.ffb;
+	
+}
+else {
+	Bool willRead = 385 - 175 - - 555 == 886 * - 419 * - 888;
+	J packet = this.fj;
+	this.fj = packet;
+	this.fb = False;
+	this.ffb = this.ffb;
+	
+}
+this.ff = this.fi!n();
+canRead =! False;
+Bool configOverride = this.fi == this.fi;
+await this.ffb?;
+this.fint = - this.fint;
+this.fb = True &&! True;
+return 746;
+}
+}
+{}

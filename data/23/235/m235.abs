@@ -1,0 +1,110 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = this.ff.get;
+this.fi = this.fi;
+Int k = this.ff.get;
+this.fint = 768 * k;
+this.ff = this.fi!n();
+await this.ffb?;
+this.fj = new E();
+while( 812 != 686 * this.fint * 554 * k * 151 + - 956 + 519) {
+	this.ff = this.fi!n();
+	this.fj = this.fj;
+	
+}
+this.fint =(- this.fint);
+while(! True) {
+	Int processAmount = this.ff.get;
+	
+}
+this.fj = this.fj;
+k = - 388;
+Int eventAmount = - 92;
+I packetNode = new D();
+Int processAmount = 139;
+while((- this.fint !=(- 776 + 242))) {
+	while( False || False && True || False || False && this.fb) {
+		this.ff = packetNode!n();
+		while( False) {
+			packetNode = new D();
+			k = - 865;
+			
+		}
+		
+	}
+	Int j = - 962 * 798;
+	this.fi = packetNode;
+	this.fb = False || this.fb;
+	this.fb = True;
+	if( False) {
+		Int eventDepth = k;
+		Bool willRead = this.ffb.get;
+		k = eventAmount;
+		await this.ffb?;
+		
+	}
+	else {
+		if( this.fb) {
+			await this.ff?;
+			
+		}
+		else {
+			Bool isSaveed = True;
+			this.ffb = packetNode!b();
+			processAmount = - 151;
+			
+		}
+		this.fint = eventAmount - - 394;
+		while( j * 686 == 904 * 156) {
+			this.ffb = this.ffb;
+			this.fint = this.fint * k;
+			
+		}
+		this.ff = packetNode!n();
+		packetNode = new D();
+		await this.ffb?;
+		
+	}
+	if(!(this.fb )) {
+		J serverObject = this.fj;
+		
+	}
+	else {
+		this.fj = new E();
+		
+	}
+	this.ff = this.ff;
+	await this.ff?;
+	I tree = this.fi;
+	
+}
+this.ffb = this.ffb;
+this.fb = this.ff == this.ff;
+eventAmount = 661;
+processAmount = processAmount;
+I serverObject = new D();
+this.fint = - 345 - - k + 749;
+this.ff = this.fi!n();
+J packet = this.fj;
+return 534;
+}
+}
+{}

@@ -1,0 +1,62 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+this.ffb = this.fi!b();
+this.ff = this.ff;
+while( True) {
+	this.ffb = this.fi!b();
+	if( True) {
+		Int k = 682;
+		this.fint = 10;
+		this.fj = new E();
+		Bool writeToggle = True;
+		
+	}
+	else {
+		if( 105 * this.fint + 603 != 895) {
+			await this.ff?;
+			this.ffb = this.fi!b();
+			this.ff = this.fi!n();
+			
+		}
+		else {
+			this.fi = this.fi;
+			this.fj = new E();
+			Bool hasDone = this.fi == this.fi;
+			this.fb = - this.fint < this.fint;
+			this.fi = this.fi;
+			this.ff = this.ff;
+			
+		}
+		this.ff = this.ff;
+		
+	}
+	await True ==! True && this.fb;
+	this.ffb =(this.ffb);
+	this.fint = 368;
+	
+}
+this.fj =(this.fj);
+I clientNode = new D();
+return this.fint;
+}
+}
+{}

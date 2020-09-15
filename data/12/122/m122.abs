@@ -1,0 +1,160 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( False) {
+	Bool canLoad =(False && this.fb);
+	this.fb = False;
+	this.fint = - 912;
+	this.fint = 768;
+	while( False) {
+		this.ff = this.fi!n();
+		Bool willSave =! False &&! True;
+		if( this.fint != 257) {
+			await this.ffb?;
+			this.ffb = this.fi!b();
+			this.ff = this.fi!n();
+			this.fint =(215);
+			J dataStruct = new E();
+			
+		}
+		else {
+			this.fint = - 562;
+			await this.ffb?;
+			
+		}
+		
+	}
+	this.fi = this.fi;
+	
+}
+else {
+	if( False && False || this.fb) {
+		this.fint = this.fint;
+		this.fj = this.fj;
+		this.fj = new E();
+		if( -(630) >= - 521 - 690) {
+			await this.fint * 648 == this.fint * 4;
+			this.fint = 660;
+			Bool pauseFlag = - 879 > 418;
+			this.fi = new D();
+			this.fj = this.fj;
+			Bool hasLoaded = this.ffb.get;
+			
+		}
+		else {
+			this.ff = this.fi!n();
+			J person =(this.fj);
+			this.fi = new D();
+			this.fb = this.fb;
+			this.fj = person;
+			
+		}
+		J packet = new E();
+		
+	}
+	else {
+		Int stackCounter = 602 * this.fint;
+		while( False) {
+			await True;
+			
+		}
+		if( True && this.fb) {
+			Int systemAmount = 854 + stackCounter - 252;
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			Int arg = 313;
+			
+		}
+		this.fj = new E();
+		this.ffb = this.fi!b();
+		if( True) {
+			this.ffb = this.fi!b();
+			Fut<Int> returnInfo = this.fi!n();
+			this.ff = this.ff;
+			this.fb = this.fb && True;
+			await(this.ff) == returnInfo;
+			Int queueCounter = 328;
+			
+		}
+		else {
+			await this.ff?;
+			this.fint = 752;
+			Int processDepth = stackCounter;
+			this.ff = this.fi!n();
+			Int j = - 668;
+			this.ff = this.fi!n();
+			Int arg = 699 * 221 * 307 * - j;
+			this.ff = this.fi!n();
+			arg = 932 + 51 *(j) * 844;
+			await this.ffb?;
+			arg = this.ff.get;
+			await this.ff?;
+			Fut<Int> syncReload =(this.fi )!n();
+			Int listCount = 242 - 59;
+			Bool restoreEnabled = True;
+			listCount = - 539 *(640);
+			
+		}
+		J packet = new E();
+		while( - stackCounter != 260) {
+			await this.ffb?;
+			Int res = this.ff.get;
+			this.fj = new E();
+			this.fint = 148 + 133;
+			Int eventAmount =((-(898 * res)));
+			
+		}
+		
+	}
+	if((this.fb || False ||! True )) {
+		await this.ff?;
+		await this.ffb?;
+		this.fi = this.fi;
+		
+	}
+	await this.ffb?;
+	while(! this.fb && True) {
+		J serverUnit = this.fj;
+		while( False || False || False) {
+			this.fj = serverUnit;
+			
+		}
+		this.fb = 76 > 548;
+		while(! True) {
+			this.fb = True;
+			
+		}
+		
+	}
+	
+}
+J tree = this.fj;
+this.ff = this.fi!n();
+Int processCount = 994;
+J node = new E();
+processCount = - 676 * processCount;
+Int systemCounter = processCount * - processCount * processCount * 790;
+tree =(tree);
+return 362;
+}
+}
+{}

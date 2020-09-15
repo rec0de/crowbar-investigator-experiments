@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String returnData = "fut_?(3)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			// this.fb = (returnData).get;
+			this.fb = True;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fb_f, valueOf(returnData)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

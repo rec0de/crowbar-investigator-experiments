@@ -1,0 +1,57 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J message =(this.fj);
+message = new E();
+while( 147 < 488 * this.fint) {
+	this.fi = this.fi;
+	this.fb = this.fb;
+	
+}
+await False && False ||! this.fb;
+while( False) {
+	this.ff = this.fi!n();
+	this.fj = this.fj;
+	
+}
+this.fj = new E();
+this.fj = this.fj;
+await this.ffb?;
+this.fb = False;
+if(! this.fb || False) {
+	await this.ff?;
+	this.ff = this.fi!n();
+	await this.ff?;
+	Fut<Int> flushState = this.fi!n();
+	this.fi = new D();
+	
+}
+else {
+	this.fb = this.fb &&! True || False;
+	Bool isReady = False ||! this.fb || False;
+	
+}
+this.fj = message;
+J clientUnit = new E();
+Int eventCount = 772;
+return - 86;
+}
+}
+{}

@@ -1,0 +1,76 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(6)";
+	String fj = "object_?(6)";
+	String fi = "object_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String ff = "fut_19";
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		// I ioNode = new D();
+		String ioNode = "object_1";
+		if((True && (this.fb == True))){
+			// this.fi = new D();
+			this.fi = "object_2";
+			this.fint = this.fint;
+			String resetCall = this.ffb;
+			// this.fj = new E();
+			this.fj = "object_3";
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.ffb = "fut_?(9)";
+			this.fj = "object_?(9)";
+			this.fi = "object_?(12)";
+			this.fint = 9;
+			this.fb = True;
+			// End assignments
+			
+			// this.ffb = ioNode!b();
+			this.ffb = "fut_19";
+			Int res = (this.fint * 677);
+		}
+		this.ffb = this.ffb;
+		// Int stackDepth = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int stackDepth = 0;
+		Bool restoreFlag = True;
+		// this.ffb = ioNode!b();
+		this.ffb = "fut_20";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.ffb = "fut_?(11)";
+		this.fj = "object_?(11)";
+		this.fi = null;
+		this.fint = 11;
+		this.fb = True;
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_4";
+		ioNode = this.fi;
+		if((((False || this.fb) || (((restoreFlag || False) && restoreFlag) && (990 == -224))) || (True && !False))){
+			Int value = -stackDepth;
+			this.fint = 504747;
+			String dataRepresentation = this.fj;
+		}
+		Int l = -992;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !ioNode=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(anon(store(store(store(anon(store(store(store(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fint_f, select(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fint_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0)), this.ffb_f, fut_19), this.ffb_f, select(store(anon(store(store(store(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fint_f, select(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fint_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0)), this.ffb_f, fut_19), this.ffb_f)), this.ffb_f, fut_20)), this.fj_f, NEW5_0), this.fj_f, NEW5_0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

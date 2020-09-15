@@ -1,0 +1,117 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool isReady = False && this.fb;
+this.fi = this.fi;
+this.fj = new E();
+J serverUnit = this.fj;
+this.fb = this.ffb.get;
+this.fi = this.fi;
+I clientStruct = this.fi;
+isReady =! False;
+clientStruct = new D();
+Fut<Int> resInfo = clientStruct!n();
+this.fi = this.fi;
+this.ff = this.fi!n();
+this.fint = 511 * this.fint;
+J serverObject = new E();
+serverUnit = serverObject;
+await 672 != 323 * this.fint;
+if( True || this.fb) {
+	if( True) {
+		this.ffb = clientStruct!b();
+		this.fint = 374 + this.fint - 355;
+		this.fj = this.fj;
+		serverUnit = serverUnit;
+		this.fj = new E();
+		resInfo = this.fi!n();
+		clientStruct = new D();
+		this.fb = this.fb;
+		this.fi = new D();
+		while( this.fint < 304) {
+			Fut<Int> a = clientStruct!n();
+			this.fi = new D();
+			await 343 == 571 - - this.fint;
+			
+		}
+		
+	}
+	else {
+		Bool willExec = True;
+		if((this.fint * 38) * this.fint != this.fint + 428 * this.fint) {
+			this.ff = this.fi!n();
+			await resInfo?;
+			
+		}
+		serverObject = new E();
+		I person = new D();
+		if( True) {
+			serverUnit = new E();
+			this.fb = this.fb &&! False;
+			isReady = this.fb;
+			await False;
+			
+		}
+		if(! False || False == False && True) {
+			Bool stateFlag = 481 <= - 389;
+			
+		}
+		else {
+			I clientRepresentation = new D();
+			Bool pauseEnabled = isReady;
+			I packet = new D();
+			isReady = isReady;
+			this.ff = resInfo;
+			pauseEnabled = False;
+			clientStruct = person;
+			await resInfo?;
+			
+		}
+		this.fj = new E();
+		
+	}
+	Bool restoreFlag = False;
+	while( restoreFlag) {
+		J packet = serverUnit;
+		this.fj = new E();
+		Int k = 327 * this.fint - - 773;
+		this.fj =(this.fj);
+		clientStruct = this.fi;
+		
+	}
+	if( 66 < 765) {
+		serverObject = serverUnit;
+		
+	}
+	this.fj = new E();
+	this.ffb = this.ffb;
+	
+}
+else {
+	Bool isDone = False;
+	this.ffb = this.fi!b();
+	J packetStruct = serverUnit;
+	
+}
+J person = serverObject;
+return 630 * 623;
+}
+}
+{}

@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String fj = null;
+	String ffb = "fut_3";
+	String ff = "fut_3";
+
+	Unit ce() {
+		
+		
+		this.fj = this.fj;
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fb = True;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_3";
+		this.ffb = this.ffb;
+		this.fint = 888;
+		Int stackCount = 274;
+		Bool canRead = ((True && !True) && False);
+		canRead = False;
+		if(((this.fint - stackCount) == (-130726 + -stackCount))){}
+		else{
+			Bool willRead = (765 == 329655792);
+			String packet = this.fj;
+			this.fj = packet;
+			this.fb = False;
+			this.ffb = this.ffb;
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_5";
+		canRead = !False;
+		Bool configOverride = (this.fi == this.fi);
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		this.fint = -this.fint;
+		this.fb = (True && !True);
+		println(toString(746)); // return statement
+		// Evaluates to: 746
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 746=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

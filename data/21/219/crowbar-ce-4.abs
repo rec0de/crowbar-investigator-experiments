@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(4)";
+	Bool fb = True;
+	String fj = "object_?(2438)";
+	String ffb = "fut_?(4)";
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		Int stackCounter = 693;
+		String resultInfo = this.ffb;
+		this.fb = False;
+		// Fut y = this.fi!n();
+		String y = "fut_7";
+		resultInfo = this.ffb;
+		String packet = this.fj;
+		y = this.ff;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_8";
+		if((459 == 252885)){}
+		else{
+		
+		}
+		// y = this.fi!n();
+		y = "fut_28";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(2437)";
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		if((this.fj == packet)){}
+		else{
+			Int listAmount = ((78030 - (-this.fint * -74)) + -this.fint);
+			Bool canSave = (this.fi == this.fi);
+			// this.fj = new E();
+			this.fj = "object_1";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(anon(store(store(heap, this.fb_f, 0), this.ffb_f, fut_8)), this.fj_f, NEW5_0), this.fj_f, NEW5_0), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

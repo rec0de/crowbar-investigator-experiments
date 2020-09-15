@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		// Fut applyRequest = this.fi!n();
+		String applyRequest = "fut_0";
+		String node = this.fi;
+		String flushCall = applyRequest;
+		String packet = this.fi;
+		this.fint = -69;
+		// applyRequest = this.fi!n();
+		applyRequest = "fut_1";
+		println(toString(254736)); // return statement
+		// Evaluates to: 254736
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 254736=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

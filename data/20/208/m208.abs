@@ -1,0 +1,88 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.fj = this.fj;
+this.ff =(this.fi )!n();
+await this.ffb?;
+Int value = this.fint;
+while(! this.fb || this.fb) {
+	while( this.fb == True && True && this.fb ||! True) {
+		await this.ffb?;
+		value = - this.fint;
+		this.fb = this.ffb.get;
+		Int systemDepth = 483;
+		value = - 404;
+		if( True) {
+			value =(601) - systemDepth;
+			value = systemDepth;
+			Int queueAmount = 67;
+			this.fi = new D();
+			this.fb = False && False &&! True;
+			await this.ffb?;
+			this.fj = this.fj;
+			systemDepth = systemDepth * 576 * 695;
+			await this.ffb?;
+			queueAmount = 851 * this.fint * value;
+			
+		}
+		else {
+			this.fj = new E();
+			this.ffb = this.ffb;
+			I serverUnit = new D();
+			this.fj = new E();
+			systemDepth = - this.fint;
+			this.ff = this.fi!n();
+			await 224 == - 985 * 997;
+			serverUnit = this.fi;
+			await this.ff?;
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	if( - value + 322 + this.fint < 417 + -(value )) {
+		while((755 - - 352) - 108 * - 792 * 93 > 392 * - this.fint) {
+			this.fb = this.fb;
+			Bool writeToggle = True;
+			Fut<Bool> returnState = this.fi!b();
+			
+		}
+		await this.ffb?;
+		this.fint = this.fint;
+		this.ff = this.ff;
+		value = 505 + 791;
+		this.ffb = this.fi!b();
+		this.ffb = this.fi!b();
+		this.ffb = this.ffb;
+		Fut<Bool> a = this.fi!b();
+		Int stackAmount = this.ff.get;
+		await 209 >= 879 * 483;
+		Int processCounter = 808;
+		I packet = this.fi;
+		
+	}
+	
+}
+this.ff = this.fi!n();
+return 660;
+}
+}
+{}

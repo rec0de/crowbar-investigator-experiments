@@ -1,0 +1,60 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fj = null;
+	String fi = null;
+	String ffb = "fut_?(0)";
+	Bool fb = False;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Int eventDepth = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int eventDepth = 0;
+		this.fj = this.fj;
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_28";
+		this.ffb = this.ffb;
+		Int eventAmount = -632;
+		this.fb = (((349 + (-eventAmount * 995)) + 610) != 6);
+		// this.ff = this.fi!n();
+		this.ff = "fut_29";
+		this.fi = this.fi;
+		this.fb = this.fb;
+		}
+		this.fi = this.fi;
+		Int stackDepth = 16;
+		this.fint = (-j * 31);
+		Int queueCounter = 4;
+		// Fut applyState = this.fi!n();
+		String applyState = "fut_30";
+		this.fb = (((!True || (False && !this.fb)) || False) || this.fb);
+		queueCounter = stackDepth;
+		Int j = -743;
+		String person = this.fi;
+		Bool storageToggle = True;
+		// person = new D();
+		person = "object_1";
+		println(toString(-388)); // return statement
+		// Evaluates to: -388
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -388=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

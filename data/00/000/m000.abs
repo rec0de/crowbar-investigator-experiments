@@ -1,0 +1,63 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+this.ffb = this.ffb;
+this.ffb = this.fi!b();
+this.fint =(this.ff ).get;
+this.fint =(this.fint) + this.fint * this.fint -(- 250);
+if(((True) )) {
+	while( True) {
+		Bool canExec =! False;
+		while( False || True) {
+			canExec = True &&(! this.fb && False);
+			await this.ff?;
+			
+		}
+		if(! canExec) {
+			this.fint = - 880 + 993;
+			await this.ff?;
+			this.ffb = this.fi!b();
+			Int arg = - 507 * - 501;
+			await this.ff?;
+			
+		}
+		I packet = this.fi;
+		
+	}
+	this.ffb =(this.fi )!b();
+	I serverNode = new D();
+	
+}
+Int l = 821 * 758;
+this.fb = False;
+Bool willLoad = False || True;
+willLoad = True ||(False && this.fb);
+Int j = 63 - 833;
+this.fi = new D();
+this.fb = this.fj == this.fj;
+Int stackCount = 944;
+willLoad =(willLoad && True == True);
+Bool willExec = this.fb;
+willExec = False;
+return 494;
+}
+}
+{}

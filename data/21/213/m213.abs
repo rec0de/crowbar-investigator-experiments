@@ -1,0 +1,138 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+this.fj = new E();
+this.fj = new E();
+this.fi = this.fi;
+if(! True && False) {
+	this.ffb = this.fi!b();
+	I packetStruct = this.fi;
+	
+}
+this.fi = new D();
+await this.ff?;
+while( this.fint > 332) {
+	this.fb = this.fb || False;
+	while( False) {
+		this.ffb = this.fi!b();
+		await this.ff?;
+		J packetNode = this.fj;
+		
+	}
+	if( False) {
+		await this.ff?;
+		this.fint = this.fint * this.fint * 453 *((- 429)) * - 556;
+		this.ff =(this.fi )!n();
+		
+	}
+	
+}
+this.fi = this.fi;
+I clientUnit = this.fi;
+Bool isLoaded = False;
+I message = clientUnit;
+this.ffb = message!b();
+Int systemCount = 877;
+this.fi = new D();
+this.fi = this.fi;
+if( False) {
+	await this.ff?;
+	this.ff = this.ff;
+	this.ff = message!n();
+	this.fint = - 333;
+	Fut<Int> returnState = this.ff;
+	clientUnit = clientUnit;
+	this.fi = this.fi;
+	this.ff = message!n();
+	this.fj = this.fj;
+	
+}
+else {
+	systemCount = systemCount + this.fint * this.fint;
+	systemCount = 235;
+	isLoaded = False;
+	
+}
+Bool isSaveed = 445 == 925 * 198;
+if(!(isLoaded &&! False) || False) {
+	isLoaded = this.fb || True;
+	this.ffb = this.ffb;
+	if((False && isSaveed && False) ||! isLoaded && True) {
+		this.fint =(350 *(564));
+		
+	}
+	else {
+		isSaveed = False;
+		this.ffb = this.ffb;
+		clientUnit = new D();
+		
+	}
+	
+}
+if(! isSaveed && isLoaded || False) {
+	if( isLoaded) {
+		Bool canLoad =! False ==! True;
+		
+	}
+	else {
+		if( False || True) {
+			await this.ff?;
+			this.ff = this.ff;
+			this.fj = this.fj;
+			this.fi = new D();
+			Int listCounter = 265;
+			Bool isWrite = isLoaded;
+			
+		}
+		else {
+			await True &&! True;
+			clientUnit = clientUnit;
+			systemCount = 399;
+			await this.ffb?;
+			Bool canLoad =(this.fj == this.fj);
+			J clientObject = new E();
+			
+		}
+		Bool writeEnabled =! True;
+		message = clientUnit;
+		Int i = this.ff.get;
+		J serverStruct = this.fj;
+		this.fint = systemCount;
+		isSaveed = True && True;
+		isSaveed = True;
+		
+	}
+	isLoaded = False && True;
+	
+}
+else {
+	clientUnit = clientUnit;
+	Fut<Int> y = this.ff;
+	
+}
+this.fb = - 634 >= 891 * this.fint * - this.fint;
+J tree =(this.fj);
+this.ff = clientUnit!n();
+systemCount = 240;
+return 911 + systemCount * systemCount;
+}
+}
+{}

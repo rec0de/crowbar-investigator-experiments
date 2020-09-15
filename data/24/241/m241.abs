@@ -1,0 +1,97 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool execEnabled =(True && True == this.fb);
+J serverObject = this.fj;
+this.ff = this.fi!n();
+execEnabled = True ||!(this.fint <= 12);
+this.fb = True;
+this.fi = this.fi;
+if(! execEnabled == True) {
+	serverObject = new E();
+	Bool canWrite = execEnabled;
+	execEnabled = canWrite;
+	canWrite = 921 == this.fint * 46 * 277;
+	await this.ffb?;
+	
+}
+else {
+	this.fi = this.fi;
+	Int res = 102;
+	while( True) {
+		J tree = new E();
+		this.fint = this.fint;
+		this.fint = 516;
+		tree = serverObject;
+		Bool isRead = True;
+		await False || True;
+		this.fi = new D();
+		I serverUnit = this.fi;
+		serverObject = new E();
+		this.fint = this.ff.get;
+		serverObject = tree;
+		await this.ff?;
+		serverUnit = new D();
+		this.fj = this.fj;
+		
+	}
+	await this.ffb?;
+	this.fint = this.fint - 461 - 415 - res;
+	serverObject = new E();
+	Int i = - 507;
+	Bool isReady = True && True;
+	serverObject = this.fj;
+	if(! execEnabled && isReady) {
+		while((False) && execEnabled &&(!((- this.fint * 4) < 742)) && this.fb || True ||! this.fb && False) {
+			this.fi = new D();
+			this.ffb = this.fi!b();
+			
+		}
+		this.fj = new E();
+		
+	}
+	else {
+		execEnabled = 342 == 904;
+		i = res;
+		
+	}
+	await this.ff?;
+	serverObject = new E();
+	this.fb = this.ffb.get;
+	i = this.ff.get;
+	await this.ff?;
+	this.fint = 37 - - 667;
+	Bool hasLoaded =(- 833 *(i + 806) == i +(451)) || this.fb;
+	res = - 902;
+	
+}
+this.ffb = this.ffb;
+execEnabled = - this.fint == - this.fint + 51;
+this.ffb = this.fi!b();
+this.ff = this.ff;
+serverObject = new E();
+Bool processFlag = True || this.fb;
+I ioObject = new D();
+Fut<Int> returnInfo = this.fi!n();
+this.ff = this.fi!n();
+return - this.fint - this.fint;
+}
+}
+{}

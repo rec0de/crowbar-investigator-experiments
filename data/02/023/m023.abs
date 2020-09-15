@@ -1,0 +1,78 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J clientStruct = this.fj;
+J ioStruct =(this.fj);
+await this.ff?;
+J serverNode = new E();
+this.fi = this.fi;
+clientStruct = serverNode;
+while( 953 <= this.fint - 718) {
+	serverNode = new E();
+	if((False )) {
+		this.fi = new D();
+		await! True ||! True;
+		clientStruct = new E();
+		clientStruct = this.fj;
+		ioStruct = clientStruct;
+		clientStruct = new E();
+		serverNode =(this.fj);
+		if( False) {
+			this.fi = new D();
+			
+		}
+		else {
+			Int arg = 374;
+			await this.ffb?;
+			Int l =(this.ff ).get;
+			
+		}
+		this.ffb = this.ffb;
+		serverNode = new E();
+		ioStruct = ioStruct;
+		
+	}
+	else {
+		clientStruct = this.fj;
+		
+	}
+	this.fint = this.fint * - 544;
+	ioStruct = serverNode;
+	await True;
+	while( True) {
+		serverNode = new E();
+		this.fj = new E();
+		
+	}
+	I node = this.fi;
+	Bool isDone = False;
+	this.fint = 293 * - 561 - this.fint;
+	
+}
+this.fj = ioStruct;
+this.fb =(! False) || True &&! False || this.fb || False || this.fb;
+this.fi = new D();
+Fut<Bool> applyChanges = this.fi!b();
+this.fi = this.fi;
+clientStruct = ioStruct;
+return(this.fint);
+}
+}
+{}

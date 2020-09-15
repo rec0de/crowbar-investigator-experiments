@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_1";
+		this.fi = this.fi;
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fi = this.fi;
+		Int l = (425 * -this.fint);
+		this.fint = 410;
+		Int j = this.fint;
+		Int processCount = 867;
+		this.fint = (processCount - 657);
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		this.fb = (((True || (!False && True)) || !False) || !True);
+		l = j;
+		this.fi = this.fi;
+		j = (-52650 * j);
+		println(toString(111)); // return statement
+		// Evaluates to: 111
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 111=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int systemDepth = 1;
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fi = null;
+		this.fb = False;
+		// End assignments
+		
+		if((systemDepth > this.fint)){
+			this.fi = this.fi;
+			systemDepth = this.fint;
+			if((False && (this.fb || this.fb))){}
+			else{
+		
+			}
+		}
+		Int res = ((systemDepth * 179) * 342);
+		println(toString(540764)); // return statement
+		// Evaluates to: 540764
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 540764=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

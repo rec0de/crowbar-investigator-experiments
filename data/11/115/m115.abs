@@ -1,0 +1,94 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool isSaveed = this.fint *(752) != this.fint;
+Int value = 161;
+if( this.fb) {
+	isSaveed = True && this.fb || isSaveed || False || True &&! this.fb || True &&(False &&(True));
+	this.ff = this.fi!n();
+	while( isSaveed) {
+		Bool isReady = False && this.fb;
+		
+	}
+	
+}
+else {
+	Bool willLoad = True && isSaveed || False &&(isSaveed);
+	if( True) {
+		this.ffb = this.ffb;
+		Fut<Int> flushState = this.ff;
+		this.ffb = this.ffb;
+		
+	}
+	await this.ff?;
+	Bool canExec = this.ffb.get;
+	this.fint = - 540;
+	while(! False) {
+		Bool storageToggle = 198 * 64 <= - this.fint;
+		storageToggle = this.fj == this.fj;
+		willLoad = True;
+		Bool canLoad = -(value) < 708;
+		this.ff = this.fi!n();
+		
+	}
+	canExec = True;
+	this.fj = new E();
+	canExec = canExec;
+	this.ff = this.fi!n();
+	
+}
+this.ff = this.fi!n();
+await this.ff?;
+this.fb =(True ||! isSaveed) || False;
+this.ff = this.fi!n();
+while( this.fb) {
+	this.fi = this.fi;
+	Fut<Int> applyUpdates = this.fi!n();
+	if( True || isSaveed) {
+		J tree = new E();
+		while( True ||! True && False) {
+			this.fj = new E();
+			Int listAmount = this.ff.get;
+			Int processDepth = 240;
+			this.fi = new D();
+			await this.ffb?;
+			applyUpdates = this.fi!n();
+			Bool hasReady = isSaveed;
+			await this.ffb?;
+			
+		}
+		
+	}
+	else {
+		value = 673;
+		
+	}
+	this.ff =(applyUpdates);
+	this.ffb = this.fi!b();
+	
+}
+value = 828;
+this.fi = new D();
+this.fb = this.fb;
+this.ff = this.fi!n();
+return 606 * value;
+}
+}
+{}

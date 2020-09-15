@@ -1,0 +1,145 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = True;
+if( this.fb) {
+	while( 713 == - this.fint) {
+		Int stackAmount =(-(- 330));
+		
+	}
+	await(this.fj) == this.fj;
+	this.ffb = this.fi!b();
+	Fut<Int> z = this.fi!n();
+	this.fb =! False && False ||(this.fb);
+	this.fint = this.fint * 515;
+	
+}
+else {
+	this.ff = this.fi!n();
+	Int j = 917;
+	if( False) {
+		this.fj = this.fj;
+		
+	}
+	else {
+		Int processCounter = 970;
+		j = j;
+		
+	}
+	this.ff = this.ff;
+	if( this.ffb == this.ffb) {
+		I message = new D();
+		this.fj = new E();
+		await False;
+		while( True) {
+			this.ffb = this.fi!b();
+			this.fj = this.fj;
+			
+		}
+		await this.ffb?;
+		Int processCounter = 543 * this.fint;
+		Fut<Int> flushUpdates = this.fi!n();
+		this.ff = message!n();
+		Fut<Int> x = this.fi!n();
+		
+	}
+	
+}
+while( True) {
+	this.fint = - 850 * 973;
+	if(! this.fb && this.fb) {
+		Bool execEnabled = False && True ||! False;
+		
+	}
+	else {
+		this.ff = this.fi!n();
+		this.fint = 788;
+		this.fi = new D();
+		this.ff = this.fi!n();
+		Bool willWrite = this.fj == this.fj;
+		if( False) {
+			await this.ffb?;
+			this.fj = new E();
+			await!(! False || True);
+			this.fint = -(443) * - this.fint;
+			I packetRepresentation = new D();
+			this.fb =! willWrite && willWrite;
+			Int eventCounter = - 260 * 586;
+			
+		}
+		
+	}
+	
+}
+this.fint = - 51 - 526;
+this.fint = this.ff.get;
+this.fi = new D();
+while( True) {
+	this.ff = this.fi!n();
+	while(! False) {
+		await True;
+		Bool hasReady = - 696 * this.fint - 223 < 875;
+		
+	}
+	this.fb = this.ffb.get;
+	
+}
+this.fint = this.fint;
+this.fb = this.fb && this.fb;
+I serverUnit = new D();
+this.ff = serverUnit!n();
+serverUnit = this.fi;
+this.ffb =(this.fi )!b();
+this.fint = this.fint;
+this.fb =! True;
+await this.ff?;
+this.fi = new D();
+this.fb = True;
+J message = new E();
+await this.ff?;
+this.ff = this.ff;
+Fut<Int> y = serverUnit!n();
+this.ff = this.fi!n();
+y = serverUnit!n();
+this.fj = new E();
+this.fj = new E();
+await y?;
+I clientNode = serverUnit;
+if((False &&(False) )) {
+	if( this.fb) {
+		while( False ||! True) {
+			this.ff = clientNode!n();
+			
+		}
+		this.fint = - 109 * this.fint;
+		
+	}
+	else {
+		this.ff = y;
+		
+	}
+	Int l = this.ff.get;
+	J dataNode = new E();
+	
+}
+return this.fint;
+}
+}
+{}

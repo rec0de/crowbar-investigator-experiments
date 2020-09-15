@@ -1,0 +1,45 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7719;
+	Bool fb = True;
+	String ffb = "fut_?(5)";
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fint = (156 - this.fint);
+		if(((!((-390144 + this.fint) >= 896) || False) || !this.fb)){
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_4";
+			if((this.fb == this.fb)){
+				this.ffb = this.ffb;
+				this.fint = ((-308127 * -this.fint) - this.fint);
+				Int listDepth = -318;
+				this.fj = this.fj;
+				this.fi = this.fi;
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_5";
+			}
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+		}
+		println(toString(96)); // return statement
+		// Evaluates to: 96
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 96=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

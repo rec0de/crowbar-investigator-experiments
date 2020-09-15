@@ -1,0 +1,152 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int queueCounter = - this.fint;
+if(! this.fb) {
+	await this.ffb?;
+	this.ff = this.fi!n();
+	queueCounter = 88 - 3 * this.fint;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	
+}
+await this.ff?;
+await this.fb ||! this.fb;
+queueCounter =(557 * 889);
+this.fj = this.fj;
+this.ff = this.fi!n();
+if( False) {
+	this.ff = this.fi!n();
+	await True;
+	while( this.fb) {
+		while(! this.fb || False) {
+			this.fb =! this.fb ==! this.fb;
+			this.ff = this.fi!n();
+			await this.ff?;
+			this.fj = new E();
+			this.fint = 401;
+			await this.ff?;
+			Int j = queueCounter -(478 * 864 * 346 * - 488) +(424) *(queueCounter);
+			this.fj = new E();
+			Bool pauseToggle = this.fint != 654;
+			
+		}
+		Int j = queueCounter *(this.fint);
+		if( this.ffb ==(this.ffb )) {
+			Bool isWrite = False ||! this.fb;
+			await! this.fb;
+			queueCounter = this.fint;
+			Int i = 881 - - 376;
+			j = 874;
+			Fut<Int> resultState = this.ff;
+			I node = new D();
+			this.ffb = this.fi!b();
+			Int k = - 472 - j;
+			
+		}
+		else {
+			await this.ff?;
+			Int k = 189 - 613;
+			await(877 == 675 * 205 * - k) == False || True;
+			this.ffb = this.fi!b();
+			
+		}
+		this.fb = True;
+		this.ffb = this.fi!b();
+		this.fb = True;
+		this.fj = this.fj;
+		
+	}
+	Int value = queueCounter;
+	queueCounter = value + queueCounter *(225) * 261;
+	while( False || False) {
+		this.fb =! True;
+		if(! False) {
+			queueCounter = 45;
+			this.fi = new D();
+			queueCounter = this.fint;
+			
+		}
+		else {
+			this.fi = this.fi;
+			
+		}
+		this.fint = 582 * - 820;
+		if( 730 < 67) {
+			I ioRepresentation = this.fi;
+			ioRepresentation = new D();
+			this.ffb = this.ffb;
+			Int arg = - queueCounter;
+			this.ff = this.fi!n();
+			
+		}
+		
+	}
+	
+}
+if(! True && False) {
+	await True || True == this.fb && False;
+	this.fint = 361;
+	Fut<Bool> q = this.fi!b();
+	Bool hasReady =! False &&! True;
+	Bool pauseOverride = False;
+	Int stackCounter = 125 + - queueCounter;
+	pauseOverride = 342 != stackCounter;
+	while( this.ff == this.ff) {
+		hasReady = queueCounter > 494;
+		
+	}
+	while(! False ||! False) {
+		queueCounter = this.ff.get;
+		hasReady =! hasReady;
+		
+	}
+	Bool hasLoaded = False;
+	
+}
+queueCounter = 623;
+this.fb = this.fj == this.fj;
+this.fint = - 567;
+this.ff = this.fi!n();
+queueCounter = this.ff.get;
+Bool isExec =! True;
+await this.ffb?;
+queueCounter = 702 + this.fint * - 849;
+Bool sendFlag = this.ffb.get;
+isExec = isExec;
+this.fj = this.fj;
+this.fint = 679;
+Bool hasReady = False == True;
+sendFlag = hasReady;
+hasReady = False;
+queueCounter = this.ff.get;
+hasReady =(False);
+Bool canWrite = isExec ||(557 > queueCounter);
+this.fi = this.fi;
+queueCounter = 947;
+await this.ff?;
+Bool execFlag = 370 == - queueCounter;
+this.fi = this.fi;
+return - 741 + -(- 855);
+}
+}
+{}

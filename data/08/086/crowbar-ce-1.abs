@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(7721)";
+	Bool fb = True;
+	String fj = "object_?(7721)";
+
+	Unit ce() {
+		
+		
+		this.fj = this.fj;
+		Int stackCounter = 400;
+		
+		// await this.fb;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(1)";
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(heap, this.fj_f, select(heap, this.fj_f))), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fb = (True && !((((True && !False) && False) || !this.fb) || False));
+		String returnState = this.ffb;
+		// returnState = this.fi!b();
+		returnState = "fut_4";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		this.fint = -212;
+		// this.ff = this.fi!n();
+		this.ff = "fut_5";
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fi = this.fi;
+		Bool isLoaded = ((-this.fint + (-this.fint * 613)) > 212332);
+		String packetRepresentation = this.fj;
+		// this.fj = new E();
+		this.fj = "object_2";
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// Fut resData = this.fi!b();
+		String resData = "fut_6";
+		println(toString(-1073)); // return statement
+		// Evaluates to: -1073
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -1073=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

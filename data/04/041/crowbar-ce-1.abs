@@ -1,0 +1,27 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -5;
+	String fi = null;
+	Bool fb = True;
+
+	Unit ce() {
+		
+		
+		this.fb = (-5 == this.fint);
+		this.fb = (!this.fb == !False);
+		this.fb = !this.fb;
+		this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f, !(select(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f))=!(0)), this.fb_f, !(select(store(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f, !(select(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f))=!(0)), this.fb_f))), this.fi_f, select(store(store(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f, !(select(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f))=!(0)), this.fb_f, !(select(store(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f, !(select(store(heap, this.fb_f, -5=select(heap, this.fint_f)), this.fb_f))=!(0)), this.fb_f))), this.fi_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

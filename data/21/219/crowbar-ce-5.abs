@@ -1,0 +1,67 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(8856)";
+	Int fint = 5;
+	Bool fb = True;
+	String ffb = "fut_?(12)";
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int stackCounter = 693;
+		String resultInfo = this.ffb;
+		this.fb = False;
+		// Fut y = this.fi!n();
+		String y = "fut_7";
+		resultInfo = this.ffb;
+		String packet = this.fj;
+		y = this.ff;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_8";
+		if((459 == 252885)){}
+		else{
+		
+		}
+		// y = this.fi!n();
+		y = "fut_28";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(8855)";
+		this.fint = 13;
+		this.fb = True;
+		this.ffb = "fut_?(7)";
+		// End assignments
+		
+		if((this.fj == packet)){}
+		else{
+			Int listAmount = ((78030 - (-this.fint * -74)) + -this.fint);
+			Bool canSave = (this.fi == this.fi);
+			// this.fj = new E();
+			this.fj = "object_1";
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_29";
+		}
+		this.fj = packet;
+		this.fb = ((this.fb || True) || False);
+		this.ffb = resultInfo;
+		// this.fj = new E();
+		this.fj = "object_2";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 13
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(store(store(store(store(store(store(anon(store(store(heap, this.fb_f, 0), this.ffb_f, fut_8)), this.fj_f, NEW5_0), this.fj_f, NEW5_0), this.ffb_f, fut_29), this.fj_f, select(store(heap, this.fb_f, 0), this.fj_f)), this.fb_f, select(store(store(store(store(anon(store(store(heap, this.fb_f, 0), this.ffb_f, fut_8)), this.fj_f, NEW5_0), this.fj_f, NEW5_0), this.ffb_f, fut_29), this.fj_f, select(store(heap, this.fb_f, 0), this.fj_f)), this.fb_f)||1||0), this.ffb_f, select(store(heap, this.fb_f, 0), this.ffb_f)), this.fj_f, NEW6_0), this.fj_f, NEW6_0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

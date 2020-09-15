@@ -1,0 +1,24 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		this.fint = 100;
+		this.fint = 114;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fint_f, 100), this.fint_f, 114), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

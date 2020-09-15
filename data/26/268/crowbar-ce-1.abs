@@ -1,0 +1,26 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 4;
+	String fi = null;
+	Bool fb = True;
+
+	Unit ce() {
+		
+		
+		this.fint = 541;
+		this.fb = ((621 - (-873 * (((this.fint * -968) * -302) * 779))) > 934);
+		this.fint = 270;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fint_f, 541), this.fb_f, 621--873*select(store(heap, this.fint_f, 541), this.fint_f)*-968*-302*779>934), this.fint_f, 270), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

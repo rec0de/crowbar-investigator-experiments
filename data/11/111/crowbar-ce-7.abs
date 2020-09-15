@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool isWrite = True;
+		String tree = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (!isWrite || !True)
+		// Loop invariant: true
+		// while((!isWrite || !True)) {
+		{
+			// Fut y = this.fi!n();
+			String y = "fut_43";
+			isWrite = (value >= 993);
+			String dataRepresentation = tree;
+			// this.ff = message!n();
+			this.ff = "fut_44";
+			Int eventCount = 824;
+			
+			// await y?;
+			// No heap modification info available at this point
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !tree=0
+		// Failed to show the following sub-obligations:
+		// !tree=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

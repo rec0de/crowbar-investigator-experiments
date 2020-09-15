@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 99;
+	String fj = "object_?(99)";
+
+	Unit ce() {
+		
+		while((99 != this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((99 != this.fint))
+		// Loop invariant: true
+		
+		this.fj = this.fj;
+		println(toString((141 - this.fint))); // return statement
+		// Evaluates to: 42
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 141-select(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

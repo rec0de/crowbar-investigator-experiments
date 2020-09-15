@@ -1,0 +1,50 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while((- this.fint) > this.fint) {
+	this.ff = this.ff;
+	this.fb = 337 > this.fint *(466);
+	this.ff = this.fi!n();
+	
+}
+await this.ff?;
+Bool execToggle =(False && False);
+while( execToggle) {
+	this.ff = this.fi!n();
+	
+}
+Int res = this.fint - - this.fint;
+while( this.fb && False || True && this.fb) {
+	Bool willLoad = this.fb || False;
+	this.fint = this.fint * 200;
+	
+}
+this.fint = - res;
+this.fi = this.fi;
+await this.ff?;
+if( - 48 * res != 28) {
+	Int value = - 814;
+	
+}
+res = 533;
+return 317;
+}
+}
+{}

@@ -1,0 +1,24 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		
+		
+		this.fb = !this.fb;
+		println(toString(703)); // return statement
+		// Evaluates to: 703
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 703=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

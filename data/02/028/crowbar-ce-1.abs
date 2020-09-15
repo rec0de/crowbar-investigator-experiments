@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	String fi = null;
+	String fj = null;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: (396 > 278)
+		// Loop invariant: true
+		// while((396 > 278)) {
+		{
+			String packet = this.fj;
+			// packet = new E();
+			packet = "object_1";
+			// packet = new E();
+			packet = "object_2";
+			Bool readyOverride = (this.fb && !!False);
+			String packetRepresentation = this.fj;
+			this.fint = -730;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fint_f, -730), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

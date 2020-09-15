@@ -1,0 +1,78 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( 614 >= 796) {
+	this.fb = False;
+	
+}
+else {
+	this.fj = new E();
+	this.fint =(this.ff ).get;
+	this.fb = this.fb && False;
+	await this.ffb?;
+	if(! this.fb) {
+		if(! this.fb) {
+			Int processCounter = -(799 + 610) + - 736 + - 179 + - 909 + 596;
+			processCounter = 506;
+			Bool isDone = 420 >=(612 * 230 * processCounter);
+			
+		}
+		else {
+			Int listCounter = this.fint;
+			listCounter = 518;
+			this.ffb =(this.fi )!b();
+			this.ffb = this.fi!b();
+			this.fint = 723;
+			listCounter = 573;
+			await! True && True && False;
+			
+		}
+		
+	}
+	else {
+		this.ff = this.fi!n();
+		J packet = new E();
+		this.ff = this.fi!n();
+		if(! this.fb) {
+			I packetNode = new D();
+			await this.ff?;
+			
+		}
+		else {
+			await True ==! True;
+			
+		}
+		this.ffb =(this.fi )!b();
+		this.ff = this.ff;
+		
+	}
+	await this.ffb?;
+	Int l = 600;
+	this.ffb = this.fi!b();
+	
+}
+this.fi = new D();
+this.ffb = this.fi!b();
+I ioNode = new D();
+Bool willWrite = ioNode ==(ioNode);
+return -(767) * 601 + this.fint;
+}
+}
+{}

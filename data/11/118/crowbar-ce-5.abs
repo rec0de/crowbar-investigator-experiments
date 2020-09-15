@@ -1,0 +1,71 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(6)";
+	String ff = "fut_?(6)";
+	Int fint = 0;
+	String fi = "object_?(6)";
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		if(((467 + this.fint) > (424 * this.fint))){
+			this.ff = this.ff;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_10";
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(8)";
+			this.ff = "fut_?(9)";
+			this.fint = 8;
+			this.fi = "object_?(8)";
+			this.ffb = "fut_?(8)";
+			// End assignments
+			
+			this.fj = this.fj;
+			String y = this.ffb;
+			Int stackCount = (-this.fint * -264);
+			this.fi = this.fi;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_11";
+			Int processCount = 797;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_12";
+			Int processAmount = 239;
+			// I packet = new D();
+			String packet = "object_1";
+			// processCount = (this.ff).get;
+			processCount = 10;
+			this.ffb = y;
+			Int l = 114;
+		}
+		this.fi = this.fi;
+		this.fi = this.fi;
+		String person = this.fj;
+		// this.fint = (this.ff).get;
+		this.fint = 10;
+		this.ff = this.ff;
+		if((this.fint == (this.fint * 2))){}
+		else{
+			String serverStruct = this.fi;
+			// serverStruct = new D();
+			serverStruct = "object_2";
+		}
+		Int res = 206;
+		println(toString(1398)); // return statement
+		// Evaluates to: 1398
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 1398=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

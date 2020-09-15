@@ -1,0 +1,47 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_1";
+	Bool fb = True;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String message = null;
+		Int queueDepth = 0;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.fb || (True && (message == this.fi)))
+		// Loop invariant: true
+		// while((this.fb || (True && (message == this.fi)))) {
+		{
+			if((this.fb && False)){}
+			else{
+				this.fint = -720;
+				// this.ffb = message!b();
+				this.ffb = "fut_12";
+				// J packet = new E();
+				String packet = "object_1";
+				this.fj = this.fj;
+			}
+			
+			// await ((queueDepth - queueDepth) == queueDepth);
+			// No heap modification info available at this point
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !message=0
+		// Failed to show the following sub-obligations:
+		// !message=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

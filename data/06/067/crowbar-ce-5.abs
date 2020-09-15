@@ -1,0 +1,66 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(7)";
+	String ff = "fut_?(8)";
+	Int fint = 8855;
+	String fi = "object_?(7)";
+	Bool fb = True;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int stackAmount = 3949329;
+		String ioRepresentation = "object_?(7)";
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		this.fj = ioRepresentation;
+		// Int listCounter = (this.ff).get;
+		Int listCounter = 9;
+		Bool isDone = (this.fint >= ((this.fint * 447) - stackAmount));
+		if((True && False)){}
+		else{
+			// this.fint = (this.ff).get;
+			this.fint = 9;
+			// this.fi = new D();
+			this.fi = "object_1";
+			Int eventCount = 109;
+			this.fb = (this.fb || isDone);
+			String clientObject = ioRepresentation;
+			this.fint = 728;
+			stackAmount = 1173;
+			// stackAmount = (this.ff).get;
+			stackAmount = 9;
+		}
+		Int listAmount = 904;
+		isDone = False;
+		}
+		this.fb = !this.fb;
+		Int stackAmount = -989;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		this.fint = 12;
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(store(store(store(store(store(heap, this.fj_f, ioRepresentation), this.fint_f, valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f))), this.fi_f, NEW5_0), this.fi_f, NEW5_0), this.fb_f, select(store(store(store(store(heap, this.fj_f, ioRepresentation), this.fint_f, valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f))), this.fi_f, NEW5_0), this.fi_f, NEW5_0), this.fb_f)||select(store(heap, this.fj_f, ioRepresentation), this.fint_f)>=select(store(heap, this.fj_f, ioRepresentation), this.fint_f)*447-stackAmount), this.fint_f, 728), this.fb_f, !(select(store(store(store(store(store(store(heap, this.fj_f, ioRepresentation), this.fint_f, valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f))), this.fi_f, NEW5_0), this.fi_f, NEW5_0), this.fb_f, select(store(store(store(store(heap, this.fj_f, ioRepresentation), this.fint_f, valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f))), this.fi_f, NEW5_0), this.fi_f, NEW5_0), this.fb_f)||select(store(heap, this.fj_f, ioRepresentation), this.fint_f)>=select(store(heap, this.fj_f, ioRepresentation), this.fint_f)*447-stackAmount), this.fint_f, 728), this.fb_f)))), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

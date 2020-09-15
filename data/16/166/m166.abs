@@ -1,0 +1,163 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( this.fb) {
+	if( False && this.fb && False || this.fb &&! this.fb) {
+		if( 356 != 972 + this.fint) {
+			this.fi = this.fi;
+			Int listCount = 129;
+			
+		}
+		else {
+			this.fb = True;
+			
+		}
+		this.fint = 273 * 916 * this.fint * 256;
+		this.fj = new E();
+		I node = new D();
+		if( True) {
+			this.ff =(node )!n();
+			I ioNode = new D();
+			this.fint = 528 - - this.fint;
+			this.fi = new D();
+			node = ioNode;
+			this.ff = this.fi!n();
+			this.fb = this.fj == this.fj;
+			this.fi = new D();
+			await this.ff?;
+			
+		}
+		await this.ff?;
+		node = node;
+		this.ff = this.fi!n();
+		this.fi = new D();
+		this.fi = new D();
+		await this.ff?;
+		
+	}
+	else {
+		this.ffb = this.ffb;
+		this.fj = new E();
+		
+	}
+	
+}
+this.fi = new D();
+this.fj = this.fj;
+this.fb = False;
+this.fi = new D();
+this.fi =(this.fi);
+while( True) {
+	this.fj = this.fj;
+	this.ff = this.ff;
+	Fut<Bool> p = this.ffb;
+	Bool isLoad = False;
+	p = this.fi!b();
+	this.ffb =(p);
+	await False || this.fb && this.fb;
+	I node = new D();
+	
+}
+this.fj = this.fj;
+while( this.fint * 980 + 95 != - 604 - 923) {
+	Int l = 677;
+	Int listCount = 192 * 679;
+	this.ff = this.ff;
+	
+}
+this.ffb = this.fi!b();
+this.fj = new E();
+this.fint = 653;
+J ioStruct = new E();
+Bool stateEnabled = False;
+Int value = 972 * 825 + - this.fint *(-(791));
+this.fi = this.fi;
+Fut<Bool> syncRequest =(this.fi )!b();
+while( False && True) {
+	await this.ff?;
+	this.ff = this.fi!n();
+	
+}
+if(! True) {
+	await syncRequest?;
+	Bool sendOverride = this.ffb.get;
+	
+}
+else {
+	I dataNode = new D();
+	Int listAmount = this.ff.get;
+	stateEnabled = this.ff == this.ff;
+	dataNode = dataNode;
+	this.fb = syncRequest.get;
+	J tree = new E();
+	I person = new D();
+	
+}
+this.fint = 936;
+this.ffb = this.fi!b();
+syncRequest = this.fi!b();
+Int res = value * value;
+this.ff = this.ff;
+stateEnabled = 401 == 922;
+this.fint = 514;
+while( True && False) {
+	Bool isDone = False && True;
+	Int systemCount = 91 + 489;
+	J packet = ioStruct;
+	while( False) {
+		J clientStruct = new E();
+		systemCount = 173 + 612;
+		await syncRequest?;
+		stateEnabled = - 642 == 834 + - 163 * 930 + 791;
+		packet = new E();
+		this.ff = this.fi!n();
+		await this.ff?;
+		value = - 612;
+		clientStruct = ioStruct;
+		
+	}
+	systemCount = - 400 - this.fint * 939;
+	
+}
+while(! stateEnabled ||! True) {
+	while( this.fint > 5) {
+		this.fint = 202 - - 259 * this.fint;
+		Bool systemToggle =(True && False);
+		Fut<Int> syncState = this.fi!n();
+		Bool willSave = stateEnabled;
+		await 547 < - 126;
+		while( stateEnabled) {
+			this.fint = 339;
+			J packetRepresentation = this.fj;
+			
+		}
+		
+	}
+	
+}
+res = value;
+this.ffb = this.fi!b();
+await syncRequest?;
+Int l = 589;
+syncRequest = syncRequest;
+return 70 * 189;
+}
+}
+{}

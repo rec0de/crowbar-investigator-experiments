@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 236;
+	Bool fb = False;
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		while((236 != this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((236 != this.fint))
+		// Loop invariant: true
+		
+		this.fint = 764;
+		this.fb = (this.fj == this.fj);
+		this.fint = 271;
+		// this.ff = this.fi!n();
+		this.ff = "fut_3";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_4";
+		println(toString(47)); // return statement
+		// Evaluates to: 47
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 47=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(3)";
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		Bool isReady = (False || (False == !False));
+		Int stackCounter = 778;
+		this.fb = (711 == -734);
+		Bool hasSaveed = (stackCounter == 695);
+		this.fb = isReady;
+		Int eventCount = (-this.fint + 163);
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_0";
+		isReady = (505 == -156);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fb_f, 711=-734), this.fb_f, 0||0=!(0)), this.ffb_f, fut_0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

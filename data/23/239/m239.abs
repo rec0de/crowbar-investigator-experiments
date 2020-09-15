@@ -1,0 +1,74 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+Int queueCount = 562 *(715);
+this.fint = this.fint;
+Int queueDepth = - 136 + 483;
+this.fj = this.fj;
+this.ff = this.fi!n();
+Bool execFlag = 888 * 652 == 707;
+this.fi = this.fi;
+this.ff = this.fi!n();
+this.fi = this.fi;
+this.ffb = this.ffb;
+this.fb = this.fi == this.fi;
+this.fj = this.fj;
+await this.ff?;
+while( - 828 < 222) {
+	this.fint = queueCount - queueCount;
+	if( False &&((True) )) {
+		this.fj =(this.fj);
+		
+	}
+	else {
+		this.fi = this.fi;
+		J message = this.fj;
+		
+	}
+	while( False) {
+		while( this.fj == this.fj) {
+			this.fi = this.fi;
+			queueCount = 236 * this.fint;
+			Int queueAmount = 277;
+			Int l =(- 885);
+			
+		}
+		this.fi = new D();
+		
+	}
+	this.fi = new D();
+	queueCount = 559;
+	
+}
+this.ff = this.fi!n();
+this.fj =(this.fj);
+queueDepth = - 129;
+while( False || True &&! False) {
+	queueCount = this.fint + 450;
+	
+}
+this.fi = new D();
+I dataNode = new D();
+Bool hasDone =(False);
+return 882;
+}
+}
+{}

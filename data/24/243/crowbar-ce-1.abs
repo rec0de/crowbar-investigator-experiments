@@ -1,0 +1,27 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fj = this.fj;
+		Bool willWrite = ((False || (True && True)) || False);
+		if(willWrite){
+			Int processCounter = 558;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fj_f, select(heap, this.fj_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

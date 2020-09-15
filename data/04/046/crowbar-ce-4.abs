@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(7)";
+	Int fint = 2083;
+	Bool fb = True;
+	String ff = "fut_0";
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		// this.ff = this.fi!n();
+		this.ff = "fut_0";
+		// Fut x = this.fi!n();
+		String x = "fut_1";
+		this.fi = this.fi;
+		this.fb = ((190 == (this.fint * this.fint)) && this.fb);
+		// this.ff = this.fi!n();
+		this.ff = "fut_2";
+		println(toString((355 + this.fint))); // return statement
+		// Evaluates to: 2438
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 355+select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f)), this.fb_f, 190=select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f)), this.fint_f)*select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f)), this.fint_f)&&select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_0), this.fi_f)), this.fb_f)), this.ff_f, fut_2), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

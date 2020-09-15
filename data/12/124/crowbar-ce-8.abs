@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1;
+	String fj = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int stackAmount = 0;
+		// End of setup
+		
+		while(((!False && !False) && False)){} 
+		// Known true:
+		// Negated loop guard: !(((!False && !False) && False))
+		// Loop invariant: true
+		
+		String message = this.fj;
+		println(toString((this.fint - stackAmount))); // return statement
+		// Evaluates to: 1
+		// Detailed evaluation breakdown:
+		// this.fint: 1
+		// stackAmount: 0
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(heap, this.fint_f)-stackAmount=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fi = null;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		Bool isReady = (False || (False == !False));
+		Int stackCounter = 778;
+		this.fb = (711 == -734);
+		Bool hasSaveed = (stackCounter == 695);
+		this.fb = isReady;
+		Int eventCount = (-this.fint + 163);
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_0";
+		isReady = (505 == -156);
+		// this.ff = this.fi!n();
+		this.ff = "fut_1";
+		String person = this.fj;
+		Int listCounter = -300;
+		Bool stateEnabled = (!True && hasSaveed);
+		Bool execToggle = hasSaveed;
+		println(toString(listCounter)); // return statement
+		// Evaluates to: -300
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -300=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -54;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		while((-54 < this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((-54 < this.fint))
+		// Loop invariant: true
+		
+		Int res = 728;
+		this.fb = (583 == this.fint);
+		println(toString(-28)); // return statement
+		// Evaluates to: -28
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -28=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(7)";
+	Int fint = 8;
+	Bool fb = True;
+	String fj = "object_?(7)";
+	String ffb = "fut_11";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_11";
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fj = this.fj;
+		Int stackCount = this.fint;
+		this.fb = False;
+		this.fi = this.fi;
+		if((574 == this.fint)){}
+		else{
+		
+		}
+		String resetReload = this.ff;
+		Int j = 719;
+		
+		// await (230 <= j);
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fint = 0;
+		this.fb = False;
+		this.fj = null;
+		this.ffb = "fut_?(0)";
+		// End assignments
+		
+		println(toString(302)); // return statement
+		// Evaluates to: 302
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 302=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

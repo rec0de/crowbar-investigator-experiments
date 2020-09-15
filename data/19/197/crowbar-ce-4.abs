@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 412;
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int listDepth = 0;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: ((listDepth - this.fint) != -411)
+		// Loop invariant: true
+		// while(((listDepth - this.fint) != -411)) {
+		{
+			if((463 == -listDepth)){}
+			else{
+				this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

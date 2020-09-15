@@ -1,0 +1,25 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(4)";
+
+	Unit ce() {
+		
+		
+		this.fb = (this.fj == this.fj);
+		Int k = 89;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fb_f, select(heap, this.fj_f)=select(heap, this.fj_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

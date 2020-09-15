@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(7)";
+	Int fint = 7;
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(7)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		// Int j = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int j = 0;
+		this.fj = this.fj;
+		if((True || False)){
+			String packetObject = this.fi;
+			this.fint = 854;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_12";
+		this.fb = !(True && this.fb);
+		this.fj = this.fj;
+		this.fint = (873 - this.fint);
+		Bool writeEnabled = False;
+		// I packet = new D();
+		String packet = "object_1";
+		if(!this.fb){}
+		else{
+			Bool sendToggle = (-244 >= (this.fint + -this.fint));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f, !(1&&select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f))), this.fj_f, select(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f, !(1&&select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f))), this.fj_f)), this.fint_f, 873-select(store(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f, !(1&&select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f))), this.fj_f, select(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f, !(1&&select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.ffb_f, fut_12), this.fb_f))), this.fj_f)), this.fint_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

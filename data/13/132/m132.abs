@@ -1,0 +1,168 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ffb?;
+if( True || False || True || True) {
+	this.fb = False;
+	if( - this.fint - this.fint < 421) {
+		this.fi = this.fi;
+		
+	}
+	else {
+		this.fj = new E();
+		Fut<Bool> resetReload =(this.fi )!b();
+		this.fj =(this.fj);
+		this.fi = new D();
+		resetReload = this.fi!b();
+		Fut<Bool> resetChanges = this.ffb;
+		Bool isLoaded = this.fb;
+		this.fb =! this.fb && True;
+		this.ffb = this.fi!b();
+		this.ffb = this.fi!b();
+		if(! True ==! True &&! True) {
+			this.fb =(this.fint * - 20 <= 218) || False;
+			J clientRepresentation = new E();
+			Int systemDepth = this.ff.get;
+			this.ff = this.fi!n();
+			this.fint = this.ff.get;
+			this.fint = - systemDepth;
+			this.fint = 462;
+			resetChanges = this.fi!b();
+			
+		}
+		resetChanges = this.fi!b();
+		
+	}
+	
+}
+else {
+	if( 503 * 324 != this.fint * 141 - 386) {
+		this.ffb = this.fi!b();
+		Int i = - this.fint;
+		this.ffb = this.fi!b();
+		J person = this.fj;
+		
+	}
+	else {
+		this.fj = this.fj;
+		this.ffb =(this.ffb);
+		this.fi = this.fi;
+		
+	}
+	this.fj = this.fj;
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	
+}
+this.fi = new D();
+if( this.fb) {
+	this.fb =! False;
+	while( True) {
+		this.ffb = this.fi!b();
+		
+	}
+	this.ff = this.fi!n();
+	if( True) {
+		I person = new D();
+		
+	}
+	else {
+		this.fint = this.ff.get;
+		if( False || True) {
+			this.fb = this.fb &&! False ||(True) && False &&! False;
+			this.fint = this.ff.get;
+			Int systemAmount = - 816;
+			Int i =(this.ff ).get;
+			Fut<Int> applyRequest =(this.ff);
+			
+		}
+		this.fi = this.fi;
+		this.ffb = this.fi!b();
+		Bool canWrite = 722 == this.fint;
+		Bool restoreFlag = this.fint * -(- this.fint) <= - this.fint;
+		this.fi = new D();
+		this.ff =(this.fi )!n();
+		this.fi = this.fi;
+		this.fi = new D();
+		this.fi = this.fi;
+		restoreFlag = True || True == restoreFlag || canWrite && False || this.fb ||!(! this.fb &&!(this.fb));
+		this.fint = 440;
+		
+	}
+	this.fb =! this.fb;
+	
+}
+else {
+	this.fb = True;
+	await True;
+	await this.ffb?;
+	Int listAmount = 264 - - this.fint;
+	
+}
+while( this.fb) {
+	this.fj = new E();
+	while( False &&! True) {
+		this.ffb = this.fi!b();
+		this.ff = this.ff;
+		this.ff = this.ff;
+		Bool isReady = False;
+		
+	}
+	
+}
+if( False) {
+	this.ffb = this.ffb;
+	
+}
+this.fi = new D();
+this.ff = this.ff;
+this.fint = 129 - 51 - 606;
+this.fj = new E();
+while( True &&! False) {
+	this.ffb = this.ffb;
+	await this.ffb?;
+	while( True) {
+		while( False) {
+			this.fint = 723;
+			
+		}
+		this.ff = this.fi!n();
+		await this.ffb?;
+		J serverStruct = new E();
+		this.fb =(this.ffb == this.ffb);
+		while( this.fint >= this.fint) {
+			this.ffb =(this.fi )!b();
+			this.fb = False;
+			
+		}
+		serverStruct = serverStruct;
+		await(this.fb && True);
+		Int stackCount =(358) * this.fint;
+		Int eventAmount = - 753;
+		this.fb = False;
+		
+	}
+	
+}
+J clientNode = this.fj;
+return - this.fint + 722;
+}
+}
+{}

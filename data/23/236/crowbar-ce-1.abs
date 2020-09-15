@@ -1,0 +1,28 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	String fj = "object_?(4)";
+
+	Unit ce() {
+		
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		Int processAmount = 394095;
+		processAmount = -(858 + ((this.fint * 963) * 296));
+		println(toString(((this.fint * 709) * 827))); // return statement
+		// Evaluates to: 2931715
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fint_f)*709*827=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

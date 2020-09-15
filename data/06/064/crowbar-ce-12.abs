@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		while((((False && True) && (False == False)) || False)){} 
+		// Known true:
+		// Negated loop guard: !((((False && True) && (False == False)) || False))
+		// Loop invariant: true
+		
+		if((((True && True) && !this.fb) && !True)){}
+		else{
+		
+		}
+		this.fi = this.fi;
+		Int stackDepth = 16;
+		this.fint = (-j * 31);
+		Int queueCounter = 4;
+		// Fut applyState = this.fi!n();
+		String applyState = "fut_38";
+		this.fb = (((!True || (False && !this.fb)) || False) || this.fb);
+		queueCounter = stackDepth;
+		Int j = -743;
+		String person = this.fi;
+		Bool storageToggle = True;
+		// person = new D();
+		person = "object_1";
+		println(toString(-388)); // return statement
+		// Evaluates to: -388
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -388=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

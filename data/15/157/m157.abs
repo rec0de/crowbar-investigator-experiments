@@ -1,0 +1,89 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( this.fi == this.fi) {
+	this.ffb = this.fi!b();
+	await True;
+	this.ff = this.fi!n();
+	this.fint = 576;
+	this.fint = 675 + 92;
+	Fut<Bool> x = this.fi!b();
+	Int l = 229 + 558;
+	
+}
+else {
+	if((this.fj == this.fj )) {
+		this.fint = - this.fint;
+		if( 115 == 633) {
+			Bool sendToggle = True;
+			
+		}
+		else {
+			I message = new D();
+			
+		}
+		while(!((- this.fint == 977 *(916)) && True)) {
+			this.ffb = this.fi!b();
+			this.fi = new D();
+			this.fb = False && this.fb;
+			this.fj = new E();
+			Fut<Int> syncChanges = this.fi!n();
+			syncChanges = syncChanges;
+			this.fi = new D();
+			Bool readyToggle = False ||(12 == this.fint) == True;
+			await this.ff?;
+			this.fb = True;
+			this.fi = this.fi;
+			
+		}
+		Int j = this.fint +(95 * 94 *(147)) + this.fint;
+		j = - j;
+		J serverObject = new E();
+		
+	}
+	
+}
+this.ff = this.fi!n();
+this.fb =! False;
+await this.ffb?;
+while( False) {
+	this.fint = 546;
+	this.fb = this.ffb.get;
+	this.fj = this.fj;
+	
+}
+this.fi = new D();
+this.fint = 818;
+this.ff =(this.fi )!n();
+this.ffb =((this.fi) )!b();
+while( True) {
+	this.ffb = this.fi!b();
+	this.fj = this.fj;
+	this.fj = this.fj;
+	
+}
+this.fb = this.fi == this.fi;
+this.ffb = this.fi!b();
+this.fint = 528;
+this.fi = new D();
+return 394 - 316;
+}
+}
+{}

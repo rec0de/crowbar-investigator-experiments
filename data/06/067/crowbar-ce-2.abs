@@ -1,0 +1,53 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String fi = "object_?(6)";
+	String ffb = "fut_?(7)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		String ioRepresentation = this.fj;
+		Int stackAmount = 702;
+		Int listCounter = -102;
+		listCounter = 21;
+		// this.ff = this.fi!n();
+		this.ff = "fut_9";
+		if(True){
+			this.fint = 289;
+			// I packet = new D();
+			String packet = "object_1";
+			// packet = new D();
+			packet = "object_2";
+		}
+		this.fb = !this.fb;
+		stackAmount = -989;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(9)";
+		this.fint = 9;
+		this.fb = True;
+		this.fi = null;
+		this.ffb = "fut_?(9)";
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(store(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f))), this.ff_f, fut_9), this.fint_f, 289), this.fb_f, !(select(store(store(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f))), this.ff_f, fut_9), this.fint_f, 289), this.fb_f)))), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

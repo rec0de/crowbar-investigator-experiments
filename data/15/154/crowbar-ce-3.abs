@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ff = "fut_7";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool execEnabled = True;
+		Int l = 0;
+		// End of setup
+		
+		while((180 == (l * 439))){} 
+		// Known true:
+		// Negated loop guard: !((180 == (l * 439)))
+		// Loop invariant: true
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_7";
+		this.fb = (this.fb && True);
+		this.fb = (execEnabled || False);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.ff_f, fut_7), this.fb_f, select(store(heap, this.ff_f, fut_7), this.fb_f)&&1), this.fb_f, execEnabled||0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

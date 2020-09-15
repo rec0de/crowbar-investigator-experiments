@@ -1,0 +1,69 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	Bool fb = True;
+	String ffb = "fut_25";
+	String fi = null;
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int i = 941;
+		if((-(i + -661) >= 742)){}
+		else{
+		
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_25";
+		this.fint = ((i * 725) - (414 * i));
+		this.fb = False;
+		i = 216;
+		this.fint = i;
+		this.fb = this.fb;
+		this.fint = -387296;
+		String packet = this.fi;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = -5;
+		this.fb = True;
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		String tree = this.fj;
+		String resolveInfo = this.ffb;
+		if((306 <= (-782 - (-240 * -this.fint)))){
+			// Fut resState = packet!b();
+			String resState = "fut_26";
+			// Int eventCount = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			Int eventCount = 0;
+			if((23 < 353)){
+				packet = packet;
+			}
+			// packet = new D();
+			packet = "object_1";
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_27";
+		// this.ff = this.fi!n();
+		this.ff = "fut_28";
+		Int queueAmount = 1130;
+		println(toString(602)); // return statement
+		// Evaluates to: 602
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 602=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

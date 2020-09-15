@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		while((False || !True)){} 
+		// Known true:
+		// Negated loop guard: !((False || !True))
+		// Loop invariant: true
+		
+		this.fint = (-109 * this.fint);
+		}
+		// Int l = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int l = 0;
+		// J dataNode = new E();
+		String dataNode = "object_1";
+		}
+		println(toString(this.fint)); // return statement
+		// Evaluates to: -109
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(heap, this.fint_f, -109*select(heap, this.fint_f)), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

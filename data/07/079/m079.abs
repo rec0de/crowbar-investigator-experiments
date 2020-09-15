@@ -1,0 +1,86 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( False) {
+	this.fj = new E();
+	I clientObject = this.fi;
+	this.ffb =(clientObject )!b();
+	await this.ff?;
+	
+}
+Bool execOverride = this.fb;
+this.fb = this.fi == this.fi;
+this.fb =! True && True ||! execOverride == True;
+this.fj = new E();
+this.fb = False;
+this.fi = this.fi;
+while( this.ffb == this.ffb) {
+	if( this.fj == this.fj) {
+		this.fb = False && True || True;
+		this.fint = 543 * - this.fint;
+		Fut<Int> resetReload = this.fi!n();
+		Fut<Int> resolveState = this.fi!n();
+		
+	}
+	else {
+		this.ffb = this.ffb;
+		this.ffb = this.ffb;
+		this.fb = True;
+		this.ffb = this.fi!b();
+		
+	}
+	this.fj = this.fj;
+	while( - 973 * 425 * this.fint - this.fint <= this.fint) {
+		Bool isLoad = this.ffb.get;
+		
+	}
+	
+}
+this.fint = 67 * - this.fint;
+Int stackAmount = -(248);
+await this.ffb?;
+this.fint = -(667);
+Int stackCounter = 889;
+Fut<Int> q = this.fi!n();
+I person = this.fi;
+await False;
+if((554 * this.fint * 265 * this.fint) == 160) {
+	person = new D();
+	
+}
+else {
+	person = this.fi;
+	this.ffb = person!b();
+	I tree = new D();
+	Bool isExec = execOverride;
+	this.ff = q;
+	await q?;
+	await this.ff?;
+	if(! True || True &&! False) {
+		I message =(person);
+		tree = new D();
+		
+	}
+	
+}
+return 761;
+}
+}
+{}

@@ -1,0 +1,65 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_25";
+	Int fint = 5;
+	Bool fb = True;
+	String fi = "object_?(5)";
+	String ffb = "fut_25";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		Int i = 941;
+		if((-(i + -661) >= 742)){}
+		else{
+		
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_25";
+		this.fint = ((i * 725) - (414 * i));
+		this.fb = False;
+		i = 216;
+		this.fint = i;
+		this.fb = this.fb;
+		this.fint = -387296;
+		String packet = this.fi;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(6)";
+		this.fint = -5;
+		this.fb = True;
+		this.fi = null;
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		String tree = this.fj;
+		String resolveInfo = this.ffb;
+		if((306 <= (-782 - (-240 * -this.fint)))){
+			// Fut resState = packet!b();
+			String resState = "fut_26";
+			// Int eventCount = (this.ff).get;
+			Int eventCount = 0;
+			if((23 < 353)){
+				packet = packet;
+			}
+			// packet = new D();
+			packet = "object_1";
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_27";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(anon(store(store(store(store(store(store(heap, this.ffb_f, fut_25), this.fint_f, 941*725-414*941), this.fb_f, 0), this.fint_f, 216), this.fb_f, select(store(store(store(store(heap, this.ffb_f, fut_25), this.fint_f, 941*725-414*941), this.fb_f, 0), this.fint_f, 216), this.fb_f)), this.fint_f, -387296)), this.ff_f, fut_27), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

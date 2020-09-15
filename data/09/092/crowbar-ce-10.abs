@@ -1,0 +1,28 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		
+		while(((((this.fint * 757) + 847) + this.fint) <= 355)){} 
+		// Known true:
+		// Negated loop guard: !(((((this.fint * 757) + 847) + this.fint) <= 355))
+		// Loop invariant: true
+		
+		}
+		println(toString(260)); // return statement
+		// Evaluates to: 260
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 260=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

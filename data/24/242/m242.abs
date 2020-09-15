@@ -1,0 +1,66 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = this.fi;
+this.fint = 380;
+this.fint = 120;
+Fut<Bool> q = this.ffb;
+Fut<Bool> returnInfo = this.ffb;
+this.fi = new D();
+returnInfo = this.ffb;
+this.fb =!(this.fb ||! False && False);
+this.fj = this.fj;
+this.fb = True == False || False;
+this.fb = True && False &&! this.fb;
+J tree = this.fj;
+J packet = new E();
+Bool hasSaveed = q.get;
+this.fj = tree;
+await q?;
+this.fint = this.fint;
+await q?;
+if( this.fb || hasSaveed) {
+	this.fb = False || False;
+	tree = tree;
+	this.fb = packet == tree;
+	
+}
+else {
+	Fut<Bool> resultData = this.fi!b();
+	Int arg = 311;
+	Int queueAmount = - this.fint;
+	resultData = this.fi!b();
+	q = this.fi!b();
+	
+}
+Int listDepth = - 928 - - 115;
+q = this.fi!b();
+packet = packet;
+returnInfo = this.fi!b();
+while( 83 != - 919) {
+	Bool isLoaded = this.fb && this.fb || hasSaveed;
+	I serverRepresentation = new D();
+	this.fint = 742 +((this.fint) * this.fint - this.fint * 135 * 687 * - 155);
+	
+}
+return 718 * 782;
+}
+}
+{}

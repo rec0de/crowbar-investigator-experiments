@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool processToggle = True;
+		// End of setup
+		
+		while(processToggle){} 
+		// Known true:
+		// Negated loop guard: !(processToggle)
+		// Loop invariant: true
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		println(toString(502)); // return statement
+		// Evaluates to: 502
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 502=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

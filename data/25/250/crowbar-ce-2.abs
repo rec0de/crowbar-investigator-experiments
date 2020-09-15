@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		Bool pauseEnabled = (False && False);
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.fi = new D();
+		this.fi = "object_2";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		this.fi = this.fi;
+		this.ff = this.ff;
+		// this.fj = new E();
+		this.fj = "object_3";
+		}
+		String resetReload = this.ff;
+		Int j = 719;
+		
+		// await (230 <= j);
+		// No heap modification info available at this point
+		
+		println(toString(302)); // return statement
+		// Evaluates to: 302
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 302=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

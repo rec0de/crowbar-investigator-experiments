@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(8)";
+	String ff = "fut_?(8)";
+	Int fint = 8;
+	String fi = "object_?(8)";
+	Bool fb = True;
+
+	Unit ce() {
+		
+		
+		if(True){
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(9)";
+			this.ff = "fut_?(9)";
+			this.fint = 0;
+			this.fi = null;
+			this.fb = True;
+			// End assignments
+			
+			if(!False){
+				this.ff = this.ff;
+			}
+			this.ff = this.ff;
+			Int k = -832655819094789888000;
+			Int processAmount = 287;
+			// this.fj = new E();
+			this.fj = "object_1";
+		}
+		String packetNode = this.fi;
+		Int arg = this.fint;
+		this.fb = ((this.fint - this.fint) == this.fint);
+		Bool isLoaded = (True || True);
+		// this.fj = new E();
+		this.fj = "object_2";
+		// this.fj = new E();
+		this.fj = "object_3";
+		Bool writeToggle = isLoaded;
+		if(False){}
+		else{
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(store(store(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f, select(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f)), this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.fb_f, select(store(store(store(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f, select(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f)), this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.fint_f)-select(store(store(store(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f, select(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f)), this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.fint_f)=select(store(store(store(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f, select(store(anon(heap), this.ff_f, select(anon(heap), this.ff_f)), this.ff_f)), this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.fint_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fj_f, NEW3_0), this.fj_f, NEW3_0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

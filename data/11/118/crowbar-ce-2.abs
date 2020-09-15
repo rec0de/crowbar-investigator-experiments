@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -7718;
+	String fi = "object_?(6)";
+	String ffb = "fut_?(6)";
+	String fj = "object_?(6)";
+	String ff = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		if(((467 + this.fint) > (424 * this.fint))){
+			this.ff = this.ff;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_10";
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fint = 8;
+			this.fi = null;
+			this.ffb = "fut_?(8)";
+			this.fj = "object_?(8)";
+			this.ff = "fut_?(8)";
+			// End assignments
+			
+			this.fj = this.fj;
+			String y = this.ffb;
+			Int stackCount = (-this.fint * -264);
+			this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ffb_f, fut_10)), this.fj_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ffb_f, fut_10)), this.fj_f)), this.fi_f, select(store(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ffb_f, fut_10)), this.fj_f, select(anon(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.ffb_f, fut_10)), this.fj_f)), this.fi_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,51 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True) {
+	I packetNode = this.fi;
+	I serverStruct = new D();
+	this.fint = 40 +(234 * this.fint - 482);
+	
+}
+this.ffb = this.ffb;
+this.ff = this.fi!n();
+this.fint =(783 * 276 + 518) - 528;
+await this.ffb?;
+this.ff = this.fi!n();
+this.fb =(this.fb || True);
+this.ffb = this.fi!b();
+while( this.fb) {
+	await this.ffb?;
+	Int value =((this.fint * 307)) + 592;
+	this.fi = new D();
+	this.fj = new E();
+	Int processAmount = 495;
+	this.fj = this.fj;
+	Bool isDone = True;
+	
+}
+Bool writeFlag = this.fb && this.fb;
+Int value = this.fint;
+Bool execToggle =! True;
+this.fb =(! False || writeFlag &&! True);
+return - value;
+}
+}
+{}

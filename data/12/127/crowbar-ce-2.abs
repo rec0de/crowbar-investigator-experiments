@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ffb = "fut_?(6)";
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		Int stackCounter = this.fint;
+		stackCounter = 121484;
+		// J node = new E();
+		String node = "object_1";
+		// this.fj = new E();
+		this.fj = "object_2";
+		this.ffb = this.ffb;
+		if((this.fb || False)){}
+		else{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.ffb_f, select(store(store(heap, this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.ffb_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

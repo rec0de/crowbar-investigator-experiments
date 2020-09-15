@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool stateEnabled = True;
+		// End of setup
+		
+		while((!stateEnabled || !True)){} 
+		// Known true:
+		// Negated loop guard: !((!stateEnabled || !True))
+		// Loop invariant: true
+		
+		Int res = value;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

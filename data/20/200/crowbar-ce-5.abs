@@ -1,0 +1,61 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7666;
+	String fi = "object_?(6)";
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: (-54 < this.fint)
+		// Loop invariant: true
+		// while((-54 < this.fint)) {
+		{
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fint = 7;
+			this.fi = "object_?(7)";
+			this.fb = True;
+			this.fj = "object_?(7)";
+			this.ffb = "fut_?(7)";
+			// End assignments
+			
+			if((this.fb || True)){
+				this.fi = this.fi;
+				if(!this.fb){}
+				else{
+					
+					// await this.ffb?;
+					// Assume the following assignments while blocked:
+					this.fint = 8;
+					this.fi = null;
+					this.fb = True;
+					this.fj = "object_?(8)";
+					this.ffb = "fut_?(8)";
+					// End assignments
+					
+					this.fj = this.fj;
+					this.fb = True;
+					this.ffb = this.ffb;
+					this.fb = !True;
+					this.fj = this.fj;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f, select(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f)), this.fb_f, 1), this.ffb_f, select(store(store(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f, select(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f)), this.fb_f, 1), this.ffb_f)), this.fb_f, !(1)), this.fj_f, select(store(store(store(store(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f, select(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f)), this.fb_f, 1), this.ffb_f, select(store(store(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f, select(anon(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f))), this.fj_f)), this.fb_f, 1), this.ffb_f)), this.fb_f, !(1)), this.fj_f)), this.fi_f)=0		
+				}	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

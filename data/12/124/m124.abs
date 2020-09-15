@@ -1,0 +1,162 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = - 811 * this.fint;
+Int stackAmount = 387 * this.fint *(851);
+while((this.fb)) {
+	this.fb = 166 < 426 *(917);
+	
+}
+this.fi = new D();
+await this.ffb?;
+await this.ffb?;
+this.fint = 972;
+J message = this.fj;
+if(! False) {
+	Int j = stackAmount - 910;
+	this.fi = this.fi;
+	J node = message;
+	this.fb = True ||! True;
+	this.ff = this.ff;
+	await this.ffb?;
+	this.ffb = this.fi!b();
+	Bool storageOverride = this.fb || False && this.fb;
+	Bool isLoad = True && False && True;
+	stackAmount = j;
+	this.fj = this.fj;
+	
+}
+else {
+	while( True) {
+		this.fj = new E();
+		if((False )) {
+			Int arg = 736;
+			await this.ffb?;
+			await this.fb;
+			this.ff = this.fi!n();
+			J serverNode = message;
+			await this.ff?;
+			Bool stateFlag = False &&(this.fb && False);
+			await this.ffb == this.ffb;
+			await this.ffb?;
+			
+		}
+		else {
+			this.ff =(this.fi )!n();
+			this.fint = 705;
+			await this.ff?;
+			this.ffb = this.ffb;
+			this.fi = this.fi;
+			await this.ff?;
+			
+		}
+		Int queueCount = 309 * - this.fint;
+		await this.ffb?;
+		
+	}
+	J serverRepresentation = message;
+	this.fint = stackAmount;
+	this.fint = 957;
+	this.fi = this.fi;
+	this.fi = new D();
+	this.fint = - 286;
+	await this.ff?;
+	while( 868 * - 81 == 875 * - 676) {
+		await this.ff?;
+		while(!(this.fb) || this.fb) {
+			this.fi = new D();
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	
+}
+Bool isRead = True;
+this.fi = this.fi;
+stackAmount = this.ff.get;
+if( 957 - stackAmount * stackAmount != - 508 - 630 + this.fint) {
+	I tree = this.fi;
+	
+}
+else {
+	this.fj = message;
+	Bool isSave =! False;
+	this.fi = new D();
+	
+}
+stackAmount = - 851;
+this.fi = this.fi;
+this.fb = this.ffb.get;
+stackAmount = 233;
+this.fint = this.fint;
+message = new E();
+isRead = this.ffb.get;
+stackAmount = this.ff.get;
+this.fb =(! False ||! True);
+Bool isReady = True;
+stackAmount = 849;
+while(! False &&! False && False) {
+	if( False && False) {
+		if( this.ffb ==(this.ffb )) {
+			this.fint = this.ff.get;
+			message = new E();
+			this.fi = this.fi;
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			isReady = False ||(True);
+			J dataObject = new E();
+			
+		}
+		isReady = True &&(isReady ||! False);
+		this.fi = new D();
+		while((! this.fb)) {
+			Int queueDepth = 837;
+			isRead = True;
+			
+		}
+		this.ff = this.fi!n();
+		this.ff = this.fi!n();
+		this.ff = this.fi!n();
+		
+	}
+	else {
+		while( this.ffb == this.ffb) {
+			isRead = True;
+			await this.ff?;
+			stackAmount = - 744 * -(this.fint + stackAmount);
+			Bool isSaveed =! this.fb || False ||! this.fb;
+			this.ffb = this.fi!b();
+			Bool canLoad = True && isReady;
+			await this.ff?;
+			await this.ffb?;
+			
+		}
+		
+	}
+	
+}
+message = this.fj;
+return this.fint - stackAmount;
+}
+}
+{}

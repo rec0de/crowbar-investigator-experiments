@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ff = "fut_39";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool isWrite = True;
+		String tree = "object_?(1)";
+		// End of setup
+		
+		while((this.fi == tree)){} 
+		// Known true:
+		// Negated loop guard: !((this.fi == tree))
+		// Loop invariant: true
+		
+		isWrite = isWrite;
+		this.fb = isWrite;
+		// this.ff = tree!n();
+		this.ff = "fut_39";
+		this.fb = False;
+		if(False){}
+		else{
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fb_f, isWrite), this.ff_f, fut_39), this.fb_f, 0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

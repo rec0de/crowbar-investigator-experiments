@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		// this.fint = (this.ff).get;
+		this.fint = 0;
+		this.fint = 386;
+		if((this.fi == this.fi)){
+			// Fut syncChanges = this.fi!b();
+			String syncChanges = "fut_1";
+			this.ffb = this.ffb;
+			// this.fi = new D();
+			this.fi = "object_1";
+			// Fut resetState = this.fi!b();
+			String resetState = "fut_2";
+		}
+		this.fj = this.fj;
+		println(toString(-308)); // return statement
+		// Evaluates to: -308
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -308=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

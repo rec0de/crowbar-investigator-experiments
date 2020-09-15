@@ -1,0 +1,92 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int j = this.ff.get;
+this.fj = this.fj;
+if( True || False) {
+	I packetObject = this.fi;
+	this.fint =(854);
+	
+}
+this.ffb = this.fi!b();
+this.fb =!(True && this.fb);
+this.fj = this.fj;
+this.fint = 873 - this.fint;
+Bool writeEnabled = False;
+I packet = new D();
+if(! this.fb) {
+	Fut<Int> a = this.fi!n();
+	Bool isLoaded = True &&! False;
+	a = this.fi!n();
+	I packetObject = new D();
+	this.fint = 922 * -(56) + 87;
+	Int systemDepth = 200 + this.fint;
+	await this.ffb?;
+	packet = this.fi;
+	while( True) {
+		while( True) {
+			await this.ffb?;
+			this.ff = this.fi!n();
+			a = this.fi!n();
+			this.ffb = this.ffb;
+			packet = packet;
+			await! writeEnabled;
+			writeEnabled = True && this.fb;
+			Int value = 545;
+			writeEnabled = packetObject == packetObject;
+			this.fint = this.fint;
+			a = this.ff;
+			this.fb = this.fb;
+			writeEnabled = False;
+			await a?;
+			
+		}
+		systemDepth = 87;
+		
+	}
+	await this.ff?;
+	Int stackAmount = 56;
+	Fut<Bool> resolveInfo = this.fi!b();
+	j =(this.fint);
+	I dataObject = packet;
+	resolveInfo = packetObject!b();
+	J person = new E();
+	
+}
+else {
+	Bool sendToggle =(452 - 696 >= this.fint + - this.fint);
+	Fut<Bool> returnState = this.fi!b();
+	this.fb = j != 730;
+	this.fint = this.ff.get;
+	J ioRepresentation = this.fj;
+	this.fint = j;
+	while(! False) {
+		sendToggle =! False || True;
+		returnState = this.fi!b();
+		
+	}
+	ioRepresentation = new E();
+	
+}
+this.fj = this.fj;
+return(107) * 648 * 162;
+}
+}
+{}

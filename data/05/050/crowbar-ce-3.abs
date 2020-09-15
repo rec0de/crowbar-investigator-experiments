@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		
+		while((False || (!True && False))){} 
+		// Known true:
+		// Negated loop guard: !((False || (!True && False)))
+		// Loop invariant: true
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_9";
+		println(toString(-153)); // return statement
+		// Evaluates to: -153
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -153=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

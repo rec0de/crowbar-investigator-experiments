@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Fut resState = this.fi!n();
+		String resState = "fut_22";
+		Int eventCount = this.fint;
+		Bool isSaveed = ((False && True) || this.fb);
+		if(True){
+			isSaveed = (867 > 936);
+			resState = this.ff;
+		}
+		if(((isSaveed && !False) && !True)){}
+		else{
+			Bool readToggle = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool isExec = True;
+		Bool processToggle = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: processToggle
+		// Loop invariant: true
+		// while(processToggle) {
+		{
+			String ioStruct = this.fi;
+			Int listCounter = -745;
+			Int stackCount = -555126;
+			if((((False && False) && True) || isExec)){}
+			else{
+				ioStruct = ioStruct;
+			}
+			String returnInfo = this.ff;
+			stackCount = stackCount;
+			// this.fj = new E();
+			this.fj = "object_1";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !ioStruct=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

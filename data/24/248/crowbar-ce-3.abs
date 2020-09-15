@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 6;
+	Bool fb = True;
+	String ff = "fut_4";
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		// Fut resetCall = this.fi!n();
+		String resetCall = "fut_3";
+		Bool hasLoaded = !False;
+		// this.ff = this.fi!n();
+		this.ff = "fut_4";
+		
+		// await resetCall?;
+		// Assume the following assignments while blocked:
+		this.fint = 7;
+		this.fb = True;
+		this.ff = "fut_?(7)";
+		// End assignments
+		
+		this.ff = this.ff;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 4;
+		this.fb = True;
+		this.ff = "fut_?(4)";
+		// End assignments
+		
+		if(this.fb){}
+		else{
+			this.fb = True;
+		}
+		println(toString((250 - (763 * this.fint)))); // return statement
+		// Evaluates to: -2802
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 250-763*select(store(anon(store(anon(store(heap, this.ff_f, fut_4)), this.ff_f, select(anon(store(heap, this.ff_f, fut_4)), this.ff_f))), this.fb_f, 1), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

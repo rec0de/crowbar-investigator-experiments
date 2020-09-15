@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(6)";
+	Int fint = 534;
+	Bool fb = True;
+	String fi = null;
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int k = -397;
+		// End of setup
+		
+		while((-this.fint != -534)){} 
+		// Known true:
+		// Negated loop guard: !((-this.fint != -534))
+		// Loop invariant: true
+		
+		this.ffb = this.ffb;
+		this.fb = (this.ff == this.ff);
+		Int eventAmount = 661;
+		Int processAmount = processAmount;
+		// I serverObject = new D();
+		String serverObject = "object_1";
+		this.fint = ((-345 - -k) + 749);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fb_f, select(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f)=select(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f)), this.fint_f, -345--(k)+749), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

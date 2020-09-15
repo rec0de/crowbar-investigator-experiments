@@ -1,0 +1,63 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( True && True) {
+	if(! False) {
+		await this.fb && False;
+		
+	}
+	else {
+		Fut<Int> resultInfo =(this.fi )!n();
+		J clientStruct = new E();
+		this.fj = new E();
+		Bool canRead = False || True ||! this.fb && this.fb;
+		clientStruct = clientStruct;
+		if((True )) {
+			this.fi = new D();
+			this.ff = this.fi!n();
+			await! False;
+			await resultInfo?;
+			
+		}
+		else {
+			J person = clientStruct;
+			
+		}
+		
+	}
+	this.fb =! this.fb;
+	
+}
+this.fj = new E();
+this.ffb = this.fi!b();
+I packetRepresentation = this.fi;
+Int processCount = 267;
+this.fi = this.fi;
+this.fi = this.fi;
+this.fint = 923;
+this.fi = packetRepresentation;
+Int l = 708 + this.fint * 791;
+l = -((860) * 414) * 876;
+this.ff = this.fi!n();
+this.fb =! this.fb;
+return 617 * - 219;
+}
+}
+{}

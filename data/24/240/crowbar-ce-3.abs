@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String ioStruct = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (True && True)
+		// Loop invariant: true
+		// while((True && True)) {
+		{
+			// this.fj = new E();
+			this.fj = "object_1";
+			// J message = new E();
+			String message = "object_2";
+			this.fi = ioStruct;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !ioStruct=0
+		// Failed to show the following sub-obligations:
+		// !ioStruct=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,69 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1236;
+	String fi = "object_?(6)";
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ff = "fut_?(8)";
+
+	Unit ce() {
+		
+		
+		this.fint = (295 - this.fint);
+		Bool canExec = (-358 == (this.fint * this.fint));
+		this.fb = True;
+		this.fb = False;
+		// Int eventCounter = (this.ff).get;
+		Int eventCounter = 0;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fint = 9;
+		this.fi = "object_?(9)";
+		this.fb = True;
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(9)";
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 12;
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		// End assignments
+		
+		Int eventCount = ((-780 * ((eventCounter + -755) - this.fint)) * 25);
+		eventCount = 84564;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 11;
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(11)";
+		this.ff = "fut_?(11)";
+		// End assignments
+		
+		if((-eventCounter <= 22176)){
+			this.ff = this.ff;
+		}
+		eventCount = (((this.fint + 35) - eventCount) + 93);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(anon(anon(store(store(anon(store(store(store(heap, this.fint_f, 295-select(heap, this.fint_f)), this.fb_f, 1), this.fb_f, 0)), this.fj_f, NEW1_0), this.fj_f, NEW1_0))), this.ff_f, select(anon(anon(store(store(anon(store(store(store(heap, this.fint_f, 295-select(heap, this.fint_f)), this.fb_f, 1), this.fb_f, 0)), this.fj_f, NEW1_0), this.fj_f, NEW1_0))), this.ff_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

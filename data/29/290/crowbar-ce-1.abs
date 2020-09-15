@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		// Bool isLoaded = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool isLoaded = False;
+		if(True){
+			this.fi = this.fi;
+			isLoaded = (396 <= (-this.fint * -this.fint));
+			// this.fj = new E();
+			this.fj = "object_1";
+		}
+		this.fint = 256608;
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		// J packet = new E();
+		String packet = "object_2";
+		// I tree = new D();
+		String tree = "object_3";
+		println(toString(43794)); // return statement
+		// Evaluates to: 43794
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 43794=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

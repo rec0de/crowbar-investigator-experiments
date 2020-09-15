@@ -1,0 +1,117 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+Int stackCounter = 400;
+await this.fb;
+this.ffb = this.fi!b();
+Bool processToggle = this.fi == this.fi;
+while( True) {
+	Int queueAmount = 266;
+	
+}
+stackCounter = this.ff.get;
+this.fi = new D();
+await this.ff?;
+Fut<Int> z = this.fi!n();
+processToggle = 855 == 927;
+if( False) {
+	if( False || this.fb == this.fb) {
+		this.fi = this.fi;
+		J person = this.fj;
+		
+	}
+	else {
+		this.ff = this.ff;
+		await(! True);
+		
+	}
+	this.ff = this.fi!n();
+	this.fint = - 737;
+	Bool canWrite =!(! True) ||! False;
+	this.fint = 471;
+	
+}
+else {
+	if( False) {
+		J message = new E();
+		this.fb =(129) >= - stackCounter;
+		if(! False) {
+			await this.ff?;
+			this.ff = this.fi!n();
+			processToggle = False;
+			
+		}
+		else {
+			await this.ff?;
+			this.fint = -(this.fint);
+			stackCounter = 505;
+			Bool isDone =(this.ffb ).get;
+			isDone = this.ffb == this.ffb;
+			await z?;
+			
+		}
+		if( - 139 > stackCounter * 89) {
+			this.fb = False;
+			I clientStruct = this.fi;
+			message = message;
+			message = new E();
+			Int arg = 448 - - 327;
+			Fut<Bool> x = clientStruct!b();
+			Int j = 563;
+			Fut<Int> returnState = z;
+			Bool systemToggle = False && processToggle;
+			
+		}
+		else {
+			this.ff =(this.fi )!n();
+			stackCounter = stackCounter;
+			message = new E();
+			this.fj = this.fj;
+			processToggle = this.fb || processToggle ||(this.fb == processToggle);
+			
+		}
+		stackCounter = - stackCounter - 825 * 845 * 325;
+		I node = this.fi;
+		
+	}
+	
+}
+this.fint = this.ff.get;
+stackCounter = 357 * stackCounter +(stackCounter) + 450 * 428 - 965;
+this.ffb = this.fi!b();
+Bool isRead = this.ffb.get;
+isRead =(878 * - stackCounter) >= 624;
+this.fb = False || True && this.fb;
+this.fint = this.fint;
+stackCounter = 497 + stackCounter;
+I dataRepresentation = new D();
+processToggle = False ||! isRead;
+this.ff = this.fi!n();
+while( True || True) {
+	this.fb =! False;
+	
+}
+Int k = 250;
+this.fint = 693;
+return stackCounter + 674 + 799;
+}
+}
+{}

@@ -1,0 +1,43 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J node = this.fj;
+while( False) {
+	await True;
+	this.fb = this.fb ||(this.fb || False);
+	this.ff = this.fi!n();
+	Fut<Int> resultData = this.fi!n();
+	
+}
+node = new E();
+this.ffb = this.fi!b();
+node = this.fj;
+this.fb = this.ff == this.ff;
+J packet = new E();
+Bool readyFlag =(node == node) && True &&! True;
+this.ff = this.fi!n();
+Int j = 866 * - 219;
+j = j;
+this.ffb = this.ffb;
+j = - 305;
+return this.fint * 755;
+}
+}
+{}

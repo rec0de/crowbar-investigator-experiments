@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(3)";
+	String fj = null;
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: ((True && (this.fb == !True)) || (False && !False))
+		// Loop invariant: true
+		// while(((True && (this.fb == !True)) || (False && !False))) {
+		{
+			String packetNode = this.fj;
+			this.fb = !False;
+			this.fb = !(this.fb || this.fb);
+			Int queueAmount = 792;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_40";
+			Int listCounter = 243;
+			listCounter = -66967;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fb_f, !(0)), this.fb_f, !(select(store(heap, this.fb_f, !(0)), this.fb_f)||select(store(heap, this.fb_f, !(0)), this.fb_f))), this.ffb_f, fut_40), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

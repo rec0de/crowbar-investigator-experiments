@@ -1,0 +1,96 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int i =(941);
+if( -(i + - 661) >= 742) {
+	I tree = new D();
+	I packet = new D();
+	this.ffb =(tree )!b();
+	
+}
+this.ffb = this.fi!b();
+this.fint = i * 725 -(414 * i);
+this.fb = False;
+i = 216;
+this.fint = i;
+this.fb = this.fb;
+this.fint = - 392 * 988;
+I packet = this.fi;
+await this.ff?;
+J tree = this.fj;
+Fut<Bool> resolveInfo = this.ffb;
+if( 988 - 682 <= - 782 - - 240 * - this.fint) {
+	Fut<Bool> resState = packet!b();
+	Int eventCount = this.ff.get;
+	if( 23 < 353) {
+		packet = packet;
+		
+	}
+	else {
+		Fut<Int> resetFlag = this.ff;
+		resetFlag = packet!n();
+		
+	}
+	packet = new D();
+	
+}
+else {
+	Int l = 762;
+	i =(- 817);
+	while(! this.fb) {
+		this.ffb = this.ffb;
+		this.fi = packet;
+		
+	}
+	this.ffb = this.fi!b();
+	this.fb =(731) * 70 * 368 < 901;
+	if( True) {
+		i = 964 - 888 - l;
+		l = 620;
+		Bool willWrite =(620 * i) == - 91;
+		willWrite =! False;
+		Fut<Bool> x = this.fi!b();
+		this.ffb = resolveInfo;
+		
+	}
+	else {
+		resolveInfo = resolveInfo;
+		this.ff = this.fi!n();
+		this.ffb =(packet )!b();
+		if((this.fb )) {
+			await resolveInfo?;
+			resolveInfo = resolveInfo;
+			await this.ff?;
+			
+		}
+		
+	}
+	i = 171;
+	this.ff = this.ff;
+	l = - 407 + 543 * 516;
+	
+}
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+Int queueAmount = - 206 + 835 - - 501;
+return 602;
+}
+}
+{}

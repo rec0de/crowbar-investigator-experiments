@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = "object_?(3)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int processCounter = 31429;
+		// this.fj = new E();
+		this.fj = "object_1";
+		// processCounter = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		processCounter = 0;
+		Int stackDepth = -processCounter;
+		processCounter = stackDepth;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

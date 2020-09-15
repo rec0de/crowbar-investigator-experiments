@@ -1,0 +1,107 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.ffb;
+I ioNode = new D();
+if( True && this.fb == True) {
+	this.fi = new D();
+	this.fint = this.fint;
+	Fut<Bool> resetCall =(this.ffb);
+	this.fj = new E();
+	await this.ff?;
+	this.ffb = ioNode!b();
+	Int res = this.fint * 677;
+	
+}
+else {
+	Fut<Int> syncUpdates = ioNode!n();
+	
+}
+this.ffb = this.ffb;
+Int stackDepth = this.ff.get;
+Bool restoreFlag = True;
+this.ffb = ioNode!b();
+await this.ffb?;
+this.fj = new E();
+ioNode =(this.fi);
+if( False || this.fb ||(restoreFlag || False) && restoreFlag &&(990 == - 224) || True &&! False) {
+	Int value = - stackDepth;
+	this.fint =(- 817 * - 618 - 159);
+	J dataRepresentation =(this.fj);
+	
+}
+Int l = - 992;
+this.ffb = ioNode!b();
+this.fi = new D();
+this.ffb = this.fi!b();
+this.fi = this.fi;
+this.fint = - this.fint;
+ioNode = new D();
+this.fi = this.fi;
+while(! False) {
+	await this.ffb?;
+	restoreFlag =! True;
+	await! False && restoreFlag;
+	this.fint = - 421;
+	this.ffb =(this.fi )!b();
+	Int i = this.ff.get;
+	await this.ffb?;
+	this.fint = - 954;
+	await - 537 < 929;
+	Bool isDone =! this.fb;
+	l = 250 * - i + l;
+	this.ff = this.fi!n();
+	this.fint = 128 *(i + l - 23) + - 692;
+	this.fb = True;
+	
+}
+this.fint = this.ff.get;
+l = this.fint - - 386;
+await True;
+ioNode = new D();
+this.fj = new E();
+if( False ||!(this.fb &&! False) && this.fb) {
+	l = l;
+	l = - stackDepth * l * 379;
+	stackDepth = 17;
+	await this.ffb?;
+	I tree = new D();
+	
+}
+else {
+	while((this.fi) ==(this.fi)) {
+		Int stackCount = 157;
+		
+	}
+	
+}
+this.ffb = this.ffb;
+this.ffb = this.ffb;
+this.fi = ioNode;
+stackDepth = 536;
+this.fint = 18 * 585;
+I tree = this.fi;
+stackDepth = - 299 + l * 33 - this.fint * 642 + 998 - - 845;
+l =(734 * stackDepth * 402 * 250 + 690);
+this.fint = 778;
+return -(stackDepth);
+}
+}
+{}

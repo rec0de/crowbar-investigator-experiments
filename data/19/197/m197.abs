@@ -1,0 +1,65 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+this.ff = this.fi!n();
+this.fi = this.fi;
+Int listDepth = 384;
+this.ffb = this.fi!b();
+this.fi = this.fi;
+while( listDepth - this.fint !=(157) + - 568) {
+	if( 463 == - listDepth) {
+		while( 409 + - this.fint > 16 * 537) {
+			await this.ff?;
+			this.fi = new D();
+			this.fi = this.fi;
+			await this.ffb?;
+			await this.ffb?;
+			Int k = - this.fint;
+			
+		}
+		this.fj = new E();
+		while( False && this.fb) {
+			Int res = - 243 + 793;
+			res = 454 + 390 * res * 191;
+			await this.ff?;
+			this.ff =(this.fi )!n();
+			this.fint = this.ff.get;
+			
+		}
+		await this.ffb?;
+		
+	}
+	else {
+		this.fi = this.fi;
+		this.ff = this.fi!n();
+		listDepth =(259 + this.fint + listDepth * 510) + listDepth;
+		this.fi = this.fi;
+		this.ff = this.ff;
+		this.fint = 24 + 682 * this.fint *(359 * listDepth + 235) + listDepth;
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+return - this.fint - 832;
+}
+}
+{}

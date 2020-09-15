@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	String fi = "object_?(2)";
+
+	Unit ce() {
+		
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 3;
+		this.fi = "object_?(3)";
+		// End assignments
+		
+		this.fint = 92;
+		Bool readFlag = True;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 4;
+		this.fi = null;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(anon(heap), this.fint_f, 92)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

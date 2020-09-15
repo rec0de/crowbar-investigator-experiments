@@ -1,0 +1,71 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 332;
+	String fi = "object_?(332)";
+	Bool fb = True;
+	String ffb = "fut_?(332)";
+	String fj = null;
+	String ff = "fut_49";
+
+	Unit ce() {
+		
+		while((this.fint > 332)){} 
+		// Known true:
+		// Negated loop guard: !((this.fint > 332))
+		// Loop invariant: true
+		
+		this.fi = this.fi;
+		String clientUnit = this.fi;
+		Bool isLoaded = False;
+		String message = clientUnit;
+		// this.ffb = message!b();
+		this.ffb = "fut_49";
+		Int systemCount = 877;
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fi = this.fi;
+		if(False){}
+		else{
+			systemCount = (systemCount + (this.fint * this.fint));
+			systemCount = 235;
+			isLoaded = False;
+		}
+		Bool isSaveed = (445 == 183150);
+		if((!(isLoaded && !False) || False)){
+			isLoaded = (this.fb || True);
+			this.ffb = this.ffb;
+			if((((False && isSaveed) && False) || (!isLoaded && True))){}
+			else{
+				isSaveed = False;
+				this.ffb = this.ffb;
+				// clientUnit = new D();
+				clientUnit = "object_2";
+			}
+		}
+		if(((!isSaveed && isLoaded) || False)){
+			if(isLoaded){
+				Bool canLoad = (!False == !True);
+			}
+			isLoaded = (False && True);
+		}
+		this.fb = (-634 >= ((891 * this.fint) * -this.fint));
+		String tree = this.fj;
+		// this.ff = clientUnit!n();
+		this.ff = "fut_68";
+		systemCount = 240;
+		println(toString((911 + (systemCount * systemCount)))); // return statement
+		// Evaluates to: 58511
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 911+240*240=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

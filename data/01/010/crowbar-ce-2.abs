@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(6)";
+	String ff = "fut_?(6)";
+	String fi = "object_?(6)";
+	Int fint = 6;
+
+	Unit ce() {
+		
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(7)";
+		this.ff = "fut_?(7)";
+		this.fi = "object_?(7)";
+		this.fint = 10;
+		// End assignments
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_2";
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fj = this.fj;
+		// this.ff = this.fi!n();
+		this.ff = "fut_3";
+		this.fj = this.fj;
+		println(toString((-this.fint * 332))); // return statement
+		// Evaluates to: -3320
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(store(store(store(anon(heap), this.ff_f, fut_2), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fj_f, select(store(store(store(anon(heap), this.ff_f, fut_2), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fj_f)), this.ff_f, fut_3), this.fj_f, select(store(store(store(store(store(anon(heap), this.ff_f, fut_2), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fj_f, select(store(store(store(anon(heap), this.ff_f, fut_2), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fj_f)), this.ff_f, fut_3), this.fj_f)), this.fint_f))*332=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(-1)";
+	String ffb = "fut_13";
+
+	Unit ce() {
+		
+		
+		if((this.fi == this.fi)){
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_13";
+			
+			// await True;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.ffb = "fut_?(0)";
+			// End assignments
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(heap, this.ffb_f, fut_13)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

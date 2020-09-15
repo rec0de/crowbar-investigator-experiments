@@ -1,0 +1,62 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = -(105 + 187);
+await this.ffb?;
+this.fi = this.fi;
+this.fi = this.fi;
+await this.ff?;
+Bool hasDone = True;
+this.fi = new D();
+if( this.ff == this.ff) {
+	this.ffb = this.ffb;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	Fut<Int> z = this.ff;
+	
+}
+Fut<Bool> a = this.ffb;
+while( hasDone) {
+	await a?;
+	
+}
+this.fb =(False);
+this.fb = this.ffb.get;
+while( this.fb) {
+	hasDone = True;
+	Fut<Bool> resInfo = this.fi!b();
+	hasDone = hasDone;
+	this.fi = this.fi;
+	Fut<Bool> flushCall = this.fi!b();
+	await this.ff?;
+	this.fi = new D();
+	this.fb =(3 * 968 - 165 - - 128 >= 841) && this.fb;
+	
+}
+this.fi = new D();
+this.fb = False;
+await a?;
+this.ff = this.fi!n();
+return - this.fint;
+}
+}
+{}

@@ -1,0 +1,64 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fj = this.fj;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fb = False;
+		this.fj = null;
+		// End assignments
+		
+		this.fb = False;
+		if((!this.fb || False)){
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fb = False;
+			this.fj = null;
+			// End assignments
+			
+			// this.ff = this.fi!n();
+			this.ff = "fut_11";
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+			// Fut flushState = this.fi!n();
+			String flushState = "fut_12";
+			// this.fi = new D();
+			this.fi = "object_2";
+		}
+		this.fj = message;
+		// J clientUnit = new E();
+		String clientUnit = "object_3";
+		Int eventCount = 772;
+		println(toString(-86)); // return statement
+		// Evaluates to: -86
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -86=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

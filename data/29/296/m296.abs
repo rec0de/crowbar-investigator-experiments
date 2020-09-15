@@ -1,0 +1,118 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( this.fb) {
+	while( False && True && this.fb &&! True) {
+		Fut<Bool> applyChanges = this.fi!b();
+		
+	}
+	
+}
+this.ff = this.fi!n();
+this.fb = this.fb;
+this.fb = False ==! False;
+while( 157 - 611 < 15) {
+	this.fint = 541;
+	while( True && False) {
+		this.fj = this.fj;
+		Int stackDepth = 113;
+		await this.ff?;
+		Bool readyOverride = this.fb && this.fb;
+		this.fb = False && True;
+		if( False && False) {
+			I node = this.fi;
+			Bool willLoad = this.ffb.get;
+			stackDepth = this.fint;
+			Int l = - stackDepth * 831 * 308;
+			Int res =(434);
+			this.ff = this.ff;
+			
+		}
+		else {
+			await this.ffb?;
+			this.fi = new D();
+			
+		}
+		await this.ffb?;
+		this.ffb = this.fi!b();
+		Bool canWrite =(readyOverride || True || True) ||! False;
+		I dataStruct = this.fi;
+		this.fb = this.ffb.get;
+		canWrite = - 187 * 162 == this.fint - 359;
+		I tree = dataStruct;
+		Bool canExec =((True));
+		tree = new D();
+		J message = new E();
+		Fut<Bool> resolveState = this.fi!b();
+		this.fint = 418;
+		
+	}
+	this.ffb = this.fi!b();
+	Int l = this.fint;
+	this.fb = this.ffb == this.ffb;
+	l = 813 - 856;
+	
+}
+while( False || this.fb) {
+	this.ffb = this.fi!b();
+	Fut<Bool> resolveState = this.fi!b();
+	I node = this.fi;
+	this.fb = this.fb;
+	J ioRepresentation = new E();
+	this.fint =(this.fint);
+	Fut<Int> resetCall = this.fi!n();
+	this.fb = False;
+	Bool pauseEnabled = True;
+	Int queueCounter = - this.fint;
+	Bool execEnabled = - 159 < 790;
+	node = new D();
+	this.ffb = resolveState;
+	ioRepresentation = new E();
+	ioRepresentation = new E();
+	
+}
+this.fint = this.fint;
+Int stackCount = 159;
+this.fint = stackCount;
+while( True) {
+	while( 154 > 609 - stackCount * 665) {
+		this.fint =(278);
+		if( this.fb) {
+			this.ffb = this.fi!b();
+			this.fb = this.ffb.get;
+			
+		}
+		else {
+			this.fb = False &&! True || False;
+			J ioStruct = new E();
+			
+		}
+		
+	}
+	Fut<Int> resultState = this.fi!n();
+	this.ff = this.fi!n();
+	this.fb = 322 == - 521;
+	
+}
+stackCount = 348 * stackCount * 434;
+return(721);
+}
+}
+{}

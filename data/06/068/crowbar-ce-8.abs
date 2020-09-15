@@ -1,0 +1,74 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(8)";
+	String ff = "fut_17";
+	Int fint = 8;
+	Bool fb = True;
+	String fi = "object_?(8)";
+	String ffb = "fut_17";
+
+	Unit ce() {
+		
+		while((False && this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((False && this.fb))
+		// Loop invariant: true
+		
+		this.fj = this.fj;
+		// this.ff = this.fi!n();
+		this.ff = "fut_17";
+		this.fint = 500;
+		// this.ff = this.fi!n();
+		this.ff = "fut_18";
+		// Fut applyFlag = this.fi!b();
+		String applyFlag = "fut_19";
+		String clientRepresentation = this.fj;
+		// I dataObject = new D();
+		String dataObject = "object_1";
+		if(False){}
+		else{
+		
+		}
+		}
+		Int processCounter = 810;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_22";
+		Int queueAmount = processCounter;
+		// this.ff = this.fi!n();
+		this.ff = "fut_23";
+		this.fi = this.fi;
+		queueAmount = 257;
+		if(((((False && this.fb) && True) && True) && True)){}
+		else{
+			processCounter = (queueAmount * -183);
+			this.fint = 962;
+			this.fi = this.fi;
+			
+			// await (250608 == (this.fint - 985));
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(12)";
+			this.ff = "fut_?(12)";
+			this.fint = 251593;
+			this.fb = True;
+			this.fi = "object_?(12)";
+			this.ffb = "fut_?(12)";
+			// End assignments
+			
+			this.fi = this.fi;
+		}
+		println(toString(1301)); // return statement
+		// Evaluates to: 1301
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 1301=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

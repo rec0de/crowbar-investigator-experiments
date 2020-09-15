@@ -1,0 +1,79 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await False || False;
+this.ffb = this.fi!b();
+this.ff = this.fi!n();
+if( this.fi == this.fi) {
+	this.fi = new D();
+	this.fj = this.fj;
+	
+}
+else {
+	while( True) {
+		this.ff = this.fi!n();
+		Bool stateOverride = - this.fint == 201 + 450;
+		this.fi = this.fi;
+		this.fj = this.fj;
+		
+	}
+	this.ffb = this.fi!b();
+	
+}
+this.fb = True;
+this.fj = new E();
+this.fj = this.fj;
+this.fi = this.fi;
+if( this.fint + 709 != 420) {
+	this.ff = this.fi!n();
+	
+}
+else {
+	Int listCounter = this.fint;
+	if(! True && True) {
+		if( 52 - - 679 >= 587) {
+			this.fj = this.fj;
+			
+		}
+		else {
+			this.ff = this.fi!n();
+			this.ff = this.fi!n();
+			await this.ffb?;
+			Fut<Bool> resultData = this.fi!b();
+			resultData = this.fi!b();
+			
+		}
+		Fut<Int> flushChanges = this.fi!n();
+		Bool hasReady = False;
+		this.fint = 943;
+		Bool canWrite = True ||(!((138 < 307) && False) || False) &&! False &&(False && True ==(588 == - 267)) && False;
+		flushChanges =(this.fi )!n();
+		
+	}
+	Bool willLoad = this.ffb == this.ffb;
+	Bool isLoad = willLoad;
+	await this.ff?;
+	
+}
+Bool hasReady = True;
+return this.fint;
+}
+}
+{}

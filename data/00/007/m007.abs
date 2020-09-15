@@ -1,0 +1,57 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( this.fb) {
+	this.fi = this.fi;
+	Int value = 822;
+	
+}
+Fut<Bool> flushUpdates = this.fi!b();
+if( False) {
+	await(this.fb);
+	
+}
+this.ffb = this.fi!b();
+I packet = new D();
+flushUpdates = this.fi!b();
+await this.ffb?;
+Int systemCounter = - 814;
+if( this.ff == this.ff) {
+	flushUpdates = this.ffb;
+	
+}
+Int listCounter = - 533;
+while(! this.fb) {
+	Bool hasLoaded = this.fi == packet;
+	
+}
+this.ffb = this.fi!b();
+await this.ffb?;
+flushUpdates = this.fi!b();
+systemCounter = 783;
+this.fj = this.fj;
+this.fi = packet;
+flushUpdates = this.fi!b();
+Fut<Int> a =(packet )!n();
+listCounter = 613;
+return 657;
+}
+}
+{}

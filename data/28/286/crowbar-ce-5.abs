@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -7607;
+	String fi = null;
+	String ffb = "fut_?(-7607)";
+	String ff = "fut_?(-7607)";
+	Bool fb = False;
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: (112 >= this.fint)
+		// Loop invariant: true
+		// while((112 >= this.fint)) {
+		{
+			this.ffb = this.ffb;
+			Bool canWrite = (((True || !True) || this.fb) || False);
+			this.ff = this.ff;
+			// Int arg = (this.ff).get;
+			Int arg = 0;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f, select(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(4)";
+	Int fint = 4;
+
+	Unit ce() {
+		
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(5)";
+		this.fint = 6;
+		// End assignments
+		
+		Bool canRead = False;
+		// this.fi = new D();
+		this.fi = "object_1";
+		// J clientNode = new E();
+		String clientNode = "object_2";
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -6
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(3)";
+	Bool fb = True;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fb = ((this.fi == this.fi) || True);
+		
+		// await !this.fb;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(4)";
+		this.fb = True;
+		// End assignments
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_2";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_3";
+		String message = this.fj;
+		// this.fi = new D();
+		this.fi = "object_1";
+		println(toString(226)); // return statement
+		// Evaluates to: 226
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 226=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

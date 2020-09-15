@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 4;
+	Bool fb = True;
+
+	Unit ce() {
+		
+		while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		Bool writeFlag = (this.fb && this.fb);
+		Int value = this.fint;
+		Bool execToggle = !True;
+		this.fb = (!False || (writeFlag && !True));
+		println(toString(-value)); // return statement
+		// Evaluates to: -4
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(heap, this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

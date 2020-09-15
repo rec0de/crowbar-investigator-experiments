@@ -1,0 +1,26 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1236;
+	String fi = null;
+	Bool fb = True;
+
+	Unit ce() {
+		
+		
+		this.fint = (156 - this.fint);
+		if(((!((-390144 + this.fint) >= 896) || False) || !this.fb)){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

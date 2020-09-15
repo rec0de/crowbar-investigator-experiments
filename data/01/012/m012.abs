@@ -1,0 +1,161 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( False) {
+	this.ffb = this.ffb;
+	
+}
+this.fj = new E();
+this.fint =(this.fint) * 155 * 937 * this.fint * - 364;
+this.fi = this.fi;
+this.fj = new E();
+while((False || this.fb ||! True) && True || this.fb) {
+	this.fi = new D();
+	Int processDepth = -(84) + 304 +(898);
+	while( this.fi == this.fi) {
+		this.fb = this.fint <= processDepth;
+		this.fi = this.fi;
+		this.ffb = this.ffb;
+		
+	}
+	this.ffb =(this.fi )!b();
+	this.fj = new E();
+	await this.ff?;
+	J node = this.fj;
+	
+}
+this.ffb = this.ffb;
+Bool processEnabled = True;
+this.fi = this.fi;
+Fut<Bool> returnData = this.fi!b();
+returnData = this.fi!b();
+this.fint = 405;
+processEnabled = 282 >=((-(216 - this.fint + 5)) * 210) - 125;
+Bool isExec = False ||!(True || True) && this.fb;
+isExec =!(False);
+this.fint = - this.fint;
+while( False && True) {
+	this.fint =((754));
+	processEnabled = isExec;
+	this.ffb = returnData;
+	this.ffb = this.fi!b();
+	J clientObject = this.fj;
+	this.ff = this.fi!n();
+	await returnData?;
+	returnData = this.ffb;
+	while( True) {
+		this.fb = returnData.get;
+		this.ffb = this.fi!b();
+		
+	}
+	this.fb = returnData.get;
+	
+}
+this.ff = this.fi!n();
+await True;
+while( False) {
+	Fut<Int> resolveData = this.fi!n();
+	
+}
+this.fint = - 446;
+this.ffb = this.fi!b();
+returnData =(this.fi )!b();
+I clientObject = new D();
+this.fb = False &&(869 * this.fint * 302 != 230);
+if( this.fint * this.fint == 937) {
+	I dataUnit = clientObject;
+	
+}
+J message = new E();
+clientObject = new D();
+await this.ffb?;
+this.fi = this.fi;
+await True && True;
+await this.ff?;
+J packet = new E();
+while( returnData == this.ffb) {
+	this.ffb = this.fi!b();
+	Bool isReady = False;
+	this.fi = this.fi;
+	this.fj = new E();
+	this.ff = this.fi!n();
+	if( False &&(False) &&! False) {
+		message = new E();
+		returnData = this.fi!b();
+		this.ff = this.ff;
+		
+	}
+	else {
+		returnData = returnData;
+		this.fj = this.fj;
+		if( 115 == 425) {
+			this.ff = clientObject!n();
+			isReady = False;
+			await True;
+			message = new E();
+			
+		}
+		
+	}
+	this.ffb = returnData;
+	
+}
+Int processCounter = - 633;
+if( True) {
+	packet = new E();
+	if( False) {
+		this.fi = new D();
+		while( False && True) {
+			await this.ff?;
+			processEnabled =!(466 >=(- 294 * - processCounter *(this.fint))) || this.fb &&! True;
+			this.ffb = clientObject!b();
+			
+		}
+		
+	}
+	Int stackDepth =((100) *(this.fint)) + 536;
+	
+}
+I clientNode = this.fi;
+this.fb =! True || True ==! True;
+Fut<Bool> x = clientNode!b();
+while(! False || this.fb) {
+	Bool hasLoaded =! False && False;
+	while( this.fb) {
+		this.ff = clientNode!n();
+		I clientRepresentation = this.fi;
+		Bool canRead = False && False;
+		this.fi = clientNode;
+		await returnData?;
+		
+	}
+	await this.ffb?;
+	this.fint = 494 + 486;
+	while( hasLoaded == processEnabled ||! False) {
+		Bool canWrite = processEnabled || hasLoaded;
+		
+	}
+	
+}
+this.fj = packet;
+return(processCounter);
+}
+}
+{}

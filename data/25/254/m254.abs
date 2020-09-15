@@ -1,0 +1,64 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Fut<Bool> syncCall = this.fi!b();
+this.fi = new D();
+await syncCall?;
+this.ff = this.fi!n();
+J serverUnit = this.fj;
+this.fint = 591 + 662;
+Int queueDepth = this.fint;
+this.fi = this.fi;
+this.fb = True;
+await this.ffb?;
+I message = new D();
+this.fint = 451 + 700;
+this.fi = new D();
+if( this.fb) {
+	while( this.fb || True &&(message == this.fi)) {
+		if( this.fb && False) {
+			Int queueCounter = queueDepth;
+			
+		}
+		else {
+			this.fint = - 720;
+			this.ffb = message!b();
+			J packet = new E();
+			this.fj = this.fj;
+			
+		}
+		await queueDepth - queueDepth == queueDepth;
+		Fut<Bool> resetChanges = message!b();
+		if( True || False) {
+			Int processCount = - queueDepth - 823;
+			
+		}
+		this.fj = new E();
+		
+	}
+	message = this.fi;
+	
+}
+this.ffb = this.fi!b();
+this.ffb =(syncCall);
+return 486;
+}
+}
+{}

@@ -1,0 +1,55 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 916;
+this.ff = this.fi!n();
+Int res = 830;
+Bool willSave =(this.ffb ).get;
+res = - 401;
+willSave = this.fi == this.fi;
+this.ffb = this.fi!b();
+this.fint = 296;
+this.ffb = this.fi!b();
+J node = new E();
+while( this.fb) {
+	this.fint = 105;
+	Fut<Int> returnState = this.fi!n();
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	this.fb = - 380 * 962 > - 806;
+	this.ffb = this.ffb;
+	this.fj = new E();
+	willSave = willSave == False;
+	
+}
+this.ffb = this.ffb;
+Bool readyEnabled = False;
+if( -(- 485 * res - res + 736) >= this.fint) {
+	this.ff = this.ff;
+	
+}
+else {
+	this.fj = this.fj;
+	
+}
+return -(444);
+}
+}
+{}

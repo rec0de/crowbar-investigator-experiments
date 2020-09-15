@@ -1,0 +1,25 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		
+		while(((((352 * this.fint) + ((((l * arg) + arg) - -488) + ((arg * -arg) * systemDepth))) * -70) < 681)){} 
+		// Known true:
+		// Negated loop guard: !(((((352 * this.fint) + ((((l * arg) + arg) - -488) + ((arg * -arg) * systemDepth))) * -70) < 681))
+		// Loop invariant: true
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

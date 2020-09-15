@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	String fi = null;
+	String fj = "object_?(5)";
+	String ffb = "fut_7";
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_6";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_7";
+		this.fint = this.fint;
+		this.fj = this.fj;
+		this.fint = 604;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ffb_f, fut_6), this.ffb_f, fut_7), this.fint_f, select(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ffb_f, fut_6), this.ffb_f, fut_7), this.fint_f)), this.fj_f, select(store(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ffb_f, fut_6), this.ffb_f, fut_7), this.fint_f, select(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ffb_f, fut_6), this.ffb_f, fut_7), this.fint_f)), this.fj_f)), this.fint_f, 604), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,62 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+this.fi = new D();
+this.fj = this.fj;
+Int stackCount = this.fint;
+this.fb = False;
+this.fi = this.fi;
+if( 574 == this.fint) {
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	this.fint = stackCount - -(this.fint);
+	this.fint = this.ff.get;
+	Int processCount = -(36);
+	Bool readOverride = False;
+	readOverride = False || False;
+	while( False) {
+		this.fi = new D();
+		this.ff = this.fi!n();
+		while( 353 != processCount) {
+			this.fj = new E();
+			await this.ff?;
+			readOverride = False;
+			
+		}
+		this.ff = this.ff;
+		
+	}
+	Bool pauseEnabled = False && False;
+	this.fj = new E();
+	this.fi = new D();
+	await this.ffb?;
+	this.fi = this.fi;
+	this.ff = this.ff;
+	this.fj = new E();
+	
+}
+Fut<Int> resetReload = this.ff;
+Int j = 719;
+await(230) <= j;
+return 71 - 136 + 367;
+}
+}
+{}

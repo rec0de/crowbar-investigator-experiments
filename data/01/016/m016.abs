@@ -1,0 +1,97 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ffb?;
+this.fi = new D();
+this.fi = new D();
+this.fi = this.fi;
+I packet = new D();
+this.fb =(this.fj) == this.fj;
+this.fb = - 149 < -(- this.fint - 546);
+Bool willSave = this.ffb.get;
+this.fb =! False || True &&(633 * - 624 ==(786 + this.fint) * 433 * - 286);
+Bool willWrite = this.fb;
+this.ff = this.fi!n();
+willWrite = False;
+this.fb = True;
+Bool hasDone = False;
+I tree = new D();
+I message = packet;
+Bool readyEnabled =! False &&(True) == willSave;
+willSave = this.ffb.get;
+I serverStruct = new D();
+Fut<Int> y = this.ff;
+if( True ||(! willWrite || False ||(982 == 944) &&(False)) || True) {
+	this.ffb = serverStruct!b();
+	serverStruct = message;
+	
+}
+else {
+	message = message;
+	serverStruct = message;
+	readyEnabled = False || True;
+	await this.ffb?;
+	this.fb = True;
+	while(! False) {
+		Int systemAmount = - 776;
+		
+	}
+	
+}
+this.fint = this.ff.get;
+willWrite = False || this.fb && False || False;
+if( False || True) {
+	serverStruct =(message);
+	
+}
+else {
+	this.fb =! True;
+	await this.ff?;
+	this.fj = this.fj;
+	this.fi = new D();
+	if( True &&! False && True && True ||((428 - this.fint < 487) && hasDone) && False && hasDone) {
+		this.fb = this.ff == y;
+		serverStruct = tree;
+		this.fb =! True;
+		tree = packet;
+		
+	}
+	else {
+		willWrite = this.fint - - 86 < 868 * this.fint;
+		Bool isSaveed = False;
+		Fut<Int> resetRequest = packet!n();
+		
+	}
+	this.fint = this.fint;
+	packet = tree;
+	
+}
+Bool hasReady =(! False) &&! False;
+J node = this.fj;
+readyEnabled = 169 <= 428;
+Int listAmount = this.fint + 345;
+willWrite = this.fb && True;
+tree = packet;
+this.fint = - 676 * 89 - this.fint;
+willSave =(tree) == packet;
+return this.fint * 844;
+}
+}
+{}

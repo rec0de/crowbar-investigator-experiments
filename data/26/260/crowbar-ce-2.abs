@@ -1,0 +1,62 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.fi = new D();
+		this.fi = "object_2";
+		// this.ff = this.fi!n();
+		this.ff = "fut_6";
+		// Fut syncChanges = this.fi!b();
+		String syncChanges = "fut_7";
+		// Int stackAmount = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int stackAmount = 0;
+		// Bool writeFlag = (syncChanges).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool writeFlag = False;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_8";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		String packet = this.fj;
+		Int stackDepth = stackAmount;
+		// this.fi = new D();
+		this.fi = "object_3";
+		// syncChanges = this.fi!b();
+		syncChanges = "fut_9";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		// Int eventCount = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int eventCount = 0;
+		println(toString(920)); // return statement
+		// Evaluates to: 920
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 920=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

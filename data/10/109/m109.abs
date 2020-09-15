@@ -1,0 +1,148 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = - 878 * 601;
+this.fint = - this.fint;
+this.fj = new E();
+I packet = this.fi;
+this.fi = this.fi;
+J person = new E();
+await this.ff?;
+this.ffb = this.fi!b();
+Int systemDepth = this.fint;
+while( 556 * this.fint == - 821) {
+	this.fj = person;
+	Int l =(this.fint) * 414 * this.fint * this.fint;
+	Bool storageEnabled = True ||(178 == 730 + 331 + 475 * this.fint) || True;
+	Int arg = this.ff.get;
+	storageEnabled = False;
+	person = person;
+	storageEnabled =(this.fb);
+	while( this.fint == -(275) + systemDepth) {
+		person = new E();
+		Bool systemEnabled = True;
+		if( False) {
+			Int listCount =(322) - 762 * arg;
+			person = new E();
+			Fut<Int> applyUpdates =(this.fi )!n();
+			listCount =(- 456 + 269) - 202;
+			Bool isWrite =(! False) && this.fb;
+			systemEnabled = -(- 705 * this.fint) != 77;
+			this.ff = this.ff;
+			await applyUpdates?;
+			packet = new D();
+			packet = this.fi;
+			listCount = 268;
+			await this.ff?;
+			this.ff = this.fi!n();
+			systemDepth = - 851;
+			
+		}
+		this.fj = person;
+		while( 797 * 175 != 804) {
+			this.fb = False == storageEnabled && storageEnabled;
+			I clientStruct = new D();
+			I dataStruct = new D();
+			Fut<Bool> a = dataStruct!b();
+			this.ffb = clientStruct!b();
+			await(518 - - 266) >= 852;
+			arg = 794 * - this.fint;
+			Bool execFlag = True;
+			
+		}
+		while( True) {
+			l = 700;
+			await this.ff?;
+			Bool readOverride = False;
+			await False ||! True;
+			await this.ff?;
+			I tree = new D();
+			person = new E();
+			
+		}
+		Fut<Bool> resetReload = this.ffb;
+		resetReload = packet!b();
+		this.fi = new D();
+		while((352 * this.fint +((l) * arg +((arg)) -(- 488) + arg * - arg * systemDepth)) * - 70 < 681) {
+			await this.ffb?;
+			this.ffb = resetReload;
+			storageEnabled = False || True &&!(systemEnabled);
+			
+		}
+		Fut<Int> syncReload = this.fi!n();
+		I node = packet;
+		syncReload = packet!n();
+		person = this.fj;
+		if( True) {
+			this.ff =(node )!n();
+			node = packet;
+			
+		}
+		else {
+			l = 648 * 872 * 960;
+			resetReload = this.fi!b();
+			this.fi = new D();
+			
+		}
+		this.fj = new E();
+		this.fj = new E();
+		this.fb = this.ffb.get;
+		Int listCounter = 893 +(l * 972);
+		this.fi = new D();
+		packet = this.fi;
+		await resetReload?;
+		packet = packet;
+		this.fi = new D();
+		while( storageEnabled) {
+			await syncReload?;
+			this.fi = node;
+			
+		}
+		systemDepth = systemDepth;
+		while(! True) {
+			await syncReload?;
+			Fut<Bool> resetCall = resetReload;
+			
+		}
+		this.fb = resetReload.get;
+		J dataNode =(person);
+		arg = 75 - - systemDepth * 441;
+		Int queueCounter = systemDepth;
+		Bool isDone = this.ffb.get;
+		
+	}
+	while(! False) {
+		Int res = arg + 105;
+		
+	}
+	this.ff = this.ff;
+	l = l - 808 - 4 * 736;
+	packet = this.fi;
+	
+}
+systemDepth = 794;
+Bool readOverride = False;
+person = new E();
+packet = packet;
+I clientUnit = this.fi;
+return 479;
+}
+}
+{}

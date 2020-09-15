@@ -1,0 +1,54 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+Fut<Int> flushFlag =(this.ff);
+Bool canRead = this.fb;
+this.fi = new D();
+Int queueCount = 900;
+await - queueCount * queueCount + 78 ==(this.fint - 703);
+queueCount = 69;
+canRead = True && False;
+while((this.fb)) {
+	while( this.fj ==(this.fj)) {
+		this.fi = new D();
+		
+	}
+	this.fb =(676 + 262 != queueCount + - 881 + queueCount) ==! True;
+	this.fj = new E();
+	if( False ||! True) {
+		this.ffb = this.fi!b();
+		queueCount = queueCount - queueCount;
+		
+	}
+	Int i = - queueCount;
+	this.fb = queueCount * this.fint + queueCount * 118 >= queueCount * queueCount + queueCount;
+	
+}
+this.ffb = this.fi!b();
+canRead =! True;
+this.fb = False;
+Bool isReady = True;
+this.ff = this.fi!n();
+this.fi = new D();
+return 340;
+}
+}
+{}

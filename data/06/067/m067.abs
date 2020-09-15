@@ -1,0 +1,97 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = this.ffb.get;
+J ioRepresentation = this.fj;
+Int stackAmount = 702;
+Int listCounter = - 102;
+listCounter = 21;
+this.ff = this.fi!n();
+if((True )) {
+	this.fint = 289;
+	I packet = new D();
+	packet = new D();
+	
+}
+else {
+	while( False) {
+		J clientNode = new E();
+		
+	}
+	this.fj =(ioRepresentation);
+	listCounter = this.ff.get;
+	Bool isDone = this.fint >= this.fint * 447 - stackAmount;
+	if( True && False) {
+		Fut<Bool> applyChanges =(this.fi )!b();
+		stackAmount = 180;
+		Fut<Bool> resultInfo = applyChanges;
+		await this.ff?;
+		stackAmount = 748;
+		Fut<Bool> resolveState =(this.fi )!b();
+		
+	}
+	else {
+		this.fint = this.ff.get;
+		this.fi = new D();
+		Int eventCount = 109;
+		this.fb = this.fb || isDone;
+		J clientObject = ioRepresentation;
+		this.fint = 728;
+		stackAmount =(195) + 978;
+		stackAmount = this.ff.get;
+		
+	}
+	Int listAmount = 904;
+	isDone = False;
+	
+}
+this.fb =! this.fb;
+stackAmount = - 989;
+await True;
+this.ff = this.fi!n();
+this.fj = new E();
+Int k = 111;
+this.fj = ioRepresentation;
+k = - this.fint * 539;
+J message = this.fj;
+stackAmount = 394;
+Bool restoreToggle =! this.fb;
+Bool canRead =! True;
+canRead =! False || True;
+if( True) {
+	restoreToggle = - 929 < 641;
+	await this.ff?;
+	this.fb = ioRepresentation == this.fj;
+	this.ff = this.ff;
+	restoreToggle = True;
+	k = stackAmount;
+	this.fb = True &&(canRead && this.fb) ||! False;
+	
+}
+else {
+	ioRepresentation = message;
+	
+}
+k = - listCounter;
+this.ffb = this.fi!b();
+return 804 * 231 * listCounter - 186 * k;
+}
+}
+{}

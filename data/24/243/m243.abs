@@ -1,0 +1,96 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+Bool willWrite = False || True && True || False;
+if( willWrite) {
+	Int processCounter = 558;
+	this.ff = this.fi!n();
+	this.fint = processCounter;
+	while( this.fb && True) {
+		if(! True) {
+			processCounter = - processCounter;
+			willWrite = False ||(False);
+			await this.ff?;
+			
+		}
+		else {
+			Int res = this.ff.get;
+			Fut<Int> syncChanges = this.fi!n();
+			
+		}
+		
+	}
+	this.ffb = this.ffb;
+	if( True) {
+		this.fint =(this.fint);
+		this.ffb = this.fi!b();
+		while( 209 + 828 == 647) {
+			Int systemCounter = processCounter -(273);
+			processCounter =((0 + processCounter * - processCounter));
+			await this.ff?;
+			Int i = systemCounter -(processCounter);
+			
+		}
+		
+	}
+	else {
+		this.fint = - processCounter;
+		while( False) {
+			this.fj = new E();
+			processCounter = processCounter *(- 451 * 586 * processCounter);
+			this.fint = - 94 - processCounter;
+			processCounter =(this.ff ).get;
+			J packetObject = new E();
+			
+		}
+		J message = this.fj;
+		this.ffb = this.ffb;
+		processCounter = this.fint * 4;
+		this.ffb = this.fi!b();
+		this.fj = message;
+		await this.ff?;
+		J ioObject = new E();
+		
+	}
+	
+}
+else {
+	if(! True &&! this.fb) {
+		Int arg = 228;
+		this.ffb = this.fi!b();
+		this.fint = arg;
+		I serverNode = this.fi;
+		this.ff = serverNode!n();
+		
+	}
+	this.fb =! False == False;
+	Bool isDone =(True);
+	this.fj = this.fj;
+	
+}
+this.fb = this.fb;
+willWrite = this.ffb.get;
+this.fi = this.fi;
+this.fint = 653 - 383;
+return 476;
+}
+}
+{}

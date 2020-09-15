@@ -1,0 +1,126 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int processAmount = this.fint;
+this.fi = new D();
+this.fj = this.fj;
+Fut<Bool> z = this.ffb;
+Bool isLoaded = - this.fint * - 428 >= processAmount * 550 * 751;
+this.ffb = this.fi!b();
+Int i = this.fint - 803 *(597) - 828 - this.fint;
+Bool isWrite = isLoaded;
+isWrite = this.fint + - 884 * 956 > 608;
+if( this.fb) {
+	Int value = 418 * - processAmount;
+	if( True) {
+		this.ffb =(this.ffb);
+		
+	}
+	else {
+		z = this.ffb;
+		
+	}
+	this.fj = new E();
+	if(! False) {
+		while(! False || isLoaded) {
+			await z?;
+			z = this.fi!b();
+			isWrite = True;
+			Bool readEnabled = this.fb;
+			isWrite = False;
+			Int systemDepth = processAmount;
+			
+		}
+		isWrite = 318 > 886;
+		Bool isReady = False;
+		Fut<Bool> resultInfo = this.fi!b();
+		this.fb = this.fi == this.fi;
+		
+	}
+	else {
+		this.fi = new D();
+		processAmount = 106;
+		if( this.ffb == z) {
+			i = value -(793 * this.fint + - 346) * 405;
+			this.ffb = this.fi!b();
+			value = 309 + 33;
+			Int l = - 282;
+			value = 494 * 169;
+			await this.ffb?;
+			this.fint = 462;
+			this.fi = this.fi;
+			isLoaded =! this.fb && True;
+			i = - 532;
+			processAmount = - 804;
+			this.fi = this.fi;
+			i = -(((this.fint)) * 151) * this.fint;
+			J clientNode = this.fj;
+			
+		}
+		Int eventAmount = processAmount - -(238);
+		this.ffb = this.fi!b();
+		Int res = 961 * 209;
+		await z?;
+		await this.ffb?;
+		Int stackAmount = 386;
+		this.ffb = this.ffb;
+		z = this.fi!b();
+		Int arg = 983;
+		
+	}
+	Int l = this.ff.get;
+	Bool willWrite = False;
+	Fut<Int> resolveState = this.fi!n();
+	Bool isSaveed = isLoaded &&! True ||(! True);
+	this.fj = this.fj;
+	Int arg =(292 * 71);
+	if( this.fi ==(this.fi )) {
+		resolveState = this.fi!n();
+		this.fj = this.fj;
+		
+	}
+	else {
+		this.ffb = z;
+		Bool isSave =! True && False;
+		this.fb = True || True;
+		while( False) {
+			Fut<Int> syncFlag = this.fi!n();
+			I ioStruct = new D();
+			
+		}
+		processAmount = 117;
+		this.fint = - 222;
+		Int stackCounter = 115 - - 103 * - 759;
+		Bool isDone = this.ffb.get;
+		
+	}
+	Fut<Int> returnData = this.ff;
+	I message = new D();
+	arg = this.fint;
+	value = 293 * 112 * arg;
+	processAmount = 20;
+	message = new D();
+	Bool configEnabled = z.get;
+	
+}
+return 779;
+}
+}
+{}

@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	String ff = "fut_?(2)";
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		// this.fint = (this.ff).get;
+		this.fint = 3;
+		String flushReload = this.ffb;
+		// flushReload = this.fi!b();
+		flushReload = "fut_0";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 3
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(heap, this.fint_f, valueOf(select(heap, this.ff_f))), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

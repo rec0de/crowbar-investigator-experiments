@@ -1,0 +1,93 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True) {
+	if( this.fb && True) {
+		this.fi = this.fi;
+		
+	}
+	else {
+		this.fi = new D();
+		
+	}
+	this.fint = this.fint -(102 * - this.fint * this.fint) * 850 + 461 - this.fint;
+	this.ff =(this.ff);
+	Int l = 108 - 789;
+	this.fint = 84;
+	
+}
+this.fi = this.fi;
+Bool canLoad =! False;
+while( this.fint + 43 + 356 >= - 208 * 361) {
+	Int i = 678 * 6;
+	
+}
+this.fi = this.fi;
+this.fi = this.fi;
+this.fb = 279 == 949;
+canLoad = canLoad;
+this.ff = this.fi!n();
+await this.ff?;
+this.fi = this.fi;
+this.ff = this.fi!n();
+Bool canWrite =! True == True;
+if( True) {
+	canWrite =! canWrite;
+	Bool isLoaded = True;
+	if( this.fi == this.fi) {
+		I clientObject = new D();
+		J message = this.fj;
+		this.ff = clientObject!n();
+		Int value = this.fint * 617;
+		this.ffb = this.ffb;
+		if( -(this.fint) + 726 * this.fint + 968 <= - 241) {
+			await this.ff?;
+			Bool canExec = True || False || isLoaded &&! False;
+			this.ff = this.fi!n();
+			await this.ffb?;
+			Bool isSaveed =(False);
+			await this.ffb?;
+			this.fi = new D();
+			
+		}
+		while( False) {
+			canWrite = 139 <= 154 * 429;
+			this.ffb = this.fi!b();
+			this.fint = 269;
+			
+		}
+		
+	}
+	Bool readyOverride =(isLoaded) && False;
+	
+}
+Bool isWrite = 965 > -(544) * -(975 + 792 * 668);
+canWrite = canLoad;
+this.ff = this.fi!n();
+I clientObject = this.fi;
+clientObject = new D();
+clientObject = new D();
+this.fint = 517;
+Bool hasLoaded = - this.fint == - this.fint * this.fint;
+Int stackCount = - 461;
+return - stackCount;
+}
+}
+{}

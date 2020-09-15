@@ -1,0 +1,101 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+this.ffb = this.fi!b();
+this.fint = - 770;
+while(! False) {
+	this.fj = new E();
+	this.ff = this.ff;
+	this.fi = this.fi;
+	this.fj =(this.fj);
+	this.fj = new E();
+	this.ffb = this.ffb;
+	Int listAmount = 17;
+	this.fint = 20 * listAmount;
+	while( this.ffb == this.ffb) {
+		this.fj = new E();
+		listAmount = listAmount;
+		await True;
+		Int res = 528 - 875;
+		Int i = res;
+		
+	}
+	
+}
+I tree = new D();
+tree = new D();
+while( True || True || True) {
+	this.fj = this.fj;
+	
+}
+if( - this.fint > 19) {
+	while(! True) {
+		this.fb = this.ffb.get;
+		this.ffb = this.ffb;
+		this.fj = this.fj;
+		this.fint = - 736;
+		this.ff = tree!n();
+		Fut<Int> resultData = this.fi!n();
+		
+	}
+	tree = new D();
+	if( True && False ||(this.fb) || True) {
+		tree = new D();
+		this.fint = 658;
+		
+	}
+	else {
+		this.fint = this.fint;
+		tree = new D();
+		this.fi = new D();
+		this.ffb = this.fi!b();
+		if( this.fb) {
+			Int l = -(280) -(- 332 - 949 * 711 * this.fint *(587)) + this.fint * - 845;
+			Int value = 830;
+			Bool isLoad = True;
+			this.fint = 872;
+			await this.fi ==(this.fi);
+			
+		}
+		else {
+			Fut<Int> returnInfo = this.fi!n();
+			this.fb =(True);
+			this.ff = tree!n();
+			
+		}
+		
+	}
+	
+}
+else {
+	I clientUnit = new D();
+	
+}
+await this.ff?;
+this.fi = new D();
+this.fb = False;
+this.fj = new E();
+J node = this.fj;
+Bool processFlag = this.fb;
+return 298 * this.fint;
+}
+}
+{}

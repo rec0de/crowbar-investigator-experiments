@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(6)";
+	Int fint = -1464;
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(6)";
+
+	Unit ce() {
+		
+		
+		Bool isLoad = (False && False);
+		this.fj = this.fj;
+		if((False == isLoad)){
+			// Fut returnInfo = this.fi!b();
+			String returnInfo = "fut_2";
+			this.fb = (!False || False);
+			if(((1 - this.fint) > -973)){
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_3";
+			}
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fb_f, !(0)||0), this.ffb_f, fut_3), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

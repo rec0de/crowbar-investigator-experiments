@@ -1,0 +1,94 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int stackCounter = 693;
+Fut<Bool> resultInfo =(this.ffb);
+this.fb = False;
+Fut<Int> y = this.fi!n();
+resultInfo = this.ffb;
+J packet =(this.fj);
+y = this.ff;
+this.ffb = this.fi!b();
+if( 459 == - 733 * - 345) {
+	this.fj = this.fj;
+	if( this.fi ==(this.fi )) {
+		packet = new E();
+		Int stackCount = this.fint + 245 * stackCounter * this.fint * 451;
+		
+	}
+	else {
+		this.ff = this.fi!n();
+		
+	}
+	Int res = 83;
+	Int systemCount =(y ).get;
+	if( this.fb) {
+		Int processDepth = 768;
+		systemCount = - 481;
+		if( False) {
+			this.fint = 365 * - 145 - 107;
+			this.fint = 84 * 903;
+			
+		}
+		else {
+			Bool hasLoaded = False;
+			
+		}
+		systemCount = this.ff.get;
+		res = 263;
+		y = this.fi!n();
+		
+	}
+	else {
+		J person = new E();
+		this.fb =! True || this.fb;
+		this.fi = new D();
+		res = 355;
+		Fut<Bool> resetChanges = this.fi!b();
+		this.ff = this.ff;
+		
+	}
+	systemCount = 746;
+	J dataStruct = packet;
+	this.fb = this.ffb.get;
+	dataStruct = packet;
+	
+}
+y = this.fi!n();
+await this.ff?;
+if( this.fj ==(packet )) {
+	packet = new E();
+	
+}
+else {
+	Int listAmount =(918 * 85 - - this.fint *(625 + - 699) + - this.fint);
+	Bool canSave = this.fi == this.fi;
+	this.fj = new E();
+	this.ffb = this.fi!b();
+	
+}
+this.fj = packet;
+this.fb = this.fb || True || False;
+this.ffb = resultInfo;
+this.fj = new E();
+return this.fint;
+}
+}
+{}

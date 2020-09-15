@@ -1,0 +1,86 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( 467 + this.fint > 424 * this.fint) {
+	this.ff = this.ff;
+	this.ffb =(this.fi )!b();
+	await this.ff?;
+	this.fj = this.fj;
+	Fut<Bool> y =(this.ffb);
+	Int stackCount = - this.fint * - 264;
+	this.fi = this.fi;
+	this.ffb = this.fi!b();
+	Int processCount =(797);
+	this.ffb =((this.fi) )!b();
+	Int processAmount = 239;
+	I packet = new D();
+	processCount = this.ff.get;
+	this.ffb = y;
+	Int l = 114;
+	
+}
+else {
+	Int j = 849;
+	this.fint =(817 - 84);
+	while( 929 > 752) {
+		this.fb = this.fb;
+		if( 444 +(211) > this.fint) {
+			this.ff = this.fi!n();
+			this.fb = this.ffb.get;
+			
+		}
+		else {
+			Bool writeFlag = this.fb;
+			await False;
+			Fut<Int> resData = this.ff;
+			
+		}
+		j = 312 - - this.fint * 652;
+		
+	}
+	this.fi = new D();
+	while( this.fint != - this.fint) {
+		await this.ffb?;
+		
+	}
+	Int stackCount = - 753 * 710;
+	
+}
+this.fi = this.fi;
+this.fi = this.fi;
+J person = this.fj;
+this.fint = this.ff.get;
+this.ff = this.ff;
+if( this.fint == this.fint * 2) {
+	person = this.fj;
+	this.fj = new E();
+	await 816 - this.fint >= 490;
+	
+}
+else {
+	I serverStruct = this.fi;
+	serverStruct = new D();
+	
+}
+Int res = 206;
+return(716 - - 682);
+}
+}
+{}

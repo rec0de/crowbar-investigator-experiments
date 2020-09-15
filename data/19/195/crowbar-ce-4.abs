@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	Bool fb = True;
+	String ff = "fut_?(0)";
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		Int l = this.fint;
+		// Int systemDepth = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int systemDepth = 0;
+		this.fint = l;
+		String dataRepresentation = this.fi;
+		if(this.fb){}
+		else{
+		
+		}
+		this.ff = this.ff;
+		dataRepresentation = dataRepresentation;
+		Bool storageToggle = ((True == !this.fb) || this.fb);
+		this.ff = this.ff;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_2";
+		l = 945;
+		l = -147;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		println(toString(149)); // return statement
+		// Evaluates to: 149
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 149=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		}
+		Bool readyOverride = (isLoaded && False);
+		}
+		Bool isWrite = (965 > 288336864);
+		Bool canWrite = canLoad;
+		// this.ff = this.fi!n();
+		this.ff = "fut_16";
+		String clientObject = this.fi;
+		// clientObject = new D();
+		clientObject = "object_1";
+		// clientObject = new D();
+		clientObject = "object_2";
+		this.fint = 517;
+		Bool hasLoaded = (-this.fint == (-this.fint * this.fint));
+		Int stackCount = -461;
+		println(toString(-stackCount)); // return statement
+		// Evaluates to: 461
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(-461)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

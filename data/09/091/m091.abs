@@ -1,0 +1,84 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool hasSaveed = this.fb;
+this.fint = this.fint + this.fint;
+this.fb = hasSaveed;
+if( -(- 92 * 522) * 345 * 245 > this.fint) {
+	if( True || hasSaveed ||(False && False )) {
+		J dataUnit = this.fj;
+		J ioStruct = new E();
+		Bool execEnabled = hasSaveed;
+		
+	}
+	else {
+		if((False == True && False )) {
+			this.ff = this.ff;
+			this.fint = this.fint;
+			this.fi = this.fi;
+			hasSaveed = 0 <= 110;
+			this.fi = new D();
+			this.fint = 687;
+			
+		}
+		else {
+			await this.ff?;
+			Fut<Bool> returnData = this.ffb;
+			this.fj = new E();
+			this.fint = this.fint;
+			await this.ff?;
+			
+		}
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+hasSaveed = False ||!(this.fi == this.fi);
+this.fi = this.fi;
+this.fint = this.fint * 673 - 856 + 162 +(this.fint);
+this.fi = new D();
+this.ffb = this.ffb;
+this.fint = this.ff.get;
+Bool isReady =(this.fb && this.fb);
+if( this.fint == 249) {
+	await this.ff?;
+	this.ff = this.ff;
+	this.ffb = this.fi!b();
+	
+}
+else {
+	isReady = False == False;
+	this.fint = - 521;
+	await this.ffb?;
+	isReady = - this.fint == 90;
+	Int listDepth = - this.fint;
+	this.ff = this.ff;
+	this.fi = new D();
+	Bool isLoad = True;
+	this.fj = new E();
+	hasSaveed = True || hasSaveed &&! False;
+	
+}
+this.fi = new D();
+return 30;
+}
+}
+{}

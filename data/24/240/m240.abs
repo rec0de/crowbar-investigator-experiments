@@ -1,0 +1,105 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Fut<Int> x = this.ff;
+this.ffb = this.ffb;
+this.fint = - 405 * 829;
+this.fi = new D();
+this.fj = new E();
+I ioStruct = new D();
+this.fint = this.fint;
+if(((900) < - this.fint )) {
+	while( 275 * 275 == - this.fint) {
+		await this.ff?;
+		this.fi = new D();
+		this.fint = 384;
+		ioStruct = this.fi;
+		
+	}
+	await x?;
+	this.ffb = this.fi!b();
+	I ioNode = new D();
+	I node = new D();
+	await this.ffb?;
+	this.ff = ioNode!n();
+	ioStruct = new D();
+	I ioRepresentation = new D();
+	
+}
+Bool willExec = False;
+willExec = this.fj == this.fj;
+J ioNode = new E();
+await x?;
+while( 105 < 253) {
+	this.fi = new D();
+	ioStruct = this.fi;
+	
+}
+if(!(True || False )) {
+	if( True) {
+		ioStruct = new D();
+		Int stackCount = - 57 - 289 * -((this.fint)) * this.fint;
+		while((950 == 774)) {
+			this.fint = - 148 * stackCount * 635;
+			
+		}
+		
+	}
+	else {
+		if( False || this.fb) {
+			this.fb = False || this.fb;
+			ioStruct = ioStruct;
+			
+		}
+		this.fint =(- this.fint);
+		willExec = True;
+		x = ioStruct!n();
+		Int i = 467;
+		await this.ffb?;
+		
+	}
+	J packetRepresentation = new E();
+	this.ff = x;
+	
+}
+Int res = 161;
+this.ffb = this.fi!b();
+while( True &&(True)) {
+	this.fj = new E();
+	J message = new E();
+	this.fi = ioStruct;
+	Fut<Int> y = ioStruct!n();
+	ioNode = new E();
+	
+}
+this.ff =(ioStruct )!n();
+while( True) {
+	this.ff = this.fi!n();
+	
+}
+while( True || False) {
+	this.fint = 392;
+	
+}
+this.fj = this.fj;
+return - 525 + this.fint * res + -((594)) -(- this.fint);
+}
+}
+{}

@@ -1,0 +1,60 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 295 - this.fint;
+Bool canExec = - 358 == this.fint * this.fint;
+this.fb = True;
+this.fb = False;
+Int eventCounter = this.ff.get;
+await(True);
+this.fj = new E();
+await this.ff?;
+Int eventCount = - 780 *(eventCounter + - 755 - this.fint) * 25;
+eventCount = 108 *(783);
+await this.ffb?;
+if((- eventCounter) <= 112 * 198) {
+	this.ff = this.ff;
+	
+}
+else {
+	this.fb = this.fb || True && canExec;
+	Bool sendToggle = True;
+	this.fb = True;
+	this.ff = this.fi!n();
+	this.fi = new D();
+	canExec = True || True;
+	canExec = this.ffb.get;
+	
+}
+eventCount = this.fint + 35 - eventCount + 93;
+this.ff = this.fi!n();
+this.fi = new D();
+this.fb = False && True;
+I node = new D();
+while( False ||! True && False) {
+	eventCounter = eventCount;
+	this.fint = 622;
+	
+}
+this.ffb = this.fi!b();
+return - 153;
+}
+}
+{}

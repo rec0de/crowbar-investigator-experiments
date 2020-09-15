@@ -1,0 +1,25 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		String person = this.fj;
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(heap, this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

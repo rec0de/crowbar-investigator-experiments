@@ -1,0 +1,76 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(5)";
+	String ff = "fut_?(5)";
+	Int fint = -75488;
+	String fi = "object_?(5)";
+	Bool fb = True;
+	String fj = null;
+
+	Unit ce() {
+		
+		while((((this.fint + 43) + 356) >= -75088)){} 
+		// Known true:
+		// Negated loop guard: !((((this.fint + 43) + 356) >= -75088))
+		// Loop invariant: true
+		
+		this.fi = this.fi;
+		this.fi = this.fi;
+		this.fb = (279 == 949);
+		Bool canLoad = canLoad;
+		// this.ff = this.fi!n();
+		this.ff = "fut_21";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.ffb = "fut_?(7)";
+		this.ff = "fut_?(7)";
+		this.fint = -1238;
+		this.fi = "object_?(7)";
+		this.fb = True;
+		// End assignments
+		
+		this.fi = this.fi;
+		// this.ff = this.fi!n();
+		this.ff = "fut_22";
+		Bool canWrite = (!True == True);
+		if(True){
+			canWrite = !canWrite;
+			Bool isLoaded = True;
+			if((this.fi == this.fi)){
+				// I clientObject = new D();
+				String clientObject = "object_1";
+				String message = this.fj;
+				// this.ff = clientObject!n();
+				this.ff = "fut_23";
+				Int value = (this.fint * 617);
+				this.ffb = this.ffb;
+				if((((-this.fint + (726 * this.fint)) + 968) <= -241)){
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.ffb = "fut_?(9)";
+					this.ff = "fut_?(9)";
+					this.fint = 9;
+					this.fi = null;
+					this.fb = True;
+					// End assignments
+					
+					Bool canExec = ((True || False) || (isLoaded && !False));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(store(store(anon(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)), this.fb_f, 279=949), this.ff_f, fut_21)), this.fi_f, select(anon(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)), this.fb_f, 279=949), this.ff_f, fut_21)), this.fi_f)), this.ff_f, fut_22), this.ff_f, fut_23), this.ffb_f, select(store(store(store(anon(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)), this.fb_f, 279=949), this.ff_f, fut_21)), this.fi_f, select(anon(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)), this.fb_f, 279=949), this.ff_f, fut_21)), this.fi_f)), this.ff_f, fut_22), this.ff_f, fut_23), this.ffb_f))), this.fi_f)=0		
+				}	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

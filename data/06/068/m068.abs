@@ -1,0 +1,86 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+Bool canSave = - 876 * 442 * this.fint > 472;
+if( True) {
+	this.ff = this.ff;
+	
+}
+else {
+	this.ff = this.fi!n();
+	await this.ff?;
+	await this.ff?;
+	Fut<Bool> applyFlag = this.fi!b();
+	canSave =! canSave && False;
+	applyFlag = this.fi!b();
+	while( False && this.fb) {
+		while(! False) {
+			Int stackCount = this.fint;
+			Int processCount = this.ff.get;
+			canSave = - 788 < processCount;
+			this.ff = this.fi!n();
+			this.fi = this.fi;
+			Int eventCount = - 14;
+			processCount = this.ff.get;
+			await applyFlag?;
+			
+		}
+		Int systemCounter = 337 - this.fint * this.fint - this.fint;
+		this.ffb = this.fi!b();
+		
+	}
+	this.fj = this.fj;
+	this.ff = this.fi!n();
+	this.fint =(500);
+	this.ff = this.fi!n();
+	applyFlag = this.fi!b();
+	J clientRepresentation =((this.fj));
+	I dataObject = new D();
+	if( False) {
+		await this.ff?;
+		this.fb = this.fi == this.fi;
+		
+	}
+	
+}
+Int processCounter = 810;
+this.ffb = this.fi!b();
+Int queueAmount = processCounter;
+this.ff = this.fi!n();
+this.fi = this.fi;
+queueAmount =((257));
+if((False) && this.fb && True && True && True) {
+	await this.ffb?;
+	processCounter = 57 * - queueAmount * 809;
+	
+}
+else {
+	processCounter = queueAmount * - 183;
+	this.fint =(962);
+	this.fi = this.fi;
+	await 176 + 344 * 728 == this.fint - 985;
+	this.fi = this.fi;
+	
+}
+return 542 - - 759;
+}
+}
+{}

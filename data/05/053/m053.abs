@@ -1,0 +1,64 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb =! True || False && True && True;
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+J dataUnit = new E();
+this.fint = - this.fint * 10 * this.fint * 561;
+Int systemAmount = this.ff.get;
+dataUnit = dataUnit;
+if( this.fint -(- systemAmount) >= this.fint - 805) {
+	Bool hasReady = True || this.fb || this.fb;
+	this.fi = new D();
+	if( 941 > 862) {
+		await(True) || False ||(! True);
+		await this.fi == this.fi;
+		this.fi = new D();
+		await this.ffb?;
+		this.fj = new E();
+		
+	}
+	else {
+		await this.ff?;
+		J person = dataUnit;
+		
+	}
+	
+}
+while( True) {
+	this.ff = this.fi!n();
+	if((this.fint * - 272) == systemAmount) {
+		Fut<Bool> y = this.fi!b();
+		
+	}
+	else {
+		Int k = 426;
+		
+	}
+	Int processCount = -(532);
+	this.fj = new E();
+	
+}
+this.ffb = this.ffb;
+return this.fint;
+}
+}
+{}

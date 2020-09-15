@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		Int arg = 365;
+		this.fint = -404471;
+		Int queueCount = -242730;
+		arg = 90457;
+		println(toString((((this.fint * queueCount) + (-651 * arg)) + -13736))); // return statement
+		// Evaluates to: -665903221
+		// Detailed evaluation breakdown:
+		// this.fint: -404471
+		// queueCount: -242730
+		// arg: 90457
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(heap, this.fint_f, -404471), this.fint_f)*-242730+-651*90457+-13736=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

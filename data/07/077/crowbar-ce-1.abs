@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(7)";
+	String ff = "fut_?(7)";
+
+	Unit ce() {
+		
+		
+		Int systemCount = (this.fint + 935);
+		this.fj = this.fj;
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.ff = this.ff;
+		this.fb = ((systemCount * 175) != -933);
+		if(((!this.fb || True) || True)){
+			systemCount = systemCount;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f, select(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f)), this.fb_f, select(heap, this.fint_f)+935*175!=-933), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

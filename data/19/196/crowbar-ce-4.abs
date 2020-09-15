@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ffb = "fut_12";
+	Bool fb = True;
+	String fj = "object_?(9)";
+	String ff = "fut_12";
+
+	Unit ce() {
+		
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_12";
+		// this.fj = new E();
+		this.fj = "object_1";
+		if((False || True)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_13";
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_14";
+		this.ff = this.ff;
+		this.fb = (True && !this.fb);
+		this.fb = (30 == 286332);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(store(store(heap, this.ff_f, fut_12), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f, fut_13), this.ffb_f, fut_14), this.ff_f, select(store(store(store(store(store(heap, this.ff_f, fut_12), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f, fut_13), this.ffb_f, fut_14), this.ff_f)), this.fb_f, 1&&!(select(store(store(store(store(store(store(heap, this.ff_f, fut_12), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f, fut_13), this.ffb_f, fut_14), this.ff_f, select(store(store(store(store(store(heap, this.ff_f, fut_12), this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f, fut_13), this.ffb_f, fut_14), this.ff_f)), this.fb_f))), this.fb_f, 30=286332), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

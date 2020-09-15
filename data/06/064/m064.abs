@@ -1,0 +1,115 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.ffb = this.fi!b();
+Int j = this.fint + 36 + 498;
+while( False || this.fb == True) {
+	this.ffb =(this.fi )!b();
+	
+}
+this.fb = this.ffb.get;
+this.ff = this.ff;
+this.fint = 757 * 202;
+this.fj = this.fj;
+this.fint = 585;
+this.fi = new D();
+this.fi = this.fi;
+this.fi = new D();
+this.fj = new E();
+this.fj = this.fj;
+await this.ff?;
+j = 294 - 456 * 555;
+while( j * this.fint - - this.fint * - this.fint <= j) {
+	this.fj = new E();
+	this.fi = new D();
+	while( False) {
+		j = 619 * - this.fint;
+		while( True) {
+			this.ff = this.fi!n();
+			
+		}
+		
+	}
+	
+}
+await! this.fb && this.fb;
+while( this.fb) {
+	this.fj = this.fj;
+	
+}
+j = 166;
+this.ff = this.ff;
+this.ffb = this.fi!b();
+this.ffb =(this.fi )!b();
+Fut<Int> applyState = this.fi!n();
+this.ff = this.fi!n();
+while( False && True && False == False || False) {
+	I dataStruct = new D();
+	this.fi = new D();
+	
+}
+if( True && True &&! this.fb &&! True) {
+	this.ffb = this.fi!b();
+	this.ffb =(((this.fi)) )!b();
+	this.fb = this.fb &&! this.fb && True;
+	if( False && False || True) {
+		while(! True) {
+			await this.ff?;
+			this.fint =(((this.ff)) ).get;
+			
+		}
+		Int eventDepth = this.ff.get;
+		this.fj = this.fj;
+		
+	}
+	else {
+		Fut<Int> resolveInfo = this.fi!n();
+		this.fj = this.fj;
+		this.ffb = this.fi!b();
+		this.fi = new D();
+		this.ff = this.fi!n();
+		this.ffb = this.fi!b();
+		
+	}
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	Int eventAmount = - 632;
+	this.fb = 349 + - eventAmount * 995 + 610 != 6;
+	this.ff = this.fi!n();
+	this.fi =(this.fi);
+	this.fb = this.fb;
+	
+}
+this.fi = this.fi;
+Int stackDepth = 16;
+this.fint = - j * 31;
+Int queueCounter = 4;
+applyState =(this.fi )!n();
+this.fb =! True || False &&! this.fb || False || this.fb;
+queueCounter = stackDepth;
+j = - 743;
+I person = this.fi;
+Bool storageToggle = True;
+person = new D();
+return - 388;
+}
+}
+{}

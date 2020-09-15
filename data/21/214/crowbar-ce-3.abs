@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(8)";
+	String fi = "object_?(8)";
+	Int fint = 8;
+	String ffb = "fut_4";
+
+	Unit ce() {
+		
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_4";
+		this.fi = this.fi;
+		String ioRepresentation = this.fj;
+		// Bool sendFlag = (this.ffb).get;
+		Bool sendFlag = False;
+		if(((True || !False) || ((!True && (False == True)) && True))){
+			ioRepresentation = this.fj;
+		}
+		// this.fj = new E();
+		this.fj = "object_1";
+		// ioRepresentation = new E();
+		ioRepresentation = "object_2";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(9)";
+		this.fi = "object_?(9)";
+		this.fint = 7;
+		this.ffb = "fut_?(9)";
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_3";
+		// Fut returnState = this.fi!n();
+		String returnState = "fut_5";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 7
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(anon(store(store(store(store(heap, this.ffb_f, fut_4), this.fi_f, select(store(heap, this.ffb_f, fut_4), this.fi_f)), this.fj_f, NEW0_0), this.fj_f, NEW0_0)), this.fj_f, NEW3_0), this.fj_f, NEW3_0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

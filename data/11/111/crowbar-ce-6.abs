@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool isWrite = True;
+		String message = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (!isWrite || !True)
+		// Loop invariant: true
+		// while((!isWrite || !True)) {
+		{
+			// Fut y = this.fi!n();
+			String y = "fut_43";
+			isWrite = (value >= 993);
+			String dataRepresentation = tree;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !message=0
+		// Failed to show the following sub-obligations:
+		// !message=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

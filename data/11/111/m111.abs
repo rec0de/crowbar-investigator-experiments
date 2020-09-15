@@ -1,0 +1,162 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int value = - this.fint;
+value = this.fint * 613 *(-(45));
+while( False && True) {
+	await True;
+	this.fi = this.fi;
+	value = 461 - - 178 * 958;
+	this.ffb = this.fi!b();
+	
+}
+while(! False || True) {
+	this.ff = this.fi!n();
+	
+}
+I tree = this.fi;
+value = this.ff.get;
+tree = new D();
+await this.ff?;
+Bool isWrite = 805 >= this.fint;
+await - 194 * 655 < 672 * 280 + 315;
+this.fj = this.fj;
+this.ff = tree!n();
+while( this.fi == tree) {
+	isWrite = True;
+	this.fj = new E();
+	if( False || True) {
+		this.fb =((820) * value - 73) + 56 != 768;
+		
+	}
+	else {
+		this.fb = False;
+		isWrite =!(this.fb);
+		this.fint = value;
+		this.ff = this.fi!n();
+		this.ffb = this.ffb;
+		tree = tree;
+		isWrite = 795 == 938 * 165 - this.fint;
+		this.fi = tree;
+		await this.ff?;
+		this.fint = 534;
+		this.fint = - this.fint;
+		J clientStruct = new E();
+		I packetObject = new D();
+		
+	}
+	this.fint = 531;
+	if( 900 >=(2 + 880 )) {
+		this.ffb = this.fi!b();
+		this.fi = new D();
+		value = 851;
+		J serverUnit = this.fj;
+		isWrite =! False;
+		Bool isSaveed = isWrite && False;
+		Int listAmount =(794);
+		Int res = this.ff.get;
+		J packetStruct = new E();
+		Fut<Bool> syncFlag = this.ffb;
+		serverUnit = new E();
+		res = 538 * - 453;
+		Fut<Int> resultData = tree!n();
+		while( True) {
+			serverUnit = this.fj;
+			serverUnit = new E();
+			
+		}
+		
+	}
+	else {
+		this.fj = new E();
+		isWrite = False;
+		this.fint = 481;
+		this.fb =(isWrite &&!(! False) && False && False || True);
+		
+	}
+	this.fb = -(-((-(271))) + value) > 12 * - value * 649;
+	isWrite = this.ffb.get;
+	
+}
+isWrite = isWrite;
+this.fb = isWrite;
+this.ff = tree!n();
+this.fb = False;
+if( False) {
+	isWrite = this.ffb.get;
+	this.ffb =(tree )!b();
+	this.fi = new D();
+	while( True) {
+		Bool storageToggle = isWrite || True;
+		Bool systemFlag =(87 <= 393);
+		systemFlag =! True;
+		tree = new D();
+		await this.ff?;
+		this.fi = this.fi;
+		this.fint = 564;
+		this.ffb = this.ffb;
+		await this.ffb?;
+		this.fb =! False;
+		this.fb =! False ||! storageToggle;
+		I message = tree;
+		Int res = 491 * this.fint;
+		
+	}
+	while( this.fj == this.fj) {
+		this.fi = new D();
+		
+	}
+	tree = tree;
+	this.ffb = tree!b();
+	await this.ff?;
+	value = 790;
+	Bool willLoad = True;
+	
+}
+this.ffb = this.fi!b();
+this.fj = new E();
+this.fint = - 39;
+while( isWrite) {
+	this.ffb = this.ffb;
+	value = - 936 * 423;
+	I message = this.fi;
+	while(! isWrite ||! True) {
+		Fut<Int> y = this.fi!n();
+		isWrite = value >= 993;
+		I dataRepresentation = tree;
+		this.ff = message!n();
+		Int eventCount = 824;
+		await y?;
+		y = tree!n();
+		
+	}
+	this.ffb =(message )!b();
+	Int arg = - 429;
+	I dataNode = new D();
+	dataNode =(this.fi);
+	
+}
+this.fi = new D();
+Int stackDepth = this.fint + 844;
+this.fb = isWrite;
+return - this.fint;
+}
+}
+{}

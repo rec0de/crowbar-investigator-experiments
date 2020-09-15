@@ -1,0 +1,71 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ff?;
+this.fint = 92;
+Bool readFlag = True;
+await this.ffb?;
+this.ff = this.fi!n();
+readFlag =(readFlag) || False && True;
+while( this.ff == this.ff) {
+	this.fb = False && False;
+	
+}
+Int res = 885 * 730;
+res = 420;
+Bool hasSaveed =! this.fb;
+while( readFlag && True) {
+	await this.ff == this.ff;
+	
+}
+Int systemCounter = -(this.fint +(res * 295));
+Bool willWrite =!(False &&! hasSaveed || False);
+I serverNode = this.fi;
+this.fb = 867 <= 555 - 39;
+this.fb = False;
+if( this.fb ||! True &&(False )) {
+	this.fj = this.fj;
+	Fut<Int> q = serverNode!n();
+	this.ff = this.fi!n();
+	this.ff = this.fi!n();
+	this.fi = new D();
+	
+}
+else {
+	await this.ffb?;
+	this.fj = new E();
+	serverNode = serverNode;
+	J packet = this.fj;
+	this.fi = serverNode;
+	res = 847;
+	this.fb = hasSaveed;
+	await(True && False) &&! False;
+	
+}
+this.fi = this.fi;
+this.fint = 557;
+Int listCount = 998;
+this.fint = 532;
+Bool canWrite = False;
+Bool writeFlag =(413 == 666 * - 207);
+return this.fint;
+}
+}
+{}

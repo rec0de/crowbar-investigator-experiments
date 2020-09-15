@@ -1,0 +1,66 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 8;
+	String fi = "object_?(7)";
+	Bool fb = True;
+	String ffb = "fut_?(10)";
+
+	Unit ce() {
+		
+		while((827 == this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((827 == this.fint))
+		// Loop invariant: true
+		
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 12;
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(12)";
+		// End assignments
+		
+		this.fb = this.fb;
+		Bool isDone = this.fb;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 13;
+		this.fi = "object_?(13)";
+		this.fb = True;
+		this.ffb = "fut_?(14)";
+		// End assignments
+		
+		this.fint = 615;
+		// I message = new D();
+		String message = "object_1";
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		this.fi = message;
+		Int stackCounter = (((this.fint - 550) + 102440140) + -242385);
+		// Fut flushState = this.fi!b();
+		String flushState = "fut_7";
+		isDone = (!False && this.fb);
+		this.fi = this.fi;
+		println(toString((stackCounter * -this.fint))); // return statement
+		// Evaluates to: 1572850140
+		// Detailed evaluation breakdown:
+		// stackCounter: 102197820
+		// this.fint: 615
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.fb_f, valueOf(select(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.ffb_f))), this.fi_f, NEW5_0), this.fint_f)-550+102440140+-242385*-(select(store(store(store(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.fb_f, valueOf(select(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.ffb_f))), this.fi_f, NEW5_0), this.fi_f, select(store(store(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.fb_f, valueOf(select(store(anon(store(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f, select(anon(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f)))), this.fb_f))), this.fint_f, 615), this.ffb_f))), this.fi_f, NEW5_0), this.fi_f)), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

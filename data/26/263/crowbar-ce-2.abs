@@ -1,0 +1,26 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		// Fut z = this.fi!b();
+		String z = "fut_0";
+		println(toString(((this.fint * 239) + 859))); // return statement
+		// Evaluates to: 859
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(heap, this.fint_f)*239+859=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

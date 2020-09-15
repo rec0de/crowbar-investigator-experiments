@@ -1,0 +1,24 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		println(toString(-125)); // return statement
+		// Evaluates to: -125
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -125=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

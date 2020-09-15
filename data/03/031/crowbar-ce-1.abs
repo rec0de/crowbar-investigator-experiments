@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 3;
+	String fi = "object_?(3)";
+	String fj = "object_?(3)";
+
+	Unit ce() {
+		
+		while((713 == -this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((713 == -this.fint))
+		// Loop invariant: true
+		
+		
+		// await (this.fj == this.fj);
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fi = null;
+		this.fj = null;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(heap), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

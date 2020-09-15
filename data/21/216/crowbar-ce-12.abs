@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(6)";
+	String fi = "object_?(6)";
+	Bool fb = True;
+	Int fint = 12;
+	String ffb = "fut_?(13)";
+	String ff = "fut_27";
+
+	Unit ce() {
+		
+		while((this.fb || this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((this.fb || this.fb))
+		// Loop invariant: true
+		
+		this.fb = True;
+		this.fj = this.fj;
+		// J ioUnit = new E();
+		String ioUnit = "object_1";
+		// Bool execToggle = (this.ffb).get;
+		Bool execToggle = True;
+		Bool isRead = (execToggle && !this.fb);
+		ioUnit = this.fj;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_27";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_28";
+		this.ffb = this.ffb;
+		// this.fi = new D();
+		this.fi = "object_2";
+		Bool restoreOverride = !False;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_29";
+		// Int l = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int l = 0;
+		// J dataUnit = new E();
+		String dataUnit = "object_3";
+		String message = this.fi;
+		this.fb = execToggle;
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -12
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(store(store(store(store(store(store(heap, this.fb_f, 1), this.fj_f, select(store(heap, this.fb_f, 1), this.fj_f)), this.ffb_f, fut_27), this.ffb_f, fut_28), this.ffb_f, select(store(store(store(store(heap, this.fb_f, 1), this.fj_f, select(store(heap, this.fb_f, 1), this.fj_f)), this.ffb_f, fut_27), this.ffb_f, fut_28), this.ffb_f)), this.fi_f, NEW8_0), this.fi_f, NEW8_0), this.ffb_f, fut_29), this.fb_f, valueOf(select(store(store(heap, this.fb_f, 1), this.fj_f, select(store(heap, this.fb_f, 1), this.fj_f)), this.ffb_f))), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

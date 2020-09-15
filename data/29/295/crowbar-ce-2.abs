@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(6)";
+	Int fint = 1236;
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(6)";
+
+	Unit ce() {
+		
+		
+		this.fint = (156 - this.fint);
+		if(((!((-390144 + this.fint) >= 896) || False) || !this.fb)){
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_4";
+			if((this.fb == this.fb)){
+				this.ffb = this.ffb;
+				this.fint = ((-308127 * -this.fint) - this.fint);
+				Int listDepth = -318;
+				this.fj = this.fj;
+				this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f, -308127*-(select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f))-select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f)), this.fj_f, select(store(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f, -308127*-(select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f))-select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f)), this.fj_f)), this.fi_f, select(store(store(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f, -308127*-(select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f))-select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f)), this.fj_f, select(store(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f, -308127*-(select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f))-select(store(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f, select(store(store(heap, this.fint_f, 156-select(heap, this.fint_f)), this.ffb_f, fut_4), this.ffb_f)), this.fint_f)), this.fj_f)), this.fi_f)), this.fi_f)=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

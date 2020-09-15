@@ -1,0 +1,60 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ffb = "fut_8";
+	String ff = "fut_8";
+	Bool fb = False;
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		Bool hasSaveed = (False && this.fb);
+		// this.ff = this.fi!n();
+		this.ff = "fut_8";
+		this.fint = this.fint;
+		// I message = new D();
+		String message = "object_1";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.ffb = "fut_8";
+		this.ff = "fut_8";
+		// End assignments
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.ffb = "fut_8";
+		this.ff = "fut_8";
+		// End assignments
+		
+		if((this.ff == this.ff)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_9";
+		}
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// this.ffb = message!b();
+		this.ffb = "fut_10";
+		println(toString(491)); // return statement
+		// Evaluates to: 491
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 491=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

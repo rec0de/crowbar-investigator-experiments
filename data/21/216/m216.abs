@@ -1,0 +1,93 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff =(this.fi )!n();
+this.fi = this.fi;
+Bool execToggle = True && this.fb;
+if( 164 * this.fint ==(332 + - 422 )) {
+	this.ffb = this.fi!b();
+	this.fb = 81 * - this.fint * - this.fint == 759;
+	this.fb = 941 >=(240);
+	this.ff = this.ff;
+	this.fb = True;
+	this.fi = new D();
+	this.ffb = this.fi!b();
+	this.fint = 421;
+	this.ffb = this.fi!b();
+	
+}
+else {
+	this.fi = new D();
+	
+}
+execToggle = True;
+this.ffb =((this.fi) )!b();
+execToggle = this.fb || True || False;
+while((this.fj == this.fj) ==! False) {
+	Fut<Bool> flushReload = this.fi!b();
+	flushReload = this.ffb;
+	
+}
+if( this.fb || this.fb) {
+	while( False) {
+		this.fi = new D();
+		
+	}
+	Int processDepth = - 378;
+	execToggle = True && execToggle;
+	
+}
+else {
+	await this.ff?;
+	while( this.fb ||(this.fb)) {
+		this.fint = - 431 - this.fint;
+		if( 703 * this.fint * this.fint -(- 678) * 978 == 767) {
+			this.fb = 78 > 185 + 929 * this.fint;
+			Int l = 634;
+			
+		}
+		else {
+			Bool canLoad = False;
+			
+		}
+		
+	}
+	this.fb = True;
+	this.fj =(this.fj);
+	J ioUnit = new E();
+	execToggle = this.ffb.get;
+	Bool isRead = execToggle &&(! this.fb);
+	ioUnit = this.fj;
+	
+}
+this.ffb = this.fi!b();
+this.ffb = this.fi!b();
+this.ffb = this.ffb;
+this.fi = new D();
+Bool restoreOverride =! False;
+this.ffb = this.fi!b();
+Int l = this.ff.get;
+J dataUnit = new E();
+I message = this.fi;
+this.fb =(execToggle);
+return - this.fint;
+}
+}
+{}

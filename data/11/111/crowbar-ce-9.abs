@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(6)";
+	Int fint = 7;
+	Bool fb = True;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool isWrite = True;
+		// End of setup
+		
+		while(isWrite){} 
+		// Known true:
+		// Negated loop guard: !(isWrite)
+		// Loop invariant: true
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		Int stackDepth = (this.fint + 844);
+		this.fb = isWrite;
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -7
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(heap, this.fi_f, NEW30_0), this.fi_f, NEW30_0), this.fb_f, isWrite), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

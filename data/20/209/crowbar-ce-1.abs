@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 3;
+	String fi = null;
+	String fj = "object_?(3)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		// Int j = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int j = 0;
+		this.fj = this.fj;
+		if((True || False)){
+			String packetObject = this.fi;
+			this.fint = 854;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.fint_f, 854), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(2)";
+	Int fint = 2;
+	Bool fb = True;
+	String ff = "fut_?(2)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		this.ff = this.ff;
+		String clientStruct = this.fj;
+		String ioUnit = clientStruct;
+		// I ioRepresentation = new D();
+		String ioRepresentation = "object_1";
+		this.fint = this.fint;
+		Int j = 250665;
+		clientStruct = clientStruct;
+		if(this.fb){}
+		else{
+			// this.fj = new E();
+			this.fj = "object_2";
+		}
+		this.fj = clientStruct;
+		println(toString(-j)); // return statement
+		// Evaluates to: -250665
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(250665)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,48 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 6;
+	String fi = "object_?(6)";
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		if((!True && False)){}
+		else{
+		
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 7;
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(7)";
+		this.ffb = "fut_?(9)";
+		// End assignments
+		
+		this.fint = 94;
+		Int k = ((this.fint * 701) * (this.fint + 355));
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		this.fint = (796 * k);
+		if(((True && !False) || !True)){
+			this.fj = this.fj;
+			Int queueAmount = 148148;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(anon(heap), this.fint_f, 94), this.fb_f, valueOf(select(store(anon(heap), this.fint_f, 94), this.ffb_f))), this.fint_f, 796*select(store(anon(heap), this.fint_f, 94), this.fint_f)*701*select(store(anon(heap), this.fint_f, 94), this.fint_f)+355), this.fj_f, select(store(store(store(anon(heap), this.fint_f, 94), this.fb_f, valueOf(select(store(anon(heap), this.fint_f, 94), this.ffb_f))), this.fint_f, 796*select(store(anon(heap), this.fint_f, 94), this.fint_f)*701*select(store(anon(heap), this.fint_f, 94), this.fint_f)+355), this.fj_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

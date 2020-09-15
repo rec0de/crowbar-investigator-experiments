@@ -1,0 +1,71 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Fut<Bool> syncReload = this.fi!b();
+this.ff = this.fi!n();
+this.fb =(! this.fb);
+this.fb = True && this.fb || this.fb;
+Int stackAmount = 956;
+this.fj = new E();
+this.ffb = this.fi!b();
+this.fb =! True;
+syncReload = this.ffb;
+if(((this.fb &&! this.fb &&! False || True || False && False)) && False) {
+	J clientObject = new E();
+	Bool isSave = 553 == this.fint + 795;
+	this.fi = this.fi;
+	stackAmount = 285;
+	this.ffb = this.ffb;
+	Bool willExec =! isSave;
+	stackAmount = - 909;
+	await this.ff?;
+	this.fj = new E();
+	if( False || willExec) {
+		I message = this.fi;
+		this.fj = clientObject;
+		I dataRepresentation = new D();
+		isSave = True == this.fb && False;
+		Fut<Bool> y = this.ffb;
+		await y?;
+		
+	}
+	else {
+		syncReload = this.fi!b();
+		this.ffb = this.fi!b();
+		
+	}
+	Bool sendToggle = True;
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	clientObject = this.fj;
+	
+}
+else {
+	J tree = this.fj;
+	
+}
+syncReload =(this.fi )!b();
+this.fj = this.fj;
+await this.ff?;
+this.fint = 52 * 1 * 754;
+return - stackAmount * 819 * stackAmount;
+}
+}
+{}

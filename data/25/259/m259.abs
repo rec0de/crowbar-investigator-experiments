@@ -1,0 +1,103 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int systemCount = 171;
+this.ffb = this.ffb;
+this.fb = False && False;
+I packet = this.fi;
+if( 832 >= 260 * 937) {
+	if( True ||! False && True) {
+		this.fb = False && False && False;
+		I dataStruct = new D();
+		I node = new D();
+		node =(this.fi);
+		node = this.fi;
+		dataStruct = this.fi;
+		
+	}
+	else {
+		Bool sendFlag = False;
+		this.fint = 321 * - systemCount;
+		
+	}
+	while((976 * 694) == systemCount * 186) {
+		this.fb =! False;
+		this.ff =(this.ff);
+		this.fi = this.fi;
+		this.fint = 666;
+		
+	}
+	systemCount = - 619 +(- 677);
+	this.fi = new D();
+	
+}
+else {
+	Bool hasDone = True && this.fb;
+	packet = packet;
+	await this.ffb?;
+	if( False && hasDone) {
+		systemCount = this.ff.get;
+		
+	}
+	else {
+		hasDone = - 14 * this.fint * - 720 == 672;
+		packet = new D();
+		Bool canWrite = False && True;
+		canWrite =! True;
+		
+	}
+	systemCount = systemCount + 104;
+	Fut<Bool> resolveState = this.ffb;
+	
+}
+Bool isLoaded = True;
+this.fb =!(101 - - 908 == 463 * 962 - 620 - 600) &&(70 <= 108);
+if(! this.fb) {
+	this.fb = False;
+	J packetRepresentation = new E();
+	
+}
+else {
+	await this.ff?;
+	Int value = 355;
+	this.fi = new D();
+	Int l = this.ff.get;
+	this.fi = new D();
+	
+}
+isLoaded =! True || False && True;
+I clientStruct = this.fi;
+this.fi = new D();
+Int systemCounter = - 701;
+this.fint = 406;
+this.fi = new D();
+isLoaded = True;
+Int l = 676;
+Int res = this.fint;
+Int systemDepth = this.ff.get;
+while( this.fb) {
+	Int eventCounter = systemCounter - 196;
+	
+}
+Int systemAmount =(l * 778 * 403);
+return 669 * systemCount;
+}
+}
+{}

@@ -1,0 +1,76 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( 211 + 857 == this.fint - 863) {
+	this.fb = 799 == 21;
+	this.ffb = this.ffb;
+	await this.ff?;
+	Fut<Int> syncChanges = this.fi!n();
+	Int i = 967;
+	
+}
+I clientObject = new D();
+Int systemCount = - 36;
+Bool isSave = False;
+this.fint =(- 252);
+this.fint = 900 * 784 * 942 * - 428 * - 330;
+this.fj = new E();
+this.fb = True;
+await this.ff?;
+isSave = True && True;
+if( True || this.fb || True) {
+	this.ffb = clientObject!b();
+	this.fb = True;
+	isSave = 925 * 425 <= - systemCount;
+	while( 629 > - this.fint) {
+		await this.ffb?;
+		
+	}
+	this.fb = True == this.fb;
+	this.fint = 502 * systemCount + 127;
+	this.fi = this.fi;
+	this.ffb = this.ffb;
+	if( True) {
+		I person = new D();
+		this.fi = person;
+		person = clientObject;
+		
+	}
+	else {
+		systemCount = systemCount * 227;
+		systemCount = 429;
+		await this.ff?;
+		while( systemCount - 633 == 585) {
+			this.fint = this.fint * this.fint;
+			this.ff = this.ff;
+			
+		}
+		
+	}
+	
+}
+else {
+	this.fj = new E();
+	
+}
+return this.fint;
+}
+}
+{}

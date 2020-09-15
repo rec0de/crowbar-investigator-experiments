@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(7)";
+	String ff = "fut_?(7)";
+	String fi = "object_?(7)";
+	Int fint = 7;
+	String ffb = "fut_?(7)";
+
+	Unit ce() {
+		
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fi = "object_?(8)";
+		this.fint = 7283;
+		this.ffb = "fut_?(8)";
+		// End assignments
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_2";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_3";
+		this.fi = this.fi;
+		String clientObject = this.fi;
+		this.fint = (437 + this.fint);
+		// this.ff = clientObject!n();
+		this.ff = "fut_4";
+		this.fj = this.fj;
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 7720
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(store(store(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f, select(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f)), this.fint_f, 437+select(store(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f, select(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f)), this.fint_f)), this.ff_f, fut_4), this.fj_f, select(store(store(store(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f, select(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f)), this.fint_f, 437+select(store(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f, select(store(store(store(store(anon(heap), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.ffb_f, fut_2), this.ffb_f, fut_3), this.fi_f)), this.fint_f)), this.ff_f, fut_4), this.fj_f)), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

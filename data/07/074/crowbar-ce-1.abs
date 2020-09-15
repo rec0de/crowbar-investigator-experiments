@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 321;
+
+	Unit ce() {
+		
+		while((601854 == -17356)){} 
+		// Known true:
+		// Negated loop guard: !((601854 == -17356))
+		// Loop invariant: true
+		
+		}
+		Int systemCount = -this.fint;
+		this.fint = 456;
+		println(toString((320 + systemCount))); // return statement
+		// Evaluates to: -1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 320+-(select(heap, this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

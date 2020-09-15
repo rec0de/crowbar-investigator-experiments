@@ -1,0 +1,109 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+this.fi = this.fi;
+this.fint = - 185 * 138;
+this.ff = this.ff;
+Int processAmount = 543 - 976;
+this.ff = this.fi!n();
+this.fj = new E();
+Int processCounter = 302;
+Int queueCount = 487;
+Int queueAmount = this.ff.get;
+Bool isSaveed = False;
+await this.ffb?;
+this.fb = this.fb;
+Int j = queueAmount;
+while( True || isSaveed) {
+	J packetRepresentation = new E();
+	if(! True && isSaveed) {
+		this.fj = this.fj;
+		
+	}
+	else {
+		queueCount = - 443;
+		Bool pauseFlag = False;
+		
+	}
+	this.fi = new D();
+	while(! False && True) {
+		processAmount =(queueAmount);
+		
+	}
+	I packetUnit = new D();
+	
+}
+this.fi = this.fi;
+J person = new E();
+Fut<Int> resultState = this.ff;
+this.fint = - 308 * 404 - 992;
+person = new E();
+Fut<Int> applyState = this.fi!n();
+while(! False) {
+	queueCount = - j * 725 + 369;
+	this.fj = this.fj;
+	this.fj = new E();
+	Bool willSave = 200 != queueAmount * 554;
+	queueCount = - j * 599;
+	this.fb =! False;
+	
+}
+this.ffb = this.fi!b();
+queueCount = resultState.get;
+queueAmount = this.ff.get;
+applyState = this.fi!n();
+applyState =(this.fi )!n();
+Bool willWrite = isSaveed ||!(isSaveed ||! this.fb || False);
+while( processAmount == - 908) {
+	Fut<Int> resetState = resultState;
+	while( True && isSaveed && True) {
+		person = this.fj;
+		this.ffb = this.fi!b();
+		Int systemCount = 768;
+		willWrite = willWrite;
+		willWrite = willWrite || False;
+		await this.fb;
+		J packetRepresentation = new E();
+		queueCount = 146 * 545 * - 84;
+		if((queueAmount + - 39 == 720 )) {
+			J packetStruct = packetRepresentation;
+			
+		}
+		Int i = 747 * - 436 * 555;
+		Bool canLoad = person == this.fj;
+		this.fb = True;
+		I node = this.fi;
+		await resetState?;
+		
+	}
+	processAmount = j;
+	this.fi = new D();
+	isSaveed = True;
+	isSaveed = this.fb;
+	this.ffb = this.fi!b();
+	
+}
+return 428 * processCounter;
+}
+}
+{}

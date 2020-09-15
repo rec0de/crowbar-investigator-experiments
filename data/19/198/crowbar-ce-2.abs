@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1236;
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(5)";
+
+	Unit ce() {
+		
+		
+		this.fint = (((this.fint * 747) * 680) - 898);
+		Int listDepth = this.fint;
+		this.fb = this.fb;
+		Bool hasDone = True;
+		hasDone = ((True || this.fb) || False);
+		this.fb = ((False || (this.fb && True)) || (hasDone && False));
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_12";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f, select(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f)), this.fb_f, 0||select(store(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f, select(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f)), this.fb_f)&&1||1||select(store(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f, select(store(heap, this.fint_f, select(heap, this.fint_f)*747*680-898), this.fb_f)), this.fb_f)||0&&0), this.ffb_f, fut_12), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

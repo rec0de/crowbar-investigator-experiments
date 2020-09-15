@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1;
+	String fi = "object_?(1)";
+	String fj = "object_?(1)";
+	String ff = "fut_?(1)";
+
+	Unit ce() {
+		
+		
+		this.fint = this.fint;
+		this.fj = this.fj;
+		Bool willSave = (this.fint <= 17784000);
+		this.fi = this.fi;
+		Int k = -1609;
+		this.ff = this.ff;
+		k = 750;
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f)), this.fi_f, select(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f)), this.fi_f)), this.ff_f, select(store(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f)), this.fi_f, select(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.fj_f)), this.fi_f)), this.ff_f)), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

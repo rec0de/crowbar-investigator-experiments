@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_25";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		Int i = 941;
+		if((-(i + -661) >= 742)){}
+		else{
+		
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_25";
+		this.fint = ((i * 725) - (414 * i));
+		this.fb = False;
+		i = 216;
+		this.fint = i;
+		this.fb = this.fb;
+		this.fint = -387296;
+		String packet = this.fi;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = -5;
+		this.fi = "object_?(8)";
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End assignments
+		
+		String tree = this.fj;
+		String resolveInfo = this.ffb;
+		if((306 <= (-782 - (-240 * -this.fint)))){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !packet=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(store(heap, this.ffb_f, fut_25), this.fint_f, 941*725-414*941), this.fb_f, 0), this.fint_f, 216), this.fb_f, select(store(store(store(store(heap, this.ffb_f, fut_25), this.fint_f, 941*725-414*941), this.fb_f, 0), this.fint_f, 216), this.fb_f)), this.fint_f, -387296), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

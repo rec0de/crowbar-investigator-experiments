@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ffb = "fut_?(0)";
+	Int fint = 0;
+	Bool fb = False;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String returnData = "fut_?(1)";
+		// End of setup
+		
+		while((returnData == this.ffb)){} 
+		// Known true:
+		// Negated loop guard: !((returnData == this.ffb))
+		// Loop invariant: true
+		
+		Int processCounter = -633;
+		if(True){
+			// J packet = new E();
+			String packet = "object_1";
+			if(False){}
+			else{
+		
+			}
+			Int stackDepth = ((100 * this.fint) + 536);
+		}
+		String clientNode = this.fi;
+		this.fb = (!True || (True == !True));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !clientNode=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

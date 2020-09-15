@@ -1,0 +1,65 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fint = 0;
+		this.fb = False;
+		this.ffb = "fut_?(0)";
+		this.fj = null;
+		// End assignments
+		
+		this.fi = this.fi;
+		this.ffb = this.ffb;
+		// Bool isLoaded = (this.ffb).get;
+		Bool isLoaded = False;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fint = 0;
+		this.fb = False;
+		this.ffb = "fut_?(0)";
+		this.fj = null;
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		Int systemAmount = 464;
+		Int arg = 304623;
+		Bool hasLoaded = (True && True);
+		if((this.fi == this.fi)){
+			hasLoaded = (False && True);
+			Bool willRead = (811 <= 667);
+			hasLoaded = (this.fj == this.fj);
+			willRead = ((((True && hasLoaded) && True) && ((979 * this.fint) != 555)) || !hasLoaded);
+			systemAmount = -648;
+		}
+		this.fb = (this.fb || True);
+		this.fint = -arg;
+		println(toString(this.fint)); // return statement
+		// Evaluates to: -304623
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(store(store(anon(store(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f)), this.ffb_f, select(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f)), this.ffb_f))), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fb_f, select(store(store(anon(store(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f)), this.ffb_f, select(store(anon(heap), this.fi_f, select(anon(heap), this.fi_f)), this.ffb_f))), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fb_f)||1), this.fint_f, -(304623)), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

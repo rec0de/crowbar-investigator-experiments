@@ -1,0 +1,69 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( this.fi ==(this.fi )) {
+	if( False && False && False ||(! False) || True) {
+		this.ffb = this.ffb;
+		
+	}
+	else {
+		this.fj = this.fj;
+		this.fi = this.fi;
+		
+	}
+	this.ff = this.fi!n();
+	this.fj = this.fj;
+	this.ff = this.fi!n();
+	this.fb = True;
+	this.fj = new E();
+	
+}
+else {
+	Int eventCount =(466);
+	
+}
+Bool isLoaded =!(False &&(this.fint <= this.fint + this.fint));
+while( this.fb && False) {
+	if( isLoaded) {
+		this.ffb = this.fi!b();
+		Fut<Bool> resolveData = this.fi!b();
+		this.ff = this.fi!n();
+		I message = new D();
+		this.ff = message!n();
+		isLoaded = True;
+		resolveData = resolveData;
+		Fut<Int> x = this.ff;
+		this.fj = new E();
+		
+	}
+	else {
+		isLoaded = False || False || False;
+		this.fi = this.fi;
+		
+	}
+	
+}
+Bool processFlag = False;
+this.ffb = this.fi!b();
+await this.ffb?;
+return this.fint + 637;
+}
+}
+{}

@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 2;
+	Bool fb = True;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		if((-632 >= ((433 + ((this.fint * 478) * -this.fint)) - 438))){
+			// J packet = new E();
+			String packet = "object_1";
+		}
+		
+		// await this.fb;
+		// Assume the following assignments while blocked:
+		this.fint = 1;
+		this.fb = True;
+		// End assignments
+		
+		this.ffb = this.ffb;
+		println(toString(86)); // return statement
+		// Evaluates to: 86
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 86=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,70 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_2";
+	String fi = "object_?(6)";
+	Int fint = 6;
+	Bool fb = True;
+	String ffb = "fut_?(6)";
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		this.fint = 380;
+		this.fint = 120;
+		String q = this.ffb;
+		String returnInfo = this.ffb;
+		// this.fi = new D();
+		this.fi = "object_1";
+		returnInfo = this.ffb;
+		this.fb = !(this.fb || (!False && False));
+		this.fj = this.fj;
+		this.fb = ((True == False) || False);
+		this.fb = ((True && False) && !this.fb);
+		String tree = this.fj;
+		// J packet = new E();
+		String packet = "object_2";
+		// Bool hasSaveed = (q).get;
+		Bool hasSaveed = False;
+		this.fj = tree;
+		
+		// await q?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(7)";
+		this.fi = "object_?(10)";
+		this.fint = 7;
+		this.fb = True;
+		this.ffb = "fut_?(7)";
+		// End assignments
+		
+		this.fint = this.fint;
+		
+		// await q?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(8)";
+		this.fi = null;
+		this.fint = 8;
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End assignments
+		
+		if((this.fb || hasSaveed)){
+			this.fb = (False || False);
+			tree = tree;
+			this.fb = (packet == tree);
+		}
+		Int listDepth = -813;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(anon(store(anon(store(store(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f, 1&&0&&!(select(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f))), this.fj_f, select(store(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f, 1&&0&&!(select(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f))), this.fj_f))), this.fint_f, select(anon(store(store(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f, 1&&0&&!(select(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f))), this.fj_f, select(store(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f, 1&&0&&!(select(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f))), this.fj_f))), this.fint_f))), this.fb_f, 0||0), this.fb_f, NEW1_0=select(store(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f, 1&&0&&!(select(store(store(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f, select(store(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f, !(select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, 380), this.fint_f, 120), this.fi_f, NEW0_0), this.fi_f, NEW0_0), this.fb_f)||!(0)&&0)), this.fj_f)), this.fb_f, 1=0||0), this.fb_f))), this.fj_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

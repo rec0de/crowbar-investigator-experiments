@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		this.fj = this.fj;
+		// J tree = new E();
+		String tree = "object_1";
+		this.fb = this.fb;
+		Bool sendEnabled = !True;
+		sendEnabled = sendEnabled;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fj_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fj_f)), this.fb_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fj_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fj_f)), this.fb_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

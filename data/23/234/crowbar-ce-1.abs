@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -9;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		while(((-527 + (-this.fint * 134)) > ((-78 * this.fint) + -this.fint))){} 
+		// Known true:
+		// Negated loop guard: !(((-527 + (-this.fint * 134)) > ((-78 * this.fint) + -this.fint)))
+		// Loop invariant: true
+		
+		Bool hasLoaded = this.fb;
+		
+		// await syncChanges?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		// End assignments
+		
+		}
+		println(toString(-843)); // return statement
+		// Evaluates to: -843
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -843=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

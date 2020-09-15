@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = "object_?(6)";
+	Bool fb = True;
+	String fj = "object_?(6)";
+
+	Unit ce() {
+		
+		while((280 == (851 * this.fint))){} 
+		// Known true:
+		// Negated loop guard: !((280 == (851 * this.fint)))
+		// Loop invariant: true
+		
+		Int eventCount = -663;
+		// this.fj = new E();
+		this.fj = "object_1";
+		eventCount = (eventCount - 12816);
+		// Fut z = this.fi!n();
+		String z = "fut_21";
+		// z = this.fi!n();
+		z = "fut_22";
+		this.fi = this.fi;
+		this.fb = False;
+		String tree = this.fj;
+		println(toString(((212918 - eventCount) + this.fint))); // return statement
+		// Evaluates to: 226404
+		// Detailed evaluation breakdown:
+		// eventCount: -13479
+		// this.fint: 7
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 212918--663-12816+select(store(store(store(store(heap, this.fj_f, NEW14_0), this.fj_f, NEW14_0), this.fi_f, select(store(store(heap, this.fj_f, NEW14_0), this.fj_f, NEW14_0), this.fi_f)), this.fb_f, 0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

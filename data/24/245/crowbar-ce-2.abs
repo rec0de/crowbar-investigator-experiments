@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = "object_?(7)";
+	String ffb = "fut_8";
+	String ff = "fut_8";
+	Bool fb = False;
+
+	Unit ce() {
+		
+		
+		this.ffb = this.ffb;
+		Bool hasSaveed = (False && this.fb);
+		// this.ff = this.fi!n();
+		this.ff = "fut_8";
+		this.fint = this.fint;
+		// I message = new D();
+		String message = "object_1";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 8;
+		this.fi = "object_?(8)";
+		this.ffb = "fut_?(8)";
+		this.ff = "fut_?(8)";
+		// End assignments
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fi = null;
+		this.ffb = "fut_?(0)";
+		this.ff = "fut_?(0)";
+		// End assignments
+		
+		if((this.ff == this.ff)){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(anon(store(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f, fut_8), this.fint_f, select(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.ff_f, fut_8), this.fint_f)))), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

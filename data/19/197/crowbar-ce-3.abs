@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_10";
+	String ffb = "fut_10";
+
+	Unit ce() {
+		
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_10";
+		// this.ff = this.fi!n();
+		this.ff = "fut_11";
+		this.fi = this.fi;
+		Int listDepth = 384;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.ffb_f, fut_10), this.ff_f, fut_11), this.fi_f, select(store(store(heap, this.ffb_f, fut_10), this.ff_f, fut_11), this.fi_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

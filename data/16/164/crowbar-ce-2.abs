@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7719;
+	String ff = "fut_?(4)";
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		this.fint = (1326 - ((-this.fint - this.fint) - -0));
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 7;
+		this.ff = "fut_?(6)";
+		// End assignments
+		
+		this.ff = this.ff;
+		// Fut resultState = this.fi!b();
+		String resultState = "fut_1";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 7
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(anon(store(heap, this.fint_f, 1326--(select(heap, this.fint_f))-select(heap, this.fint_f)--0)), this.ff_f, select(anon(store(heap, this.fint_f, 1326--(select(heap, this.fint_f))-select(heap, this.fint_f)--0)), this.ff_f)), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

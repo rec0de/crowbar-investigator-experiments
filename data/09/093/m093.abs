@@ -1,0 +1,97 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+this.fi =(this.fi);
+await! False;
+Bool isSave = False;
+this.fb =((this.fi)) == this.fi;
+this.fb = isSave;
+this.fint = this.fint + this.fint +(144 + 607);
+Bool canLoad = False;
+while(! this.fb) {
+	Int eventDepth =(- this.fint);
+	
+}
+Bool stateEnabled =(this.fj) == this.fj;
+Int stackCount = - 761;
+stackCount = stackCount;
+Fut<Bool> returnState = this.fi!b();
+returnState = this.fi!b();
+J tree = this.fj;
+stackCount = 596;
+this.fi = this.fi;
+while( this.fint * 481 + 44 !=(776 + 594)) {
+	await 604 * 678 * - stackCount != 910 - 536 +(235);
+	if( True &&! True) {
+		tree = tree;
+		if( this.fb) {
+			I serverUnit = this.fi;
+			this.fint = this.fint * 911;
+			Bool isDone = -(stackCount + this.fint) >= 26 * 448 + - 819;
+			
+		}
+		else {
+			this.fi = new D();
+			this.ffb = this.fi!b();
+			Int i = -(257 + - 647) * 951 - this.fint;
+			
+		}
+		canLoad = False;
+		
+	}
+	
+}
+this.fint = 7;
+stateEnabled =(canLoad && this.fb || canLoad);
+Fut<Bool> resolveState = this.fi!b();
+while(! True) {
+	stateEnabled = False;
+	while(! False ||(! True)) {
+		if( this.fint * 125 - stackCount == 51) {
+			I packetUnit =((this.fi));
+			canLoad =! True;
+			Bool isLoaded = this.fb &&!(- stackCount == 926);
+			this.fi = new D();
+			
+		}
+		else {
+			Int listDepth = 205 + 207 + 5;
+			Bool hasReady = this.fb;
+			resolveState = returnState;
+			this.fi = this.fi;
+			this.fb = True && True;
+			hasReady = False;
+			Bool hasDone = 843 - this.fint == 738;
+			returnState =((this.ffb));
+			
+		}
+		
+	}
+	
+}
+this.ffb = returnState;
+Bool canWrite = False;
+this.ff = this.fi!n();
+this.fj = new E();
+return - stackCount;
+}
+}
+{}

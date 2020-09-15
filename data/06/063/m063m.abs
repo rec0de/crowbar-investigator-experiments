@@ -1,0 +1,13 @@
+module MockABS;
+
+
+
+class Generated {
+
+Int gen() {
+	Int a = 0;
+	Int i =  ((0 - 1)) + 0; 
+	return 0;
+}
+}
+{}

@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 3;
+	String fi = null;
+	String ff = "fut_?(3)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		this.fint = 916;
+		// this.ff = this.fi!n();
+		this.ff = "fut_4";
+		Int res = 830;
+		// Bool willSave = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool willSave = False;
+		res = -401;
+		willSave = (this.fi == this.fi);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fint_f, 916), this.ff_f, fut_4), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

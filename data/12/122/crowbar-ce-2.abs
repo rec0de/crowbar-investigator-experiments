@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		this.fi = this.fi;
+		}
+		String tree = this.fj;
+		// this.ff = this.fi!n();
+		this.ff = "fut_30";
+		Int processCount = 994;
+		// J node = new E();
+		String node = "object_1";
+		processCount = (-676 * processCount);
+		Int systemCounter = (((processCount * -processCount) * processCount) * 790);
+		tree = tree;
+		println(toString(362)); // return statement
+		// Evaluates to: 362
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 362=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

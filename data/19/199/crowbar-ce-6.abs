@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 6984;
+	Bool fb = True;
+	String ffb = "fut_?(6984)";
+	String fj = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int res = 0;
+		// End of setup
+		
+		while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		this.ffb = this.ffb;
+		Bool readyEnabled = False;
+		if((-(((-485 * res) - res) + 736) >= this.fint)){}
+		else{
+			this.fj = this.fj;
+		}
+		println(toString(-444)); // return statement
+		// Evaluates to: -444
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -444=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,129 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await True;
+this.ffb = this.fi!b();
+Int k = - 726 * 272;
+Int processCount = k;
+while( 69 > this.fint) {
+	k = 535;
+	I person = this.fi;
+	this.fint = this.ff.get;
+	
+}
+this.fb =! False && this.fb && False &&((processCount) * 81 + 300 == 836);
+await True;
+this.fb =(True == False);
+this.fj = new E();
+if( False) {
+	this.fb = this.ffb.get;
+	this.ff = this.fi!n();
+	Bool isWrite = True;
+	if( False) {
+		while( False || False && this.fb && True &&! this.fb || isWrite ||! this.fb ||(False && isWrite && True)) {
+			await this.ff?;
+			
+		}
+		this.fi = this.fi;
+		
+	}
+	else {
+		this.fint = 983 * 40;
+		this.fj =(this.fj);
+		
+	}
+	processCount = 481;
+	
+}
+processCount = k;
+this.ff = this.ff;
+k = 690;
+k = 217 *(412);
+this.ffb = this.ffb;
+Bool hasReady = this.fj ==(this.fj);
+this.fi = this.fi;
+if(! True && True) {
+	this.ff = this.fi!n();
+	Int res = this.ff.get;
+	res = 467;
+	res = 235 - 907;
+	this.fb = 700 >= 411;
+	hasReady = this.fb ||! True;
+	this.fj = new E();
+	while((False)) {
+		processCount = - 699 *(26);
+		
+	}
+	this.fj = new E();
+	hasReady = this.fb && False;
+	this.fj = this.fj;
+	
+}
+else {
+	this.ffb =(this.ffb);
+	
+}
+this.ff = this.fi!n();
+this.ffb = this.fi!b();
+await this.ff?;
+if((! False )) {
+	this.fj = this.fj;
+	I ioStruct = this.fi;
+	this.fi = this.fi;
+	if(! False) {
+		k = 726;
+		hasReady = this.fj == this.fj;
+		this.fj = this.fj;
+		this.fb = True && True && hasReady && True &&((this.ff == this.ff));
+		
+	}
+	
+}
+else {
+	Bool isDone = True || False;
+	
+}
+this.ffb = this.fi!b();
+while( False) {
+	await this.ff?;
+	this.ffb = this.fi!b();
+	if( False &&! False && False && False || True) {
+		processCount = processCount;
+		this.ffb =(this.fi )!b();
+		Bool isSaveed = this.ffb.get;
+		hasReady = True;
+		while((475) == this.fint) {
+			k = 577;
+			await False && False;
+			
+		}
+		
+	}
+	
+}
+this.ff = this.ff;
+hasReady =(False || True) &&! True;
+Int queueCounter = 153 - 515;
+this.fb =(954 * processCount) + 712 * 265 < processCount - - 509 * - 265;
+k = queueCounter + 232;
+return 862;
+}
+}
+{}

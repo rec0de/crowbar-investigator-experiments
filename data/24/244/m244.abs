@@ -1,0 +1,92 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+this.ff = this.fi!n();
+this.ff = this.ff;
+if(! False && False || True || this.fb &&! True || False || this.fb) {
+	this.fi = this.fi;
+	this.fi = this.fi;
+	this.fint = 905;
+	
+}
+else {
+	Int eventDepth = 973;
+	this.fb = this.fb;
+	
+}
+I serverStruct = new D();
+Fut<Bool> resetRequest =(this.ffb);
+this.fb = False;
+this.fj = new E();
+while(! this.fb) {
+	Bool hasReady =! True;
+	while( True || hasReady && True) {
+		while( hasReady) {
+			hasReady = False;
+			this.fi = this.fi;
+			resetRequest = this.ffb;
+			this.fint = 219 * this.fint;
+			
+		}
+		serverStruct = new D();
+		Bool canLoad =! True;
+		await this.fint == 339 + this.fint;
+		this.fint = this.fint;
+		Int processDepth = 364;
+		serverStruct = serverStruct;
+		
+	}
+	this.ffb = resetRequest;
+	this.ff = serverStruct!n();
+	this.fi = this.fi;
+	this.fi = this.fi;
+	
+}
+await resetRequest?;
+J dataObject = new E();
+this.ffb = this.fi!b();
+serverStruct = new D();
+this.fint = 559 *(this.fint);
+resetRequest = this.fi!b();
+dataObject = this.fj;
+serverStruct = new D();
+this.ffb =(this.ffb);
+this.fint = this.ff.get;
+this.ff = this.fi!n();
+this.ff = serverStruct!n();
+await resetRequest?;
+Fut<Bool> z = serverStruct!b();
+Int res = this.ff.get;
+this.fb =! False || this.fb;
+this.fint =(295);
+this.fint = 198;
+this.fint = res;
+dataObject = this.fj;
+while( z == this.ffb) {
+	dataObject = new E();
+	Int eventCounter = this.ff.get;
+	
+}
+z = serverStruct!b();
+return 205;
+}
+}
+{}

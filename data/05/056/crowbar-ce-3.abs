@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(1)";
+	Int fint = 1;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		if(((904 * this.fint) <= 236)){}
+		else{
+			// this.ff = this.fi!n();
+			this.ff = "fut_0";
+			this.fint = 762;
+			this.fj = this.fj;
+			Bool canWrite = (this.ff == this.ff);
+		}
+		println(toString(-345)); // return statement
+		// Evaluates to: -345
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -345=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

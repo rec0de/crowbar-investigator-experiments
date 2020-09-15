@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(4)";
+
+	Unit ce() {
+		
+		while(!this.fb){} 
+		// Known true:
+		// Negated loop guard: !(!this.fb)
+		// Loop invariant: true
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_32";
+		this.fb = (18830560 < 901);
+		if(True){
+			Int i = (76 - l);
+			Int l = 620;
+			Bool willWrite = ((620 * i) == -91);
+			willWrite = !False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.ffb_f, fut_32), this.fb_f, 18830560<901), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

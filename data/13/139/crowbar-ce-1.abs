@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	Bool fb = True;
+	String fj = "object_?(4)";
+	String ff = "fut_?(4)";
+
+	Unit ce() {
+		
+		
+		this.ff = this.ff;
+		this.fj = this.fj;
+		this.fint = this.fint;
+		this.fb = (!True || False);
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -5
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.fj_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.fj_f)), this.fint_f, select(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.fj_f, select(store(heap, this.ff_f, select(heap, this.ff_f)), this.fj_f)), this.fint_f)), this.fb_f, !(1)||0), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

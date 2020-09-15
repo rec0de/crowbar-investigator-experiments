@@ -1,0 +1,92 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True) {
+	await this.ff?;
+	if(! False) {
+		this.ff = this.ff;
+		
+	}
+	else {
+		this.ffb = this.ffb;
+		this.ff =(this.fi )!n();
+		
+	}
+	this.ff = this.ff;
+	Int k =(627 * 537) * 944 * 228 * 274 * - 241 * 725 * 240;
+	Int processAmount = 287;
+	this.fj = new E();
+	
+}
+I packetNode = this.fi;
+Int arg = this.fint;
+this.fb = this.fint - this.fint == this.fint;
+Bool isLoaded = True || True;
+this.fj = new E();
+this.fj = new E();
+Bool writeToggle = isLoaded;
+if( False) {
+	await this.ffb?;
+	this.fb = 506 >= 640 + 154;
+	while( False) {
+		if( isLoaded ==! this.fb && True) {
+			this.ff = packetNode!n();
+			this.fint = 797;
+			
+		}
+		else {
+			this.fi = this.fi;
+			Int stackCounter =(this.ff ).get;
+			this.fint = this.ff.get;
+			Bool isSaveed =! False ||! False;
+			Bool hasLoaded = False &&(True);
+			Bool sendFlag = 458 < arg - 935;
+			arg = 411;
+			Int systemAmount = 604;
+			await isLoaded &&! sendFlag && hasLoaded && True;
+			systemAmount =(133 - - 293);
+			Int i = this.ff.get;
+			await this.ffb?;
+			isLoaded = True &&! False;
+			hasLoaded = this.ff ==(this.ff);
+			this.fi = new D();
+			Int j =(this.fint);
+			this.ff = packetNode!n();
+			this.ff = packetNode!n();
+			
+		}
+		
+	}
+	isLoaded = False && False &&! True || isLoaded;
+	writeToggle = - arg + 584 * arg == 343 + - 764;
+	
+}
+this.ffb = this.fi!b();
+arg = - this.fint;
+await this.ff?;
+packetNode = new D();
+if( -(- 568 - 494 * 15) <= this.fint) {
+	this.ffb = packetNode!b();
+	
+}
+return - 373 * this.fint;
+}
+}
+{}

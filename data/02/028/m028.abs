@@ -1,0 +1,72 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+while( this.fb || True) {
+	this.ffb =(this.ffb);
+	
+}
+while(((396) > 278)) {
+	J packet = this.fj;
+	packet = new E();
+	packet = new E();
+	Bool readyOverride = this.fb &&!(! False);
+	J packetRepresentation = this.fj;
+	this.fint = - 730;
+	this.ff = this.fi!n();
+	
+}
+await this.ffb?;
+this.ff = this.fi!n();
+this.ff =((this.fi) )!n();
+this.fb = this.ffb.get;
+Fut<Int> resetState = this.fi!n();
+this.fi = this.fi;
+this.fj = this.fj;
+this.ffb = this.ffb;
+resetState = this.fi!n();
+J packetNode = this.fj;
+await resetState?;
+this.fint = this.fint + 750;
+while( this.fb) {
+	while( this.fb) {
+		this.fj = new E();
+		packetNode = this.fj;
+		Bool isDone = False;
+		
+	}
+	await this.ffb?;
+	this.fj = this.fj;
+	this.ffb = this.fi!b();
+	Fut<Bool> z = this.fi!b();
+	this.fi = new D();
+	
+}
+J ioRepresentation = packetNode;
+J node = this.fj;
+ioRepresentation = node;
+this.ffb =(this.ffb);
+node = packetNode;
+node = new E();
+ioRepresentation = new E();
+return 534 * 789;
+}
+}
+{}

@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		this.fb = (this.fint <= -this.fint);
+		this.fint = this.fint;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_1";
+		// this.ff = this.fi!n();
+		this.ff = "fut_2";
+		// Bool willExec = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool willExec = False;
+		Int systemCounter = 371;
+		println(toString(-637)); // return statement
+		// Evaluates to: -637
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -637=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

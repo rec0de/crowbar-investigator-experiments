@@ -1,0 +1,58 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 325;
+Bool configToggle =(- 356) - 123 == 460;
+this.fi = this.fi;
+this.ffb = this.fi!b();
+await this.ffb?;
+this.fj = this.fj;
+await this.ffb?;
+if( - 981 * 302 + 610 >(135) * 168) {
+	while( False) {
+		this.ff = this.ff;
+		this.fi = new D();
+		await this.ffb?;
+		
+	}
+	Bool isSaveed = False &&(False);
+	isSaveed = False && False;
+	await this.ffb?;
+	while( False) {
+		this.ff = this.fi!n();
+		Int k = 866;
+		await this.ff?;
+		this.fi = new D();
+		this.fb = True && True ||! True;
+		isSaveed =! True && True;
+		k = this.fint + this.fint * 948;
+		await this.fb;
+		
+	}
+	J message = this.fj;
+	message =(this.fj);
+	
+}
+this.fj = this.fj;
+this.ff = this.ff;
+return 801 + 35 + 955;
+}
+}
+{}

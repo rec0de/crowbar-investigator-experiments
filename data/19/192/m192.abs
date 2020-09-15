@@ -1,0 +1,90 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int listCounter = this.ff.get;
+Bool processToggle =(815) > this.fint - 326;
+Bool isExec = False;
+this.fj = new E();
+processToggle =! isExec;
+this.fi = new D();
+isExec =(- 889) >= 372;
+if( 338 == 518) {
+	while( True) {
+		J person = this.fj;
+		
+	}
+	Int k =(572 * 238) * listCounter;
+	this.ffb = this.fi!b();
+	if( True &&! False) {
+		this.fb = True;
+		this.ffb = this.fi!b();
+		this.fi = this.fi;
+		this.fj = new E();
+		this.fj = this.fj;
+		await this.ffb?;
+		this.fj = new E();
+		Bool isSave = 593 != k * listCounter + 33;
+		this.fi = this.fi;
+		while(! False) {
+			this.ff = this.fi!n();
+			
+		}
+		isSave = True || False &&! this.fb;
+		processToggle = True;
+		processToggle = isSave;
+		J node = this.fj;
+		
+	}
+	else {
+		processToggle =(isExec && True) ==!(this.fb) || True;
+		
+	}
+	this.fj = this.fj;
+	
+}
+else {
+	J ioRepresentation = this.fj;
+	
+}
+while( processToggle) {
+	I ioStruct = this.fi;
+	listCounter = - 745;
+	Int stackCount = - 858 * 647;
+	if( False && False && True || isExec) {
+		this.fint = this.fint * - 85;
+		this.fj = new E();
+		
+	}
+	else {
+		ioStruct =((ioStruct));
+		
+	}
+	Fut<Int> returnInfo = this.ff;
+	stackCount = stackCount;
+	this.fj = new E();
+	this.ffb = ioStruct!b();
+	isExec = True;
+	
+}
+this.fi = new D();
+return 502;
+}
+}
+{}

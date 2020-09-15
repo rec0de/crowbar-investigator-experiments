@@ -1,0 +1,75 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(9)";
+	String ff = "fut_?(10)";
+	Int fint = 9;
+	String fi = "object_?(9)";
+	Bool fb = True;
+	String ffb = "fut_?(9)";
+
+	Unit ce() {
+		
+		
+		if((614 >= 796)){}
+		else{
+			// this.fj = new E();
+			this.fj = "object_1";
+			// this.fint = (this.ff).get;
+			this.fint = 11;
+			this.fb = (this.fb && False);
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(17)";
+			this.ff = "fut_?(12)";
+			this.fint = 12;
+			this.fi = "object_?(12)";
+			this.fb = True;
+			this.ffb = "fut_?(12)";
+			// End assignments
+			
+			if(!this.fb){
+				if(!this.fb){
+					Int processCounter = -2637;
+					processCounter = 506;
+					Bool isDone = (420 >= (140760 * processCounter));
+				}
+			}
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(16)";
+			this.ff = "fut_?(16)";
+			this.fint = 15;
+			this.fi = "object_?(16)";
+			this.fb = True;
+			this.ffb = "fut_?(16)";
+			// End assignments
+			
+			Int l = 600;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_11";
+		}
+		// this.fi = new D();
+		this.fi = "object_2";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_12";
+		// I ioNode = new D();
+		String ioNode = "object_3";
+		Bool willWrite = (ioNode == ioNode);
+		println(toString((-460967 + this.fint))); // return statement
+		// Evaluates to: -460952
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -460967+select(store(store(store(store(anon(anon(store(store(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fint_f, valueOf(select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f))), this.fb_f, select(store(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fint_f, valueOf(select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f))), this.fb_f)&&0))), this.ffb_f, fut_11), this.fi_f, NEW8_0), this.fi_f, NEW8_0), this.ffb_f, fut_12), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

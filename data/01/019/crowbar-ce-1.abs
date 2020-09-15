@@ -1,0 +1,27 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		String tree = this.fi;
+		Int listDepth = (this.fint * 256);
+		String serverNode = this.fi;
+		println(toString(-900)); // return statement
+		// Evaluates to: -900
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -900=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

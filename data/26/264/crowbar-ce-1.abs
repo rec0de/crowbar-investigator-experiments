@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(6)";
+	Int fint = 6;
+	String fj = "object_?(6)";
+
+	Unit ce() {
+		
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(7)";
+		this.fint = 8;
+		this.fj = "object_?(7)";
+		// End assignments
+		
+		this.fi = this.fi;
+		// this.fj = new E();
+		this.fj = "object_2";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 8
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// select(store(store(store(anon(store(store(heap, this.fi_f, NEW0_0), this.fi_f, NEW0_0)), this.fi_f, select(anon(store(store(heap, this.fi_f, NEW0_0), this.fi_f, NEW0_0)), this.fi_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

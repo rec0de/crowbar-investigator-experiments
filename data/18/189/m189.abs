@@ -1,0 +1,92 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.ff;
+Fut<Int> applyState =(this.fi )!n();
+this.fi = new D();
+await applyState?;
+while( True && False) {
+	this.fi = new D();
+	this.fb = this.ffb.get;
+	applyState = applyState;
+	while( True) {
+		Int stackCounter = this.fint;
+		J node = new E();
+		
+	}
+	this.fb = False;
+	await applyState?;
+	this.fi = new D();
+	if( this.fb && True ||! False) {
+		this.fj = this.fj;
+		this.fi = this.fi;
+		this.fint = 443;
+		Int processAmount = 851 * - this.fint * 16 * - this.fint * 438;
+		
+	}
+	else {
+		this.fj = new E();
+		applyState = this.ff;
+		this.fi = new D();
+		Int processCounter = - 882 + - this.fint;
+		this.fi = this.fi;
+		while( True && this.fb) {
+			await this.ffb?;
+			Fut<Int> x = this.fi!n();
+			this.fb = this.ffb.get;
+			
+		}
+		await this.ff?;
+		J clientObject = this.fj;
+		
+	}
+	while(! False) {
+		J message = new E();
+		this.ff = this.fi!n();
+		this.fi = new D();
+		message = new E();
+		Bool writeEnabled = True &&! this.fb &&! True;
+		
+	}
+	
+}
+this.fj = new E();
+this.ffb = this.fi!b();
+this.ff = this.ff;
+Bool readyToggle = True;
+if( - 946 * this.fint == - this.fint) {
+	this.fi = this.fi;
+	this.fj = new E();
+	
+}
+else {
+	this.fi = new D();
+	this.fj = new E();
+	this.fb =(readyToggle) || False &&! True ==! True || False;
+	this.ff = this.fi!n();
+	
+}
+this.fint = 943 * 50;
+readyToggle = False;
+Bool configOverride = this.ffb.get;
+return 396;
+}
+}
+{}

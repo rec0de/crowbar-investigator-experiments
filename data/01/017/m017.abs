@@ -1,0 +1,55 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( False || False) {
+	J dataStruct = new E();
+	
+}
+this.fb = this.fb;
+this.fj = new E();
+Bool isDone = 740 <(380);
+I message = new D();
+Bool isSaveed = False && isDone;
+this.fb =! this.fb || True;
+this.fj = new E();
+Bool isReady =(True && isSaveed);
+await this.ffb?;
+this.ff = this.fi!n();
+this.fb = False;
+isDone = False;
+Bool execToggle = isDone || False || True;
+execToggle = this.ffb.get;
+this.ffb = this.fi!b();
+this.fi = new D();
+this.fj = this.fj;
+this.fj = this.fj;
+while( isSaveed) {
+	this.ff = message!n();
+	
+}
+Bool isRead = 139 > 917;
+isSaveed = False && isRead;
+Int queueCount = this.fint -(203);
+message = message;
+execToggle = False;
+return 528;
+}
+}
+{}

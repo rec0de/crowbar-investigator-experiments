@@ -1,0 +1,119 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( False) {
+	await this.ffb?;
+	this.ff = this.ff;
+	this.ff = this.ff;
+	Bool isLoaded = True;
+	if( this.fi ==(this.fi )) {
+		this.fint = 4;
+		this.ff = this.fi!n();
+		Fut<Int> p = this.fi!n();
+		I ioNode = this.fi;
+		
+	}
+	else {
+		J message = this.fj;
+		this.fi = new D();
+		
+	}
+	this.fi = new D();
+	this.fb = True;
+	await this.ffb?;
+	Int res = 395;
+	this.fi = this.fi;
+	J packet = this.fj;
+	this.fi = new D();
+	this.fj = new E();
+	this.fint = this.fint;
+	await this.ff?;
+	Bool hasSaveed = False;
+	
+}
+Int value = this.fint * 974 + 215 + this.fint * this.fint + 841;
+if( 527 < value - 2) {
+	while( 37 !=(730 - 957)) {
+		value = - 91 * - 605;
+		I person = new D();
+		this.ffb = person!b();
+		this.fi = person;
+		if( False ||((False) && True && True )) {
+			I tree = new D();
+			Int stackCount = this.fint;
+			
+		}
+		Bool isRead = 324 ==(971);
+		
+	}
+	
+}
+if( this.fb) {
+	this.fb = True;
+	if( True &&! this.fb) {
+		Bool readyFlag =! True || False ==! True;
+		this.ffb =(this.fi )!b();
+		this.fj = this.fj;
+		I tree = this.fi;
+		Bool systemFlag = True;
+		systemFlag = - 214 * 850 * - 446 >= - 277;
+		value = - value;
+		this.fb = this.ffb.get;
+		this.fint = - 266;
+		this.fj = new E();
+		await this.ff?;
+		value = 630 + 93 * - 835 - 482;
+		this.ff = this.ff;
+		this.ffb = this.fi!b();
+		I node = new D();
+		node = new D();
+		Int listAmount = this.ff.get;
+		J serverStruct = new E();
+		while( systemFlag) {
+			J clientUnit = this.fj;
+			await this.ffb?;
+			await this.ff?;
+			clientUnit = serverStruct;
+			this.ff = this.ff;
+			
+		}
+		this.ffb = this.ffb;
+		J person = serverStruct;
+		this.ff = node!n();
+		
+	}
+	await True;
+	this.fj = new E();
+	this.fi = new D();
+	
+}
+else {
+	Fut<Bool> returnData = this.fi!b();
+	Bool hasLoaded = 180 < 204;
+	await this.ff?;
+	J node = new E();
+	this.fint = value;
+	
+}
+this.ffb = this.fi!b();
+return 53;
+}
+}
+{}

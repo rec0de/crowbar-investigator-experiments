@@ -1,0 +1,96 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+await this.ff?;
+this.fi = this.fi;
+if( this.fi == this.fi) {
+	Int value = 484 * - 266;
+	this.fi = new D();
+	if(! True) {
+		Int processDepth = 461 + 824 * this.fint * 628;
+		
+	}
+	else {
+		value = value + this.fint;
+		value = this.ff.get;
+		if( 846 == 638) {
+			this.fb = False && True && True;
+			await this.ffb?;
+			
+		}
+		value = 427;
+		
+	}
+	Bool sendToggle = this.fint * 808 + value * this.fint <= 54;
+	
+}
+else {
+	I person = new D();
+	this.fj = new E();
+	
+}
+this.fj = new E();
+this.fj = this.fj;
+I ioStruct = new D();
+while( 280 == 851 * this.fint) {
+	await! False && True;
+	Bool willExec = this.fb;
+	if(! False) {
+		J clientUnit = new E();
+		willExec = False;
+		this.fi = this.fi;
+		Fut<Bool> syncChanges = this.fi!b();
+		this.ff = this.fi!n();
+		syncChanges =((this.fi) )!b();
+		Bool processOverride = True;
+		this.fi = this.fi;
+		ioStruct = ioStruct;
+		this.ff = this.ff;
+		clientUnit = clientUnit;
+		await this.ffb?;
+		Bool canLoad = False;
+		processOverride = 832 < - 969;
+		await True || canLoad;
+		await this.ff?;
+		while( willExec ||(! False) && False) {
+			Int res = - 478 * 500;
+			this.ff =(ioStruct )!n();
+			J person =((this.fj));
+			
+		}
+		processOverride = True;
+		
+	}
+	this.ffb = ioStruct!b();
+	
+}
+Int eventCount = - 663;
+this.fj = new E();
+eventCount = eventCount - 712 * 18;
+Fut<Int> z =(this.fi )!n();
+z = this.fi!n();
+this.fi = this.fi;
+this.fb = False;
+J tree = this.fj;
+return(91 - - 832 + 315 * 673 - eventCount + this.fint);
+}
+}
+{}

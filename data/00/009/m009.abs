@@ -1,0 +1,142 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.fi = new D();
+Int i = 895 + 556;
+if(! this.fb && this.fb) {
+	while( this.fb && True &&! this.fb ||! True) {
+		J packetNode = new E();
+		
+	}
+	this.fj = new E();
+	this.fint = 201;
+	Fut<Int> syncRequest = this.fi!n();
+	
+}
+else {
+	i = this.fint +(172);
+	Fut<Int> a = this.fi!n();
+	this.fi = new D();
+	i = this.fint;
+	a = this.fi!n();
+	this.ffb = this.fi!b();
+	Bool hasReady = False && this.fb || True && this.fb && this.fb ||! True;
+	I person = new D();
+	if( 407 ==(199 + - 523) + 127) {
+		this.ff =(this.fi )!n();
+		
+	}
+	await this.ffb?;
+	await False &&! hasReady && True || False;
+	this.fint = i + 884;
+	
+}
+this.fj = this.fj;
+Bool hasLoaded =! True ||(this.fb && False);
+this.ffb = this.fi!b();
+this.fb =! True;
+if( hasLoaded && False) {
+	if( - this.fint *(830) * 696 == 734 + i) {
+		this.ffb = this.fi!b();
+		i = - 720;
+		this.ffb = this.fi!b();
+		this.fi = new D();
+		this.fb =!(False) || False && hasLoaded || hasLoaded;
+		await False && hasLoaded;
+		Fut<Bool> returnInfo = this.ffb;
+		this.fint = 244;
+		Int systemCounter = i * 549;
+		Bool isDone = True;
+		
+	}
+	else {
+		i = 431 +(- 265 * this.fint * i) + this.fint;
+		this.ff = this.fi!n();
+		hasLoaded = True;
+		await this.ffb?;
+		this.fi = new D();
+		
+	}
+	Int k = this.fint * - this.fint + 405 * - 213 * 930 * - 101;
+	
+}
+else {
+	await this.ffb?;
+	J packetRepresentation = this.fj;
+	while( i == - 590 - 719 * 968) {
+		while(! False) {
+			this.fb =(True || this.fb ||! hasLoaded);
+			this.fi = new D();
+			this.fint = this.ff.get;
+			
+		}
+		this.ff =(this.fi )!n();
+		if( this.fb ==! hasLoaded) {
+			J node = new E();
+			
+		}
+		else {
+			await this.ff?;
+			
+		}
+		packetRepresentation = packetRepresentation;
+		packetRepresentation = packetRepresentation;
+		this.fj = packetRepresentation;
+		await this.ffb?;
+		hasLoaded =! this.fb && False && False == True;
+		Int res = - 823 - 656;
+		this.fi = new D();
+		hasLoaded =(this.ffb ).get;
+		this.fint = 581;
+		
+	}
+	while(! False && False) {
+		while( False) {
+			Bool willLoad = True || False;
+			Int stackCount = this.ff.get;
+			this.fi = this.fi;
+			Fut<Bool> flushCall = this.fi!b();
+			i = - i;
+			J packetObject = new E();
+			this.fb = willLoad ||!(False || False) ||! True || True;
+			
+		}
+		this.fint = 292;
+		J ioStruct = this.fj;
+		Fut<Int> returnData = this.fi!n();
+		
+	}
+	
+}
+while((True)) {
+	this.fint =((this.fint * 395 * - 721 + i -(994 * 889) - 181 + - 923 * 261 + 35)) * - 975;
+	
+}
+this.fi = new D();
+i = 841;
+this.fb = this.fb == False || False;
+await this.ffb?;
+this.ffb = this.fi!b();
+J tree = new E();
+return - this.fint;
+}
+}
+{}

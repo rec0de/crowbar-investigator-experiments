@@ -1,0 +1,56 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -1;
+	Bool fb = True;
+	String fj = null;
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		Int value = ((((this.fint * 974) + 215) + (this.fint * this.fint)) + 841);
+		if((527 < (value - 2))){}
+		else{
+		
+		}
+		if(this.fb){
+			this.fb = True;
+			if((True && !this.fb)){}
+			else{
+		
+			}
+			
+			// await True;
+			// Assume the following assignments while blocked:
+			this.fint = 0;
+			this.fb = False;
+			// End assignments
+			
+			// this.fj = new E();
+			this.fj = "object_1";
+			// this.fi = new D();
+			this.fi = "object_2";
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_38";
+		println(toString(53)); // return statement
+		// Evaluates to: 53
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 53=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

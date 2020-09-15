@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(6)";
+	String ff = "fut_28";
+	String ffb = "fut_28";
+
+	Unit ce() {
+		
+		while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Int eventDepth = (this.ff).get;
+		Int eventDepth = 0;
+		this.fj = this.fj;
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_28";
+		this.ffb = this.ffb;
+		Int eventAmount = -632;
+		this.fb = (((349 + (-eventAmount * 995)) + 610) != 6);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.ff_f, fut_28), this.ffb_f, select(store(store(heap, this.fj_f, select(heap, this.fj_f)), this.ff_f, fut_28), this.ffb_f)), this.fb_f, 349+-(-632)*995+610!=6), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

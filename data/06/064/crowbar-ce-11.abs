@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 3;
+	Bool fb = True;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int j = 1236;
+		// End of setup
+		
+		while((((False && True) && (False == False)) || False)){} 
+		// Known true:
+		// Negated loop guard: !((((False && True) && (False == False)) || False))
+		// Loop invariant: true
+		
+		if((((True && True) && !this.fb) && !True)){}
+		else{
+		
+		}
+		this.fi = this.fi;
+		Int stackDepth = 16;
+		this.fint = (-j * 31);
+		Int queueCounter = 4;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fint_f, -(j)*31), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

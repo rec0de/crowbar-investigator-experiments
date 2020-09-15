@@ -1,0 +1,37 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool isReady =(False || False ==! False);
+Int stackCounter = 778;
+this.fb = 711 == - 734;
+Bool hasSaveed = stackCounter == 695;
+this.fb = isReady;
+Int eventCount =(- this.fint) + 163;
+this.ffb = this.fi!b();
+isReady = 505 == - 156;
+this.ff = this.fi!n();
+J person = this.fj;
+Int listCounter = - 300;
+Bool stateEnabled =! True && hasSaveed;
+Bool execToggle = hasSaveed;
+return listCounter;
+}
+}
+{}

@@ -1,0 +1,69 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(10)";
+	String fi = "object_?(10)";
+	Int fint = 10;
+	Bool fb = True;
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		// Fut syncCall = this.fi!b();
+		String syncCall = "fut_9";
+		// this.fi = new D();
+		this.fi = "object_1";
+		
+		// await syncCall?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(11)";
+		this.fi = "object_?(11)";
+		this.fint = 11;
+		this.fb = True;
+		// End assignments
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_10";
+		String serverUnit = this.fj;
+		this.fint = 1253;
+		Int queueDepth = this.fint;
+		this.fi = this.fi;
+		this.fb = True;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(13)";
+		this.fi = "object_?(13)";
+		this.fint = 13;
+		this.fb = True;
+		// End assignments
+		
+		// I message = new D();
+		String message = "object_2";
+		this.fint = 1151;
+		// this.fi = new D();
+		this.fi = "object_3";
+		if(this.fb){}
+		else{
+		
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_15";
+		this.ffb = syncCall;
+		println(toString(486)); // return statement
+		// Evaluates to: 486
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 486=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

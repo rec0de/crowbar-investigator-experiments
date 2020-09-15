@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -52;
+	String fi = null;
+	String ff = "fut_?(3)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int listDepth = -464;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: ((listDepth - this.fint) != -411)
+		// Loop invariant: true
+		// while(((listDepth - this.fint) != -411)) {
+		{
+			if((463 == -listDepth)){}
+			else{
+				this.fi = this.fi;
+				// this.ff = this.fi!n();
+				this.ff = "fut_14";
+				listDepth = (((259 + this.fint) + (listDepth * 510)) + listDepth);
+				this.fi = this.fi;
+				this.ff = this.ff;
+				this.fint = ((24 + ((682 * this.fint) * ((359 * listDepth) + 235))) + listDepth);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f)), this.ff_f, select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f)), this.ff_f)), this.fint_f, 24+682*select(store(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f)), this.ff_f, select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f, select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fi_f)), this.ff_f)), this.fint_f)*359*259+select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fint_f)+listDepth*510+listDepth+235+259+select(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.ff_f, fut_14), this.fint_f)+listDepth*510+listDepth), this.fi_f)=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

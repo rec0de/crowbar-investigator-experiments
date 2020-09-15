@@ -1,0 +1,54 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+while( False) {
+	this.fint = this.fint * 394;
+	
+}
+Bool hasSaveed = this.ffb.get;
+this.fint = - 835;
+this.ffb = this.fi!b();
+if( -(- this.fint) * - 864 >=((this.fint) )) {
+	this.fi = new D();
+	J node = this.fj;
+	
+}
+Int stackCount = - 625;
+this.ff = this.fi!n();
+this.fb = this.fb || hasSaveed;
+stackCount = 680 * this.fint;
+Bool configToggle = - stackCount *(906) == 844 * 832;
+this.fb = False;
+await this.ff?;
+await True;
+this.ff = this.fi!n();
+hasSaveed = True;
+Bool isLoaded = configToggle;
+configToggle = True || False;
+Bool isWrite = True;
+stackCount = - 189 * 558;
+J serverNode = new E();
+this.fint = 697;
+configToggle = hasSaveed;
+return - 961;
+}
+}
+{}

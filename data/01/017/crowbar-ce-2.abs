@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(7)";
+	String ff = "fut_?(7)";
+	String fi = "object_?(7)";
+	Bool fb = True;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		while((False || False)){} 
+		// Known true:
+		// Negated loop guard: !((False || False))
+		// Loop invariant: true
+		
+		this.fb = this.fb;
+		// this.fj = new E();
+		this.fj = "object_1";
+		Bool isDone = (740 < 380);
+		// I message = new D();
+		String message = "object_2";
+		Bool isSaveed = (False && isDone);
+		this.fb = (!this.fb || True);
+		// this.fj = new E();
+		this.fj = "object_3";
+		Bool isReady = (True && isSaveed);
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_8";
+		this.fb = False;
+		isDone = False;
+		Bool execToggle = ((isDone || False) || True);
+		// execToggle = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		execToggle = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(anon(store(store(store(store(store(store(heap, this.fb_f, select(heap, this.fb_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fb_f, !(select(store(store(store(heap, this.fb_f, select(heap, this.fb_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0), this.fb_f))||1), this.fj_f, NEW4_0), this.fj_f, NEW4_0)), this.ff_f, fut_8), this.fb_f, 0), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,57 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi =(this.fi);
+this.ffb = this.fi!b();
+this.ffb = this.fi!b();
+this.fj = new E();
+while( False) {
+	await this.fint == 278;
+	
+}
+await this.fint * 868 ==(113 * 8);
+Fut<Int> resultState = this.fi!n();
+resultState = this.fi!n();
+Bool systemFlag = this.ffb.get;
+Int processCounter = - 458;
+this.fint = - processCounter;
+this.fi = this.fi;
+this.fb = systemFlag && systemFlag;
+if(! False ||! False) {
+	this.fint = 504;
+	await resultState?;
+	processCounter = 332 *(- 626);
+	await this.ffb?;
+	this.ff =(this.ff);
+	
+}
+else {
+	await this.ffb?;
+	
+}
+this.ffb =((this.fi) )!b();
+processCounter = resultState.get;
+Fut<Int> applyFlag =(this.fi )!n();
+resultState = this.fi!n();
+this.fi = new D();
+return 363;
+}
+}
+{}

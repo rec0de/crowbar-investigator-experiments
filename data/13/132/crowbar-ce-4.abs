@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 4;
+	String fi = "object_?(4)";
+	Bool fb = True;
+	String fj = "object_?(4)";
+
+	Unit ce() {
+		
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = -211;
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(5)";
+		// End assignments
+		
+		if((((True || False) || True) || True)){
+			this.fb = False;
+			if(((-this.fint - this.fint) < 421)){}
+			else{
+				// this.fj = new E();
+				this.fj = "object_1";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(anon(heap), this.fb_f, 0), this.fj_f, NEW1_0), this.fj_f, NEW1_0), this.fi_f)=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

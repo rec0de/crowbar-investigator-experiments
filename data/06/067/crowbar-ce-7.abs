@@ -1,0 +1,93 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(2)";
+	String ff = "fut_?(2)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String ioRepresentation = "object_?(2)";
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		this.fj = ioRepresentation;
+		// Int listCounter = (this.ff).get;
+		Int listCounter = 3;
+		Bool isDone = (this.fint >= ((this.fint * 447) - stackAmount));
+		if((True && False)){}
+		else{
+			// this.fint = (this.ff).get;
+			this.fint = 3;
+			// this.fi = new D();
+			this.fi = "object_1";
+			Int eventCount = 109;
+			this.fb = (this.fb || isDone);
+			String clientObject = ioRepresentation;
+			this.fint = 728;
+			Int stackAmount = 1173;
+			// stackAmount = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			stackAmount = 0;
+		}
+		Int listAmount = 904;
+		isDone = False;
+		}
+		this.fb = !this.fb;
+		Int stackAmount = -989;
+		
+		// await True;
+		// No heap modification info available at this point
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_18";
+		// this.fj = new E();
+		this.fj = "object_2";
+		Int k = 111;
+		this.fj = ioRepresentation;
+		k = (-this.fint * 539);
+		String message = this.fj;
+		stackAmount = 394;
+		Bool restoreToggle = !this.fb;
+		Bool canRead = !True;
+		canRead = (!False || True);
+		if(True){
+			restoreToggle = (-929 < 641);
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+			this.fb = (ioRepresentation == this.fj);
+			this.ff = this.ff;
+			restoreToggle = True;
+			k = stackAmount;
+			this.fb = ((True && (canRead && this.fb)) || !False);
+		}
+		k = -listCounter;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_19";
+		println(toString(((185724 * listCounter) - (186 * k)))); // return statement
+		// Evaluates to: 557730
+		// Detailed evaluation breakdown:
+		// listCounter: 3
+		// k: -3
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 185724*valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f))-186*-(valueOf(select(store(heap, this.fj_f, ioRepresentation), this.ff_f)))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,28 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 1;
+	String ff = "fut_?(1)";
+
+	Unit ce() {
+		
+		
+		if((741543 == 651)){}
+		else{
+			this.ff = this.ff;
+		}
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(heap, this.ff_f, select(heap, this.ff_f)), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

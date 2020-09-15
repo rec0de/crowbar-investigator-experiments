@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -1;
+	Bool fb = True;
+	String ffb = "fut_?(4)";
+
+	Unit ce() {
+		
+		while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		}
+		Bool isExec = (!True || (this.fb == !(-839 == this.fint)));
+		Int value = (((this.fint + 245436) - 94146) + this.fint);
+		this.ffb = this.ffb;
+		this.fb = True;
+		println(toString((((((823 * this.fint) * value) * this.fint) - value) - 434))); // return statement
+		// Evaluates to: 124358302
+		// Detailed evaluation breakdown:
+		// this.fint: -1
+		// value: 151288
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 823*select(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fb_f, 1), this.fint_f)*select(heap, this.fint_f)+245436-94146+select(heap, this.fint_f)*select(store(store(heap, this.ffb_f, select(heap, this.ffb_f)), this.fb_f, 1), this.fint_f)-select(heap, this.fint_f)+245436-94146+select(heap, this.fint_f)-434=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

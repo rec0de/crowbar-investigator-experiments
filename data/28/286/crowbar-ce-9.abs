@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int eventCount = -180;
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		Bool canExec = isSaveed;
+		println(toString((-181 - eventCount))); // return statement
+		// Evaluates to: -1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -181-eventCount=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

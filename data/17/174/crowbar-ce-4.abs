@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(5)";
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(5)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String resolveInfo = "fut_?(7)";
+		// End of setup
+		
+		while(!this.fb){} 
+		// Known true:
+		// Negated loop guard: !(!this.fb)
+		// Loop invariant: true
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_15";
+		this.fb = (18830560 < 901);
+		if(True){
+			Int i = (76 - l);
+			Int l = 620;
+			Bool willWrite = ((620 * i) == -91);
+			willWrite = !False;
+			// Fut x = this.fi!b();
+			String x = "fut_16";
+			this.ffb = resolveInfo;
+		}
+		Int i = 171;
+		this.ff = this.ff;
+		Int l = 279781;
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_17";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(store(heap, this.ffb_f, fut_15), this.fb_f, 18830560<901), this.ffb_f, resolveInfo), this.ff_f, select(store(store(store(heap, this.ffb_f, fut_15), this.fb_f, 18830560<901), this.ffb_f, resolveInfo), this.ff_f)), this.ff_f, fut_17), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

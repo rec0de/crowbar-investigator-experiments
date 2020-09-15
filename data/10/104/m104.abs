@@ -1,0 +1,70 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+this.fj = this.fj;
+J message = new E();
+Bool isDone = False;
+isDone = isDone && True || this.fb && isDone;
+Bool isLoaded = - 125 >= 618;
+Fut<Bool> returnState = this.ffb;
+if(! True) {
+	while( True) {
+		isLoaded = isDone;
+		Int res = this.ff.get;
+		await False;
+		this.fb = False;
+		this.fint = 731 * 145 * res - res;
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+else {
+	await False;
+	this.fj = new E();
+	J clientNode = message;
+	this.fint = - this.fint;
+	
+}
+isLoaded = True;
+this.ff = this.fi!n();
+Fut<Int> returnData = this.fi!n();
+if((178 > 77 )) {
+	message = message;
+	
+}
+I clientUnit = new D();
+Fut<Bool> resetCall = returnState;
+message = this.fj;
+await this.fint > -(915 * this.fint * 549);
+returnState = this.fi!b();
+this.fb = returnState.get;
+await this.ff?;
+clientUnit = new D();
+this.fj = new E();
+J packet = message;
+this.ff = clientUnit!n();
+I person = new D();
+clientUnit = new D();
+return 729;
+}
+}
+{}

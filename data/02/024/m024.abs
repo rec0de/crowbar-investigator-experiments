@@ -1,0 +1,52 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = True || this.fb;
+this.ff = this.fi!n();
+Int processDepth = -(this.fint * this.fint) -(994 * 514);
+this.ff = this.ff;
+processDepth = - 612;
+while( - 769 + 344 * 870 - - 367 * 830 >= - 48) {
+	this.ffb = this.ffb;
+	this.fint = - this.fint;
+	
+}
+Bool hasReady = True;
+this.fj = new E();
+hasReady =(True) && True;
+I clientRepresentation = this.fi;
+if( True && True) {
+	Bool isSaveed = False && True || hasReady;
+	
+}
+else {
+	this.fi = clientRepresentation;
+	
+}
+await this.ffb?;
+this.fb = False;
+this.ff =(this.fi )!n();
+processDepth = 132;
+I packetObject = new D();
+await this.ffb?;
+return processDepth;
+}
+}
+{}

@@ -1,0 +1,52 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -1;
+	String ffb = "fut_?(12)";
+	Bool fb = True;
+	String fj = "object_?(7)";
+	String ff = "fut_?(7)";
+
+	Unit ce() {
+		
+		
+		// J person = new E();
+		String person = "object_1";
+		this.fint = (944 - ((183 * this.fint) * this.fint));
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		if((!this.fb == True)){
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fint = 10;
+			this.ffb = "fut_?(10)";
+			this.fb = True;
+			this.fj = "object_?(10)";
+			this.ff = "fut_?(13)";
+			// End assignments
+			
+			this.fj = person;
+			this.fint = 397;
+			this.fb = ((-this.fint + this.fint) != 987);
+		}
+		// this.fint = (this.ff).get;
+		this.fint = 11;
+		this.fb = (4 > 158);
+		Bool hasLoaded = this.fb;
+		this.fb = (False || False);
+		println(toString(((405 * this.fint) - this.fint))); // return statement
+		// Evaluates to: 4444
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 405*select(store(store(store(store(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fb_f, -(select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f))+select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f)!=987), this.fint_f, valueOf(select(store(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fb_f, -(select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f))+select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f)!=987), this.ff_f))), this.fb_f, 4>158), this.fb_f, 0||0), this.fint_f)-select(store(store(store(store(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fb_f, -(select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f))+select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f)!=987), this.fint_f, valueOf(select(store(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fb_f, -(select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f))+select(store(store(anon(store(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.fb_f, valueOf(select(store(heap, this.fint_f, 944-183*select(heap, this.fint_f)*select(heap, this.fint_f)), this.ffb_f)))), this.fj_f, NEW0_0), this.fint_f, 397), this.fint_f)!=987), this.ff_f))), this.fb_f, 4>158), this.fb_f, 0||0), this.fint_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

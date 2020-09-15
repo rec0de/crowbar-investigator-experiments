@@ -1,0 +1,64 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( this.fb) {
+	this.fint = 505;
+	Int res = this.ff.get;
+	J serverUnit = this.fj;
+	
+}
+else {
+	this.fi = new D();
+	this.ffb = this.fi!b();
+	if( - this.fint * 212 == - 575) {
+		Bool systemToggle = this.ff == this.ff;
+		Bool writeEnabled = True;
+		this.fj = this.fj;
+		
+	}
+	Bool hasReady = this.fj == this.fj;
+	this.ff = this.fi!n();
+	this.fi = this.fi;
+	this.fint = 346;
+	
+}
+Int systemAmount = 976;
+this.fi = new D();
+J ioObject = new E();
+if( - 962 * - 126 != 255) {
+	ioObject = new E();
+	this.ff = this.fi!n();
+	this.ff = this.fi!n();
+	
+}
+else {
+	Int processCount = this.ff.get;
+	processCount = this.fint;
+	Bool isReady = this.fb;
+	this.ff =(this.ff);
+	systemAmount = this.fint - 599;
+	this.ffb = this.fi!b();
+	
+}
+this.fi = this.fi;
+return 125 * 690;
+}
+}
+{}

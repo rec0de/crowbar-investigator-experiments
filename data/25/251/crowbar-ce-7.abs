@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = True;
+	Int fint = 0;
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		
+		while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		}
+		this.fint = (-325 * this.fint);
+		String tree = this.fi;
+		if(True){
+			String node = this.fj;
+		}
+		// tree = new D();
+		tree = "object_1";
+		this.fj = this.fj;
+		println(toString(5)); // return statement
+		// Evaluates to: 5
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 5=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

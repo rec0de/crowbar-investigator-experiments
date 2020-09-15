@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int processCounter = 1;
+		Int processAmount = -907;
+		// End of setup
+		
+		while((processAmount == -908)){} 
+		// Known true:
+		// Negated loop guard: !((processAmount == -908))
+		// Loop invariant: true
+		
+		println(toString((428 * processCounter))); // return statement
+		// Evaluates to: 428
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 428*processCounter=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

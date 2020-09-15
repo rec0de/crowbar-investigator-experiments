@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int systemCount = 1;
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		String message = this.fi;
+		// message = new D();
+		message = "object_1";
+		println(toString(systemCount)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// systemCount=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

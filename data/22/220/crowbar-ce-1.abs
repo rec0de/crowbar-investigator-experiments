@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -1;
+	String fi = null;
+	Bool fb = True;
+	String ff = "fut_?(5)";
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: (-this.fint > this.fint)
+		// Loop invariant: true
+		// while((-this.fint > this.fint)) {
+		{
+			this.ff = this.ff;
+			this.fb = (337 > (this.fint * 466));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.ff_f, select(heap, this.ff_f)), this.fb_f, 337>select(store(heap, this.ff_f, select(heap, this.ff_f)), this.fint_f)*466), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = True;
+	String ffb = "fut_?(4)";
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		// this.fb = (this.ffb).get;
+		this.fb = True;
+		String ioRepresentation = this.fj;
+		Int stackAmount = 702;
+		Int listCounter = -102;
+		listCounter = 21;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(heap, this.fb_f, valueOf(select(heap, this.ffb_f))), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

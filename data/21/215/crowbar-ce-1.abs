@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+
+	Unit ce() {
+		
+		
+		String message = this.fj;
+		// I clientStruct = new D();
+		String clientStruct = "object_1";
+		// this.fi = new D();
+		this.fi = "object_2";
+		println(toString(196)); // return statement
+		// Evaluates to: 196
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 196=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

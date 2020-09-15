@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -20296;
+	String fi = "object_?(4)";
+	String ff = "fut_?(4)";
+	String ffb = "fut_?(4)";
+
+	Unit ce() {
+		
+		while((7955955 > (392 * -this.fint))){} 
+		// Known true:
+		// Negated loop guard: !((7955955 > (392 * -this.fint)))
+		// Loop invariant: true
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 5;
+		this.fi = null;
+		this.ff = "fut_?(5)";
+		this.ffb = "fut_?(5)";
+		// End assignments
+		
+		this.fint = this.fint;
+		this.ff = this.ff;
+		Int value = 1296;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_19";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(anon(heap), this.fint_f, select(anon(heap), this.fint_f)), this.ff_f, select(store(anon(heap), this.fint_f, select(anon(heap), this.fint_f)), this.ff_f)), this.ffb_f, fut_19), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

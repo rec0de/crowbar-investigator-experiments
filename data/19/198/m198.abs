@@ -1,0 +1,72 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint =(this.fint * 747 * 680 - 898);
+Int listDepth = this.fint;
+this.fb = this.fb;
+Bool hasDone = True;
+hasDone = True || this.fb || False;
+this.fb = False || this.fb && True || hasDone && False;
+this.ffb = this.fi!b();
+Fut<Int> p = this.fi!n();
+if( True) {
+	this.fi = this.fi;
+	listDepth = p.get;
+	J person = new E();
+	
+}
+this.ffb = this.ffb;
+if( - 274 != - this.fint) {
+	await p?;
+	this.fi = this.fi;
+	this.ffb = this.fi!b();
+	this.fj = new E();
+	p = this.fi!n();
+	
+}
+this.fi = new D();
+while( 860 + -(listDepth) * 612 == -(372 + - 405)) {
+	Bool isWrite =! this.fb || True;
+	this.ff = this.fi!n();
+	this.fint = 421;
+	this.fj = this.fj;
+	
+}
+Int systemCount = listDepth * 912;
+Bool isLoaded =(917 > - 504) && True;
+this.fj = new E();
+hasDone = False && False;
+await this.ff?;
+while( False) {
+	J person = new E();
+	this.fint = 250;
+	this.fi =(this.fi);
+	systemCount = p.get;
+	await this.ffb?;
+	Fut<Bool> q =(this.fi )!b();
+	I serverNode = new D();
+	
+}
+I message =((this.fi));
+message = new D();
+return systemCount;
+}
+}
+{}

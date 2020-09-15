@@ -1,0 +1,93 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+I packetRepresentation = new D();
+this.fi = this.fi;
+this.fj = new E();
+while(((459 * 13) == 723)) {
+	this.fb = this.fb && this.fb;
+	await this.ff?;
+	
+}
+this.fi = packetRepresentation;
+Bool isWrite =! False == this.fb;
+this.ffb = this.ffb;
+this.ff = packetRepresentation!n();
+while((760) *(779 - 247 * -(-(-(563 * 732) * 237))) < this.fint) {
+	if((377) != this.fint) {
+		Bool stateToggle = True;
+		this.ffb = this.ffb;
+		this.ff =((this.fi) )!n();
+		Int eventCount = this.fint * 665 * - this.fint + - 190;
+		
+	}
+	else {
+		J packetStruct = this.fj;
+		
+	}
+	isWrite = False && True && True;
+	while( 968 >= 852 * this.fint - - this.fint) {
+		if( True) {
+			await True;
+			isWrite = True;
+			isWrite = False;
+			isWrite = 495 * this.fint != - 704 * 167;
+			this.fj = this.fj;
+			isWrite = this.fb;
+			
+		}
+		Fut<Bool> q = this.fi!b();
+		Fut<Bool> z = q;
+		this.ffb = this.fi!b();
+		await this.fb;
+		
+	}
+	this.fi = packetRepresentation;
+	packetRepresentation = new D();
+	this.fi = new D();
+	
+}
+Int listCount = 66;
+listCount = 165;
+this.ff = this.ff;
+while( False ==(this.ff == this.ff)) {
+	this.fi = new D();
+	
+}
+this.ffb = this.ffb;
+this.ff = this.ff;
+this.fj = this.fj;
+this.fint = this.ff.get;
+I packet = this.fi;
+listCount = 862;
+if( True || isWrite) {
+	this.fint = - 3;
+	packetRepresentation = this.fi;
+	
+}
+else {
+	this.fb = packetRepresentation == this.fi;
+	
+}
+return - 653 -(listCount);
+}
+}
+{}

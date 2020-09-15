@@ -1,0 +1,35 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool isLoaded = this.ffb.get;
+if( True) {
+	this.fi = this.fi;
+	isLoaded = 396 <= -(this.fint) * - this.fint;
+	this.fj = new E();
+	
+}
+this.fint = 594 * 432;
+await this.ffb?;
+J packet = new E();
+I tree = new D();
+return 298 * 146 + 286;
+}
+}
+{}

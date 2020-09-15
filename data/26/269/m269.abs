@@ -1,0 +1,99 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+if( True == True || this.fb && True) {
+	await this.ffb?;
+	
+}
+else {
+	this.fint = this.fint * 49 +(- this.fint);
+	Bool isLoaded = this.ffb.get;
+	Bool isLoad =(this.fi) == this.fi;
+	if( False) {
+		Int l = this.fint;
+		isLoaded = isLoaded && isLoad;
+		while(! True) {
+			Int k = 223 * 884 * this.fint;
+			k = 868;
+			k = 92;
+			k = 842;
+			this.fi = new D();
+			this.fint = - k * 553 * l;
+			
+		}
+		this.ff = this.ff;
+		Int k = - 972 -(this.fint * 106 * 682 +(174) * 445);
+		this.fi = new D();
+		this.ff = this.ff;
+		this.fint = this.fint;
+		I packet = this.fi;
+		this.fj = this.fj;
+		this.fi = packet;
+		packet = new D();
+		
+	}
+	else {
+		I ioObject = this.fi;
+		ioObject = this.fi;
+		await this.ffb?;
+		this.ffb = ioObject!b();
+		isLoaded = isLoaded;
+		this.fj = new E();
+		
+	}
+	
+}
+await this.ffb?;
+this.ffb = this.ffb;
+I ioNode = new D();
+this.fb =! True;
+ioNode = new D();
+this.ffb = ioNode!b();
+Int listCount = 346;
+this.ffb =(ioNode )!b();
+this.fj = this.fj;
+while(! True && this.fb) {
+	I packet = new D();
+	
+}
+this.ffb = this.fi!b();
+while((True)) {
+	Bool pauseOverride =(this.fb);
+	ioNode = new D();
+	
+}
+ioNode = ioNode;
+this.fi = new D();
+this.ffb = ioNode!b();
+I dataObject = this.fi;
+this.fint = - this.fint;
+Bool restoreFlag = ioNode ==(ioNode);
+Int stackCounter = 713;
+if( restoreFlag && True) {
+	await this.ff?;
+	
+}
+this.fb = this.ffb.get;
+this.fj = this.fj;
+return(405);
+}
+}
+{}

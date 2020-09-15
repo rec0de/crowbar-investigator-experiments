@@ -1,0 +1,103 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( - 54 < this.fint) {
+	await this.ff?;
+	if( this.fb || True) {
+		this.fi = this.fi;
+		if(! this.fb) {
+			this.fi = this.fi;
+			this.fint = 47;
+			this.fj = this.fj;
+			this.ff = this.fi!n();
+			await this.ff?;
+			Int res = this.ff.get;
+			this.fb = True;
+			J dataObject = new E();
+			this.ffb = this.ffb;
+			this.fj = new E();
+			this.fj = this.fj;
+			
+		}
+		else {
+			await this.ffb?;
+			this.fj = this.fj;
+			this.fb = True;
+			this.ffb = this.ffb;
+			this.fb =! True;
+			this.fj = this.fj;
+			Fut<Int> q = this.fi!n();
+			await this.fb || this.fb;
+			this.ff = this.fi!n();
+			J dataNode = new E();
+			this.fint = this.fint;
+			I tree = new D();
+			tree = tree;
+			
+		}
+		this.ffb = this.fi!b();
+		this.fint = this.fint + 867 - - 630;
+		this.ff = this.fi!n();
+		this.ff = this.fi!n();
+		if( True) {
+			this.fj = new E();
+			this.ff = this.ff;
+			Int j = - this.fint;
+			await! False || True || this.fb;
+			
+		}
+		
+	}
+	else {
+		this.fb = this.fb &&!(this.ffb == this.ffb) ||!(True ||(! True &&! False &&! False));
+		this.fj = this.fj;
+		this.fj = this.fj;
+		if( this.fb &&! this.fb) {
+			await this.ff?;
+			this.fi = this.fi;
+			Bool canWrite = this.ffb.get;
+			Bool readyEnabled =(977) >= 959;
+			await this.ffb?;
+			await this.ff?;
+			
+		}
+		else {
+			await this.ff?;
+			Bool readyFlag = this.fb;
+			readyFlag = True ||! this.fb;
+			
+		}
+		Int stackDepth = this.fint + 875;
+		this.fj = new E();
+		await this.ffb?;
+		this.fi = new D();
+		this.fint = 361;
+		this.fi = new D();
+		this.fj = new E();
+		
+	}
+	
+}
+Int res = 728;
+this.fb = 583 == this.fint;
+return - 28;
+}
+}
+{}

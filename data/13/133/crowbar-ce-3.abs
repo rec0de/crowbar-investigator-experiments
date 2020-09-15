@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 7;
+	String fi = "object_?(7)";
+	Bool fb = True;
+	String fj = "object_?(7)";
+	String ff = "fut_?(8)";
+
+	Unit ce() {
+		
+		
+		if((614 >= 796)){}
+		else{
+			// this.fj = new E();
+			this.fj = "object_1";
+			// this.fint = (this.ff).get;
+			this.fint = 9;
+			this.fb = (this.fb && False);
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fint = 10;
+			this.fi = null;
+			this.fb = True;
+			this.fj = "object_?(10)";
+			this.ff = "fut_?(10)";
+			// End assignments
+			
+			if(!this.fb){}
+			else{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fint_f, valueOf(select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f))), this.fb_f, select(store(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.fint_f, valueOf(select(store(store(heap, this.fj_f, NEW0_0), this.fj_f, NEW0_0), this.ff_f))), this.fb_f)&&0)), this.fi_f)=0	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

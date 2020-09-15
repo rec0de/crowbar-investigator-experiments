@@ -1,0 +1,60 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = "object_?(12)";
+	String ff = "fut_?(8)";
+	Int fint = 8;
+	String fi = "object_?(8)";
+	Bool fb = True;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		this.fb = (True && !((((True && !False) && False) || !this.fb) || False));
+		String returnState = this.ffb;
+		// returnState = this.fi!b();
+		returnState = "fut_4";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(9)";
+		this.fint = 9;
+		this.fi = "object_?(9)";
+		this.fb = True;
+		// End assignments
+		
+		this.fint = -212;
+		// this.ff = this.fi!n();
+		this.ff = "fut_5";
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fi = this.fi;
+		Bool isLoaded = ((-this.fint + (-this.fint * 613)) > 212332);
+		String packetRepresentation = this.fj;
+		// this.fj = new E();
+		this.fj = "object_2";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(11)";
+		this.ff = "fut_?(11)";
+		this.fint = 11;
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(store(store(store(store(store(anon(store(heap, this.fb_f, 1&&!(1&&!(0)&&0||!(select(heap, this.fb_f))||0))), this.fint_f, -212), this.ff_f, fut_5), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fi_f, select(store(store(store(store(anon(store(heap, this.fb_f, 1&&!(1&&!(0)&&0||!(select(heap, this.fb_f))||0))), this.fint_f, -212), this.ff_f, fut_5), this.fi_f, NEW1_0), this.fi_f, NEW1_0), this.fi_f)), this.fj_f, NEW2_0), this.fj_f, NEW2_0)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

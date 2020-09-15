@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String packetNode = null;
+		Int j = 0;
+		// End of setup
+		
+		while(((j * 686) == 141024)){} 
+		// Known true:
+		// Negated loop guard: !(((j * 686) == 141024))
+		// Loop invariant: true
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !packetNode=0
+		// Failed to show the following sub-obligations:
+		// !packetNode=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

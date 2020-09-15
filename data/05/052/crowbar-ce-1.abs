@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		
+		
+		Bool readOverride = False;
+		Int l = 737;
+		Bool hasReady = False;
+		l = 469;
+		
+		// await (this.fb || !False);
+		// Assume the following assignments while blocked:
+		this.fb = False;
+		// End assignments
+		
+		Int queueDepth = -452;
+		println(toString((-554 + (l * 810)))); // return statement
+		// Evaluates to: 379336
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -554+469*810=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

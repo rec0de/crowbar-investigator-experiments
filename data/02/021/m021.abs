@@ -1,0 +1,116 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if(! this.fb && True) {
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	this.fint = this.fint;
+	this.ff = this.fi!n();
+	while( 467 == 12 + 518) {
+		this.ff = this.fi!n();
+		I message = this.fi;
+		this.fint = 854;
+		this.fi = this.fi;
+		if(! this.fb) {
+			this.fint = this.ff.get;
+			this.ffb = this.fi!b();
+			this.fb = True;
+			Int systemCounter = 830;
+			Fut<Bool> p = this.fi!b();
+			this.fint = 842;
+			this.fi = new D();
+			await this.ffb?;
+			
+		}
+		else {
+			J ioObject = this.fj;
+			J packet = new E();
+			
+		}
+		this.ff = this.ff;
+		this.fint = 363 - this.fint * 849;
+		
+	}
+	this.ff = this.fi!n();
+	this.fb = False;
+	this.fb = this.fb;
+	this.fj = this.fj;
+	
+}
+this.ffb = this.fi!b();
+while( this.fint > 379 * this.fint) {
+	this.fi = this.fi;
+	
+}
+this.fj = new E();
+this.fi = this.fi;
+this.ffb = this.fi!b();
+this.fj = new E();
+this.fint =(168);
+if( this.fint <= this.fint) {
+	this.ff = this.fi!n();
+	this.fi = this.fi;
+	if(! True ||! True) {
+		J person = new E();
+		
+	}
+	else {
+		while( 509 <= 743) {
+			this.fj = this.fj;
+			await(this.fb || False);
+			Fut<Bool> resolveState = this.fi!b();
+			this.fint = - this.fint - 102;
+			resolveState = this.fi!b();
+			this.fj = this.fj;
+			
+		}
+		this.ffb = this.ffb;
+		this.ff = this.fi!n();
+		this.ffb = this.ffb;
+		Int j = this.ff.get;
+		this.fj = this.fj;
+		while( True || True && this.fb || False) {
+			await this.fb;
+			
+		}
+		
+	}
+	await this.ffb?;
+	while( this.fb) {
+		this.fb = this.ffb.get;
+		
+	}
+	
+}
+else {
+	this.ffb =(this.ffb);
+	Int queueCount = 113;
+	this.fint = 816;
+	this.ff = this.ff;
+	
+}
+Bool isExec =! True || this.fb ==!(- 839 == this.fint);
+Int value = this.fint + 724 * 339 - 142 * 663 + this.fint;
+this.ffb = this.ffb;
+this.fb = True;
+return 823 * this.fint * value * this.fint - value - 434;
+}
+}
+{}

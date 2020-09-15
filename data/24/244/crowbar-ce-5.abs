@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		String z = "fut_?(1)";
+		String serverStruct = null;
+		// End of setup
+		
+		while((z == this.ffb)){} 
+		// Known true:
+		// Negated loop guard: !((z == this.ffb))
+		// Loop invariant: true
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !serverStruct=0
+		// Failed to show the following sub-obligations:
+		// !serverStruct=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

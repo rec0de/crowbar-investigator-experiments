@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = -75488;
+	String fi = null;
+	Bool fb = True;
+
+	Unit ce() {
+		
+		while((((this.fint + 43) + 356) >= -75088)){} 
+		// Known true:
+		// Negated loop guard: !((((this.fint + 43) + 356) >= -75088))
+		// Loop invariant: true
+		
+		this.fi = this.fi;
+		this.fi = this.fi;
+		this.fb = (279 == 949);
+		Bool canLoad = canLoad;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f, select(store(heap, this.fi_f, select(heap, this.fi_f)), this.fi_f)), this.fb_f, 279=949), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

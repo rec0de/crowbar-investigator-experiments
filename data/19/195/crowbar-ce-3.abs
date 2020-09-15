@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	String fi = null;
+	Bool fb = True;
+	String ff = "fut_?(5)";
+
+	Unit ce() {
+		
+		
+		Int l = this.fint;
+		// Int systemDepth = (this.ff).get;
+		Int systemDepth = 0;
+		this.fint = l;
+		String dataRepresentation = this.fi;
+		if(this.fb){}
+		else{
+		
+		}
+		this.ff = this.ff;
+		dataRepresentation = dataRepresentation;
+		Bool storageToggle = ((True == !this.fb) || this.fb);
+		this.ff = this.ff;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.ff_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.ff_f)), this.ff_f, select(store(store(heap, this.fint_f, select(heap, this.fint_f)), this.ff_f, select(store(heap, this.fint_f, select(heap, this.fint_f)), this.ff_f)), this.ff_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

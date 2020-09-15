@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Int l = 0;
+		// End of setup
+		
+		while((180 == (l * 439))){} 
+		// Known true:
+		// Negated loop guard: !((180 == (l * 439)))
+		// Loop invariant: true
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_7";
+		this.fb = (this.fb && True);
+		this.fb = (execEnabled || False);
+		// Fut resetFlag = this.fi!n();
+		String resetFlag = "fut_8";
+		// J packetUnit = new E();
+		String packetUnit = "object_1";
+		// this.fi = new D();
+		this.fi = "object_2";
+		println(toString(-556)); // return statement
+		// Evaluates to: -556
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -556=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

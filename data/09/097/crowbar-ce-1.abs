@@ -1,0 +1,28 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 4;
+	String fi = null;
+	String ff = "fut_?(4)";
+
+	Unit ce() {
+		
+		
+		// this.fint = (this.ff).get;
+		this.fint = 0;
+		this.fint = 386;
+		if((this.fi == this.fi)){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(heap, this.fint_f, valueOf(select(heap, this.ff_f))), this.fint_f, 386), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

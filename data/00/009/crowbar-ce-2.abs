@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 5;
+	String fi = null;
+	Bool fb = True;
+	String fj = "object_?(5)";
+
+	Unit ce() {
+		
+		while((((this.fb && True) && !this.fb) || !True)){} 
+		// Known true:
+		// Negated loop guard: !((((this.fb && True) && !this.fb) || !True))
+		// Loop invariant: true
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fint = 201;
+		// Fut syncRequest = this.fi!n();
+		String syncRequest = "fut_27";
+		}
+		this.fj = this.fj;
+		Bool hasLoaded = (!True || (this.fb && False));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(store(store(store(store(heap, this.fj_f, NEW3_0), this.fj_f, NEW3_0), this.fint_f, 201), this.fj_f, select(store(store(store(heap, this.fj_f, NEW3_0), this.fj_f, NEW3_0), this.fint_f, 201), this.fj_f)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

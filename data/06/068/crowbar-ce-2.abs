@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: !False
+		// Loop invariant: true
+		// while(!False) {
+		{
+			Int stackCount = this.fint;
+			// Int processCount = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			Int processCount = 0;
+			Bool canSave = (-788 < processCount);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(heap, this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

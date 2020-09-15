@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(2)";
+
+	Unit ce() {
+		
+		
+		// Fut syncCall = this.fi!b();
+		String syncCall = "fut_9";
+		// this.fi = new D();
+		this.fi = "object_1";
+		
+		// await syncCall?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(store(store(heap, this.fi_f, NEW0_0), this.fi_f, NEW0_0)), this.fi_f)=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

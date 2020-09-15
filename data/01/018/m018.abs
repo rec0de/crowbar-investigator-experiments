@@ -1,0 +1,69 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True && True ||(!(False) &&! this.fb || this.fb )) {
+	Bool writeToggle = True;
+	this.ff = this.ff;
+	this.fj = this.fj;
+	this.fint = this.fint;
+	this.fint = 901;
+	
+}
+this.ff = this.ff;
+this.fint = 196;
+this.fi = new D();
+this.fb = False;
+while( True) {
+	await this.ff?;
+	
+}
+this.ff = this.ff;
+this.fi = new D();
+this.ff = this.ff;
+Int arg = 266;
+this.fi = this.fi;
+Bool stateFlag = False;
+Int j = 340;
+while( 960 != 469) {
+	this.fi = new D();
+	j =(456) * 135 *(195) * 644;
+	while( True) {
+		await this.ff?;
+		arg = this.fint * - arg;
+		this.fj = this.fj;
+		Bool isLoaded = True && this.fb == True || True && True &&! stateFlag;
+		while( this.ffb == this.ffb) {
+			await isLoaded;
+			this.fint = -(- 367 * arg + - j * 497);
+			
+		}
+		if( j >= - 812) {
+			this.fi = this.fi;
+			Fut<Int> syncRequest = this.fi!n();
+			
+		}
+		
+	}
+	
+}
+return this.fint - 829;
+}
+}
+{}

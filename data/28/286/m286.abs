@@ -1,0 +1,114 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+this.ff = this.fi!n();
+while( this.fb) {
+	if(! False) {
+		this.ffb = this.fi!b();
+		I ioUnit = this.fi;
+		this.fint = 603;
+		while( False) {
+			this.fb = False && False;
+			Int queueCounter =(this.fint - 212 - 553 * - this.fint) * 339;
+			Fut<Bool> resetRequest = this.fi!b();
+			await resetRequest?;
+			Int eventCount = 341 + 990 * - 850 *(- this.fint - - this.fint);
+			this.fi = new D();
+			
+		}
+		this.ffb =(ioUnit )!b();
+		ioUnit = new D();
+		this.fb = 892 * 120 * this.fint - - this.fint - - 787 == - this.fint;
+		this.fj = new E();
+		this.fj = this.fj;
+		this.fb =! False;
+		ioUnit = this.fi;
+		
+	}
+	else {
+		this.fi = this.fi;
+		this.fint = 664 - 248;
+		
+	}
+	Bool canWrite = this.ffb.get;
+	while( 112 >= this.fint) {
+		this.ffb = this.ffb;
+		canWrite = True ||(! True) || this.fb || False;
+		this.ff = this.ff;
+		Int arg = this.ff.get;
+		this.ffb = this.fi!b();
+		
+	}
+	Fut<Int> p = this.fi!n();
+	
+}
+Fut<Int> resState = this.fi!n();
+Int eventCount = this.fint;
+Bool isSaveed = False && True || this.fb;
+if( True) {
+	isSaveed = 867 > 936;
+	resState = this.ff;
+	
+}
+if( isSaveed &&! False &&! True) {
+	Int res = resState.get;
+	this.fi = this.fi;
+	while(! True) {
+		this.fb = this.ffb.get;
+		eventCount =(503) - 512 * 326 * eventCount * 43;
+		J ioObject = new E();
+		isSaveed = True &&! this.fb;
+		
+	}
+	while( True && this.fb) {
+		while( isSaveed) {
+			isSaveed = isSaveed;
+			Bool canLoad =! False && True;
+			J dataRepresentation = this.fj;
+			
+		}
+		resState =((this.fi) )!n();
+		this.fint = this.fint - res * 282;
+		
+	}
+	this.ff = this.ff;
+	this.fint = - 269;
+	this.fint = this.fint * 177;
+	
+}
+else {
+	Bool readToggle = False;
+	this.ffb =(this.fi )!b();
+	
+}
+while( False) {
+	Bool hasLoaded = False;
+	
+}
+while( False) {
+	Bool systemOverride = True;
+	
+}
+Bool canExec = isSaveed;
+return - 181 - eventCount;
+}
+}
+{}

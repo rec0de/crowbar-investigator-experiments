@@ -1,0 +1,72 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J ioUnit = new E();
+if( True || True) {
+	ioUnit = new E();
+	
+}
+else {
+	ioUnit = new E();
+	ioUnit = new E();
+	Bool isExec = this.fb;
+	this.ffb = this.fi!b();
+	if( True) {
+		this.ffb = this.fi!b();
+		Bool isRead =! False;
+		
+	}
+	else {
+		if( False && True == False && False) {
+			this.fint = 372;
+			this.fj = this.fj;
+			
+		}
+		this.fi = new D();
+		
+	}
+	J node = new E();
+	Int arg = 998;
+	node = this.fj;
+	
+}
+if( True || this.fb) {
+	ioUnit = new E();
+	ioUnit = ioUnit;
+	
+}
+else {
+	this.ffb = this.ffb;
+	while(! this.fb) {
+		this.ff = this.ff;
+		while( this.fb) {
+			this.fi = new D();
+			ioUnit = new E();
+			
+		}
+		Bool canLoad = this.ff == this.ff;
+		
+	}
+	
+}
+return 229 * this.fint;
+}
+}
+{}

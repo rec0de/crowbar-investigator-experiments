@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		
+		
+		this.fi = this.fi;
+		
+		// await (False || True);
+		// No heap modification info available at this point
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_1";
+		println(toString(8399360)); // return statement
+		// Evaluates to: 8399360
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 8399360=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

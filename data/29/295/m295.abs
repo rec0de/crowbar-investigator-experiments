@@ -1,0 +1,54 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint =(156) - this.fint;
+if(!(- 512 * 762 + this.fint >= 896) || False ||! this.fb) {
+	this.ffb = this.fi!b();
+	if( this.fb == this.fb) {
+		this.ffb = this.ffb;
+		this.fint = 379 * - 813 * - this.fint - this.fint;
+		Int listDepth = - 318;
+		this.fj = this.fj;
+		this.fi = this.fi;
+		this.ffb = this.fi!b();
+		
+	}
+	else {
+		Int i = -(3);
+		this.ffb = this.fi!b();
+		i = i;
+		this.fb =!(False) ==! False;
+		this.ffb = this.fi!b();
+		while( this.fb) {
+			i = - i;
+			await this.ff?;
+			await this.fb;
+			
+		}
+		this.fi = this.fi;
+		
+	}
+	await this.ffb?;
+	
+}
+return 282 - 186;
+}
+}
+{}

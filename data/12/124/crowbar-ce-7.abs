@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(-1)";
+	String ffb = "fut_?(-1)";
+	Int fint = 0;
+	Bool fb = False;
+
+	Unit ce() {
+		
+		// Known true:
+		// Loop guard: (this.ffb == this.ffb)
+		// Loop invariant: true
+		// while((this.ffb == this.ffb)) {
+		{
+			Bool isRead = True;
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.ffb = "fut_?(0)";
+			// End assignments
+			
+			Int stackAmount = (-744 * -(this.fint + stackAmount));
+			Bool isSaveed = ((!this.fb || False) || !this.fb);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !select(heap, this.fi_f)=0
+		// Failed to show the following sub-obligations:
+		// !select(anon(heap), this.fi_f)=0
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

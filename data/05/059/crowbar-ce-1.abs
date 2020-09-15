@@ -1,0 +1,66 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		
+		
+		this.fint = 1675;
+		// this.fb = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fb = False;
+		if(True){
+			this.fb = ((False && True) && this.fb);
+		}
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		String message = this.fi;
+		Int l = 665;
+		String node = this.fj;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		
+		// await (False || True);
+		// No heap modification info available at this point
+		
+		Int listDepth = 567;
+		Bool isLoaded = !True;
+		isLoaded = this.fb;
+		this.ffb = this.ffb;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// this.fb = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fb = False;
+		// this.fi = new D();
+		this.fi = "object_1";
+		// node = new E();
+		node = "object_2";
+		Int j = -34;
+		Bool isReady = True;
+		println(toString(558)); // return statement
+		// Evaluates to: 558
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 558=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

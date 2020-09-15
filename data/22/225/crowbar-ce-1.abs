@@ -1,0 +1,48 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		
+		
+		this.fj = this.fj;
+		// this.fb = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fb = False;
+		String clientUnit = this.fj;
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		String dataNode = this.fi;
+		dataNode = this.fi;
+		Int listAmount = (-258522 - -this.fint);
+		listAmount = -709;
+		// clientUnit = new E();
+		clientUnit = "object_1";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		String person = this.fj;
+		this.fint = 786;
+		println(toString(917)); // return statement
+		// Evaluates to: 917
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// 917=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = "object_?(9)";
+	Int fint = 8;
+	Bool fb = True;
+	String ffb = "fut_17";
+	String ff = "fut_18";
+
+	Unit ce() {
+		// Assume the following pre-state:
+		Bool execToggle = True;
+		// End of setup
+		
+		while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		Int processDepth = -378;
+		execToggle = (True && execToggle);
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_16";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_17";
+		this.ffb = this.ffb;
+		// this.fi = new D();
+		this.fi = "object_1";
+		Bool restoreOverride = !False;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_18";
+		// Int l = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int l = 0;
+		// J dataUnit = new E();
+		String dataUnit = "object_2";
+		String message = this.fi;
+		this.fb = execToggle;
+		println(toString(-this.fint)); // return statement
+		// Evaluates to: -8
+		// Proof failed here. Trying to show:
+		// Method postcondition: result=0
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// -(select(store(store(store(store(store(store(store(heap, this.ffb_f, fut_16), this.ffb_f, fut_17), this.ffb_f, select(store(store(heap, this.ffb_f, fut_16), this.ffb_f, fut_17), this.ffb_f)), this.fi_f, NEW8_0), this.fi_f, NEW8_0), this.ffb_f, fut_18), this.fb_f, 1&&execToggle), this.fint_f))=0
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}
