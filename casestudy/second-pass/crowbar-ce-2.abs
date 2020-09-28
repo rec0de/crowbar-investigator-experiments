@@ -1,0 +1,27 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int maxTemp = 0;
+
+	Unit ce() {
+		// Snippet from: div
+		// Assume the following pre-state:
+		Int a = -1;
+		Int b = 1;
+		// End of setup
+		
+		Int div = 0;
+		Int remainder = a;
+		while((remainder >= b)) { }
+		// Proof failed here. Trying to show:
+		// Loop invariant: (((((div*b)+remainder)=a)) /\ ((remainder>=0))) /\ ((heap.maxTemp=old.maxTemp))
+		// Failed to show the following sub-obligations:
+		// (a>=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

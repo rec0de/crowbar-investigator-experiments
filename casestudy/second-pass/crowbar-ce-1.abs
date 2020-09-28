@@ -1,0 +1,45 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int maxTemp = 0;
+
+	Unit ce() {
+		// Snippet from: readAvg
+		// Assume the following pre-state:
+		Int sample = 1;
+		Int i = 0;
+		String s = "object_?(1)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (i < sample)
+		// Loop invariant: ((!(s=0)) /\ ((sample>0))) /\ ((heap.maxTemp=old.maxTemp))
+		// while((i < sample)) {
+		{
+			i = (i + 1);
+			// Fut reading = s!getReading();
+			String reading = "fut_4";
+			
+			// await reading?;
+			// Assume the following assignments while blocked:
+			this.maxTemp = -1;
+			// End assignments
+			
+			// Int value = (reading).get;
+			// Future value irrelevant or unavailable, using default:
+			Int value = 0;
+			Int sum = (sum + value);
+		}
+		
+		// Proof failed here. Trying to show:
+		// Loop invariant: ((!(s=0)) /\ ((sample>0))) /\ ((heap.maxTemp=old.maxTemp))
+		// Failed to show the following sub-obligations:
+		// (select(anon(heap), this.maxTemp)=old.maxTemp)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

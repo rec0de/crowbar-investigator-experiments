@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int maxTemp = 0;
+
+	Unit ce() {
+		// Snippet from: read
+		
+		// Fut reading = s!getReading();
+		String reading = "fut_1";
+		
+		// await reading?;
+		// Assume the following assignments while blocked:
+		this.maxTemp = -2;
+		// End assignments
+		
+		// Int temp = (reading).get;
+		Int temp = -1;
+		if((temp > this.maxTemp)){
+			this.maxTemp = temp;
+		}
+		// return unit
+		// Proof failed here. Trying to show:
+		// Method postcondition: (heap.maxTemp>=old.maxTemp)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (select(store(heap, this.maxTemp, valueOf(fut_1)), this.maxTemp)>=heap.maxTemp)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

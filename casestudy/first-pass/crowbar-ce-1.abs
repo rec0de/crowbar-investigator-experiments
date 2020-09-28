@@ -1,0 +1,24 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: read
+		// Assume the following pre-state:
+		String s = null;
+		// End of setup
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(s=0)
+		// Failed to show the following sub-obligations:
+		// !(s=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

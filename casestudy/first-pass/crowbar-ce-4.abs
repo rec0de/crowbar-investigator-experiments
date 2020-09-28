@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: readAvg
+		// while((i < sample)){} 
+		// Known true:
+		// Negated loop guard: !((i < sample))
+		// Loop invariant: !(s=0)
+		
+		// Assume the following pre-state:
+		Int sample = 0;
+		Int i = 0;
+		String s = "object_?(1)";
+		// End of setup
+		
+		
+		// Proof failed here. Trying to show:
+		// Method precondition: (sample>0)
+		// Failed to show the following sub-obligations:
+		// (sample>0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}
