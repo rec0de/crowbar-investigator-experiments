@@ -4,7 +4,7 @@ import json
 
 themecolor = "#b90f22"
 
-cecountFile = open("data/ceCounts.json", "r") 
+cecountFile = open("data/ceCountsLoc.json", "r") 
 cecount = json.loads(cecountFile.read())
 
 locFile = open("data/locPairs.json", "r") 
@@ -46,10 +46,10 @@ plt.xlabel('ABS input size (byte)')
 plt.ylabel('Counterexample size (byte)')
 plt.show()
 
-# Plot byte vs # of counterexamples
+# Plot loc vs # of counterexamples
 x = list(map(lambda e: e["x"], cecount))
 y = list(map(lambda e: e["y"], cecount))
 plt.scatter(x, y, s=6, marker=".", color=themecolor)
-plt.xlabel('ABS input size (byte)')
+plt.xlabel('ABS input size (loc)')
 plt.ylabel('Number of generated counterexamples')
 plt.show()
