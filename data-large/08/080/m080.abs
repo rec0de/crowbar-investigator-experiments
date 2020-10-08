@@ -1,0 +1,174 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+Fut<Bool> p = this.fi!b();
+while( this.fb) {
+	p = this.fi!b();
+	
+}
+Fut<Int> resInfo =(this.fi )!n();
+this.ff = this.fi!n();
+p = this.fi!b();
+this.ffb =(this.fi )!b();
+this.fb = True;
+Bool isSave = True &&(this.fb);
+this.fj = new E();
+Fut<Bool> resolveInfo = this.fi!b();
+isSave = isSave && this.fb;
+this.fb = this.ffb.get;
+this.fint = 817;
+resolveInfo = this.fi!b();
+p = p;
+Fut<Int> q = this.fi!n();
+this.fj = new E();
+this.ffb = this.fi!b();
+this.fint = this.ff.get;
+await True;
+this.fi =(this.fi);
+this.fj = this.fj;
+this.fint = 914;
+Int systemDepth = 889;
+Bool writeEnabled = isSave;
+while( 376 - 95 >= 419) {
+	q = this.fi!n();
+	this.ff = this.fi!n();
+	this.fb = True;
+	Bool isLoaded = this.ffb.get;
+	
+}
+this.fj = new E();
+resInfo = this.fi!n();
+I serverRepresentation = this.fi;
+while( isSave) {
+	resInfo = this.fi!n();
+	if( False ||! isSave) {
+		isSave = 382 * - 775 * this.fint != 204 - - 404;
+		while( isSave) {
+			await resInfo?;
+			this.ff = serverRepresentation!n();
+			this.fb =(False);
+			resInfo = serverRepresentation!n();
+			serverRepresentation = new D();
+			writeEnabled = writeEnabled;
+			systemDepth = 791;
+			await this.ffb?;
+			serverRepresentation = new D();
+			resInfo =(serverRepresentation )!n();
+			this.ffb = p;
+			await systemDepth < systemDepth;
+			Int l = q.get;
+			Int queueCount = 834 * 537 * - systemDepth * 359 *(224) * 719 * 781;
+			Fut<Bool> returnState = this.fi!b();
+			J packetRepresentation = new E();
+			this.fj = new E();
+			await this.ffb?;
+			
+		}
+		this.ffb = p;
+		this.fj = new E();
+		I serverNode = this.fi;
+		I node = this.fi;
+		systemDepth = 69;
+		Bool hasReady = False || isSave;
+		await resolveInfo?;
+		Bool willRead = - systemDepth <((121) - 260);
+		
+	}
+	else {
+		serverRepresentation = serverRepresentation;
+		while( writeEnabled ||! False) {
+			p = this.ffb;
+			q = this.ff;
+			this.ffb = this.ffb;
+			
+		}
+		this.ffb = this.fi!b();
+		if( True) {
+			isSave = False || True;
+			
+		}
+		
+	}
+	this.fint = 590;
+	while( this.fb || False) {
+		Fut<Bool> y = serverRepresentation!b();
+		while( True) {
+			this.fint = 623;
+			Bool configToggle = 966 > this.fint;
+			q = this.ff;
+			await q?;
+			systemDepth = 447;
+			isSave = False;
+			I ioRepresentation = new D();
+			configToggle = this.fint == 107;
+			await this.ff?;
+			resolveInfo = resolveInfo;
+			await y?;
+			ioRepresentation = new D();
+			q = ioRepresentation!n();
+			Bool hasLoaded = 290 < 215 * 965 * 980;
+			await resolveInfo?;
+			serverRepresentation = new D();
+			serverRepresentation = this.fi;
+			
+		}
+		await writeEnabled;
+		this.fi = new D();
+		J message = this.fj;
+		Bool readFlag = False;
+		
+	}
+	this.fb = resolveInfo.get;
+	Int listCount = 762 * 817;
+	while( 380 == 602) {
+		I ioUnit = serverRepresentation;
+		await resInfo?;
+		this.fj = new E();
+		serverRepresentation = new D();
+		
+	}
+	this.fint =(systemDepth);
+	this.fb = False;
+	if( False) {
+		isSave = True ||(868 <= this.fint);
+		this.fint = resInfo.get;
+		serverRepresentation = this.fi;
+		Fut<Int> syncUpdates = this.ff;
+		I serverStruct = this.fi;
+		
+	}
+	else {
+		this.ff = serverRepresentation!n();
+		this.fint = 439;
+		Fut<Int> y = this.ff;
+		
+	}
+	resInfo = this.fi!n();
+	writeEnabled = isSave || this.fb;
+	isSave = this.fb || True;
+	listCount = 16 * 382;
+	this.ffb = serverRepresentation!b();
+	
+}
+return 570;
+}
+}
+{}

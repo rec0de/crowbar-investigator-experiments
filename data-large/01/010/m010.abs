@@ -1,0 +1,199 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.ff;
+this.ff = this.fi!n();
+this.ff = this.ff;
+await this.ffb?;
+await this.ffb?;
+this.fj = this.fj;
+this.ffb = this.ffb;
+if((!(False) && this.fb &&! this.fb || this.fb) == True) {
+	this.ff = this.fi!n();
+	this.fi = this.fi;
+	
+}
+else {
+	J packet = this.fj;
+	
+}
+this.ffb = this.fi!b();
+Fut<Bool> resultState = this.fi!b();
+this.fj = new E();
+this.fb = resultState.get;
+this.fint = 908;
+Int eventAmount = - 480;
+this.fi = new D();
+await this.ff?;
+Bool willSave = this.fb &&! True;
+await(True || False && False);
+this.fi = this.fi;
+eventAmount = 867 * -(249);
+if(! True && True && False) {
+	willSave =(551) == 922;
+	this.fi = this.fi;
+	
+}
+await this.ffb?;
+await willSave;
+I dataUnit = this.fi;
+this.fint = 648;
+willSave = resultState.get;
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+this.fint =((this.fint) + this.fint * this.fint - 854);
+while( - eventAmount != 993) {
+	if( 831 <= eventAmount * 144) {
+		willSave =(this.fb);
+		Fut<Bool> returnState = resultState;
+		this.fb = False;
+		if( this.fb) {
+			this.fint = 151;
+			await False || this.fb;
+			this.ff = dataUnit!n();
+			await returnState?;
+			returnState = resultState;
+			await this.ff?;
+			Fut<Bool> resolveData = this.fi!b();
+			
+		}
+		else {
+			willSave = False && True;
+			this.fj = new E();
+			await willSave || True;
+			Bool canLoad = resultState.get;
+			await returnState?;
+			await resultState?;
+			Bool isWrite = dataUnit == this.fi;
+			willSave = True;
+			Bool restoreToggle = False;
+			
+		}
+		this.fb =(True);
+		Bool canLoad = True;
+		Int value = this.fint;
+		Bool execEnabled = eventAmount * - 142 - 294 - - 731 == 251 + 142;
+		this.ffb = this.fi!b();
+		while( False) {
+			Int processDepth = 255;
+			
+		}
+		canLoad =! willSave;
+		this.fb = execEnabled;
+		resultState = returnState;
+		await resultState?;
+		this.ffb =(dataUnit )!b();
+		execEnabled =! True;
+		if( willSave) {
+			I node = this.fi;
+			await this.ffb?;
+			this.fint = 988;
+			
+		}
+		else {
+			J tree = this.fj;
+			execEnabled = True;
+			await this.ffb?;
+			willSave = False || True;
+			
+		}
+		
+	}
+	else {
+		this.fb =! willSave;
+		eventAmount = 343;
+		this.fj = this.fj;
+		this.fint = - 946 * 361;
+		while( willSave && this.fb) {
+			dataUnit = dataUnit;
+			this.fint = 18;
+			
+		}
+		while(! True) {
+			Bool hasReady =! this.fb && False && False;
+			Fut<Bool> resolveState = dataUnit!b();
+			await this.ff?;
+			
+		}
+		this.fb =! True;
+		
+	}
+	this.fb = resultState.get;
+	while(! True) {
+		eventAmount = eventAmount;
+		Int processCounter = - 44;
+		this.fb =! False;
+		I clientRepresentation = new D();
+		while( True) {
+			eventAmount = this.fint * eventAmount;
+			this.fi = this.fi;
+			willSave = False;
+			this.ff = this.ff;
+			
+		}
+		eventAmount = 454 * 23;
+		await this.ff?;
+		this.fint = this.fint;
+		this.fb = willSave;
+		this.ff = this.ff;
+		this.fi = new D();
+		clientRepresentation = this.fi;
+		J message = this.fj;
+		clientRepresentation = new D();
+		if( False) {
+			this.fj = message;
+			dataUnit = new D();
+			
+		}
+		else {
+			this.fi = this.fi;
+			willSave = willSave &&(True);
+			I serverStruct = dataUnit;
+			Bool willLoad = False || this.fb;
+			this.ffb = clientRepresentation!b();
+			
+		}
+		message =(message);
+		eventAmount = eventAmount;
+		this.ff = clientRepresentation!n();
+		willSave =!(False && True && False || True) && this.fb;
+		this.fi = new D();
+		J ioRepresentation = this.fj;
+		message = message;
+		await eventAmount >=(120);
+		J packet = new E();
+		
+	}
+	willSave = False;
+	
+}
+dataUnit = this.fi;
+Int listDepth = 688;
+this.fj = new E();
+while(! this.fb &&! False) {
+	await resultState?;
+	this.fi = this.fi;
+	
+}
+await this.ff?;
+return 539 + -(229 * - 862);
+}
+}
+{}

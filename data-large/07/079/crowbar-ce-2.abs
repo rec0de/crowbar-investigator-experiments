@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String serverObject = null;
+		Bool hasDone = False;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			if(((hasDone && False) && False)){}
+			else{
+				this.ff = resultInfo;
+				Int stackCount = -51;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverObject=0)
+		// Failed to show the following sub-obligations:
+		// !(serverObject=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

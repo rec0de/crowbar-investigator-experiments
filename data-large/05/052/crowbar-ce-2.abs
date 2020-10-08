@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fi = "object_?(4)";
+		this.fint = 4;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: !False
+		// Loop invariant: true
+		// while(!False) {
+		{
+			Int l = 17;
+			this.fint = 682;
+			Int listCounter = arg;
+			// Bool hasLoaded = (resState).get;
+			// Future value irrelevant or unavailable, using default:
+			Bool hasLoaded = False;
+			
+			// await resState?;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fint = 5;
+			// End assignments
+			
+			Bool configEnabled = True;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(heap, this.fint, 682)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

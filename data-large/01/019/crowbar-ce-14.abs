@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_77";
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_77";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(14)";
+		this.ff = "fut_29";
+		this.fint = 901;
+		this.fb = True;
+		this.ffb = "fut_29";
+		// End of setup
+		
+		// Int stackCount = (this.ff).get;
+		Int stackCount = 0;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_29";
+		stackCount = (977 - this.fint);
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_30";
+		if(!this.fb){}
+		else{
+			Bool isDone = (this.fb || True);
+			// I packetUnit = new D();
+			String packetUnit = "object_2";
+		}
+		this.fb = !this.fb;
+		this.ff = this.ff;
+		this.fj = this.fj;
+		Int listDepth = 250;
+		// I serverObject = new D();
+		String serverObject = "object_3";
+		if((stackCount <= 76)){
+			this.fint = 625;
+		}
+		listDepth = (this.fint - listDepth);
+		stackCount = listDepth;
+		this.ff = this.ff;
+		this.fi = this.fi;
+		if((this.fb && this.fb)){}
+		else{
+			// serverObject = new D();
+			serverObject = "object_4";
+			this.fint = 105;
+		}
+		this.fj = this.fj;
+		this.fint = -592;
+		// this.ff = serverObject!n();
+		this.ff = "fut_77";
+		String clientStruct = this.fj;
+		serverObject = this.fi;
+		this.ff = this.ff;
+		String message = clientStruct;
+		Bool isSaveed = this.fb;
+		// serverObject = new D();
+		serverObject = "object_5";
+		this.fb = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

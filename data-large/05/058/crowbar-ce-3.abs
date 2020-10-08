@@ -1,0 +1,60 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False || (!hasSaveed && False))){} 
+		// Known true:
+		// Negated loop guard: !((False || (!hasSaveed && False)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isLoaded = True;
+		Bool hasSaveed = False;
+		// End of setup
+		
+		// I tree = new D();
+		String tree = "object_1";
+		this.ff = this.ff;
+		// I message = new D();
+		String message = "object_2";
+		this.fj = ioRepresentation;
+		Int listCounter = -592;
+		// J ioRepresentation = new E();
+		String ioRepresentation = "object_3";
+		Int listDepth = 981;
+		ioRepresentation = this.fj;
+		Int eventCounter = -994;
+		// Bool execEnabled = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool execEnabled = False;
+		if((True && True)){
+			ioRepresentation = this.fj;
+			if((isLoaded || False)){
+				Bool isRead = hasSaveed;
+			}
+			Bool willSave = (False && False);
+			String clientRepresentation = message;
+			// this.ff = tree!n();
+			this.ff = "fut_58";
+			Bool configEnabled = ((True && False) && isLoaded);
+		}
+		println(toString(listCounter)); // return statement
+		// Evaluates to: -592
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-592=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,75 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	String ffb = "fut_?(0)";
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_?(5)";
+		this.fint = 5;
+		this.fi = "object_?(5)";
+		this.ffb = "fut_?(5)";
+		// End of setup
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(7)";
+		this.fint = 6;
+		this.fi = null;
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		}
+		// J dataRepresentation = new E();
+		String dataRepresentation = "object_1";
+		Int listAmount = this.fint;
+		Bool isWrite = (943656 > 170);
+		// I serverObject = new D();
+		String serverObject = "object_2";
+		// dataRepresentation = new E();
+		dataRepresentation = "object_3";
+		this.ffb = this.ffb;
+		this.ff = this.ff;
+		isWrite = (this.fb && isWrite);
+		// this.fint = (this.ff).get;
+		this.fint = 8;
+		serverObject = this.fi;
+		dataRepresentation = this.fj;
+		String resultInfo = this.ff;
+		isWrite = !this.fb;
+		Int j = 952;
+		
+		// await resultInfo?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(7)";
+		this.fint = 6;
+		this.fi = null;
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		this.fint = 933;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverObject=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

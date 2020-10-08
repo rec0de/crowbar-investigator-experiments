@@ -1,0 +1,163 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.ffb;
+this.fint = this.fint;
+await! True && this.fb;
+this.fj = new E();
+while( True) {
+	await this.ff?;
+	this.fint = - this.fint;
+	this.fi = this.fi;
+	this.ff = this.fi!n();
+	while( 488 == 419 *(this.fint * 702)) {
+		Bool isSaveed = True;
+		this.fi = new D();
+		this.fint = 189 * 816;
+		Int l =(this.ff ).get;
+		
+	}
+	
+}
+this.fi = this.fi;
+this.fint = 396;
+this.ffb = this.fi!b();
+this.fi = new D();
+J dataStruct = this.fj;
+await False && True;
+I node = this.fi;
+this.fint = 545;
+if( True) {
+	this.fint = 884;
+	this.fb =! False;
+	this.fj = new E();
+	this.fi = node;
+	if(! True && True) {
+		this.fint = this.ff.get;
+		await this.ff?;
+		this.ff = this.fi!n();
+		await this.ff?;
+		dataStruct =(this.fj);
+		this.ff = node!n();
+		await this.ff?;
+		J person = dataStruct;
+		I ioUnit =((node));
+		
+	}
+	
+}
+if( this.fint == this.fint + this.fint) {
+	this.fb = True;
+	node = this.fi;
+	I message = new D();
+	if( this.fb && this.fb) {
+		this.ff =(this.ff);
+		await this.ffb?;
+		if( False) {
+			dataStruct = this.fj;
+			this.ffb = node!b();
+			
+		}
+		else {
+			this.fi = new D();
+			
+		}
+		node = this.fi;
+		
+	}
+	this.fint = 154;
+	this.ff = this.ff;
+	J ioStruct = this.fj;
+	
+}
+else {
+	this.ffb = this.ffb;
+	this.fint = this.fint;
+	this.ffb = this.ffb;
+	this.ff = this.fi!n();
+	if( 879 == 106) {
+		this.fj = new E();
+		
+	}
+	this.ff = this.ff;
+	await this.ffb?;
+	
+}
+this.fi = node;
+Bool isSaveed =(False) || True || this.fb && this.fb;
+while( False) {
+	this.fi = node;
+	
+}
+this.ff = node!n();
+dataStruct = new E();
+if( False ||! False && True || False) {
+	Bool isLoaded = isSaveed;
+	
+}
+else {
+	this.fint = 127;
+	isSaveed = True;
+	
+}
+this.fint = this.fint;
+Bool canSave = isSaveed || False;
+await this.ffb?;
+while( this.fint == 335) {
+	await this.ff?;
+	if( 717 <(this.fint )) {
+		while( canSave) {
+			node =(this.fi);
+			this.fb = True || True;
+			await this.ff?;
+			
+		}
+		Int j = 848 + 953;
+		while( True == isSaveed) {
+			await this.ff?;
+			Int i = - this.fint;
+			this.fj = this.fj;
+			
+		}
+		this.ffb = this.ffb;
+		
+	}
+	else {
+		this.fb = this.ff == this.ff;
+		dataStruct = dataStruct;
+		this.fint = 757;
+		dataStruct = dataStruct;
+		
+	}
+	this.ff = this.ff;
+	canSave = canSave;
+	this.fi = new D();
+	
+}
+canSave = this.ffb.get;
+Int stackCount = 791;
+this.ff = this.ff;
+Bool canWrite =(! False &&! True && True);
+Int processCount = 451 * 279;
+processCount = 686;
+return 20 + 826;
+}
+}
+{}

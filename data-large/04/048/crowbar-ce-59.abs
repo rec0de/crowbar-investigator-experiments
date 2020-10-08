@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fi = null;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String ioStruct = null;
+		Bool hasDone = False;
+		this.fb = True;
+		// End of setup
+		
+		Bool isLoad = (!False && !this.fb);
+		if(this.fb){}
+		else{
+			Bool willWrite = (ioStruct == this.fi);
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fb = False;
+			// End assignments
+			
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_193";
+		}
+		this.fb = (True || True);
+		// this.ff = this.fi!n();
+		this.ff = "fut_194";
+		String packet = ioStruct;
+		this.fint = 112;
+		if(((hasDone || True) || !False)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_195";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(ioStruct=0)
+		// Failed to show the following sub-obligations:
+		// !(ioStruct=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

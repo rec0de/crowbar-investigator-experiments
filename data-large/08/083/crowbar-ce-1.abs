@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(13)";
+		this.fint = 12;
+		this.fb = True;
+		// End of setup
+		
+		// this.fint = (this.ff).get;
+		this.fint = 14;
+		// this.fj = new E();
+		this.fj = "object_1";
+		// J message = new E();
+		String message = "object_2";
+		Int eventCounter = 482964;
+		if(True){
+			// J tree = new E();
+			String tree = "object_3";
+			this.fb = ((this.fint == (this.fint + 42)) || (this.fb == True));
+			this.fj = message;
+			this.fb = this.fb;
+			String clientNode = tree;
+			Bool isReady = this.fb;
+			clientNode = tree;
+			tree = clientNode;
+			this.ff = this.ff;
+			Bool willSave = ((((True == False) && True) && False) && this.fb);
+		}
+		this.fint = 224;
+		// this.fj = new E();
+		this.fj = "object_4";
+		if((this.fb && True)){
+			this.fint = -664;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

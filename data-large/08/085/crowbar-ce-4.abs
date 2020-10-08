@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		this.ffb = "fut_?(5)";
+		// End of setup
+		
+		if(this.fb){}
+		else{
+			Int processCounter = 520;
+			// Fut y = this.fi!b();
+			String y = "fut_35";
+			this.ffb = y;
+			Int i = 383;
+			processCounter = processCounter;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

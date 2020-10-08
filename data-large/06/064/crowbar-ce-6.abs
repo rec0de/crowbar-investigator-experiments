@@ -1,0 +1,68 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((175 >= 491)){} 
+		// Known true:
+		// Negated loop guard: !((175 >= 491))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(4)";
+		this.ff = "fut_?(4)";
+		// End of setup
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		// Fut resolveState = this.fi!n();
+		String resolveState = "fut_47";
+		Int arg = listDepth;
+		}
+		Bool isLoaded = (164 >= 350);
+		Int j = 24;
+		isLoaded = (842 == 597520);
+		// this.ff = this.fi!n();
+		this.ff = "fut_48";
+		
+		// await resultData?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(6)";
+		this.ff = "fut_?(9)";
+		// End assignments
+		
+		Int i = 727;
+		Int eventCounter = 130;
+		j = 467;
+		i = i;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.ff = "fut_?(7)";
+		// End assignments
+		
+		// eventCounter = (syncFlag).get;
+		// Future value irrelevant or unavailable, using default:
+		eventCounter = 0;
+		if((318 >= -31)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_49";
+			this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, select(anon(anon(store(store(store(heap, this.fi, NEW5_0), this.fi, NEW5_0), this.ff, fut_48))), this.fi)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

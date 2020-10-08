@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fj = null;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		if(this.fb){
+			String clientNode = this.fj;
+			this.fb = False;
+		}
+		// J tree = new E();
+		String tree = "object_1";
+		Bool isSave = False;
+		if(True){
+			// this.fint = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			this.fint = 0;
+		}
+		// this.fb = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fb = False;
+		Int queueCounter = 320;
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		println(toString(640)); // return statement
+		// Evaluates to: 640
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (640=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

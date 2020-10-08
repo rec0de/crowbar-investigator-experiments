@@ -1,0 +1,26 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = 3;
+		// End of setup
+		
+		this.fint = 654;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

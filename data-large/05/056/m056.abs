@@ -1,0 +1,189 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J tree = this.fj;
+Int systemAmount = 556;
+await this.ffb?;
+while( True || False) {
+	this.ff = this.fi!n();
+	await! True ||(- 696 < 203);
+	this.fint = -((this.fint * 370));
+	
+}
+this.fj = new E();
+Bool isWrite = this.fint + 94 >= 562;
+if( True) {
+	Int processAmount = 122;
+	
+}
+else {
+	this.ff = this.ff;
+	this.fj = this.fj;
+	
+}
+Bool isDone = isWrite && False && True ||(True);
+Bool hasDone = isWrite || False;
+await(False);
+while( False ||! True && True) {
+	while( hasDone && True) {
+		isDone = this.fb;
+		Int eventDepth = 458;
+		
+	}
+	this.ff = this.fi!n();
+	Fut<Int> syncRequest = this.fi!n();
+	Bool systemOverride = this.ffb.get;
+	this.fi = new D();
+	isDone = True;
+	systemOverride = - 448 > - this.fint;
+	systemAmount = 221;
+	this.ff = this.ff;
+	tree = tree;
+	await this.ff?;
+	isDone = this.ffb.get;
+	
+}
+Bool restoreFlag = False;
+this.fi = new D();
+Bool systemOverride = isWrite && True == False;
+this.ffb = this.ffb;
+this.fi = new D();
+while( 942 - 46 * 78 == this.fint) {
+	if( 524 == 693) {
+		await this.ff?;
+		
+	}
+	else {
+		isDone = False || systemOverride;
+		if( hasDone && True) {
+			systemOverride = True;
+			hasDone = hasDone || isWrite || systemOverride;
+			isDone = this.ffb.get;
+			Bool stateToggle = False;
+			stateToggle = this.ffb.get;
+			
+		}
+		else {
+			this.ffb = this.ffb;
+			await this.ff?;
+			isDone = systemOverride || False || True;
+			this.ffb = this.ffb;
+			isDone = False && False && False &&! False;
+			await False;
+			await this.ff?;
+			await(True) || hasDone;
+			Int systemCount = 329;
+			tree = new E();
+			this.ff = this.fi!n();
+			this.fj = new E();
+			
+		}
+		await this.ff?;
+		if( False && False) {
+			await this.ff?;
+			this.fb = False && restoreFlag;
+			isWrite =! False;
+			Fut<Bool> resetCall = this.fi!b();
+			systemAmount = this.fint * 743;
+			systemOverride = this.ffb.get;
+			systemAmount = this.fint;
+			this.ff =(this.fi )!n();
+			
+		}
+		else {
+			this.ffb =(this.ffb);
+			Int queueDepth = 976;
+			hasDone =! False;
+			isDone = False;
+			await this.ffb?;
+			
+		}
+		Int stackDepth = systemAmount;
+		
+	}
+	this.fint = 970;
+	tree = new E();
+	isDone = systemAmount >= 699;
+	this.fint = 653;
+	
+}
+this.fj = new E();
+restoreFlag = hasDone || True ||! False;
+if( False) {
+	Int j = 204 * 411;
+	systemOverride = this.ffb.get;
+	isDone = this.ffb.get;
+	
+}
+else {
+	this.fi = this.fi;
+	if( this.fb) {
+		hasDone =! True &&(- 778 == 215) && isDone;
+		this.ffb = this.fi!b();
+		Int listCounter = systemAmount;
+		this.fj = new E();
+		Fut<Bool> flushUpdates = this.ffb;
+		Int processCount = 404;
+		
+	}
+	else {
+		this.fb = True;
+		
+	}
+	this.ffb = this.fi!b();
+	systemOverride = systemOverride;
+	systemOverride = isDone || False;
+	if( False && True) {
+		this.fb = True;
+		isWrite = True;
+		this.fb = this.ffb.get;
+		
+	}
+	else {
+		if( systemOverride) {
+			isWrite = True;
+			await this.ffb?;
+			this.fj = this.fj;
+			Bool execOverride = systemAmount <= 89;
+			this.fj = new E();
+			await this.ff?;
+			Int queueDepth =(664) * systemAmount;
+			
+		}
+		else {
+			this.fint = this.ff.get;
+			
+		}
+		this.fb =! False;
+		
+	}
+	Int l = 467;
+	this.ffb = this.fi!b();
+	
+}
+restoreFlag = hasDone;
+this.fi = this.fi;
+restoreFlag = this.ff == this.ff;
+this.ff = this.ff;
+J packetUnit = tree;
+return 814 * this.fint * - 889;
+}
+}
+{}

@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_127";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Bool willSave = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: willSave
+		// Loop invariant: true
+		// while(willSave) {
+		{
+			// Fut flushUpdates = clientNode!b();
+			String flushUpdates = "fut_125";
+			// flushUpdates = clientNode!b();
+			flushUpdates = "fut_126";
+			// J clientUnit = new E();
+			String clientUnit = "object_1";
+			Bool isSaveed = True;
+			if(True){
+				String clientStruct = this.fj;
+				// this.ff = this.fi!n();
+				this.ff = "fut_127";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((507540 == (69 - this.fint))){} 
+		// Known true:
+		// Negated loop guard: !((507540 == (69 - this.fint)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = 4;
+		// End of setup
+		
+		Bool isRead = !(message == clientUnit);
+		// Int processCount = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int processCount = 0;
+		this.fint = 243;
+		String applyState = this.ff;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

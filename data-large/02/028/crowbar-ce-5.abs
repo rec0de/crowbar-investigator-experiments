@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int queueCounter = 1;
+		// End of setup
+		
+		Bool isRead = (!this.fb && !True);
+		Bool isLoaded = !isRead;
+		println(toString(queueCounter)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (queueCounter=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

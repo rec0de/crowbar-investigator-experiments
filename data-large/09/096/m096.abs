@@ -1,0 +1,236 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+this.ff = this.fi!n();
+this.fint =(838);
+J packet = this.fj;
+Bool hasReady = this.fb && False ||! False;
+packet = this.fj;
+this.fb = False && False;
+while( True) {
+	if( - 46 == 674 * 433) {
+		Bool isLoaded = hasReady ==! False;
+		while( this.fb) {
+			hasReady = False;
+			this.fi = this.fi;
+			this.ff = this.fi!n();
+			await this.ff?;
+			this.ff = this.ff;
+			Bool readFlag = this.fb;
+			
+		}
+		
+	}
+	else {
+		if(! True) {
+			this.fi = new D();
+			await this.ff?;
+			
+		}
+		this.ffb =(this.ffb);
+		
+	}
+	
+}
+Int listCounter = 403;
+this.ff =(this.fi )!n();
+Bool storageFlag = this.ffb.get;
+if( this.fb) {
+	if( this.fi == this.fi) {
+		Bool isWrite = False;
+		this.fb = this.ff ==(this.ff);
+		Bool isSave = True || False;
+		I person = new D();
+		while( True) {
+			Int processCount = 649 - 705;
+			await this.ff?;
+			I packetObject = this.fi;
+			Bool hasDone = False && True && isWrite;
+			this.fi = new D();
+			
+		}
+		isSave = False && isSave;
+		listCounter = -(this.fint);
+		await this.ffb?;
+		
+	}
+	this.ffb = this.fi!b();
+	this.fj = new E();
+	storageFlag = hasReady;
+	this.fi = this.fi;
+	this.fb = True ||! False;
+	Bool isSaveed = False;
+	this.ffb = this.fi!b();
+	while( True) {
+		this.fj = new E();
+		this.fint = this.fint;
+		
+	}
+	this.fj = this.fj;
+	
+}
+this.fj = new E();
+if((False) ||(hasReady || True )) {
+	await this.ff?;
+	await this.ffb?;
+	Int eventDepth = 558 + 435;
+	this.fb = - this.fint < 560;
+	await this.ffb?;
+	Bool isSaveed = True;
+	if( this.fb) {
+		Int k = eventDepth * this.fint;
+		this.fint = 41 * this.fint * - 880;
+		
+	}
+	this.ff = this.fi!n();
+	while( True) {
+		packet = this.fj;
+		if((True || storageFlag )) {
+			J message = new E();
+			isSaveed =! hasReady && False;
+			packet = message;
+			
+		}
+		else {
+			I node = this.fi;
+			await this.ffb?;
+			await True;
+			storageFlag = True;
+			this.ffb = node!b();
+			this.ff = node!n();
+			isSaveed = packet == this.fj;
+			J serverObject = new E();
+			
+		}
+		if( eventDepth - 409 > 204) {
+			await this.ffb?;
+			Bool canRead = True;
+			eventDepth = - 220 - 894;
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			hasReady =!(True);
+			
+		}
+		storageFlag = True && True;
+		J packetObject = packet;
+		this.ff = this.ff;
+		I tree = this.fi;
+		Fut<Int> a = tree!n();
+		Int stackCounter = 114;
+		this.fint = 217 - - 825;
+		if( 754 > 255 + 103) {
+			await False &&! True;
+			Int j = 245;
+			await this.ffb?;
+			listCounter = - 440 * - 820;
+			
+		}
+		else {
+			this.fb = False && True || hasReady;
+			packetObject = packetObject;
+			Int queueAmount = this.fint;
+			Int stackDepth = eventDepth;
+			this.ff = tree!n();
+			await this.ff?;
+			hasReady =! False;
+			this.ff = tree!n();
+			eventDepth = a.get;
+			this.fint = 213;
+			
+		}
+		this.ff = tree!n();
+		I node = tree;
+		await this.ffb?;
+		this.fi = new D();
+		
+	}
+	this.fb =(this.ffb) ==(this.ffb);
+	I node = this.fi;
+	
+}
+else {
+	Fut<Bool> resData = this.fi!b();
+	
+}
+if( False) {
+	Fut<Bool> returnState = this.ffb;
+	this.ff = this.fi!n();
+	storageFlag = False && True;
+	await returnState?;
+	while( False == False) {
+		I clientObject =(this.fi);
+		Bool execEnabled = 582 + this.fint * 510 >= - 645;
+		clientObject = clientObject;
+		Int processCounter = this.fint;
+		Bool isSave = this.ffb.get;
+		J serverRepresentation = new E();
+		J clientStruct = serverRepresentation;
+		if( execEnabled) {
+			Bool willWrite = isSave;
+			
+		}
+		else {
+			this.fint = this.ff.get;
+			this.fj = clientStruct;
+			await this.ffb?;
+			storageFlag = this.fb || hasReady;
+			storageFlag = True;
+			this.fb = True;
+			hasReady = False;
+			serverRepresentation = packet;
+			
+		}
+		
+	}
+	await returnState?;
+	this.ff = this.fi!n();
+	I packetRepresentation = new D();
+	
+}
+else {
+	Bool hasDone = False;
+	storageFlag = storageFlag;
+	Bool isLoaded =(this.ffb ).get;
+	storageFlag = True;
+	
+}
+Int eventDepth = 980;
+if( False) {
+	this.fint = 992 * 588;
+	Bool hasSaveed = False;
+	Bool readyFlag = True;
+	readyFlag = this.fb;
+	readyFlag = False;
+	listCounter =(listCounter - - 19);
+	
+}
+else {
+	this.fint =(- 636) + eventDepth;
+	this.fi = new D();
+	
+}
+this.ffb = this.fi!b();
+return -(665 - 861) * 698 + 534;
+}
+}
+{}

@@ -1,0 +1,48 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && False)){} 
+		// Known true:
+		// Negated loop guard: !((False && False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(4)";
+		this.fb = True;
+		// End of setup
+		
+		Int l = 55813640;
+		}
+		this.fb = (True == !True);
+		
+		// await applyFlag?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(5)";
+		this.fb = True;
+		// End assignments
+		
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(anon(store(heap, this.fb, (1=!(1))))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

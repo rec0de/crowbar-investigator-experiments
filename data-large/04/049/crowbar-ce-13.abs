@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && !False)){} 
+		// Known true:
+		// Negated loop guard: !((False && !False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String resState = "fut_?(0)";
+		this.fb = True;
+		// End of setup
+		
+		String message = this.fj;
+		if((resState == resState)){
+			// resState = this.fi!b();
+			resState = "fut_45";
+			// I packet = new D();
+			String packet = "object_1";
+		}
+		}
+		if((this.fb && !False)){}
+		else{
+			Bool readToggle = (!True == False);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

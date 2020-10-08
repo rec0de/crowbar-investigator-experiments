@@ -1,0 +1,204 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await False;
+this.fb = False;
+this.ffb = this.fi!b();
+if( True) {
+	await this.ffb?;
+	
+}
+else {
+	this.fb =! False || True;
+	
+}
+J ioRepresentation = this.fj;
+await this.ff?;
+this.ffb = this.fi!b();
+Int listCounter = 106;
+this.fint =(this.fint) * 197;
+I message = new D();
+if( 582 * - listCounter >=(188 )) {
+	message = new D();
+	this.fi = new D();
+	J clientUnit = this.fj;
+	listCounter = 570 * 716 * this.fint;
+	await False || True;
+	if( 949 == 485) {
+		this.ffb = message!b();
+		while( listCounter < 250) {
+			await this.fb;
+			ioRepresentation = this.fj;
+			
+		}
+		I node = message;
+		Fut<Int> x = this.fi!n();
+		this.fint = - 410;
+		this.fi = message;
+		while(! True || True) {
+			await this.ffb?;
+			Int processAmount = x.get;
+			
+		}
+		J tree = new E();
+		
+	}
+	while( 291 + 353 + 150 - 994 > 154 - 310) {
+		listCounter = listCounter - this.fint * this.fint;
+		while(! this.fb) {
+			await this.ff?;
+			listCounter = listCounter;
+			await this.ffb?;
+			listCounter = 255;
+			Fut<Bool> resolveData = message!b();
+			this.fb = 816 < this.fint;
+			clientUnit = new E();
+			Bool isLoad = False;
+			ioRepresentation = clientUnit;
+			Bool isRead = True;
+			
+		}
+		Bool willLoad =(this.fi == this.fi);
+		
+	}
+	this.fj = this.fj;
+	if( False) {
+		clientUnit = new E();
+		this.fb = True && this.fb ||! this.fb;
+		clientUnit = new E();
+		I tree = this.fi;
+		
+	}
+	await this.ff?;
+	while( True) {
+		clientUnit = new E();
+		
+	}
+	Int arg = 176;
+	Fut<Bool> y = this.fi!b();
+	
+}
+this.fb = ioRepresentation == this.fj;
+Int queueDepth = 478;
+Bool isLoaded =! True;
+while( False) {
+	this.fi = this.fi;
+	while( this.fj == ioRepresentation) {
+		message = new D();
+		listCounter = 16 + 650;
+		this.fint = - 184;
+		this.ffb = message!b();
+		this.ff = message!n();
+		
+	}
+	this.fi =(this.fi);
+	Fut<Int> resolveInfo = this.ff;
+	this.fb = ioRepresentation == ioRepresentation;
+	
+}
+this.fi = new D();
+this.fint = 273;
+isLoaded = False;
+I tree = new D();
+ioRepresentation = ioRepresentation;
+Bool hasSaveed = - queueDepth > 412;
+tree = new D();
+Bool execEnabled = False;
+ioRepresentation = new E();
+this.fint = 572;
+I clientRepresentation = this.fi;
+I person = this.fi;
+tree = new D();
+while( False ||! hasSaveed && False) {
+	I node = this.fi;
+	message = new D();
+	queueDepth = 975;
+	person = new D();
+	isLoaded = isLoaded && False || execEnabled && False;
+	if( True) {
+		this.fb = isLoaded;
+		ioRepresentation = this.fj;
+		tree = new D();
+		Int systemDepth = this.fint;
+		clientRepresentation = new D();
+		this.fi = new D();
+		message = new D();
+		isLoaded = 713 - systemDepth >= this.fint;
+		while( this.fj == ioRepresentation) {
+			await isLoaded && False;
+			Fut<Int> applyRequest = clientRepresentation!n();
+			await this.ff?;
+			Int arg = - 54;
+			clientRepresentation = new D();
+			arg = 800 + 949;
+			
+		}
+		message = new D();
+		systemDepth = 797 +(systemDepth + 436);
+		this.fj =(this.fj);
+		systemDepth = 13;
+		Int processCounter = - 726;
+		listCounter = this.ff.get;
+		I clientNode = new D();
+		
+	}
+	
+}
+tree = new D();
+this.ff = this.ff;
+message = new D();
+this.fj = ioRepresentation;
+listCounter = - 592;
+ioRepresentation = new E();
+Int listDepth = 981;
+ioRepresentation = this.fj;
+Int eventCounter =(- 994);
+execEnabled = this.ffb.get;
+if( True && True) {
+	ioRepresentation = this.fj;
+	if( isLoaded || False) {
+		Bool isRead = hasSaveed;
+		
+	}
+	else {
+		this.fi = new D();
+		clientRepresentation = new D();
+		listCounter = 942;
+		Bool stateFlag = False;
+		while( False) {
+			hasSaveed = True;
+			Bool readyOverride = True;
+			Int stackAmount = 558;
+			listDepth = this.ff.get;
+			
+		}
+		queueDepth = listCounter;
+		
+	}
+	Bool willSave = False && False;
+	clientRepresentation = message;
+	this.ff = tree!n();
+	Bool configEnabled =(True && False && isLoaded);
+	
+}
+return listCounter;
+}
+}
+{}

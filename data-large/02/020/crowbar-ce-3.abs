@@ -1,0 +1,75 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String ff = "fut_?(0)";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = 7;
+		this.fi = "object_?(4)";
+		this.ff = "fut_31";
+		// End of setup
+		
+		// this.ff = dataRepresentation!n();
+		this.ff = "fut_31";
+		// I dataRepresentation = new D();
+		String dataRepresentation = "object_1";
+		Bool stateOverride = (((True || !True) || (this.fb && !False)) || False);
+		// Int j = (this.ff).get;
+		Int j = 0;
+		j = 989;
+		Int k = 693402;
+		String clientUnit = clientUnit;
+		}
+		// Fut q = this.fi!b();
+		String q = "fut_32";
+		if(!True){}
+		else{
+			if(!False){
+				// Int systemAmount = (this.ff).get;
+				Int systemAmount = 0;
+				
+				// await this.ff?;
+				// Assume the following assignments while blocked:
+				this.fint = 5;
+				this.fi = "object_?(5)";
+				this.ff = "fut_?(5)";
+				// End assignments
+				
+				Int eventAmount = systemAmount;
+				q = q;
+				this.fint = 593;
+				
+				// await q?;
+				// Assume the following assignments while blocked:
+				this.fint = 6;
+				this.fi = null;
+				this.ff = "fut_?(6)";
+				// End assignments
+				
+				// Fut resetReload = dataRepresentation!b();
+				String resetReload = "fut_46";
+			}
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(anon(store(heap, this.ff, fut_31)), this.fint, 593)), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

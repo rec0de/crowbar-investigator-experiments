@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((stackDepth == -1443)){} 
+		// Known true:
+		// Negated loop guard: !((stackDepth == -1443))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int stackDepth = -1442;
+		String clientNode = null;
+		// End of setup
+		
+		Int eventAmount = 616;
+		Bool hasDone = hasLoaded;
+		Bool writeToggle = ((isLoad && !True) || hasDone);
+		Int listAmount = (stackDepth + 334);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientNode=0)
+		// Failed to show the following sub-obligations:
+		// !(clientNode=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

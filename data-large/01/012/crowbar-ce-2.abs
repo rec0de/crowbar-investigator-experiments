@@ -1,0 +1,80 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Bool writeToggle = False;
+		this.fj = "object_?(-2437)";
+		this.ff = "fut_55";
+		this.fint = -2437;
+		this.fi = "object_?(-2437)";
+		this.fb = True;
+		this.ffb = "fut_55";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.ffb == this.ffb)
+		// Loop invariant: true
+		// while((this.ffb == this.ffb)) {
+		{
+			if((((((!this.fb && True) && !writeToggle) && !False) || True) || False)){
+				// this.ff = this.fi!n();
+				this.ff = "fut_55";
+				if((381 >= this.fint)){
+					// J person = new E();
+					String person = "object_1";
+					String tree = this.fi;
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.fj = "object_?(12)";
+					this.ff = "fut_?(12)";
+					this.fint = 12;
+					this.fi = "object_?(12)";
+					this.fb = True;
+					this.ffb = "fut_?(12)";
+					// End assignments
+					
+				}
+				String serverObject = this.fi;
+				// J serverStruct = new E();
+				String serverStruct = "object_2";
+				writeToggle = writeToggle;
+				writeToggle = this.fb;
+				// J person = new E();
+				String person = "object_3";
+				this.fj = this.fj;
+				
+				// await this.ff?;
+				// Assume the following assignments while blocked:
+				this.fj = null;
+				this.ff = "fut_?(0)";
+				this.fint = 0;
+				this.fi = null;
+				this.fb = False;
+				this.ffb = "fut_?(0)";
+				// End assignments
+				
+			}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(anon(store(heap, this.ff, fut_55)), this.fj, select(anon(store(heap, this.ff, fut_55)), this.fj))), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

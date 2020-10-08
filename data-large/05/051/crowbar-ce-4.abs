@@ -1,0 +1,85 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(9)";
+		this.fint = 8;
+		this.fi = "object_?(8)";
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End of setup
+		
+		// this.fint = (this.ff).get;
+		this.fint = 10;
+		this.ffb = this.ffb;
+		String applyState = this.ffb;
+		if((this.fb || False)){}
+		else{
+			this.fint = 20;
+			String message = message;
+			// message = new D();
+			message = "object_1";
+		}
+		if(False){}
+		else{
+			// I message = new D();
+			String message = "object_2";
+			this.fint = 672;
+			// applyState = this.fi!b();
+			applyState = "fut_54";
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		this.fint = 15;
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(12)";
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_3";
+		// I message = new D();
+		String message = "object_4";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(13)";
+		this.ff = "fut_?(13)";
+		this.fint = 13;
+		this.fi = null;
+		this.fb = True;
+		this.ffb = "fut_?(13)";
+		// End assignments
+		
+		Bool restoreFlag = (((22 == 189) || !this.fb) || False);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(anon(store(store(store(store(heap, this.fint, valueOf(heap.ff)), this.ffb, heap.ffb), this.fint, 20), this.fint, 672)), this.fj, NEW34_0), this.fj, NEW34_0)), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

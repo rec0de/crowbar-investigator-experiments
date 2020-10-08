@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String clientStruct = null;
+		Bool willSave = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: willSave
+		// Loop invariant: true
+		// while(willSave) {
+		{
+			this.fb = False;
+			Int listCounter = 8;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientStruct=0)
+		// Failed to show the following sub-obligations:
+		// !(clientStruct=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

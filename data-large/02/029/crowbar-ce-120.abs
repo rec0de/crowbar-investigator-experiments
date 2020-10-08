@@ -1,0 +1,81 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String resInfo = "fut_?(11)";
+		String serverUnit = "object_?(13)";
+		this.ff = "fut_?(9)";
+		this.fi = "object_?(9)";
+		this.fb = True;
+		this.fint = 225;
+		this.ffb = "fut_?(9)";
+		// End of setup
+		
+		Bool isLoad = (697 > 546);
+		this.ff = resInfo;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_218";
+		this.fi = serverUnit;
+		Bool isSaveed = (this.fint == 225);
+		Bool isLoaded = False;
+		String serverUnit = serverUnit;
+		// Fut q = serverUnit!n();
+		String q = "fut_219";
+		this.fi = serverUnit;
+		if(!isSaveed){}
+		else{
+			String packetNode = this.fi;
+			this.ffb = resState;
+			String serverRepresentation = this.fi;
+		}
+		String resState = this.ffb;
+		this.fi = this.fi;
+		// J person = new E();
+		String person = "object_1";
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		
+		// await resultInfo?;
+		// No heap modification info available at this point
+		
+		isLoaded = (person == this.fj);
+		String resultInfo = this.ff;
+		// this.fj = new E();
+		this.fj = "object_2";
+		q = this.ff;
+		this.fint = 102;
+		String resultState = q;
+		// q = serverUnit!n();
+		q = "fut_222";
+		println(toString(-171598)); // return statement
+		// Evaluates to: -171598
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-171598=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

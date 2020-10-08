@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = 21238;
+		this.fb = True;
+		// End of setup
+		
+		// Bool isSave = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool isSave = False;
+		if(this.fb){
+			this.fint = (-716 + (860 * -this.fint));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,231 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 654;
+this.ffb = this.fi!b();
+I tree = new D();
+this.ff =((tree) )!n();
+this.ffb = this.ffb;
+this.fj = this.fj;
+this.fi = tree;
+await this.ff?;
+this.fj = this.fj;
+if((! False )) {
+	while( this.fint > 711 * 210 * 717) {
+		this.fi = new D();
+		if( - 369 + this.fint >= 234) {
+			this.fj = new E();
+			
+		}
+		else {
+			this.ff =(this.ff);
+			this.ffb = tree!b();
+			this.fj = new E();
+			I packet = new D();
+			Fut<Bool> syncChanges = tree!b();
+			await!(True) && True;
+			
+		}
+		this.ffb = tree!b();
+		I serverStruct = new D();
+		Int eventCount = 522;
+		eventCount = 194;
+		I message = serverStruct;
+		eventCount = - 574 * 934;
+		this.ffb = this.ffb;
+		message = tree;
+		
+	}
+	this.fb =! this.fb;
+	this.fint = this.fint - this.fint;
+	await True == False;
+	I packetUnit = tree;
+	await this.ff?;
+	this.fint = this.fint;
+	this.ffb = tree!b();
+	I packet = new D();
+	this.fint =(989 - this.fint);
+	
+}
+else {
+	await! False;
+	Bool isRead = False && this.fb;
+	
+}
+this.ff = this.ff;
+this.fj = new E();
+Int res = - this.fint;
+this.fint = 703;
+this.fint = 104;
+Int value = res - - res;
+this.ffb = tree!b();
+if( False == False) {
+	Bool execOverride = True;
+	
+}
+else {
+	this.fb =!(- value <(707));
+	await this.ff?;
+	if( this.fb || False && False && this.fb || False) {
+		this.fb = this.ffb.get;
+		Int i = - this.fint + value;
+		tree = tree;
+		if( True) {
+			await this.ffb?;
+			this.fj = this.fj;
+			this.fj = new E();
+			await this.ffb?;
+			res = this.ff.get;
+			await this.ffb?;
+			await this.ff?;
+			this.fi = tree;
+			res = 863;
+			value = value;
+			await this.ffb?;
+			this.ffb = this.ffb;
+			this.ffb = tree!b();
+			this.ff = this.ff;
+			await this.ffb?;
+			
+		}
+		this.ffb = this.ffb;
+		
+	}
+	this.fb = True;
+	tree = new D();
+	this.fint = - 699;
+	this.fj = new E();
+	Int systemDepth = value;
+	Int eventAmount = this.fint * 363;
+	this.ffb = tree!b();
+	res = res;
+	await this.fb;
+	tree = tree;
+	systemDepth = 636 - this.fint * 681;
+	
+}
+while( False) {
+	if( this.fb) {
+		while( True) {
+			this.ffb = this.ffb;
+			value = this.fint;
+			Bool willRead =! this.fb;
+			
+		}
+		
+	}
+	else {
+		while( this.fb) {
+			await this.ffb?;
+			tree =(tree);
+			value = 953;
+			
+		}
+		Bool readyEnabled = False;
+		J ioRepresentation = new E();
+		
+	}
+	this.fint = 846;
+	this.fi = this.fi;
+	Bool canLoad = this.fb;
+	res = 368;
+	Int processAmount = 890;
+	while( False) {
+		if( this.fj == this.fj) {
+			value = 519;
+			this.fi = tree;
+			this.ff = this.ff;
+			processAmount = 1 * 184;
+			
+		}
+		
+	}
+	canLoad =! False || False;
+	await this.ffb?;
+	this.ff = this.ff;
+	
+}
+Bool execEnabled = 615 == - 607;
+await this.ffb?;
+this.fint = 789 -(((565 * - 378)));
+this.fj = new E();
+J person = new E();
+this.fb = False;
+this.fj = person;
+execEnabled = 814 == 919;
+this.fj = new E();
+tree = new D();
+this.fb = execEnabled;
+this.ff = this.fi!n();
+this.ffb = tree!b();
+value = - 684;
+this.fj = new E();
+this.fj = this.fj;
+Fut<Int> resetCall = tree!n();
+Fut<Int> syncFlag = this.fi!n();
+value = 97;
+Int arg = res;
+I dataObject = new D();
+this.fint = 43;
+J message = person;
+execEnabled = True;
+this.fint = 85;
+value = this.fint;
+syncFlag = tree!n();
+while( False && False) {
+	message = this.fj;
+	await True;
+	
+}
+execEnabled = True;
+syncFlag = resetCall;
+execEnabled = False;
+this.fb = 175 == 829;
+Bool storageEnabled = 159 >= 718;
+person = new E();
+J ioUnit =(person);
+value = 480;
+while( True) {
+	Bool hasLoaded = arg == 936;
+	this.ff = this.fi!n();
+	value = 623;
+	Fut<Int> y = tree!n();
+	if( True && True) {
+		syncFlag = resetCall;
+		this.fb = False &&! False;
+		
+	}
+	else {
+		Bool isSaveed = this.fb || False;
+		this.fint = 263;
+		
+	}
+	I packet = this.fi;
+	
+}
+person = new E();
+Int systemDepth = res;
+arg = 564 + 395;
+Bool configToggle = this.ffb.get;
+message = new E();
+return(558);
+}
+}
+{}

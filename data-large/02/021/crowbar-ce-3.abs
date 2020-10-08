@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = 5;
+		this.fb = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: this.fb
+		// Loop invariant: true
+		// while(this.fb) {
+		{
+			String message = this.fi;
+			String flushChanges = this.ffb;
+			// J person = new E();
+			String person = "object_1";
+			Bool hasReady = True;
+			person = packet;
+			this.fint = 541;
+			// hasReady = (this.ffb).get;
+			// Future value irrelevant or unavailable, using default:
+			hasReady = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String node = null;
+		Bool isSave = False;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: ((isSave && isSave) || True)
+		// Loop invariant: true
+		// while(((isSave && isSave) || True)) {
+		{
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+			this.fint = 777;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(node=0)
+		// Failed to show the following sub-obligations:
+		// !(node=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

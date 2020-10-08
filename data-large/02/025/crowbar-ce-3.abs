@@ -1,0 +1,68 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		if(this.fb){}
+		else{
+		
+		}
+		// this.fj = new E();
+		this.fj = "object_1";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		if((-66573360 > 763)){}
+		else{
+			// Int l = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			Int l = 0;
+			String packetUnit = this.fi;
+			l = (arg - 918);
+			Bool hasReady = restoreEnabled;
+			// J dataObject = new E();
+			String dataObject = "object_2";
+			String resetState = this.ff;
+			this.fint = j;
+		}
+		Bool restoreEnabled = !this.fb;
+		Int arg = 77;
+		String dataObject = this.fj;
+		// restoreEnabled = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		restoreEnabled = False;
+		restoreEnabled = True;
+		this.fint = 81;
+		Int l = -640233;
+		println(toString(549)); // return statement
+		// Evaluates to: 549
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (549=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

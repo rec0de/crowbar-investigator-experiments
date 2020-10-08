@@ -1,0 +1,154 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( 827 != 646) {
+	if( this.fb) {
+		this.fb =! False;
+		Bool hasDone = False &&! True;
+		await this.ff?;
+		this.fint = 669;
+		Bool readyEnabled = False;
+		J clientStruct = new E();
+		hasDone = this.fi == this.fi;
+		while( readyEnabled) {
+			I packet =(this.fi);
+			await this.ffb?;
+			Fut<Int> resultInfo = this.fi!n();
+			this.ff = resultInfo;
+			this.fb = True;
+			readyEnabled = False;
+			await resultInfo?;
+			this.fi = packet;
+			readyEnabled = hasDone || False;
+			Bool hasLoaded = hasDone;
+			Int stackDepth = 865 * 681;
+			packet =((this.fi));
+			this.fj = new E();
+			await this.ffb?;
+			I clientRepresentation = this.fi;
+			resultInfo = this.fi!n();
+			Fut<Int> resInfo = this.ff;
+			Bool canSave = True || False ||(True);
+			await resultInfo?;
+			canSave = False;
+			readyEnabled = readyEnabled && canSave;
+			resultInfo = this.fi!n();
+			await False &&!(False);
+			clientStruct = clientStruct;
+			J dataUnit = clientStruct;
+			
+		}
+		while( True && hasDone) {
+			Bool isSaveed = 635 + - this.fint != 136;
+			
+		}
+		while( -(95) <= this.fint) {
+			this.ffb = this.ffb;
+			this.fb = True;
+			this.fb = this.fi == this.fi;
+			Bool canSave = readyEnabled;
+			hasDone = readyEnabled ||! True || False;
+			
+		}
+		J node = new E();
+		await this.fb || this.fb;
+		
+	}
+	else {
+		this.fb =(True && this.fb);
+		
+	}
+	this.ff =(this.fi )!n();
+	while( this.ffb == this.ffb) {
+		this.ffb = this.ffb;
+		if( True) {
+			this.fint = - 215 - 455;
+			this.fi = new D();
+			this.ff = this.fi!n();
+			await this.ffb?;
+			this.fj = this.fj;
+			this.ffb = this.fi!b();
+			Fut<Int> returnInfo =(this.fi )!n();
+			this.fint = 35;
+			this.fint =(208 * 726);
+			J message = this.fj;
+			this.fb = False;
+			this.fi = new D();
+			this.fint = 314;
+			await this.ff?;
+			this.ffb = this.ffb;
+			this.ff = this.fi!n();
+			this.ffb = this.fi!b();
+			
+		}
+		this.fi = this.fi;
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+this.ff = this.fi!n();
+Bool isReady = 220 < 950;
+this.fi = this.fi;
+this.fint = this.ff.get;
+this.fj = new E();
+Bool isDone = this.ffb.get;
+if( False) {
+	if( this.fb &&(True )) {
+		this.ff = this.ff;
+		
+	}
+	this.fj = this.fj;
+	Bool isSaveed = 617 < - 323 + - 791;
+	this.fj = new E();
+	
+}
+else {
+	await False;
+	this.ff = this.fi!n();
+	this.fb = False;
+	this.ff = this.fi!n();
+	
+}
+isDone = this.ffb.get;
+isReady = False;
+this.fint = 661;
+this.fb = True;
+this.ffb = this.ffb;
+this.ff = this.ff;
+this.fb = isDone;
+this.fb = this.ffb.get;
+if( False) {
+	this.fb = isDone && this.fb && True;
+	Fut<Int> resolveInfo = this.fi!n();
+	isDone = isDone;
+	Int listCount = this.fint;
+	Int i = this.ff.get;
+	listCount = - 726;
+	I tree = this.fi;
+	Bool willLoad =! True || True;
+	isDone =! False || False && True;
+	this.fb = 428 != - 813 * - 750;
+	
+}
+return 776 * - this.fint;
+}
+}
+{}

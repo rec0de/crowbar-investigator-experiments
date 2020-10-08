@@ -1,0 +1,133 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fj = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.ff = "fut_?(12)";
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(17)";
+		this.fj = "object_?(12)";
+		// End of setup
+		
+		// Bool isSave = (this.ffb).get;
+		Bool isSave = True;
+		if(this.fb){
+			this.fint = (-716 + (860 * -this.fint));
+			// this.ff = this.fi!n();
+			this.ff = "fut_19";
+			// isSave = (this.ffb).get;
+			isSave = True;
+			// I packetUnit = new D();
+			String packetUnit = "object_1";
+			// this.ff = this.fi!n();
+			this.ff = "fut_20";
+			if(!isSave){
+				// Fut resolveInfo = this.fi!b();
+				String resolveInfo = "fut_21";
+				this.fint = this.fint;
+				Int systemAmount = 94;
+				// this.fint = (this.ff).get;
+				this.fint = 19;
+				if(isSave){}
+				else{
+					this.fj = this.fj;
+				}
+				// Fut applyUpdates = packetUnit!b();
+				String applyUpdates = "fut_66";
+				Int eventCount = 739;
+				if(((True && False) || (!(this.fi == this.fi) && False))){}
+				else{
+					
+					// await applyUpdates?;
+					// Assume the following assignments while blocked:
+					this.ff = "fut_?(31)";
+					this.fi = "object_?(29)";
+					this.fb = True;
+					this.ffb = "fut_?(20)";
+					this.fj = "object_?(20)";
+					this.fint = 20;
+					// End assignments
+					
+				}
+				if(False){}
+				else{
+					Int queueDepth = 106;
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.ff = "fut_?(21)";
+					this.fi = "object_?(21)";
+					this.fb = True;
+					this.ffb = "fut_?(21)";
+					this.fj = "object_?(21)";
+					this.fint = 21;
+					// End assignments
+					
+					// packetUnit = new D();
+					packetUnit = "object_2";
+					this.fint = 218;
+				}
+				if(((isSave && isSave) || True)){
+					systemAmount = 177;
+					resolveInfo = applyUpdates;
+					eventCount = eventCount;
+					this.fj = this.fj;
+					this.ffb = resolveInfo;
+				}
+				// resolveInfo = this.fi!b();
+				resolveInfo = "fut_100";
+				// this.fi = new D();
+				this.fi = "object_3";
+				systemAmount = eventCount;
+				Int systemDepth = 893;
+				String packetRepresentation = this.fj;
+				eventCount = 620;
+				// Fut resData = packetUnit!b();
+				String resData = "fut_101";
+				systemDepth = 75;
+			}
+			Bool willRead = ((this.fb == isSave) && False);
+			// this.ffb = packetUnit!b();
+			this.ffb = "fut_102";
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.ff = "fut_?(25)";
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(24)";
+			this.fj = "object_?(24)";
+			this.fint = 0;
+			// End assignments
+			
+			this.fj = this.fj;
+		}
+		// Int k = (this.ff).get;
+		Int k = 0;
+		k = (244 * k);
+		if((((-138 * k) * this.fint) < k)){}
+		else{
+			k = 664;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(store(store(anon(anon(store(store(store(store(store(store(heap, this.fint, (-716+(860*-(heap.fint)))), this.ff, fut_19), this.ff, fut_20), this.fint, select(store(heap, this.fint, (-716+(860*-(heap.fint)))), this.fint)), this.fint, valueOf(select(store(heap, this.ff, fut_20), this.ff))), this.fj, heap.fj))), this.fint, 218), this.fj, select(anon(anon(store(store(store(store(store(store(heap, this.fint, (-716+(860*-(heap.fint)))), this.ff, fut_19), this.ff, fut_20), this.fint, select(store(heap, this.fint, (-716+(860*-(heap.fint)))), this.fint)), this.fint, valueOf(select(store(heap, this.ff, fut_20), this.ff))), this.fj, heap.fj))), this.fj)), this.ffb, fut_66), this.fi, NEW8_0), this.fi, NEW8_0), this.ffb, fut_102)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

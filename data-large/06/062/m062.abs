@@ -1,0 +1,159 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+await True;
+this.fj = new E();
+this.ff = this.ff;
+if(! False) {
+	await this.ff?;
+	this.fi = new D();
+	
+}
+if( False == True) {
+	this.fb = 438 * - 263 > 194;
+	
+}
+else {
+	this.fi = new D();
+	this.fb = - 954 != 610;
+	
+}
+if(! False) {
+	if(! True && False || False) {
+		this.fj = new E();
+		while( this.fb) {
+			this.fint = 264;
+			await this.ff?;
+			this.fj = this.fj;
+			this.fint = 799;
+			this.fi = this.fi;
+			this.fb = True;
+			I clientObject = this.fi;
+			this.fint = 161;
+			this.fj = new E();
+			this.ffb = clientObject!b();
+			
+		}
+		
+	}
+	else {
+		this.fi = this.fi;
+		while(! True) {
+			await! False && True;
+			
+		}
+		
+	}
+	if(! this.fb) {
+		Int listDepth = 543;
+		this.fint = 601;
+		Int listCounter = this.ff.get;
+		this.ff = this.ff;
+		this.fj = new E();
+		
+	}
+	this.ff = this.fi!n();
+	this.fint = 232;
+	
+}
+else {
+	this.fb = False;
+	this.fj = new E();
+	
+}
+Bool systemEnabled =! True;
+this.ffb =(this.fi )!b();
+await False == True;
+systemEnabled =(False);
+J ioRepresentation = this.fj;
+this.ffb = this.fi!b();
+await this.ff?;
+while( True) {
+	this.fb = this.fint <= 97;
+	Int res = this.fint;
+	if( True) {
+		this.fi = this.fi;
+		
+	}
+	await this.ff?;
+	res = 829;
+	this.fb = True && this.fb;
+	this.ff = this.fi!n();
+	ioRepresentation = this.fj;
+	ioRepresentation = new E();
+	this.ffb = this.fi!b();
+	I packet = new D();
+	this.fb = systemEnabled;
+	
+}
+await this.ff?;
+ioRepresentation = new E();
+systemEnabled = False;
+this.fi = new D();
+this.ffb = this.ffb;
+systemEnabled = systemEnabled == this.fb &&((! False));
+while(! systemEnabled) {
+	ioRepresentation = ioRepresentation;
+	ioRepresentation = this.fj;
+	this.ff = this.ff;
+	if(! True) {
+		await this.ff?;
+		ioRepresentation = this.fj;
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		this.fj = new E();
+		Int queueCounter = 777 * this.fint;
+		if(((910) == 402 )) {
+			Int k = this.ff.get;
+			queueCounter = 494;
+			await this.ff?;
+			
+		}
+		else {
+			this.fi = new D();
+			this.ff = this.fi!n();
+			ioRepresentation = ioRepresentation;
+			this.ff = this.fi!n();
+			I person = this.fi;
+			
+		}
+		systemEnabled = systemEnabled;
+		this.ff = this.fi!n();
+		this.fj = new E();
+		this.fint = 382;
+		
+	}
+	ioRepresentation = new E();
+	this.fj = new E();
+	Fut<Int> z = this.fi!n();
+	I node = new D();
+	Int i = 968 * - 954;
+	this.ffb = node!b();
+	
+}
+ioRepresentation = new E();
+this.ffb = this.fi!b();
+return this.fint;
+}
+}
+{}

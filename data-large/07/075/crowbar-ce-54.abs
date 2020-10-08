@@ -1,0 +1,90 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+	String ffb = "fut_133";
+	String ff = "fut_133";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isSave = True;
+		this.fi = "object_?(2)";
+		this.fb = True;
+		this.fj = "object_?(2)";
+		this.ffb = "fut_?(2)";
+		// End of setup
+		
+		if(this.fb){}
+		else{
+			Bool isRead = True;
+			Int systemCount = 951;
+			this.fi = this.fi;
+			if(False){}
+			else{
+				String dataStruct = this.fi;
+				// this.ffb = dataStruct!b();
+				this.ffb = "fut_133";
+				
+				// await (this.fj == this.fj);
+				// Assume the following assignments while blocked:
+				this.fi = null;
+				this.fb = False;
+				this.fj = null;
+				this.ffb = "fut_133";
+				// End assignments
+				
+				// this.ff = this.fi!n();
+				this.ff = "fut_134";
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_135";
+			}
+			if(!isSave){}
+			else{
+				// this.fi = new D();
+				this.fi = "object_1";
+				
+				// await this.ffb?;
+				// No heap modification info available at this point
+				
+			}
+			this.fint = 531;
+		}
+		// J tree = new E();
+		String tree = "object_2";
+		isSave = False;
+		if(True){
+			// this.fint = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			this.fint = 0;
+		}
+		// this.fb = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fb = False;
+		Int queueCounter = 320;
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		println(toString(640)); // return statement
+		// Evaluates to: 640
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (640=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

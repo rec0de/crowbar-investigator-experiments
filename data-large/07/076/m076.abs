@@ -1,0 +1,177 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+Int stackDepth =(- this.fint);
+await True;
+this.fint = stackDepth;
+Bool isReady = False;
+await this.ff?;
+this.fi = new D();
+stackDepth = 460 * 262;
+this.ff = this.fi!n();
+stackDepth = 562;
+this.fint = - 344 - 811;
+Fut<Bool> flushReload = this.ffb;
+stackDepth = 877;
+if(!((True) )) {
+	flushReload = this.fi!b();
+	
+}
+await flushReload?;
+I packet = new D();
+if(! False) {
+	Bool canWrite = this.fj == this.fj;
+	
+}
+else {
+	await this.ff?;
+	Bool systemFlag = isReady &&!(! False && False);
+	this.fi = new D();
+	this.ff = packet!n();
+	J serverNode = new E();
+	this.ffb =(this.fi )!b();
+	packet = new D();
+	Int processCount = 352;
+	
+}
+flushReload = packet!b();
+if( flushReload == flushReload) {
+	while( True) {
+		isReady = this.fb && this.fb;
+		
+	}
+	packet = new D();
+	
+}
+else {
+	Fut<Int> resetCall = this.fi!n();
+	this.fj = new E();
+	resetCall = packet!n();
+	
+}
+flushReload = this.fi!b();
+isReady = this.fj == this.fj;
+Int j = this.fint + 350;
+Int res = - j;
+await! isReady;
+J packetRepresentation = new E();
+j = 756;
+this.fint = res;
+I person = packet;
+Bool hasReady = True;
+Bool isDone = True;
+this.fb =! True;
+while( this.fj ==(packetRepresentation)) {
+	Int systemAmount = stackDepth;
+	
+}
+isDone =(j + - 449) == 216 * 36;
+if( False) {
+	isDone = True;
+	Bool execEnabled = hasReady;
+	execEnabled = - 573 != - 234;
+	
+}
+else {
+	person = person;
+	if(!(hasReady )) {
+		hasReady =! False;
+		packetRepresentation = new E();
+		res = 829 * 930;
+		this.ffb = this.ffb;
+		Bool pauseToggle = True &&! False && False ||! True;
+		await flushReload?;
+		I node = this.fi;
+		Int eventDepth = 551;
+		await True == False;
+		packet = new D();
+		
+	}
+	else {
+		I packetUnit = this.fi;
+		
+	}
+	
+}
+await this.ff?;
+res = 439;
+if( False) {
+	if( False &&! True && False) {
+		j = 183;
+		if( False ||((! False) )) {
+			await this.ffb?;
+			hasReady =! False && False || False;
+			this.ff = person!n();
+			this.ffb = this.fi!b();
+			await flushReload?;
+			packetRepresentation = new E();
+			isDone = False && True || False;
+			Bool sendEnabled = True;
+			
+		}
+		
+	}
+	else {
+		Fut<Int> resolveData = this.ff;
+		resolveData =(packet )!n();
+		this.fb = this.fint != 261 * this.fint;
+		while( this.ff == this.ff) {
+			Bool restoreToggle = this.fb;
+			stackDepth = j;
+			this.fi = new D();
+			this.fint = 990 * - 880;
+			await True;
+			resolveData = this.fi!n();
+			
+		}
+		J ioUnit =(this.fj);
+		Bool isSave =! True || False || True;
+		packetRepresentation = new E();
+		this.ffb = this.fi!b();
+		
+	}
+	
+}
+Fut<Bool> x = this.ffb;
+while(! False) {
+	stackDepth = - 16;
+	this.fi = new D();
+	await True;
+	this.ffb = person!b();
+	
+}
+flushReload = packet!b();
+J ioStruct = new E();
+while( 745 != - 133 * 711) {
+	j = 948;
+	
+}
+stackDepth = 667;
+this.fj = new E();
+await flushReload?;
+x = this.fi!b();
+hasReady = False || True || this.fb;
+this.fi = this.fi;
+this.fj = new E();
+return 236;
+}
+}
+{}

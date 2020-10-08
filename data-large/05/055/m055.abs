@@ -1,0 +1,151 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if((False) || True) {
+	Bool isReady = False == False;
+	while( True && False || False) {
+		await this.ffb?;
+		if( True) {
+			this.fint = 412;
+			this.fi = this.fi;
+			await False;
+			Bool isLoaded = isReady || True;
+			isReady = this.ffb.get;
+			await! True;
+			await this.ff?;
+			Int listCount = -(-(- this.fint * this.fint) * this.fint);
+			isReady = this.fb;
+			this.fi = new D();
+			J packet = new E();
+			Bool configOverride = this.ffb.get;
+			
+		}
+		else {
+			isReady =(False) || isReady;
+			this.ffb = this.ffb;
+			isReady =! True;
+			this.fb = isReady;
+			I person = new D();
+			isReady = False || isReady;
+			I tree = new D();
+			this.fint = 537;
+			this.fi = new D();
+			this.ffb = tree!b();
+			
+		}
+		this.fi = this.fi;
+		if( this.fi == this.fi) {
+			this.ffb = this.ffb;
+			this.fi = this.fi;
+			this.ffb = this.fi!b();
+			this.ff = this.fi!n();
+			
+		}
+		
+	}
+	
+}
+else {
+	this.fi = new D();
+	if( False) {
+		while(! False) {
+			Bool isLoaded = False;
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	else {
+		this.fi = this.fi;
+		this.fint = this.fint;
+		
+	}
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	this.fint = this.ff.get;
+	Fut<Int> returnInfo = this.ff;
+	
+}
+this.fint = 66;
+if( True) {
+	this.fj = new E();
+	this.fi = new D();
+	Int listAmount =(this.fint);
+	this.fb = listAmount == listAmount;
+	this.ffb = this.fi!b();
+	this.ffb = this.fi!b();
+	this.ff = this.ff;
+	this.ffb = this.fi!b();
+	
+}
+else {
+	this.fj = new E();
+	
+}
+if( False || True &&! this.fb) {
+	this.fb = this.fb;
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	this.ff = this.fi!n();
+	if( True) {
+		this.fb = True;
+		
+	}
+	else {
+		this.ffb =(this.fi )!b();
+		this.ffb = this.fi!b();
+		I person = new D();
+		await this.ff?;
+		while( False && False) {
+			person = new D();
+			Fut<Bool> resultData =(this.ffb);
+			this.ffb = this.ffb;
+			resultData = person!b();
+			await this.ff?;
+			this.fj = new E();
+			Int processDepth = 112 * this.fint;
+			resultData = person!b();
+			processDepth = 956;
+			I dataUnit = person;
+			Bool hasLoaded = True && False;
+			
+		}
+		Bool execOverride =! this.fb == False;
+		this.fint = 964;
+		
+	}
+	this.fb = this.ffb.get;
+	Int processDepth = 937;
+	Int value = 818 - - 92;
+	
+}
+else {
+	this.fint = this.fint;
+	Int eventDepth = this.fint;
+	this.ffb = this.fi!b();
+	Bool hasReady = False && True ||!(True) && False;
+	this.ff =(this.ff);
+	
+}
+this.fi = new D();
+return(125);
+}
+}
+{}

@@ -1,0 +1,195 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int eventCounter = 306;
+eventCounter = 735;
+this.ffb = this.ffb;
+if( this.fb) {
+	while( False) {
+		if( True) {
+			await False;
+			await this.ff?;
+			
+		}
+		else {
+			await this.ffb?;
+			eventCounter = 153;
+			
+		}
+		eventCounter = 822;
+		this.fi = this.fi;
+		while( True && True) {
+			Int j = eventCounter;
+			this.fb = True && True;
+			Fut<Bool> z = this.fi!b();
+			this.fj = this.fj;
+			this.ffb = this.ffb;
+			
+		}
+		if( False) {
+			this.fint = 920;
+			J serverStruct = this.fj;
+			
+		}
+		else {
+			await this.ffb?;
+			await this.ff?;
+			this.fint = this.ff.get;
+			this.ffb = this.fi!b();
+			this.ff = this.ff;
+			
+		}
+		I ioUnit = new D();
+		
+	}
+	this.fi = this.fi;
+	this.fj = new E();
+	this.ff = this.ff;
+	this.ff = this.fi!n();
+	this.fj = new E();
+	
+}
+else {
+	while((False)) {
+		Int queueCount = this.fint;
+		while(! True) {
+			await False;
+			this.fint = queueCount;
+			await this.ffb?;
+			this.fint = 171;
+			this.fint = - 248;
+			Int systemCounter = 71;
+			this.fb = True;
+			this.fint = 683;
+			eventCounter =(queueCount);
+			
+		}
+		
+	}
+	await this.ffb?;
+	await this.ff?;
+	if((409 - 233 == eventCounter )) {
+		eventCounter = 285;
+		
+	}
+	this.fi = this.fi;
+	
+}
+Fut<Int> flushReload = this.fi!n();
+Int res = 665 * - 451;
+Fut<Bool> p = this.fi!b();
+while( True) {
+	this.ff = flushReload;
+	
+}
+while( True) {
+	this.fi = new D();
+	Fut<Int> syncRequest = this.fi!n();
+	
+}
+Fut<Int> returnData = this.ff;
+while( False) {
+	this.ff =(this.fi )!n();
+	this.fint = - 49;
+	this.ff = this.fi!n();
+	await p?;
+	eventCounter = this.ff.get;
+	eventCounter = 585;
+	this.fb = True && False;
+	this.fj = this.fj;
+	this.fb = this.fb || this.fb;
+	J ioNode = new E();
+	eventCounter = this.fint;
+	res = 514;
+	Fut<Bool> y = this.fi!b();
+	this.ffb = this.ffb;
+	this.ff = this.fi!n();
+	
+}
+I serverNode = this.fi;
+await returnData?;
+Int j = - 558 + 731;
+this.ff = serverNode!n();
+res = eventCounter + 470;
+this.ffb = p;
+this.ffb = this.fi!b();
+while( this.fb) {
+	res = eventCounter;
+	this.fb =(this.fb);
+	
+}
+returnData = returnData;
+this.fj = this.fj;
+this.fb = 985 -(482) - 5 == res;
+await this.ff?;
+if( True) {
+	res = 718;
+	
+}
+else {
+	serverNode = serverNode;
+	j = res -(j);
+	eventCounter = eventCounter;
+	while( False && this.fb || False) {
+		flushReload = this.fi!n();
+		j = 420;
+		flushReload = serverNode!n();
+		this.ff = this.fi!n();
+		eventCounter = 587 + 834;
+		eventCounter = 239 + 175;
+		eventCounter = res;
+		serverNode = new D();
+		returnData =(this.fi )!n();
+		if( this.fb) {
+			await this.ff?;
+			serverNode = new D();
+			J person = this.fj;
+			this.fj = new E();
+			
+		}
+		I node = new D();
+		
+	}
+	await p?;
+	this.ff = serverNode!n();
+	
+}
+flushReload = this.fi!n();
+while( True) {
+	while( False) {
+		this.ffb = serverNode!b();
+		this.ffb = serverNode!b();
+		
+	}
+	this.fb = p.get;
+	await False;
+	this.fint = - 131;
+	Int stackAmount = 918;
+	
+}
+eventCounter = 553;
+this.fj = this.fj;
+eventCounter = this.fint;
+Bool hasLoaded = False && True;
+await returnData?;
+return 222;
+}
+}
+{}

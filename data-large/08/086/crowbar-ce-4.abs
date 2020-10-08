@@ -1,0 +1,32 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Int stackCounter = 0;
+		Int processDepth = 0;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (-stackCounter == ((processDepth * processDepth) * this.fint))
+		// Loop invariant: true
+		// while((-stackCounter == ((processDepth * processDepth) * this.fint))) {
+		{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

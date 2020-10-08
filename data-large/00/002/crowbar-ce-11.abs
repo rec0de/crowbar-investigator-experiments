@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((990 <= 195)){} 
+		// Known true:
+		// Negated loop guard: !((990 <= 195))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String packetUnit = null;
+		// End of setup
+		
+		String node = node;
+		Int l = 208;
+		// J serverObject = new E();
+		String serverObject = "object_1";
+		this.fint = 199;
+		packetUnit = packetUnit;
+		this.fj = serverObject;
+		this.ffb = this.ffb;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packetUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(packetUnit=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

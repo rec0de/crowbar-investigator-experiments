@@ -1,0 +1,99 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-2646 == this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((-2646 == this.fint))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isDone = True;
+		this.ffb = "fut_?(8)";
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fint = 9;
+		this.fi = "object_?(8)";
+		this.fb = True;
+		// End of setup
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		Bool restoreFlag = ((hasDone || True) || !False);
+		if(False){}
+		else{
+			this.fi = this.fi;
+			if(this.fb){}
+			else{
+				this.fb = True;
+			}
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_57";
+			Bool systemOverride = systemOverride;
+			systemOverride = (isDone || False);
+			if((False && True)){}
+			else{
+				if(systemOverride){
+					Bool isWrite = True;
+					
+					// await this.ffb?;
+					// Assume the following assignments while blocked:
+					this.ffb = "fut_?(18)";
+					this.fj = "object_?(13)";
+					this.ff = "fut_?(13)";
+					this.fint = 13;
+					this.fi = "object_?(13)";
+					this.fb = True;
+					// End assignments
+					
+					this.fj = this.fj;
+					Bool execOverride = (systemAmount <= 89);
+					// this.fj = new E();
+					this.fj = "object_2";
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.ffb = "fut_?(14)";
+					this.fj = "object_?(14)";
+					this.ff = "fut_?(14)";
+					this.fint = 17;
+					this.fi = "object_?(14)";
+					this.fb = True;
+					// End assignments
+					
+					Int queueDepth = (664 * systemAmount);
+				}
+				this.fb = !False;
+			}
+			Int l = 467;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_59";
+		}
+		restoreFlag = hasDone;
+		this.fi = this.fi;
+		restoreFlag = (this.ff == this.ff);
+		this.ff = this.ff;
+		String packetUnit = tree;
+		println(toString(((814 * this.fint) * -889))); // return statement
+		// Evaluates to: -12301982
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (((814*select(anon(store(store(store(anon(store(store(store(store(store(heap, this.fj, NEW23_0), this.fj, NEW23_0), this.fi, heap.fi), this.fb, 1), this.ffb, fut_57)), this.fj, select(anon(store(store(store(store(store(heap, this.fj, NEW23_0), this.fj, NEW23_0), this.fi, heap.fi), this.fb, 1), this.ffb, fut_57)), this.fj)), this.fj, NEW26_0), this.fj, NEW26_0)), this.fint))*-889)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

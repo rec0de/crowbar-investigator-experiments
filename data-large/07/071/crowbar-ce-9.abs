@@ -1,0 +1,60 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!this.fb){} 
+		// Known true:
+		// Negated loop guard: !(!this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(7)";
+		this.ff = "fut_?(7)";
+		this.fint = 322;
+		this.fb = True;
+		// End of setup
+		
+		Bool readyToggle = False;
+		// I clientStruct = new D();
+		String clientStruct = "object_1";
+		readyToggle = ((True == False) || this.fb);
+		// this.fj = new E();
+		this.fj = "object_2";
+		// this.fj = new E();
+		this.fj = "object_3";
+		// J packet = new E();
+		String packet = "object_4";
+		clientStruct = this.fi;
+		this.fb = (322 > this.fint);
+		String tree = this.fj;
+		// this.ff = clientStruct!n();
+		this.ff = "fut_55";
+		if(!True){}
+		else{
+			// this.fj = new E();
+			this.fj = "object_5";
+			Int stackCount = listDepth;
+			this.fint = 43;
+			stackCount = 818;
+			this.fb = ((485199 + this.fint) <= 565);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

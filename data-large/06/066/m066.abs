@@ -1,0 +1,229 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Fut<Bool> flushState = this.fi!b();
+this.fi = new D();
+this.fi = new D();
+if( this.fb) {
+	this.fint = this.fint;
+	this.fb = flushState.get;
+	
+}
+Int stackCounter = this.fint;
+this.fj = this.fj;
+while( True) {
+	if( False) {
+		this.ff = this.ff;
+		flushState = this.ffb;
+		
+	}
+	else {
+		this.ff = this.ff;
+		this.fi = new D();
+		Bool willSave = this.fb &&! this.fb;
+		flushState = this.fi!b();
+		flushState = this.fi!b();
+		willSave = True;
+		this.fi = this.fi;
+		stackCounter = - stackCounter;
+		await this.ff?;
+		this.fj = this.fj;
+		this.fb = False;
+		
+	}
+	this.fb = False;
+	
+}
+Bool processFlag =! this.fb || False;
+this.ff = this.fi!n();
+this.fb = False;
+await this.ffb?;
+flushState = this.fi!b();
+flushState = this.fi!b();
+if( False &&! this.fb) {
+	this.ff = this.fi!n();
+	this.fj = this.fj;
+	await this.ff?;
+	Bool isLoaded = this.fb;
+	await this.ffb?;
+	this.fi = this.fi;
+	flushState = this.fi!b();
+	while(! this.fb) {
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+while( this.fb) {
+	Bool storageEnabled = processFlag;
+	if( False) {
+		this.fi = new D();
+		this.ff = this.fi!n();
+		if( False) {
+			await flushState?;
+			await this.ffb?;
+			flushState = this.ffb;
+			this.fi = new D();
+			stackCounter = stackCounter;
+			Fut<Int> syncCall = this.fi!n();
+			this.ff = this.fi!n();
+			await syncCall?;
+			Int arg = stackCounter;
+			
+		}
+		else {
+			processFlag = False;
+			this.fb = this.fb || False;
+			stackCounter = 631;
+			processFlag = this.ffb.get;
+			
+		}
+		await False || this.fb ||! True;
+		await flushState?;
+		stackCounter = 201 *(468);
+		if( - stackCounter == 334) {
+			this.ffb = this.fi!b();
+			J serverObject = this.fj;
+			flushState = this.fi!b();
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			J node = new E();
+			await this.ff?;
+			
+		}
+		processFlag =! True ||! storageEnabled && False;
+		processFlag = this.ffb == this.ffb;
+		this.fb = True;
+		Bool execFlag = False;
+		
+	}
+	Bool isReady = False;
+	this.ff = this.fi!n();
+	isReady =(True) == this.fb;
+	isReady = this.ffb.get;
+	
+}
+this.fi = new D();
+Int listCount = this.fint;
+Bool configOverride = - 105 == listCount;
+listCount = stackCounter + 493;
+configOverride = 774 * stackCounter == 55 + this.fint;
+this.ff = this.ff;
+stackCounter = 933;
+if((this.fi == this.fi) && False && False) {
+	this.fj = new E();
+	this.ffb =(this.fi )!b();
+	if( False || processFlag) {
+		Int eventDepth = stackCounter;
+		Bool execOverride = this.fb || this.fb;
+		listCount = 958 + 39;
+		this.fb = this.ffb.get;
+		configOverride = this.fb;
+		this.fi = new D();
+		listCount = stackCounter;
+		
+	}
+	else {
+		configOverride = False || False;
+		stackCounter =(351 - - 159);
+		processFlag =(120) != 556;
+		
+	}
+	if( True) {
+		this.fint = - 578;
+		configOverride =! True && this.fb ||! True;
+		this.fb = this.fb || True;
+		flushState = this.fi!b();
+		
+	}
+	else {
+		this.fb = this.fb && True;
+		await flushState?;
+		await! True || this.fb;
+		Int systemCounter = - 209 * listCount;
+		this.fi = this.fi;
+		if( True || True) {
+			this.ff = this.fi!n();
+			flushState = this.fi!b();
+			flushState = flushState;
+			stackCounter = - this.fint;
+			processFlag = processFlag && processFlag ||(listCount > - 311);
+			
+		}
+		Bool isSave = this.fint == 861 - systemCounter;
+		listCount = this.ff.get;
+		if( this.ff == this.ff) {
+			await flushState?;
+			await configOverride;
+			
+		}
+		else {
+			this.fb = processFlag;
+			this.fj = new E();
+			this.fi = this.fi;
+			processFlag = False && False;
+			Int i =(901);
+			Bool storageToggle = False;
+			isSave = False;
+			I dataRepresentation = new D();
+			Fut<Int> a = dataRepresentation!n();
+			flushState = dataRepresentation!b();
+			
+		}
+		while( True &&!(this.ff == this.ff) && True) {
+			this.fj = this.fj;
+			
+		}
+		await! False ||((458 > stackCounter) || False);
+		J person = this.fj;
+		while( False) {
+			listCount = systemCounter;
+			await this.ffb?;
+			isSave = 586 == 812 * 622;
+			this.fb = True;
+			I packet = this.fi;
+			this.ff = packet!n();
+			flushState = packet!b();
+			
+		}
+		
+	}
+	this.ff = this.fi!n();
+	Fut<Int> resetUpdates = this.fi!n();
+	configOverride = True;
+	resetUpdates = this.fi!n();
+	await flushState?;
+	await this.ffb?;
+	
+}
+else {
+	flushState = this.fi!b();
+	Int eventCounter = stackCounter;
+	await flushState?;
+	
+}
+this.ff =(this.fi )!n();
+Bool isSaveed = True &&! False;
+return 734;
+}
+}
+{}

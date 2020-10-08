@@ -1,0 +1,62 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		
+		// I clientObject = new D();
+		String clientObject = "object_1";
+		// J clientUnit = new E();
+		String clientUnit = "object_2";
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		clientUnit = clientUnit;
+		Int k = 756;
+		// Int res = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int res = 0;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		this.fi = this.fi;
+		}
+		String ioRepresentation = clientUnit;
+		Int listCounter = listCounter;
+		// J clientUnit = new E();
+		String clientUnit = "object_3";
+		if((True && False)){}
+		else{
+			this.ff = this.ff;
+			if((765 == -246)){}
+			else{
+		
+			}
+			this.fint = (k + -32);
+		}
+		clientUnit = clientUnit;
+		println(toString(508)); // return statement
+		// Evaluates to: 508
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (508=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_114";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Int i = 0;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (-i == (i * 918))
+		// Loop invariant: true
+		// while((-i == (i * 918))) {
+		{
+			// Fut applyRequest = packetObject!n();
+			String applyRequest = "fut_113";
+			// this.ff = this.fi!n();
+			this.ff = "fut_114";
+			Int systemCounter = 740;
+			Bool willExec = (this.fb || True);
+			Int res = (systemCounter * i);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

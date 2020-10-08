@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && !isLoaded)){} 
+		// Known true:
+		// Negated loop guard: !((False && !isLoaded))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String tree = null;
+		Bool isLoaded = False;
+		// End of setup
+		
+		Int l = ((systemCount * -904) + 275);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(tree=0)
+		// Failed to show the following sub-obligations:
+		// !(tree=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

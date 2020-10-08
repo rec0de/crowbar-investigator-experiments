@@ -1,0 +1,175 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( False && False) {
+	while( 247 < this.fint) {
+		this.ffb = this.fi!b();
+		this.fb = this.fb && False && False || this.fb;
+		
+	}
+	Bool configEnabled = True;
+	this.fb =! True;
+	configEnabled = False || configEnabled;
+	this.ff = this.fi!n();
+	this.fb = this.ff == this.ff;
+	configEnabled =(True);
+	
+}
+else {
+	this.fb =! False;
+	while( - 860 +(768) == 781) {
+		if( this.fi == this.fi) {
+			await True ||! False && False;
+			this.ffb = this.ffb;
+			this.fj = new E();
+			this.ff =(this.fi )!n();
+			this.ff = this.fi!n();
+			this.fj = this.fj;
+			
+		}
+		else {
+			Int queueDepth =(this.fint);
+			
+		}
+		Bool readEnabled = this.fb;
+		this.fi = this.fi;
+		readEnabled =! True;
+		
+	}
+	
+}
+this.ffb =(this.fi )!b();
+await this.ff?;
+this.fb =! this.fb &&! False;
+while( this.fb) {
+	this.fj = this.fj;
+	this.ffb = this.fi!b();
+	Bool processFlag = False && True;
+	this.fj = this.fj;
+	this.fj = this.fj;
+	this.fint = 740;
+	if( False) {
+		Int eventCount = this.ff.get;
+		while((True)) {
+			eventCount = this.fint;
+			Int i = - 169;
+			this.fj = this.fj;
+			await this.ffb?;
+			Int listCounter = 258 + this.fint;
+			this.fint = this.ff.get;
+			this.fj = this.fj;
+			Int queueDepth = 797 * 312 - 217;
+			await this.ff?;
+			queueDepth =(listCounter);
+			
+		}
+		this.fint = 272;
+		this.fj = new E();
+		this.ffb = this.fi!b();
+		
+	}
+	else {
+		Int systemAmount = this.ff.get;
+		I serverRepresentation = this.fi;
+		
+	}
+	this.ffb = this.fi!b();
+	processFlag = False;
+	await this.ff?;
+	
+}
+this.fj = this.fj;
+this.ffb = this.fi!b();
+await this.ffb?;
+await this.ff?;
+if( False) {
+	Fut<Int> flushRequest = this.fi!n();
+	while((this.fint * this.fint != 468)) {
+		J tree = this.fj;
+		tree = tree;
+		J clientObject = new E();
+		this.fj = new E();
+		while( False) {
+			Bool hasDone = this.fb;
+			this.fb = this.fb;
+			this.fi = new D();
+			
+		}
+		this.ff = this.fi!n();
+		await flushRequest?;
+		J person = this.fj;
+		this.fb = True;
+		clientObject = this.fj;
+		Int stackCount = 471 + 275 + 609;
+		Fut<Bool> flushChanges = this.fi!b();
+		Int l = 381 * 367 * stackCount * stackCount;
+		this.ffb = this.fi!b();
+		flushChanges = this.fi!b();
+		stackCount = this.fint;
+		clientObject = this.fj;
+		this.fi = new D();
+		while(! True) {
+			Fut<Int> resolveData = this.ff;
+			J message = clientObject;
+			flushRequest = this.fi!n();
+			await flushRequest?;
+			person = new E();
+			clientObject = message;
+			person = new E();
+			Fut<Int> flushState = this.fi!n();
+			
+		}
+		stackCount = 487;
+		Int processDepth = 780 - 10;
+		
+	}
+	this.fj = this.fj;
+	this.ff = flushRequest;
+	Bool canRead = this.fb && True;
+	this.fint = flushRequest.get;
+	Fut<Bool> flushChanges =(this.fi )!b();
+	Bool canExec = True && canRead;
+	this.fint = - 197;
+	canExec = False;
+	canExec = canRead;
+	Bool isSaveed = canExec;
+	this.fj = new E();
+	this.ffb = this.fi!b();
+	this.ffb = this.ffb;
+	Int eventDepth = 493;
+	
+}
+else {
+	this.fb = False;
+	this.fint = 407;
+	this.ffb = this.ffb;
+	this.fj = new E();
+	Fut<Int> resetRequest = this.fi!n();
+	Fut<Bool> returnData = this.fi!b();
+	
+}
+this.fi = new D();
+this.fj = this.fj;
+J packet = this.fj;
+this.fi = this.fi;
+return this.fint;
+}
+}
+{}

@@ -1,0 +1,230 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True) {
+	this.fb = this.fb;
+	this.fj = new E();
+	this.fj = this.fj;
+	this.fint = - 634 + - 299 + this.fint;
+	while( this.fint == 608 * 57) {
+		while( False) {
+			await this.ff?;
+			this.ff = this.fi!n();
+			this.ffb = this.fi!b();
+			this.fb = this.ff == this.ff;
+			
+		}
+		this.fint =(this.ff ).get;
+		this.fj = this.fj;
+		this.fj = new E();
+		this.fi = new D();
+		this.ff =(this.ff);
+		Bool readEnabled = False && False;
+		Bool readFlag = True;
+		Int queueCounter = this.fint;
+		if( readEnabled || True) {
+			await this.ffb?;
+			Int processAmount = 513 - 250 + queueCounter;
+			queueCounter = - 679 * 7;
+			await this.ff?;
+			
+		}
+		else {
+			queueCounter = 702;
+			queueCounter = 303;
+			this.fint = 772;
+			Int systemAmount =(493 * queueCounter);
+			systemAmount = - 58;
+			Fut<Bool> q = this.fi!b();
+			await this.ff?;
+			systemAmount = this.fint;
+			await this.ffb?;
+			q = this.fi!b();
+			Int value =(this.fint) * systemAmount;
+			value = 798;
+			this.fint = 928;
+			Bool isLoad = q == q;
+			
+		}
+		readFlag =! False;
+		Int systemAmount = this.ff.get;
+		Int eventCount = 942;
+		readEnabled = this.fi == this.fi;
+		systemAmount = - 707;
+		
+	}
+	Bool processToggle = False;
+	J tree = this.fj;
+	
+}
+this.fi = this.fi;
+this.fb = False || True;
+Bool willWrite = 514 <= 19 - this.fint;
+if( this.fb) {
+	this.fint = 394;
+	I tree = this.fi;
+	this.ff = this.fi!n();
+	this.fb = this.ffb.get;
+	await this.ff?;
+	willWrite = this.fb;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	await this.ffb?;
+	await True;
+	this.fb =(268 >= this.fint * 647 + this.fint);
+	
+}
+I message = this.fi;
+message = new D();
+while((True)) {
+	willWrite = False && this.fb;
+	willWrite = this.fb;
+	this.fb =(! False);
+	while((! False || this.fb)) {
+		if( - 359 <= this.fint) {
+			Int eventCounter = - 178 * - this.fint;
+			await this.ff?;
+			this.ff = this.fi!n();
+			message = new D();
+			this.ffb = this.fi!b();
+			Fut<Int> syncFlag = message!n();
+			I packet = message;
+			packet = message;
+			I clientObject = new D();
+			this.fi = message;
+			await False;
+			
+		}
+		else {
+			Bool storageEnabled = False && True && True;
+			Int processCounter = 907;
+			await processCounter == this.fint;
+			await this.ffb?;
+			Int j = 946;
+			await this.ff?;
+			this.fj = this.fj;
+			willWrite = this.ffb.get;
+			Bool willSave = storageEnabled;
+			await this.ff?;
+			this.fb = 640 - - 604 * 144 - 165 == 162;
+			await this.ff?;
+			this.fi = message;
+			
+		}
+		this.fb = this.fb && True && False;
+		this.fj = this.fj;
+		this.fb = True;
+		
+	}
+	
+}
+if((False )) {
+	this.fint = 109 + 187;
+	Int systemDepth = this.ff.get;
+	message = this.fi;
+	
+}
+else {
+	while( True) {
+		message = new D();
+		message = new D();
+		this.fb = willWrite && this.fb &&! True;
+		
+	}
+	
+}
+this.fj = this.fj;
+while( this.fb) {
+	this.ff = this.fi!n();
+	this.fb = willWrite;
+	
+}
+Bool canExec = True;
+Int queueCounter = 422;
+this.fb = 903 <= 758 + queueCounter;
+willWrite = False;
+I person = this.fi;
+this.fj = new E();
+willWrite = canExec;
+queueCounter = queueCounter * - 923;
+this.fb =! False;
+canExec = True;
+while((True) || canExec) {
+	person = this.fi;
+	this.fint = this.fint;
+	this.ff = this.ff;
+	canExec = True;
+	Bool hasReady = False;
+	if( True) {
+		person = new D();
+		person = new D();
+		
+	}
+	else {
+		canExec = hasReady;
+		
+	}
+	Int res = 821 - this.fint * 179 * queueCounter;
+	
+}
+await this.ff?;
+message = this.fi;
+this.fb =((False) || True);
+this.fi = this.fi;
+I serverRepresentation = this.fi;
+Bool isLoaded = True;
+Bool isSave = this.fb || True;
+while(! True) {
+	serverRepresentation = new D();
+	this.fint = 3;
+	while((True)) {
+		Int systemCount = 17 - this.fint;
+		willWrite =(canExec);
+		Bool sendOverride = isLoaded;
+		
+	}
+	isSave = False || False;
+	canExec = this.ffb.get;
+	Bool sendFlag = True;
+	Int processCount = 581;
+	isSave = False;
+	await this.ffb?;
+	I ioStruct = new D();
+	Fut<Int> applyUpdates = ioStruct!n();
+	await applyUpdates?;
+	while( False) {
+		this.fb = this.fb;
+		await True;
+		
+	}
+	this.fb = this.ffb.get;
+	isLoaded = False;
+	await this.ff?;
+	Bool isExec = False ||! False && True;
+	
+}
+Bool isRead =! this.fb &&! True;
+isLoaded =! isRead;
+return queueCounter;
+}
+}
+{}

@@ -1,0 +1,196 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( True == False || False) {
+	Fut<Int> applyCall = this.ff;
+	this.ffb = this.ffb;
+	while( this.fb) {
+		await this.fb ==! False;
+		this.ff = applyCall;
+		
+	}
+	this.fint = applyCall.get;
+	
+}
+Int i = 894 - 805;
+while( i >= - 550) {
+	this.fi = this.fi;
+	this.fj = new E();
+	this.fb = this.fi == this.fi;
+	if( this.fb) {
+		this.fj = new E();
+		this.fb = True && False;
+		
+	}
+	else {
+		Int k = 690;
+		Int arg = 775;
+		await this.ff == this.ff;
+		
+	}
+	i =(130) * 892;
+	
+}
+Bool configToggle =! True;
+if( True) {
+	Fut<Bool> y = this.fi!b();
+	while((True || this.fb &&(! True && False))) {
+		while( False) {
+			Bool canSave =! False;
+			
+		}
+		if( this.fb) {
+			y = this.fi!b();
+			await 582 >= 250;
+			this.fj = new E();
+			this.fint = this.fint;
+			
+		}
+		else {
+			Int processCounter = 520;
+			y = this.fi!b();
+			this.ffb =(y);
+			i = 383;
+			processCounter = processCounter;
+			y = this.fi!b();
+			
+		}
+		while( i + 425 == - i) {
+			Int eventCounter = 689;
+			Bool hasSaveed = configToggle;
+			Fut<Bool> resetRequest = y;
+			this.fj = this.fj;
+			this.ff = this.fi!n();
+			
+		}
+		i = 682;
+		if(! this.fb) {
+			this.fj = this.fj;
+			this.fj = this.fj;
+			await configToggle == this.fb || True;
+			
+		}
+		else {
+			i = 368 * 106;
+			Int systemDepth = 928 + 949;
+			
+		}
+		
+	}
+	this.ff = this.fi!n();
+	await this.ff?;
+	J serverStruct = this.fj;
+	await configToggle && False;
+	Int listCounter = this.fint *(182);
+	while( i != this.fint) {
+		this.fi = this.fi;
+		Int l = i;
+		Bool isLoaded =! False;
+		
+	}
+	this.fb = configToggle || False && configToggle || True || False;
+	while( True) {
+		I packet = new D();
+		if( False) {
+			this.fint = i + this.fint * 520;
+			
+		}
+		else {
+			await y?;
+			await((! this.fb));
+			listCounter = - 622;
+			serverStruct = this.fj;
+			
+		}
+		Fut<Bool> p = this.ffb;
+		
+	}
+	while( this.fb) {
+		Int stackAmount = 309;
+		
+	}
+	this.fint = 142;
+	this.fint = 735;
+	Bool willSave = True;
+	
+}
+else {
+	await this.ffb?;
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	if( this.fi == this.fi) {
+		this.fint = i;
+		Fut<Int> q = this.fi!n();
+		J node = new E();
+		configToggle =! False;
+		this.ffb = this.fi!b();
+		q = this.fi!n();
+		this.fb = True;
+		if( True) {
+			await this.ff?;
+			
+		}
+		I ioObject = new D();
+		J dataRepresentation = node;
+		Bool hasDone = False;
+		this.fi = new D();
+		
+	}
+	else {
+		this.fi = this.fi;
+		this.ff = this.ff;
+		configToggle =(this.ffb ).get;
+		while( True) {
+			this.fj = new E();
+			Fut<Bool> p = this.fi!b();
+			this.fi = this.fi;
+			this.fb = i < this.fint;
+			
+		}
+		i = i;
+		i = 646;
+		Bool isRead = True;
+		Bool writeToggle = False;
+		I clientStruct = new D();
+		
+	}
+	
+}
+this.fint = 633;
+Int systemCounter = this.ff.get;
+this.fint = 665 + 117;
+i = 1;
+this.fb =! True;
+while( True) {
+	await configToggle;
+	this.fi = this.fi;
+	this.ff =(this.ff);
+	this.fb = False;
+	Fut<Bool> resInfo = this.fi!b();
+	
+}
+this.fint = - 402;
+Bool isReady = False;
+this.fi = this.fi;
+this.fj = this.fj;
+return this.fint;
+}
+}
+{}

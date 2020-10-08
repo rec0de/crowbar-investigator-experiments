@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(hasSaveed){} 
+		// Known true:
+		// Negated loop guard: !(hasSaveed)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool hasSaveed = True;
+		// End of setup
+		
+		Bool isDone = this.fb;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		hasSaveed = (True && pauseEnabled);
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		hasSaveed = True;
+		println(toString(20)); // return statement
+		// Evaluates to: 20
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (20=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

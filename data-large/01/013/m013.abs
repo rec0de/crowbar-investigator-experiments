@@ -1,0 +1,162 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool willSave = False;
+if(! True && False) {
+	this.ff = this.fi!n();
+	I message = new D();
+	
+}
+else {
+	this.ffb = this.fi!b();
+	if(! False || True) {
+		this.ffb = this.ffb;
+		Int l = this.fint;
+		willSave = True;
+		while( willSave) {
+			await this.ff?;
+			this.fb =! False;
+			this.fi = new D();
+			this.fb = this.fint >= 908 * this.fint * 183;
+			this.fj = new E();
+			I clientNode = new D();
+			Bool willRead =! True;
+			
+		}
+		this.fint = 413;
+		Bool isSaveed = - 989 >= l;
+		
+	}
+	this.fj = this.fj;
+	this.fint = this.fint;
+	await this.ffb?;
+	
+}
+this.ffb = this.ffb;
+I clientNode = this.fi;
+Fut<Int> z = this.fi!n();
+J clientUnit = this.fj;
+if( False) {
+	await z?;
+	
+}
+clientUnit = new E();
+I ioRepresentation = new D();
+this.fint = - 350 + - this.fint;
+Int systemAmount = 103;
+await z?;
+Bool execEnabled = True;
+I packet = new D();
+systemAmount =(39 + systemAmount);
+Bool isSaveed = this.ffb.get;
+ioRepresentation = clientNode;
+if(! False) {
+	clientNode = clientNode;
+	
+}
+else {
+	z = ioRepresentation!n();
+	
+}
+this.fi = packet;
+this.fj = this.fj;
+while( isSaveed) {
+	while( False) {
+		this.ffb = ioRepresentation!b();
+		Fut<Bool> resState = this.fi!b();
+		Int stackCount = 869;
+		Fut<Bool> returnInfo =(this.ffb);
+		
+	}
+	this.fb = this.fb;
+	
+}
+while( willSave) {
+	Fut<Bool> flushUpdates = clientNode!b();
+	flushUpdates = clientNode!b();
+	clientUnit = new E();
+	isSaveed = True;
+	if( True) {
+		J clientStruct = this.fj;
+		this.ff = this.fi!n();
+		z = this.fi!n();
+		clientUnit = new E();
+		execEnabled = isSaveed;
+		ioRepresentation = new D();
+		if( clientNode == packet) {
+			await! isSaveed;
+			this.fb = False;
+			Fut<Int> returnState = z;
+			this.fi = new D();
+			z = packet!n();
+			this.ffb = flushUpdates;
+			await this.ffb?;
+			this.fj = clientStruct;
+			execEnabled = systemAmount != 760;
+			await this.ff?;
+			clientUnit = new E();
+			
+		}
+		else {
+			execEnabled = False;
+			clientStruct = this.fj;
+			this.fb = this.ffb.get;
+			this.fj = clientStruct;
+			
+		}
+		this.fint = this.fint * 289;
+		
+	}
+	else {
+		this.fj = this.fj;
+		flushUpdates = this.fi!b();
+		this.ffb = packet!b();
+		this.ffb = this.ffb;
+		Bool configOverride = 126 -(- 820) * 496 >= 976;
+		packet = new D();
+		clientNode = clientNode;
+		packet = clientNode;
+		while(! True) {
+			await this.ff?;
+			this.ff = this.ff;
+			this.fi = new D();
+			flushUpdates = ioRepresentation!b();
+			await this.ffb?;
+			isSaveed = 258 > systemAmount * systemAmount + 427 + 479;
+			this.fj = new E();
+			Int queueCounter = this.fint;
+			
+		}
+		systemAmount = 299;
+		execEnabled = execEnabled;
+		await this.ffb?;
+		
+	}
+	
+}
+clientNode = clientNode;
+this.ff = this.fi!n();
+this.fi = clientNode;
+this.ff = packet!n();
+clientNode = new D();
+return this.fint;
+}
+}
+{}

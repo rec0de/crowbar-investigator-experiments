@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String resState = "fut_?(12)";
+		this.fj = "object_?(9)";
+		this.ff = "fut_40";
+		this.fi = "object_?(9)";
+		this.fint = 9;
+		this.fb = True;
+		this.ffb = "fut_40";
+		// End of setup
+		
+		Int k = this.fint;
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_40";
+		// this.fi = new D();
+		this.fi = "object_1";
+		this.fb = (this.fj == this.fj);
+		
+		// await resState?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fint = 13;
+		this.fb = True;
+		this.ffb = "fut_?(10)";
+		// End assignments
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_41";
+		if(True){
+			if((this.fint != 17)){
+				this.ffb = resState;
+				Int i = this.fint;
+				String resState = this.ffb;
+				String message = this.fj;
+				this.fint = -135552000;
+				this.fint = i;
+			}
+			Bool isRead = this.fb;
+		}
+		if((this.fb && !False)){}
+		else{
+			Bool readToggle = (!True == False);
+			// Fut resState = this.fi!b();
+			String resState = "fut_42";
+		}
+		println(toString(130)); // return statement
+		// Evaluates to: 130
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (130=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

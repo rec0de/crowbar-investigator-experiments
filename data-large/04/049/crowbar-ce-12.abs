@@ -1,0 +1,53 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fj = null;
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && !False)){} 
+		// Known true:
+		// Negated loop guard: !((False && !False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String resState = "fut_?(0)";
+		this.fb = True;
+		// End of setup
+		
+		String message = this.fj;
+		if((resState == resState)){
+			// resState = this.fi!b();
+			resState = "fut_45";
+			// I packet = new D();
+			String packet = "object_1";
+		}
+		}
+		if((this.fb && !False)){
+			// this.fj = new E();
+			this.fj = "object_2";
+			String message = message;
+			// I person = new D();
+			String person = "object_3";
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+		}
+		println(toString(130)); // return statement
+		// Evaluates to: 130
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (130=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

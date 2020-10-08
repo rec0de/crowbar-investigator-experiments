@@ -1,0 +1,227 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool writeToggle = this.fb;
+this.fint = 877;
+this.fi = this.fi;
+this.fb =(! False && True);
+while( this.ffb == this.ffb) {
+	if(! this.fb && True &&! writeToggle &&! False || True || False) {
+		this.ff = this.fi!n();
+		if( 381 >=(this.fint )) {
+			J person = new E();
+			I tree = this.fi;
+			await this.ff?;
+			
+		}
+		else {
+			this.fi = new D();
+			Int stackCount = this.fint *(750 * 237) *(- 559 + this.fint) * 277 - 280;
+			
+		}
+		I serverObject = this.fi;
+		J serverStruct = new E();
+		writeToggle = writeToggle;
+		writeToggle = this.fb;
+		J person = new E();
+		this.fj = this.fj;
+		await this.ff?;
+		
+	}
+	this.ffb = this.fi!b();
+	this.fj = this.fj;
+	I tree = new D();
+	this.fint = 343 * 157;
+	
+}
+if( this.fi == this.fi) {
+	await this.ff?;
+	while( True) {
+		while( 630 > 776) {
+			this.ff = this.fi!n();
+			J message = new E();
+			this.ff = this.fi!n();
+			await this.ff?;
+			this.fi = this.fi;
+			this.fb = writeToggle && False;
+			await True && False;
+			this.fj = this.fj;
+			
+		}
+		this.fint = 43 + this.fint;
+		
+	}
+	this.fj = new E();
+	if( False) {
+		Fut<Bool> resetUpdates =(this.ffb);
+		while( False) {
+			this.ff = this.fi!n();
+			writeToggle = writeToggle;
+			this.fb = resetUpdates.get;
+			await this.ff?;
+			await this.ffb?;
+			Bool readyEnabled = True;
+			readyEnabled = True;
+			await this.ffb?;
+			this.fj = this.fj;
+			await True;
+			await resetUpdates?;
+			readyEnabled = False;
+			this.fi = this.fi;
+			
+		}
+		writeToggle =! False;
+		this.fb = this.fb;
+		this.fint = this.fint;
+		if( writeToggle) {
+			this.ff = this.fi!n();
+			await this.ff?;
+			
+		}
+		else {
+			await this.ffb?;
+			resetUpdates = this.fi!b();
+			writeToggle = this.ffb.get;
+			
+		}
+		this.ffb = this.fi!b();
+		
+	}
+	this.ff = this.ff;
+	while( True ||! this.fb) {
+		await this.ff?;
+		this.fb = this.fb;
+		writeToggle = False ||(writeToggle) && True && True && True;
+		
+	}
+	
+}
+else {
+	await this.ffb?;
+	
+}
+await this.ff?;
+writeToggle = this.ffb.get;
+while(! this.fb) {
+	I node = this.fi;
+	this.ff = this.fi!n();
+	
+}
+while( False) {
+	this.ff = this.fi!n();
+	this.ff = this.fi!n();
+	I node = new D();
+	I serverUnit = new D();
+	await! False;
+	this.fj = this.fj;
+	
+}
+J person = new E();
+Bool configEnabled = 372 * - this.fint - this.fint * 655 * this.fint == 945;
+while( - 552 - this.fint > -((- 958))) {
+	Int res = this.ff.get;
+	this.ffb = this.fi!b();
+	this.fb = False;
+	this.ff = this.fi!n();
+	this.fint = 275;
+	res = 659;
+	Int listCount = 474;
+	if((13) == 278 * res) {
+		while( True) {
+			await this.ff?;
+			Int j = 659;
+			Int processCounter = 814;
+			
+		}
+		res = this.ff.get;
+		while( True && False) {
+			J message = person;
+			
+		}
+		person = new E();
+		this.fi = this.fi;
+		
+	}
+	else {
+		if( True || False) {
+			this.fint = 572;
+			person = new E();
+			this.fint = 282;
+			this.fi = new D();
+			Int processDepth = 655;
+			await False;
+			person = person;
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			this.fi = new D();
+			I serverUnit = this.fi;
+			this.fint = 599;
+			this.ffb = serverUnit!b();
+			listCount = res;
+			this.fb = True && True;
+			Int listDepth =(439) * - 750 * 54;
+			
+		}
+		
+	}
+	Int arg = 361;
+	
+}
+person = new E();
+writeToggle = True;
+await this.ffb?;
+this.fb =! True;
+if( this.fb) {
+	J message = new E();
+	
+}
+else {
+	J tree = new E();
+	person = new E();
+	I serverNode = new D();
+	tree = person;
+	person = tree;
+	tree = person;
+	while( True) {
+		await this.ffb?;
+		while( - 954 == 488) {
+			J clientObject = this.fj;
+			await 121 < this.fint;
+			
+		}
+		this.fj = this.fj;
+		serverNode = new D();
+		
+	}
+	tree = new E();
+	this.ffb = serverNode!b();
+	J node = person;
+	
+}
+this.fint = this.fint + 31;
+await this.ffb?;
+this.ffb = this.ffb;
+this.fint = 869 - 777;
+return 466;
+}
+}
+{}

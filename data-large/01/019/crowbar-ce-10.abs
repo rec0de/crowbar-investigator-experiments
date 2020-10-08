@@ -1,0 +1,76 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(isSaveed){} 
+		// Known true:
+		// Negated loop guard: !(isSaveed)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isSaveed = True;
+		// End of setup
+		
+		Int stackCount = 774;
+		Bool isRead = !False;
+		// I packet = new D();
+		String packet = "object_1";
+		// Fut x = this.fi!b();
+		String x = "fut_39";
+		Int arg = 456;
+		Bool pauseToggle = ((False && isRead) && False);
+		packet = this.fi;
+		// this.fj = new E();
+		this.fj = "object_2";
+		// I person = new D();
+		String person = "object_3";
+		
+		// await x?;
+		// No heap modification info available at this point
+		
+		// isRead = (x).get;
+		// Future value irrelevant or unavailable, using default:
+		isRead = False;
+		Bool hasReady = True;
+		pauseToggle = (-422684 == 425);
+		// Fut flushReload = person!b();
+		String flushReload = "fut_40";
+		isRead = (this.fi == person);
+		String tree = message;
+		// this.fi = new D();
+		this.fi = "object_4";
+		isRead = !False;
+		Int listDepth = (listDepth + 911);
+		
+		// await True;
+		// No heap modification info available at this point
+		
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// flushReload = this.fi!b();
+		flushReload = "fut_41";
+		stackCount = (297 * arg);
+		// hasReady = (flushReload).get;
+		// Future value irrelevant or unavailable, using default:
+		hasReady = False;
+		println(toString(-294)); // return statement
+		// Evaluates to: -294
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-294=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

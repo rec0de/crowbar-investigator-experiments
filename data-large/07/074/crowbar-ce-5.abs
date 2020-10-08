@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String message = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			// J tree = new E();
+			String tree = "object_1";
+			String clientStruct = message;
+			this.fb = (!willSave && this.fb);
+			String y = this.ffb;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_39";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(message=0)
+		// Failed to show the following sub-obligations:
+		// !(message=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

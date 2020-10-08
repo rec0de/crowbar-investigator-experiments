@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fb = True;
+		this.ffb = "fut_?(6)";
+		this.ff = "fut_?(6)";
+		// End of setup
+		
+		this.ffb = this.ffb;
+		Bool storageFlag = False;
+		this.fb = ((True || this.fb) || storageFlag);
+		// this.ff = this.fi!n();
+		this.ff = "fut_28";
+		if((storageFlag && this.fb)){}
+		else{
+			storageFlag = (((True == False) || True) || this.fb);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

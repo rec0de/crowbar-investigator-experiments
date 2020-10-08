@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = -21238;
+		this.fi = "object_?(4)";
+		this.fb = True;
+		// End of setup
+		
+		this.fb = (914 < this.fint);
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 5;
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(heap, this.fb, (914<heap.fint))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

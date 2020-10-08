@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ffb = "fut_?(6)";
+		this.fb = True;
+		this.ff = "fut_?(6)";
+		// End of setup
+		
+		String clientStruct = this.fi;
+		this.fi = this.fi;
+		this.fb = True;
+		// this.ffb = clientStruct!b();
+		this.ffb = "fut_49";
+		// this.ff = this.fi!n();
+		this.ff = "fut_50";
+		Int l = -174;
+		Bool writeOverride = (False && writeOverride);
+		if(this.fb){
+			Int j = 406;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!pauseEnabled){} 
+		// Known true:
+		// Negated loop guard: !(!pauseEnabled)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String packet = null;
+		Bool pauseEnabled = True;
+		Int i = 0;
+		// End of setup
+		
+		pauseEnabled = (-i < (this.fint - i));
+		}
+		if((((!True && (pauseEnabled == True)) && !False) || False)){}
+		else{
+			Bool hasSaveed = True;
+			this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(packet=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

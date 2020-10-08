@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((willRead || canRead)){} 
+		// Known true:
+		// Negated loop guard: !((willRead || canRead))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool canRead = True;
+		Bool willRead = True;
+		this.fint = -502;
+		// End of setup
+		
+		Bool hasReady = True;
+		Int stackAmount = (18 * this.fint);
+		Int i = (this.fint + 503);
+		Int j = 514;
+		this.fint = i;
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (select(store(heap, this.fint, (heap.fint+503)), this.fint)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

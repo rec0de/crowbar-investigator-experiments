@@ -1,0 +1,147 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ffb?;
+Int l = 653 -(572) - this.fint - - this.fint;
+if( True) {
+	while( this.fb) {
+		Bool canWrite = this.fb;
+		while( False &&(False)) {
+			this.fb = this.fb;
+			this.fb = canWrite && True;
+			Int res = this.ff.get;
+			
+		}
+		I packet = new D();
+		Int queueCounter = 22 + - this.fint;
+		
+	}
+	this.fi = new D();
+	this.ff = this.fi!n();
+	if( False) {
+		l = this.ff.get;
+		
+	}
+	else {
+		I packet = new D();
+		this.fj = new E();
+		l =(340);
+		this.ff = packet!n();
+		while((this.fb)) {
+			packet = packet;
+			Int i = this.fint;
+			this.fint = 808 + 211;
+			this.fint = - 90;
+			packet = new D();
+			
+		}
+		l = this.fint;
+		this.ffb = this.fi!b();
+		if( False) {
+			l = 914;
+			Int stackCount = - 30;
+			
+		}
+		else {
+			this.fint = this.fint;
+			
+		}
+		
+	}
+	if( 449 < 846) {
+		this.fb = True;
+		this.fb = False;
+		
+	}
+	this.fb = False == False ||! True || True || False;
+	this.ff = this.fi!n();
+	this.fint = 329 * this.fint;
+	if(! False) {
+		this.fint = l * 336 * 391;
+		Bool isLoaded = 157 < 765;
+		l = - this.fint;
+		this.fint = this.ff.get;
+		this.fj = this.fj;
+		Int processCounter = 105;
+		l = - 666;
+		await isLoaded;
+		this.ffb = this.fi!b();
+		isLoaded = False;
+		I ioStruct = this.fi;
+		await this.ff?;
+		this.fj = this.fj;
+		this.fj = new E();
+		this.fint = l - processCounter;
+		if(! True) {
+			Fut<Int> syncFlag = ioStruct!n();
+			ioStruct = new D();
+			await this.ff?;
+			
+		}
+		else {
+			this.fint = 104 * 24;
+			Bool hasLoaded = True;
+			Bool isSave = False && True;
+			this.ffb = this.ffb;
+			this.ff = ioStruct!n();
+			this.fi = this.fi;
+			this.ff = this.ff;
+			processCounter = l * processCounter;
+			this.ffb = this.fi!b();
+			await isLoaded;
+			isLoaded = hasLoaded;
+			await this.ff?;
+			Int systemAmount = l;
+			Int j = 303;
+			await isSave && this.fb;
+			Bool willWrite =(! False);
+			processCounter = 927;
+			ioStruct = new D();
+			Int processAmount = 117;
+			processCounter = -(l);
+			
+		}
+		this.fi = this.fi;
+		Int listAmount = 498;
+		this.fi = ioStruct;
+		
+	}
+	this.ff = this.fi!n();
+	this.fint = - 193;
+	l = 474 * 55;
+	
+}
+await this.ff?;
+l = 470;
+this.ff = this.fi!n();
+this.fint = this.fint;
+Int queueDepth = this.fint * 774;
+l =(241);
+Fut<Bool> resInfo = this.fi!b();
+this.fi = this.fi;
+l = this.ff.get;
+I node = this.fi;
+this.ffb = this.fi!b();
+Bool isSaveed = this.fb;
+this.fi = new D();
+return 553 * l;
+}
+}
+{}

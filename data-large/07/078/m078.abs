@@ -1,0 +1,181 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if((True) || True) {
+	this.fj = new E();
+	
+}
+else {
+	this.fi = this.fi;
+	J packet = new E();
+	this.fb = packet == packet;
+	this.fi = this.fi;
+	Int eventDepth = this.ff.get;
+	if( True || False) {
+		packet = new E();
+		Int processCounter = this.fint;
+		Bool sendEnabled = this.fb;
+		sendEnabled = True;
+		
+	}
+	this.fj = this.fj;
+	if( this.fb) {
+		if((False &&! this.fb) && False && this.fb) {
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			Int value = 871;
+			this.fint = value * - this.fint;
+			await False;
+			await this.ff?;
+			this.ffb = this.fi!b();
+			await this.ffb?;
+			Bool hasDone =! True;
+			hasDone = False;
+			packet =(this.fj);
+			
+		}
+		if( True || this.fb) {
+			Bool execEnabled =! False;
+			eventDepth = 718;
+			await True;
+			Int eventCount = 185;
+			await this.ffb?;
+			
+		}
+		else {
+			J ioObject = packet;
+			
+		}
+		this.fb = True || True;
+		this.ff = this.fi!n();
+		this.fb = True;
+		Fut<Bool> a = this.fi!b();
+		this.fj = new E();
+		Int j = 881 - 880;
+		this.fi = new D();
+		await this.ffb?;
+		Int stackDepth = j - 116;
+		while( False) {
+			this.fi = new D();
+			await this.ffb?;
+			this.fb = this.ffb.get;
+			this.ff = this.ff;
+			this.fint = - 192;
+			a = this.fi!b();
+			
+		}
+		if( True &&(! this.fb) || True &&! True) {
+			await this.ffb?;
+			this.fi = this.fi;
+			this.fb = this.fb;
+			await this.ff?;
+			this.fi = new D();
+			j = 754;
+			I message =(this.fi);
+			await a?;
+			await this.ff?;
+			await this.ff?;
+			this.fb = False || False &&! True;
+			await a?;
+			Bool writeToggle = this.ffb.get;
+			this.fj = new E();
+			await this.fb;
+			eventDepth = 930;
+			eventDepth = 943;
+			message =(message);
+			Int arg = 32;
+			eventDepth = 538;
+			this.fint = 151 * 595;
+			await this.ff?;
+			await a?;
+			stackDepth = 326;
+			this.fb = this.fb;
+			Bool canWrite = this.ffb.get;
+			this.fi = new D();
+			arg = arg;
+			await this.ff?;
+			this.ffb = this.ffb;
+			Int res = this.ff.get;
+			Int listCount = 519;
+			J packetNode = new E();
+			Bool configOverride = True;
+			j = 2;
+			J person = new E();
+			
+		}
+		else {
+			a = this.fi!b();
+			packet = new E();
+			this.ff = this.fi!n();
+			eventDepth = 384 * j;
+			await this.ffb?;
+			
+		}
+		await True && False;
+		
+	}
+	else {
+		Int processDepth = - 239;
+		Fut<Bool> a = this.fi!b();
+		processDepth = 836;
+		Fut<Bool> resetReload = a;
+		
+	}
+	
+}
+this.ffb = this.fi!b();
+Int listDepth = - 258 * 629;
+this.fi = this.fi;
+listDepth = 48 + listDepth * listDepth;
+this.fj = this.fj;
+this.ffb = this.fi!b();
+while( True ||! False) {
+	Fut<Int> resInfo = this.fi!n();
+	this.fb = this.ffb.get;
+	I packetObject = new D();
+	Bool hasReady = this.ffb.get;
+	Int res = this.ff.get;
+	if( False && True) {
+		this.fi = new D();
+		await this.ff?;
+		this.fb = this.fint + 772 - 164 > 627;
+		hasReady = - res > 835;
+		hasReady = True;
+		while( True) {
+			Fut<Bool> resolveData = packetObject!b();
+			
+		}
+		this.fb = resInfo == resInfo;
+		
+	}
+	this.ffb = this.ffb;
+	
+}
+Fut<Bool> resolveInfo = this.fi!b();
+Int systemCounter = 281;
+this.ff = this.fi!n();
+I clientStruct = this.fi;
+systemCounter = 901;
+return this.fint * - listDepth + this.fint;
+}
+}
+{}

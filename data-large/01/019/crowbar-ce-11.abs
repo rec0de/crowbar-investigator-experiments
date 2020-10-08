@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	Bool fb = False;
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(12)";
+		this.ff = "fut_29";
+		this.fint = -11797;
+		this.fb = True;
+		this.ffb = "fut_29";
+		// End of setup
+		
+		// Int stackCount = (this.ff).get;
+		Int stackCount = 0;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_29";
+		stackCount = (977 - this.fint);
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_30";
+		if(!this.fb){
+			// this.ff = this.fi!n();
+			this.ff = "fut_31";
+			Bool isRead = (True && False);
+			Int k = 564;
+		}
+		this.fb = !this.fb;
+		this.ff = this.ff;
+		this.fj = this.fj;
+		Int listDepth = 250;
+		// I serverObject = new D();
+		String serverObject = "object_2";
+		if((stackCount <= 76)){}
+		else{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

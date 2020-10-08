@@ -1,0 +1,152 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 740;
+if( True ||! False ||(True || this.fb && False )) {
+	while( this.fb ||! False) {
+		this.ff = this.ff;
+		this.fb = False;
+		Bool canLoad = True;
+		if( 793 > - 80) {
+			this.fj = this.fj;
+			Bool restoreOverride = False;
+			Bool willWrite = canLoad;
+			
+		}
+		else {
+			await canLoad;
+			this.fint = this.fint;
+			Bool readOverride = this.ffb.get;
+			this.fi = this.fi;
+			canLoad = this.fb;
+			await - 416 <= 274;
+			canLoad = this.fb;
+			this.fi = new D();
+			this.fb = False;
+			Bool hasSaveed =! True;
+			
+		}
+		await this.ff?;
+		while( this.fb && False || False) {
+			this.ffb = this.fi!b();
+			this.fint = 640;
+			await this.ffb?;
+			Fut<Bool> syncUpdates = this.fi!b();
+			this.fj = this.fj;
+			
+		}
+		
+	}
+	this.fb = this.fb;
+	this.ff = this.fi!n();
+	this.ffb = this.fi!b();
+	Bool willLoad = this.fb;
+	
+}
+else {
+	this.fb = True;
+	await this.ff?;
+	await this.ffb?;
+	J serverObject = new E();
+	this.fj = new E();
+	Int eventCount =(502);
+	this.fj = new E();
+	Bool systemToggle = False;
+	serverObject = this.fj;
+	if( False) {
+		this.ffb = this.fi!b();
+		Bool isDone = False && False && True;
+		this.fj = serverObject;
+		this.fi = new D();
+		this.ffb = this.ffb;
+		this.ff = this.ff;
+		Int processDepth = this.fint - - 494;
+		this.ffb = this.fi!b();
+		systemToggle = 950 != 870;
+		serverObject = new E();
+		this.ff =(this.ff);
+		Bool storageToggle = 286 >= 829;
+		this.fint = - 442;
+		this.fb = this.ffb.get;
+		this.fj = serverObject;
+		await this.fint <= - 778;
+		if( False) {
+			this.fj = this.fj;
+			isDone = True || True &&! True &&(False);
+			J serverNode = serverObject;
+			systemToggle = this.ffb.get;
+			
+		}
+		else {
+			J person = serverObject;
+			I packet = new D();
+			
+		}
+		eventCount = 529;
+		await this.ff?;
+		processDepth = 408;
+		J person = new E();
+		Bool isReady = False;
+		if( True) {
+			this.ff = this.fi!n();
+			Bool isSave = True;
+			
+		}
+		this.fb =! True;
+		if( this.fb || True) {
+			Int systemDepth = - 1;
+			person = person;
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			J serverNode = new E();
+			await this.ffb?;
+			storageToggle = 403 == processDepth;
+			await this.ff?;
+			this.fint = 217 * 724;
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	else {
+		this.fi = new D();
+		this.fint = - 318 * 418;
+		
+	}
+	while( False || systemToggle || False) {
+		Int queueCount = eventCount;
+		this.ff = this.fi!n();
+		
+	}
+	this.ff = this.fi!n();
+	I tree = this.fi;
+	tree = tree;
+	this.ff =(this.ff);
+	serverObject = new E();
+	this.fj = new E();
+	Bool isExec = 529 * -(eventCount - 365) >= this.fint;
+	
+}
+return 179;
+}
+}
+{}

@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String serverNode = null;
+		this.fb = True;
+		// End of setup
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_35";
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		this.fint = (485 - ((this.fint * 353) * 606));
+		Int systemAmount = 979;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverNode=0)
+		// Failed to show the following sub-obligations:
+		// !(serverNode=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

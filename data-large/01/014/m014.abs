@@ -1,0 +1,179 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int processDepth = 432 - 33;
+this.fb = this.fb || this.fb;
+this.fb =(this.fj) == this.fj;
+if( this.fb) {
+	Bool willSave = this.fi == this.fi;
+	
+}
+else {
+	Int i = this.ff.get;
+	await - 240 * this.fint == 958;
+	
+}
+Int res = 606 * 545;
+this.fb = this.fb;
+Fut<Bool> resetUpdates =((this.fi) )!b();
+if( False) {
+	res = 635;
+	this.fi = this.fi;
+	this.fint = res;
+	
+}
+else {
+	this.fb =! True || False && this.fb;
+	res = 60;
+	this.ff = this.fi!n();
+	
+}
+if( False) {
+	resetUpdates = this.fi!b();
+	this.ffb =(this.ffb);
+	I clientRepresentation = new D();
+	
+}
+else {
+	this.fj = new E();
+	resetUpdates = this.fi!b();
+	await this.ff?;
+	this.fj = new E();
+	this.ffb = this.fi!b();
+	resetUpdates =(this.fi )!b();
+	if( True) {
+		res = - this.fint;
+		resetUpdates = this.fi!b();
+		this.fi = this.fi;
+		res = 952 * - res;
+		await this.ffb?;
+		this.ffb = this.fi!b();
+		resetUpdates = this.fi!b();
+		this.fj = this.fj;
+		this.ffb = this.fi!b();
+		this.ffb = this.fi!b();
+		processDepth = processDepth;
+		J message = this.fj;
+		
+	}
+	else {
+		while( True) {
+			await this.ff?;
+			processDepth = - res;
+			await(430 == - 429);
+			I clientNode = new D();
+			I person = new D();
+			clientNode = new D();
+			this.fb = this.fb;
+			Bool hasReady =(True);
+			this.fj = new E();
+			this.ffb = resetUpdates;
+			this.fi = this.fi;
+			this.ffb = clientNode!b();
+			this.ffb = clientNode!b();
+			
+		}
+		resetUpdates = this.fi!b();
+		Int systemCount = 637 * 202;
+		if( False) {
+			Bool hasDone = True;
+			this.fi = this.fi;
+			Bool isExec =! this.fb;
+			this.fj = new E();
+			
+		}
+		else {
+			this.ff =(this.fi )!n();
+			resetUpdates = this.fi!b();
+			await resetUpdates?;
+			this.fint = - systemCount * 806 * - 318;
+			Fut<Int> returnData = this.ff;
+			Int arg = 95;
+			Fut<Bool> a = resetUpdates;
+			this.fj = new E();
+			
+		}
+		this.fb = 48 > 899;
+		resetUpdates = this.ffb;
+		
+	}
+	processDepth = 957;
+	Fut<Bool> q = this.fi!b();
+	await q?;
+	while( False) {
+		q = this.fi!b();
+		this.fint = this.fint;
+		this.fj = new E();
+		while( True || False) {
+			J dataUnit =(this.fj);
+			this.ffb = q;
+			await this.ff?;
+			Bool hasDone =! this.fb;
+			res = res * - 201;
+			await this.ffb?;
+			Fut<Bool> applyState =(this.fi )!b();
+			await -(60 + - 881) + - 663 != - 552 - this.fint + this.fint;
+			await resetUpdates?;
+			this.fint = - 243;
+			
+		}
+		this.fb =! True;
+		if( True == False) {
+			await this.ffb?;
+			I node = this.fi;
+			await resetUpdates?;
+			this.fb = True;
+			
+		}
+		else {
+			this.fi = new D();
+			this.ff = this.fi!n();
+			await res <= res;
+			this.fint = 379;
+			await resetUpdates?;
+			this.ffb = this.fi!b();
+			this.fi = this.fi;
+			
+		}
+		resetUpdates = this.fi!b();
+		this.fb = q.get;
+		
+	}
+	J node = new E();
+	this.fj = new E();
+	this.fj = this.fj;
+	this.fb = this.fb && False && False || True;
+	this.ff = this.ff;
+	I serverUnit = new D();
+	node = new E();
+	node = this.fj;
+	resetUpdates = this.ffb;
+	
+}
+J person = new E();
+Int k = - this.fint;
+this.fi = this.fi;
+Int queueDepth = this.ff.get;
+Fut<Bool> resetFlag = this.fi!b();
+resetFlag = this.ffb;
+return 34;
+}
+}
+{}

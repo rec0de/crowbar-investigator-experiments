@@ -1,0 +1,50 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!pauseOverride){} 
+		// Known true:
+		// Negated loop guard: !(!pauseOverride)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int j = -3;
+		Bool pauseOverride = True;
+		this.fint = 4;
+		this.ff = "fut_?(4)";
+		// End of setup
+		
+		this.fint = 196;
+		// Int k = (this.ff).get;
+		Int k = 0;
+		// Int systemDepth = (this.ff).get;
+		Int systemDepth = 0;
+		// this.ff = this.fi!n();
+		this.ff = "fut_69";
+		Int stackCount = j;
+		}
+		// J tree = new E();
+		String tree = "object_1";
+		println(toString(((j * -this.fint) - 495))); // return statement
+		// Evaluates to: 93
+		// Detailed evaluation breakdown:
+		// j: -3
+		// this.fint: 196
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (((j*-(select(store(heap, this.fint, 196), this.fint)))-495)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

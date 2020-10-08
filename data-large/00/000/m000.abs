@@ -1,0 +1,193 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 85 * this.fint * this.fint;
+if( this.fb) {
+	J serverNode = this.fj;
+	this.ffb = this.fi!b();
+	this.fb = this.fb;
+	await this.ff?;
+	Int stackAmount = this.ff.get;
+	serverNode = serverNode;
+	
+}
+else {
+	Int eventAmount = 160;
+	
+}
+Bool canWrite =! True &&! False && False;
+this.ff = this.fi!n();
+canWrite = True;
+this.fint = this.fint - this.fint +(787) * this.fint;
+if(! canWrite) {
+	if( False) {
+		while( False) {
+			canWrite =((this.fint)) <=(this.fint);
+			await - 15 >= 407;
+			
+		}
+		this.fb = True;
+		this.ff = this.fi!n();
+		Bool isSaveed = this.ffb.get;
+		this.ffb = this.ffb;
+		Int i = - this.fint - this.fint;
+		this.ffb = this.ffb;
+		await False && False;
+		this.fj = new E();
+		this.fb = isSaveed;
+		
+	}
+	
+}
+else {
+	if( True) {
+		if( - this.fint * 648 > - this.fint) {
+			await this.ff?;
+			Bool isDone = False;
+			
+		}
+		else {
+			this.fint = this.fint;
+			this.fint = 241 * 320 - 534;
+			await this.ffb?;
+			Bool isSaveed = this.ffb.get;
+			
+		}
+		this.fb = canWrite && canWrite;
+		canWrite = True &&! this.fb;
+		
+	}
+	else {
+		I node = new D();
+		
+	}
+	this.fb = this.fb;
+	this.fb = this.ffb.get;
+	while( this.fb &&! False) {
+		canWrite = canWrite;
+		await this.ffb?;
+		canWrite =(True) && canWrite ==! canWrite && False && True;
+		canWrite =(True);
+		
+	}
+	
+}
+J node = this.fj;
+this.ff = this.ff;
+this.ffb = this.fi!b();
+if( True) {
+	this.fb = True;
+	
+}
+if( True) {
+	this.ffb = this.ffb;
+	this.ffb = this.ffb;
+	
+}
+canWrite =! canWrite;
+this.fi = this.fi;
+await this.ffb?;
+this.fb = True || canWrite;
+I clientObject = new D();
+clientObject = new D();
+Bool hasLoaded = False;
+this.fj = this.fj;
+await! False;
+node = new E();
+I message = clientObject;
+canWrite = False;
+while(! False) {
+	clientObject = new D();
+	Int j = this.fint;
+	while( True) {
+		Int stackAmount =(317);
+		this.ff = clientObject!n();
+		Bool willExec =(j) * stackAmount <= 450;
+		
+	}
+	if( hasLoaded) {
+		Bool systemToggle = this.fb;
+		
+	}
+	else {
+		if( this.fb) {
+			this.ffb = this.ffb;
+			await this.fb;
+			
+		}
+		hasLoaded = hasLoaded;
+		this.ffb = this.ffb;
+		
+	}
+	while( j >= 598) {
+		message = clientObject;
+		hasLoaded = hasLoaded ||! canWrite && True;
+		if( False && False) {
+			this.ff = this.fi!n();
+			Fut<Int> resultInfo = this.fi!n();
+			Int res = this.fint;
+			resultInfo = this.ff;
+			hasLoaded =! True;
+			Int k = this.ff.get;
+			
+		}
+		else {
+			await this.ffb?;
+			
+		}
+		node = this.fj;
+		clientObject = clientObject;
+		
+	}
+	this.ff = this.fi!n();
+	
+}
+node = new E();
+await False;
+node = new E();
+while( 90 - -(this.fint) * - this.fint < 801) {
+	I person = clientObject;
+	
+}
+message = new D();
+while( False) {
+	hasLoaded = False;
+	while( hasLoaded) {
+		this.ff = clientObject!n();
+		canWrite = -(this.fint) == 662;
+		while( True) {
+			await this.ff?;
+			await this.ffb?;
+			Bool execToggle =(this.ffb ).get;
+			await this.ffb?;
+			await this.ff?;
+			
+		}
+		Bool hasSaveed = False ||! False;
+		this.ffb = message!b();
+		
+	}
+	
+}
+this.fb = True == this.fb && True;
+return 104;
+}
+}
+{}

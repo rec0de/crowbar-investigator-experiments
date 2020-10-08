@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!canWrite){} 
+		// Known true:
+		// Negated loop guard: !(!canWrite)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String dataObject = null;
+		Bool canWrite = True;
+		// End of setup
+		
+		}
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(dataObject=0)
+		// Failed to show the following sub-obligations:
+		// !(dataObject=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

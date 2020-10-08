@@ -1,0 +1,59 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((True && this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((True && this.fb))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		this.fi = this.fi;
+		// Fut resolveData = this.fi!n();
+		String resolveData = "fut_43";
+		String packet = this.fi;
+		Bool isLoaded = True;
+		// I packetObject = new D();
+		String packetObject = "object_1";
+		// Fut q = packet!b();
+		String q = "fut_44";
+		
+		// await resolveData?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = False;
+		// End assignments
+		
+		// packetObject = new D();
+		packetObject = "object_2";
+		isLoaded = True;
+		// this.ff = this.fi!n();
+		this.ff = "fut_45";
+		Int stackCount = this.fint;
+		String serverNode = packet;
+		Int value = 80;
+		// this.fj = new E();
+		this.fj = "object_3";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverNode=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

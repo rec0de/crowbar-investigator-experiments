@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+	String ff = "fut_33";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((888 == 486540)){} 
+		// Known true:
+		// Negated loop guard: !((888 == 486540))
+		// Loop invariant: true
+		
+		
+		this.fj = this.fj;
+		// Fut resultInfo = this.fi!n();
+		String resultInfo = "fut_32";
+		// this.ff = this.fi!n();
+		this.ff = "fut_33";
+		this.fj = this.fj;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

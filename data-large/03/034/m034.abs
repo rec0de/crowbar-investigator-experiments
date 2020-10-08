@@ -1,0 +1,194 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int stackDepth = this.fint;
+Bool writeToggle = False &&! True;
+this.fint = 416 * 987 + 254 * - this.fint;
+this.fint = this.fint + 444;
+I clientNode = this.fi;
+while(! writeToggle) {
+	await this.ffb?;
+	writeToggle = this.ffb.get;
+	if( False && False) {
+		this.ff = clientNode!n();
+		await this.fb;
+		
+	}
+	else {
+		stackDepth = - 576 * 172;
+		
+	}
+	
+}
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+writeToggle = this.ffb.get;
+await this.ffb?;
+I packet = new D();
+packet = new D();
+if(! False) {
+	this.fb = True;
+	stackDepth = 89;
+	await this.ffb?;
+	writeToggle = False;
+	I tree = new D();
+	if( True) {
+		Int res = 177;
+		stackDepth = stackDepth;
+		while( 535 ==(215) + 390) {
+			await this.ff?;
+			res = stackDepth;
+			
+		}
+		this.fi = packet;
+		
+	}
+	else {
+		I person = tree;
+		await True && False;
+		this.fint = 498;
+		this.ffb = packet!b();
+		stackDepth = stackDepth;
+		Bool willLoad = False;
+		
+	}
+	this.ff = this.ff;
+	await(False) ||! writeToggle;
+	I packetUnit = tree;
+	
+}
+else {
+	Int i =(552);
+	J packetObject = new E();
+	while( - i == - 261) {
+		packetObject = new E();
+		J person = this.fj;
+		packetObject = new E();
+		await this.ffb?;
+		Int queueAmount = 833;
+		
+	}
+	
+}
+await this.ff?;
+this.ff = clientNode!n();
+this.ffb = this.fi!b();
+this.ffb = this.ffb;
+Int eventAmount = 328;
+while( True) {
+	this.fj = this.fj;
+	eventAmount = 451;
+	
+}
+this.fj = this.fj;
+this.fj = this.fj;
+packet = new D();
+Bool hasLoaded = True == True;
+this.ffb = this.ffb;
+Bool isReady = stackDepth != - eventAmount;
+Bool isLoad = True;
+hasLoaded = this.ffb.get;
+packet = new D();
+if( False || False) {
+	if( hasLoaded && True) {
+		clientNode = new D();
+		J message = new E();
+		eventAmount =(this.fint) * stackDepth;
+		while( True) {
+			this.ff = this.ff;
+			writeToggle = this.ffb.get;
+			isReady =! False;
+			this.ffb = this.fi!b();
+			this.fint = 567 + 95;
+			isReady = True;
+			await this.ff?;
+			
+		}
+		Int i = 948;
+		this.fint = i;
+		J dataUnit = new E();
+		J node = message;
+		i = 882;
+		message = new E();
+		Fut<Int> syncChanges = packet!n();
+		J clientStruct = new E();
+		this.fi = new D();
+		packet = new D();
+		if( this.fint == eventAmount) {
+			isLoad = False;
+			hasLoaded =! hasLoaded || False;
+			
+		}
+		else {
+			writeToggle = this.ffb.get;
+			I packetUnit = new D();
+			syncChanges = packet!n();
+			await this.ff?;
+			clientNode = new D();
+			
+		}
+		syncChanges = this.ff;
+		packet = new D();
+		while( True) {
+			await! isReady;
+			
+		}
+		this.fi = new D();
+		isReady =(i == 278);
+		
+	}
+	else {
+		Int queueCount =(- 247);
+		Int systemCounter = 687;
+		
+	}
+	
+}
+else {
+	packet = new D();
+	hasLoaded = True;
+	await this.ffb?;
+	Fut<Int> resolveInfo = clientNode!n();
+	
+}
+this.ff =(this.ff);
+while( True) {
+	isLoad =! False;
+	while( stackDepth == - 927 - 516) {
+		eventAmount = 284;
+		
+	}
+	eventAmount = 616;
+	Bool hasDone = hasLoaded;
+	writeToggle =(isLoad &&! True || hasDone);
+	Int listAmount =(stackDepth + 334);
+	this.ff = clientNode!n();
+	this.ff = clientNode!n();
+	this.ffb = this.ffb;
+	this.fb = hasLoaded;
+	clientNode = new D();
+	
+}
+stackDepth = 23 - this.fint;
+writeToggle = False;
+return this.fint;
+}
+}
+{}

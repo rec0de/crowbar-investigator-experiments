@@ -1,0 +1,238 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb =(873 > - 228);
+this.ff = this.ff;
+this.fint = 578;
+if( this.fb) {
+	this.fj = new E();
+	this.fj = new E();
+	this.fb = this.fb;
+	
+}
+else {
+	await - 439 <= this.fint * 864 * 937 * this.fint * - this.fint;
+	this.fi = new D();
+	this.fint = 966 * - 469;
+	this.fj = this.fj;
+	this.fb = this.fb || True;
+	await this.ff?;
+	this.ffb = this.fi!b();
+	Int l = 882;
+	Bool isReady = this.fb;
+	while( True) {
+		J clientRepresentation = new E();
+		if(! False) {
+			await this.ff?;
+			Bool hasSaveed = True ||(True) ==! isReady;
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			I serverNode = new D();
+			Bool restoreToggle = False ||! False || isReady;
+			this.fint = 784;
+			l = this.ff.get;
+			isReady = - l * this.fint < 576 * 173 * 520 + 431;
+			await serverNode == serverNode;
+			this.fint = - 217;
+			this.ff = serverNode!n();
+			
+		}
+		Fut<Int> resetFlag = this.fi!n();
+		this.fb = False;
+		
+	}
+	this.fint = 644;
+	
+}
+Int l = 107 * - this.fint + 567;
+this.fb = this.ffb.get;
+await this.fb;
+Int arg = 140;
+Bool restoreEnabled = True;
+Int j = l * l;
+await True;
+while(!(True)) {
+	this.fb =! True;
+	if((True )) {
+		this.fint = 544 + l;
+		if( restoreEnabled) {
+			await this.ff?;
+			restoreEnabled = True;
+			Bool isLoaded = this.ffb.get;
+			await this.ff?;
+			I serverNode = new D();
+			l =(j);
+			I ioStruct = this.fi;
+			await this.ff?;
+			await this.ff?;
+			arg =(arg * 132);
+			
+		}
+		else {
+			await this.ffb?;
+			this.fi = new D();
+			j = 194 + 962;
+			
+		}
+		arg = -(arg);
+		this.fj = this.fj;
+		arg =(276 * 616);
+		J packet = this.fj;
+		arg = 191;
+		
+	}
+	
+}
+this.ff = this.fi!n();
+l = 799;
+this.fi = new D();
+this.fb = this.fb;
+this.fb = True;
+this.fint = 635 - - l;
+J dataObject = new E();
+l = arg;
+if(! False) {
+	restoreEnabled = False;
+	this.fi = this.fi;
+	
+}
+else {
+	while( True) {
+		arg = j;
+		Int value = - arg * - 922;
+		
+	}
+	
+}
+restoreEnabled = 388 == 463;
+this.ffb = this.ffb;
+arg = - 884 + 339;
+this.fj = dataObject;
+this.fi = this.fi;
+if( False && True) {
+	await this.ff?;
+	Bool willSave = True || False;
+	if( this.fj == this.fj) {
+		while( False &&(True)) {
+			J clientRepresentation = this.fj;
+			
+		}
+		while( False) {
+			arg = 88;
+			this.ffb = this.fi!b();
+			dataObject = new E();
+			await this.ff?;
+			this.fi = this.fi;
+			j = this.ff.get;
+			restoreEnabled = False;
+			
+		}
+		willSave = this.ffb.get;
+		while(! willSave && False) {
+			willSave = this.fb;
+			l = 863;
+			this.fb = True && False;
+			
+		}
+		
+	}
+	Bool isWrite = willSave;
+	await this.ffb?;
+	
+}
+else {
+	arg = - 929;
+	restoreEnabled =! this.fb;
+	this.fb = True;
+	await this.ff?;
+	if( restoreEnabled) {
+		restoreEnabled = 753 != 437;
+		this.fint = j;
+		Int processCount = 89;
+		this.fi = this.fi;
+		
+	}
+	Bool restoreOverride = False || restoreEnabled;
+	
+}
+while( False) {
+	l = 162;
+	if( True && False && False) {
+		j = this.fint;
+		await this.ffb?;
+		this.ff = this.ff;
+		l = 17;
+		I serverNode = new D();
+		restoreEnabled = 991 == this.fint;
+		while( False && this.fb ==(restoreEnabled ||! True) &&! True) {
+			await this.ffb?;
+			J ioObject = dataObject;
+			this.fint = 531;
+			restoreEnabled = this.ffb.get;
+			
+		}
+		J packet = new E();
+		serverNode = new D();
+		
+	}
+	else {
+		Int k =(337);
+		this.fint = l - l;
+		
+	}
+	arg = 82;
+	l = 230;
+	this.fj = new E();
+	
+}
+if( this.fb) {
+	Int res =(76 * j * j) + 818;
+	
+}
+this.fj = new E();
+await this.ffb?;
+if( - 147 * 510 * 888 > 763) {
+	dataObject = new E();
+	Int systemCounter = this.ff.get;
+	
+}
+else {
+	l = this.ff.get;
+	I packetUnit = this.fi;
+	l = arg - 918;
+	Bool hasReady = restoreEnabled;
+	dataObject = new E();
+	Fut<Int> resetState = this.ff;
+	this.fint = j;
+	
+}
+restoreEnabled =! this.fb;
+arg = 77;
+dataObject = this.fj;
+restoreEnabled = this.ffb.get;
+restoreEnabled =(True);
+this.fint = 81;
+l = 957 * - 669;
+return 549;
+}
+}
+{}

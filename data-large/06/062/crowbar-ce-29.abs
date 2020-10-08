@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = 6;
+		this.fb = True;
+		this.ff = "fut_?(6)";
+		// End of setup
+		
+		}
+		if(!this.fb){}
+		else{
+		
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_186";
+		this.fint = 232;
+		}
+		Bool systemEnabled = !True;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

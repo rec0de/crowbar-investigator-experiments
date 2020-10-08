@@ -1,0 +1,173 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.fi = new D();
+this.fi = this.fi;
+Bool writeEnabled = this.fb;
+if( this.fint != this.fint) {
+	this.ff = this.fi!n();
+	this.fint = 242;
+	this.ff = this.fi!n();
+	
+}
+else {
+	while( True) {
+		this.fb = this.ffb.get;
+		Fut<Int> flushState = this.ff;
+		flushState = flushState;
+		this.ffb = this.fi!b();
+		if( writeEnabled) {
+			this.fint = -(this.fint);
+			Bool stateToggle = True || True == False;
+			await this.ffb?;
+			this.fi = new D();
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			
+		}
+		while( flushState == this.ff) {
+			this.ff = this.fi!n();
+			this.ffb = this.fi!b();
+			Int systemDepth = this.fint;
+			Int arg = systemDepth - 785;
+			writeEnabled = - 379 ==(this.fint * 348) * 153;
+			
+		}
+		
+	}
+	while( False || False) {
+		Int listCounter = this.fint;
+		writeEnabled = True;
+		await! this.fb || writeEnabled;
+		Int j = this.fint;
+		Bool readyEnabled = False;
+		while( True || False || False) {
+			await this.ffb?;
+			listCounter =(this.fint * 194 + - 863);
+			readyEnabled = readyEnabled;
+			Fut<Int> returnState = this.fi!n();
+			this.fint = j;
+			I packet = this.fi;
+			this.fint = this.fint;
+			packet = new D();
+			this.ffb = this.fi!b();
+			Fut<Int> resolveState =((this.fi) )!n();
+			this.fint = 58 - 79 * 546;
+			this.fint = 11 + 112;
+			Fut<Int> resetReload = this.ff;
+			Int processDepth = 200;
+			Int processCount = 810;
+			processDepth = listCounter + 693;
+			I packetObject = new D();
+			I node = new D();
+			Fut<Bool> syncRequest = this.ffb;
+			
+		}
+		this.fint = j;
+		Bool readOverride = this.fb && False && writeEnabled;
+		I tree = this.fi;
+		readyEnabled = writeEnabled;
+		Bool writeFlag = tree == tree;
+		tree = tree;
+		Fut<Int> returnInfo = tree!n();
+		this.fi = new D();
+		readOverride = 257 == 352;
+		this.fi = new D();
+		Int l = 441;
+		writeFlag =(True);
+		if((readOverride )) {
+			await this.ffb?;
+			writeEnabled =((this.ffb == this.ffb)) && True && False;
+			Bool isSaveed = True || readOverride;
+			Bool isSave = isSaveed ||! False || readOverride;
+			readyEnabled = True ==! False && True;
+			await this.ffb?;
+			
+		}
+		else {
+			this.fint = this.ff.get;
+			this.fj = new E();
+			Int systemAmount = 921;
+			listCounter = 255;
+			Bool systemToggle =! this.fb;
+			Fut<Bool> resolveData = this.fi!b();
+			I dataObject = new D();
+			
+		}
+		writeFlag = 231 == this.fint * this.fint;
+		tree = new D();
+		Bool stateEnabled =(readOverride);
+		while( True) {
+			this.ff = returnInfo;
+			await this.ff?;
+			Int listDepth = 533 * listCounter;
+			this.fb = stateEnabled;
+			await! True || False;
+			
+		}
+		if( this.fb) {
+			this.ff = tree!n();
+			j = 697;
+			this.fi = tree;
+			
+		}
+		writeFlag = this.ffb.get;
+		J packetStruct = new E();
+		
+	}
+	Int l = 520;
+	if( True) {
+		if( False) {
+			this.ff = this.fi!n();
+			
+		}
+		else {
+			this.fj = this.fj;
+			this.fint = 803;
+			
+		}
+		this.ff = this.ff;
+		await True && False || False;
+		this.fi = this.fi;
+		this.fint = 458;
+		this.ff = this.ff;
+		this.ff = this.ff;
+		
+	}
+	while( False) {
+		this.ffb = this.fi!b();
+		Bool pauseEnabled = False || this.fb;
+		
+	}
+	await this.ffb?;
+	
+}
+this.fb = False &&! writeEnabled && True;
+this.fj = new E();
+await True;
+this.fj = new E();
+this.fb =! True;
+return 397;
+}
+}
+{}

@@ -1,0 +1,217 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+this.fi = new D();
+if( False || this.fb) {
+	if( False) {
+		Int queueCount =(this.fint) * this.fint - - this.fint;
+		this.fb =! this.fb;
+		
+	}
+	else {
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+else {
+	this.fi = this.fi;
+	
+}
+this.fj = new E();
+this.ff = this.fi!n();
+this.ffb = this.fi!b();
+this.ff = this.ff;
+Bool hasDone = 830 != this.fint;
+if((False || this.fb ||(! False)) && False ||(True )) {
+	this.fb = False || this.fb;
+	this.fint = 281 * - 831;
+	this.ff = this.ff;
+	hasDone = False;
+	while( this.fint < 590 + - 13 - 193) {
+		Int systemCount = 978 - - 348;
+		this.fj = new E();
+		this.fi = this.fi;
+		this.fj = this.fj;
+		if( False && False) {
+			I serverObject = new D();
+			Bool canWrite = hasDone || False || hasDone;
+			hasDone = 258 >= 258;
+			serverObject = new D();
+			
+		}
+		else {
+			this.fint = systemCount;
+			this.ff = this.fi!n();
+			systemCount = 19;
+			this.fb = this.fb;
+			I packetStruct = this.fi;
+			packetStruct = this.fi;
+			await this.ffb?;
+			Bool willWrite = this.ff == this.ff;
+			this.fb =(this.fb);
+			this.fj = new E();
+			hasDone = hasDone;
+			
+		}
+		
+	}
+	I ioStruct = new D();
+	this.fint = this.fint;
+	await this.ff?;
+	while( False) {
+		this.fj = this.fj;
+		this.ffb = this.ffb;
+		hasDone = this.fb;
+		hasDone = True &&(this.fb) || False;
+		this.fi = ioStruct;
+		
+	}
+	Bool isLoad =! False &&! this.fb;
+	if( this.fb) {
+		this.fb = True;
+		if( 785 * 837 + 79 - this.fint * 174 == - 448) {
+			this.fj = new E();
+			await - 473 != this.fint - this.fint;
+			await this.ff?;
+			
+		}
+		else {
+			isLoad = isLoad;
+			
+		}
+		this.fb = isLoad;
+		while( isLoad && this.fb) {
+			await True;
+			ioStruct = ioStruct;
+			J clientObject = new E();
+			Bool hasReady = hasDone && isLoad;
+			Bool stateFlag =(this.fb);
+			this.fb = False && hasReady;
+			this.ffb = this.fi!b();
+			
+		}
+		I packet = new D();
+		this.ff = this.fi!n();
+		
+	}
+	else {
+		Bool willWrite = ioStruct == this.fi;
+		await this.ff?;
+		this.ffb = this.fi!b();
+		
+	}
+	this.fb = True || True;
+	this.ff = this.fi!n();
+	I packet = ioStruct;
+	this.fint = 112;
+	if( hasDone || True ||! False) {
+		this.ff =(this.fi )!n();
+		this.ff = ioStruct!n();
+		if( True) {
+			await this.ff?;
+			I dataStruct = ioStruct;
+			this.fi = new D();
+			I message = new D();
+			this.fj = this.fj;
+			
+		}
+		else {
+			this.fi = new D();
+			this.fi = packet;
+			Int queueCounter = 888;
+			Int systemDepth = queueCounter;
+			this.fi = ioStruct;
+			Bool isSaveed = False;
+			J serverStruct = new E();
+			this.ff = ioStruct!n();
+			isLoad = this.ffb.get;
+			Fut<Bool> applyRequest = ioStruct!b();
+			packet = new D();
+			
+		}
+		
+	}
+	else {
+		Bool willExec = False;
+		this.fint = 818;
+		J clientUnit = this.fj;
+		
+	}
+	Int systemAmount = 734 *(- this.fint + 467) * 205;
+	isLoad = 697 == systemAmount;
+	
+}
+else {
+	this.fj = this.fj;
+	
+}
+this.ff = this.ff;
+if( False && hasDone) {
+	this.ffb = this.fi!b();
+	while( 543 == this.fint + this.fint) {
+		this.ffb = this.fi!b();
+		hasDone = True;
+		this.ff = this.ff;
+		
+	}
+	this.fb =! True;
+	
+}
+if( False) {
+	this.fi = this.fi;
+	this.ffb =(this.fi )!b();
+	this.fint = 262;
+	
+}
+else {
+	await this.ffb?;
+	
+}
+this.ffb = this.fi!b();
+this.ff = this.fi!n();
+if( 546 * 299 == 353) {
+	while( 787 == 755) {
+		I ioObject = new D();
+		Bool readyToggle = this.fb;
+		
+	}
+	this.fj = new E();
+	hasDone = this.ffb.get;
+	this.ffb = this.fi!b();
+	this.fb =! False;
+	Int listCounter = this.ff.get;
+	this.ffb = this.fi!b();
+	Fut<Bool> applyState = this.ffb;
+	
+}
+else {
+	Int arg = 179;
+	this.ff = this.fi!n();
+	arg = 125;
+	arg = 465 + arg;
+	
+}
+this.fi = new D();
+return 244;
+}
+}
+{}

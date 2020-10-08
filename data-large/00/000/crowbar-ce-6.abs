@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String clientObject = null;
+		Bool hasLoaded = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: hasLoaded
+		// Loop invariant: true
+		// while(hasLoaded) {
+		{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientObject=0)
+		// Failed to show the following sub-obligations:
+		// !(clientObject=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

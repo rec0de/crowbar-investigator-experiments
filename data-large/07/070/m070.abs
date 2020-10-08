@@ -1,0 +1,218 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.fi!b();
+while( True &&! this.fb) {
+	await this.ffb?;
+	await this.ffb?;
+	Int processAmount = 467 - this.fint * - this.fint * - this.fint;
+	Fut<Int> applyFlag = this.fi!n();
+	Int systemCount = 481 * processAmount;
+	Bool hasLoaded = this.fint < this.fint;
+	
+}
+if( True) {
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	
+}
+else {
+	this.ff = this.ff;
+	if( this.fb ||! False || True) {
+		this.fj = this.fj;
+		if((True )) {
+			Bool willExec = True && False;
+			
+		}
+		await this.ffb?;
+		if(! this.fb || True) {
+			await this.ffb == this.ffb;
+			await this.ff?;
+			
+		}
+		while( True && this.fb == True) {
+			Int stackCount = 855;
+			this.fint = this.fint;
+			this.ff = this.fi!n();
+			stackCount = 333;
+			this.fint = 956;
+			stackCount = 810;
+			this.fi = new D();
+			
+		}
+		
+	}
+	else {
+		this.fb = False;
+		this.ffb = this.fi!b();
+		
+	}
+	this.fj = this.fj;
+	this.fj =(this.fj);
+	while( False) {
+		await this.ff?;
+		while( this.fb) {
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	this.fi = this.fi;
+	while( True) {
+		Fut<Bool> applyFlag = this.fi!b();
+		if(!(False && this.fb) || False) {
+			this.ffb = this.fi!b();
+			Bool isSaveed = False;
+			applyFlag = this.fi!b();
+			isSaveed =! isSaveed;
+			await this.ffb?;
+			applyFlag = this.fi!b();
+			I clientUnit = new D();
+			this.fb = False && False;
+			
+		}
+		this.ff = this.fi!n();
+		await this.fb;
+		this.fint = 724;
+		applyFlag = this.ffb;
+		
+	}
+	if( True) {
+		J clientUnit = this.fj;
+		Int i = this.fint;
+		clientUnit =(clientUnit);
+		Bool isRead = this.fb;
+		if( True &&(! this.fb )) {
+			i = 239;
+			this.fi = new D();
+			
+		}
+		this.ff = this.fi!n();
+		this.fb = i <= 570;
+		while( True) {
+			this.fb = this.ffb.get;
+			this.fb = this.fb;
+			await - 194 == - this.fint;
+			await False &&! True;
+			await True;
+			i = 689 - this.fint + - 498;
+			Int queueDepth = - i * 718;
+			isRead = True &&(True);
+			Fut<Int> syncState = this.fi!n();
+			J packetObject = new E();
+			this.ff = this.fi!n();
+			syncState = this.fi!n();
+			Fut<Int> p = this.fi!n();
+			await p?;
+			Bool processFlag = False == False;
+			
+		}
+		J dataStruct = new E();
+		isRead = False;
+		Bool readyFlag = True;
+		while( readyFlag || True) {
+			this.fi = this.fi;
+			
+		}
+		this.ff = this.fi!n();
+		I tree = new D();
+		await this.ff?;
+		
+	}
+	else {
+		this.fint = this.fint;
+		Bool canExec =! this.fb;
+		
+	}
+	await this.ffb?;
+	if(! False) {
+		await this.ffb?;
+		
+	}
+	else {
+		this.fi = this.fi;
+		while( True && True ||! False && False) {
+			this.ffb = this.ffb;
+			this.ffb = this.fi!b();
+			this.ff = this.fi!n();
+			Bool hasLoaded =(618) == 319 - 132 * - 610 * 549;
+			this.ffb = this.ffb;
+			Bool restoreFlag = this.fb;
+			Int listAmount = 406;
+			Fut<Int> resetCall = this.fi!n();
+			this.fi = new D();
+			this.fint = 355;
+			await this.fj == this.fj;
+			resetCall = this.fi!n();
+			await resetCall?;
+			await this.ffb?;
+			restoreFlag =! True;
+			this.fi =(this.fi);
+			hasLoaded = True;
+			J person = this.fj;
+			
+		}
+		
+	}
+	if( False) {
+		this.fj = new E();
+		Fut<Bool> applyReload = this.fi!b();
+		Int i = this.fint;
+		Int stackDepth = 352;
+		this.fj = this.fj;
+		
+	}
+	if( True) {
+		this.fb = True;
+		Bool readEnabled = True || True;
+		this.fint = 341 + this.fint;
+		this.fi = new D();
+		
+	}
+	else {
+		while(! this.fb) {
+			Bool isSaveed = False && this.fb;
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	await this.ff?;
+	Bool readyToggle = this.ffb.get;
+	
+}
+while(! this.fb) {
+	this.fj = new E();
+	this.fb = this.fb;
+	
+}
+this.fj = new E();
+this.fj = this.fj;
+I person = this.fi;
+this.fj = this.fj;
+this.fj = this.fj;
+this.ff = this.fi!n();
+this.ffb = person!b();
+await this.ff?;
+this.fb = - 437 <= this.fint;
+return 58;
+}
+}
+{}

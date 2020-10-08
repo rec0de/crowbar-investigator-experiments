@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_113";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		
+		// this.ff = dataRepresentation!n();
+		this.ff = "fut_113";
+		// I dataRepresentation = new D();
+		String dataRepresentation = "object_1";
+		Bool stateOverride = (((True || !True) || (this.fb && !False)) || False);
+		// Int j = (this.ff).get;
+		Int j = 0;
+		j = 989;
+		Int k = 693402;
+		String clientUnit = clientUnit;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!sendEnabled){} 
+		// Known true:
+		// Negated loop guard: !(!sendEnabled)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String serverUnit = null;
+		Bool sendEnabled = True;
+		// End of setup
+		
+		}
+		// I person = new D();
+		String person = "object_1";
+		// Fut y = person!n();
+		String y = "fut_46";
+		if((182 == (this.fint * 659))){}
+		else{
+			Int value = 572;
+			String z = this.ffb;
+		}
+		Bool isSave = False;
+		isSave = True;
+		if(False){}
+		else{
+			person = person;
+			Bool willRead = True;
+			if(!sendEnabled){}
+			else{
+		
+			}
+			Bool sendEnabled = !False;
+			if(sendEnabled){
+				this.fi = serverUnit;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(serverUnit=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

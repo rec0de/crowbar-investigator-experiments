@@ -1,0 +1,197 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+Bool isRead = True;
+this.ff = this.ff;
+this.fi = this.fi;
+isRead = this.fb;
+if( True) {
+	await this.ff?;
+	Int i = this.fint - - this.fint * this.fint;
+	this.ffb = this.fi!b();
+	isRead = this.ffb.get;
+	this.ff = this.ff;
+	while( True) {
+		if( False) {
+			this.fj = this.fj;
+			isRead = False;
+			await False || this.fb || True;
+			this.fj = new E();
+			this.ff = this.ff;
+			Fut<Bool> flushRequest = this.ffb;
+			flushRequest = this.fi!b();
+			
+		}
+		else {
+			this.fb = True;
+			Bool canLoad = this.fi == this.fi;
+			this.fj = new E();
+			
+		}
+		I tree = new D();
+		this.fint =(728);
+		isRead = isRead;
+		J packetUnit = new E();
+		await packetUnit == packetUnit;
+		this.fi = this.fi;
+		tree = new D();
+		Bool canLoad = False || isRead;
+		
+	}
+	await this.ff?;
+	await this.ffb?;
+	
+}
+else {
+	isRead =(False || False);
+	this.ff = this.fi!n();
+	this.ff = this.fi!n();
+	
+}
+while( False) {
+	isRead =! True || True;
+	if( True) {
+		this.fb = False;
+		
+	}
+	else {
+		isRead = False && False;
+		if( False) {
+			this.fb = True && this.fb &&(True ||! True);
+			
+		}
+		
+	}
+	this.fb = this.ff == this.ff;
+	
+}
+this.ffb = this.ffb;
+this.fi = new D();
+Fut<Bool> resState = this.fi!b();
+await this.ffb?;
+isRead = isRead &&! False && False;
+J message = this.fj;
+if(((this.fint) * - 739 - 700 * 161 != this.fint * 196 )) {
+	this.ff = this.fi!n();
+	await resState?;
+	Int queueCount = - this.fint * 586 * this.fint;
+	this.fint = this.fint * 276;
+	while(! True) {
+		I dataObject = new D();
+		await! True;
+		queueCount = 328;
+		this.fb = True;
+		Int listCount = 469 * 44;
+		
+	}
+	Int k = this.fint;
+	
+}
+else {
+	await resState?;
+	isRead = False;
+	resState = resState;
+	resState = this.fi!b();
+	this.ff = this.ff;
+	Bool hasReady = 260 <= this.fint;
+	
+}
+this.ff = this.fi!n();
+this.fi = new D();
+this.fb = this.fj ==(this.fj);
+await resState?;
+this.ffb = this.fi!b();
+if( True) {
+	if((this.fint) != 17) {
+		this.ffb = resState;
+		Int i = this.fint;
+		resState = this.ffb;
+		message = this.fj;
+		this.fint = - 353 * 750 * 512;
+		this.fint = i;
+		
+	}
+	else {
+		this.ffb =(this.ffb);
+		
+	}
+	isRead = this.fb;
+	
+}
+else {
+	while( False &&! False) {
+		while((69) == this.fint) {
+			await 940 == 283 * - 488;
+			this.fb = 767 >= 15 - 868;
+			await this.ffb?;
+			await resState?;
+			J person = message;
+			this.fb =(- 979) * 142 == 161;
+			await! False;
+			this.ff = this.fi!n();
+			
+		}
+		J packetUnit = new E();
+		Bool isLoad = isRead;
+		
+	}
+	message = this.fj;
+	if((resState) == resState) {
+		resState = this.fi!b();
+		I packet = new D();
+		
+	}
+	else {
+		this.fi = new D();
+		Bool willLoad = False;
+		this.fint = 609;
+		Bool writeFlag = False;
+		if( isRead) {
+			await resState?;
+			Int systemDepth = 829 - 233;
+			willLoad = resState.get;
+			systemDepth = 670 * this.fint;
+			this.fj = this.fj;
+			
+		}
+		this.fi = this.fi;
+		await this.ff?;
+		Bool isLoad = True;
+		
+	}
+	
+}
+if((this.fb &&! False )) {
+	this.fj = new E();
+	message = message;
+	I person = new D();
+	await this.ffb?;
+	
+}
+else {
+	Bool readToggle =! True == False;
+	resState = this.fi!b();
+	
+}
+return 130;
+}
+}
+{}

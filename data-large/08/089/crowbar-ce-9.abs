@@ -1,0 +1,56 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: this.fb
+		// Loop invariant: true
+		// while(this.fb) {
+		{
+			if(((False || False) || False)){}
+			else{
+				String dataObject = this.fi;
+				// this.ff = this.fi!n();
+				this.ff = "fut_37";
+				
+				// await this.ffb?;
+				// No heap modification info available at this point
+				
+				Bool isExec = True;
+				Bool isDone = isExec;
+				Bool hasDone = True;
+				
+				// await resolveState?;
+				// No heap modification info available at this point
+				
+				Int value = this.fint;
+				
+				// await True;
+				// No heap modification info available at this point
+				
+				Int l = -(value * -value);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(dataObject=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

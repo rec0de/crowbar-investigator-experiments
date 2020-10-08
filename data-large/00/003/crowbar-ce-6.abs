@@ -1,0 +1,75 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(willLoad){} 
+		// Known true:
+		// Negated loop guard: !(willLoad)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool willLoad = True;
+		// End of setup
+		
+		}
+		this.fj = this.fj;
+		Bool isReady = (True && !this.fb);
+		this.ffb = this.ffb;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		// this.ffb = person!b();
+		this.ffb = "fut_29";
+		this.fi = this.fi;
+		this.fint = 161;
+		Int res = 709;
+		isReady = isReady;
+		if(False){}
+		else{
+		
+		}
+		Bool isLoaded = False;
+		if(False){}
+		else{
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+			this.fb = ((isReady || this.fb) || False);
+			this.ff = this.ff;
+		}
+		// this.ff = person!n();
+		this.ff = "fut_53";
+		String person = person;
+		// this.ff = person!n();
+		this.ff = "fut_54";
+		// this.ff = this.fi!n();
+		this.ff = "fut_55";
+		this.ff = this.ff;
+		// this.ff = this.fi!n();
+		this.ff = "fut_56";
+		res = (328 + res);
+		println(toString(-res)); // return statement
+		// Evaluates to: -1037
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-((328+709))=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

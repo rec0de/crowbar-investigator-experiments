@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((702 == -449)){} 
+		// Known true:
+		// Negated loop guard: !((702 == -449))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String clientUnit = null;
+		// End of setup
+		
+		}
+		// Fut x = ioRepresentation!b();
+		String x = "fut_68";
+		Int systemCounter = 654;
+		systemCounter = -1162;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(clientUnit=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

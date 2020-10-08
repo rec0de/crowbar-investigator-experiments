@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fb = True;
+		this.ff = "fut_?(5)";
+		// End of setup
+		
+		Int i = (342 + this.fint);
+		this.fb = False;
+		i = 34142;
+		this.fb = (False || True);
+		// this.ff = this.fi!n();
+		this.ff = "fut_30";
+		// Bool hasSaveed = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool hasSaveed = False;
+		String serverRepresentation = this.fj;
+		serverRepresentation = serverRepresentation;
+		// J dataUnit = new E();
+		String dataUnit = "object_1";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

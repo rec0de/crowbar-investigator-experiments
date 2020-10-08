@@ -1,0 +1,214 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+J packetRepresentation = new E();
+this.fj = new E();
+this.fj = this.fj;
+this.ff = this.ff;
+this.fj = new E();
+J person = new E();
+this.fb =(! False);
+this.ff = this.fi!n();
+person = new E();
+J message = new E();
+this.fb = False && True;
+this.ffb =(this.ffb);
+if( True) {
+	Int processCount = 629;
+	Bool hasDone = False && True && this.fb;
+	
+}
+this.ffb =(this.ffb);
+Fut<Bool> y = this.fi!b();
+this.fj = new E();
+Int i = 519;
+await this.ffb?;
+packetRepresentation = packetRepresentation;
+if( this.fb ||(this.fb )) {
+	Fut<Int> x = this.fi!n();
+	this.fi = this.fi;
+	i = 734;
+	this.ff = this.fi!n();
+	
+}
+else {
+	Bool isReady = True;
+	
+}
+await this.ffb?;
+this.fint = 846;
+I dataUnit = new D();
+if( False || this.fb) {
+	this.fint = this.fint;
+	Bool hasDone =! True;
+	Fut<Bool> resultData = dataUnit!b();
+	this.fj = new E();
+	this.fj = packetRepresentation;
+	while( this.fint == 714) {
+		Bool storageOverride = False;
+		packetRepresentation = new E();
+		if( 211 + - i < 642) {
+			await this.ffb?;
+			dataUnit = this.fi;
+			
+		}
+		else {
+			Bool canWrite = hasDone;
+			
+		}
+		Bool canExec =(791 == i) &&! False || True ||! True;
+		this.fj = this.fj;
+		if( i - 482 <= 376) {
+			person = new E();
+			
+		}
+		await 270 * 293 > 847;
+		person = packetRepresentation;
+		
+	}
+	hasDone = True;
+	Bool isSaveed = True;
+	this.ffb = y;
+	while( False) {
+		i = - i * this.fint;
+		y = this.fi!b();
+		isSaveed = False;
+		this.fj = packetRepresentation;
+		this.fi = new D();
+		message = new E();
+		Int res =(105) * 441 + 818;
+		this.ff = this.ff;
+		
+	}
+	
+}
+else {
+	packetRepresentation = packetRepresentation;
+	I clientUnit = new D();
+	while( False) {
+		message = new E();
+		
+	}
+	
+}
+Int eventAmount = 924;
+while( True) {
+	eventAmount = - 476;
+	await False;
+	if((! this.fb) || this.fb) {
+		y = this.fi!b();
+		await 177 ==(196);
+		dataUnit = new D();
+		message = new E();
+		if( False) {
+			i = 641 * - 409;
+			Bool canWrite =! this.fb && False;
+			
+		}
+		else {
+			this.fint = i;
+			await this.ff?;
+			this.fj = new E();
+			this.fb = - 231 * 901 - eventAmount > 580;
+			dataUnit = new D();
+			this.ff = this.fi!n();
+			
+		}
+		this.fi = dataUnit;
+		if( this.fb && this.fb) {
+			await y?;
+			
+		}
+		else {
+			await this.ff?;
+			
+		}
+		
+	}
+	packetRepresentation = message;
+	
+}
+this.fi = dataUnit;
+Fut<Bool> resData = dataUnit!b();
+I tree =(dataUnit);
+tree = new D();
+y = this.fi!b();
+if( this.ff == this.ff) {
+	if((575) == eventAmount) {
+		dataUnit = new D();
+		while( 364 == i) {
+			Bool storageToggle = True;
+			await this.ff?;
+			
+		}
+		y =(tree )!b();
+		
+	}
+	else {
+		person = new E();
+		message = new E();
+		Int k = 492;
+		if( this.fb) {
+			Bool isExec = False;
+			eventAmount = eventAmount - 296;
+			J packet = new E();
+			packet = new E();
+			await resData?;
+			
+		}
+		else {
+			await resData?;
+			person = message;
+			await this.ff?;
+			Fut<Bool> resetFlag = y;
+			this.fi = new D();
+			Fut<Int> resolveData =(this.ff);
+			Int listDepth =(this.ff ).get;
+			
+		}
+		resData = resData;
+		tree = this.fi;
+		Bool configToggle = 164 <= k;
+		I serverNode = dataUnit;
+		person = new E();
+		
+	}
+	this.fb = True;
+	this.fint = this.fint;
+	Int arg = this.fint;
+	I packet = dataUnit;
+	Int queueCount = - 402;
+	
+}
+else {
+	this.fb =! False;
+	this.fb = False;
+	eventAmount = 16;
+	Int listCount = - 512 - 659 - 689;
+	listCount = eventAmount;
+	message = person;
+	
+}
+await this.fb;
+Int processCount = this.ff.get;
+return 126;
+}
+}
+{}

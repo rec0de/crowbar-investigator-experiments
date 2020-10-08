@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False || False)){} 
+		// Known true:
+		// Negated loop guard: !((False || False))
+		// Loop invariant: true
+		
+		
+		this.ffb = this.ffb;
+		Bool hasReady = True;
+		hasReady = True;
+		}
+		String ioRepresentation = this.fj;
+		Bool storageOverride = (178 >= eventDepth);
+		// I tree = new D();
+		String tree = "object_1";
+		ioRepresentation = this.fj;
+		println(toString(532)); // return statement
+		// Evaluates to: 532
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (532=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

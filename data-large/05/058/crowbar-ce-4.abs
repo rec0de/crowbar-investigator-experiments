@@ -1,0 +1,33 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String tree = null;
+		// End of setup
+		
+		Int queueDepth = listCounter;
+		}
+		Bool willSave = (False && False);
+		String clientRepresentation = message;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(tree=0)
+		// Failed to show the following sub-obligations:
+		// !(tree=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

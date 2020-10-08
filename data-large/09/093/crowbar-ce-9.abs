@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((this.fint == 959)){} 
+		// Known true:
+		// Negated loop guard: !((this.fint == 959))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String packetStruct = null;
+		this.fint = 960;
+		// End of setup
+		
+		// this.fint = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		this.fint = 0;
+		Int value = -615;
+		this.ff = this.ff;
+		
+		// await x?;
+		// No heap modification info available at this point
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packetStruct=0)
+		// Failed to show the following sub-obligations:
+		// !(packetStruct=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

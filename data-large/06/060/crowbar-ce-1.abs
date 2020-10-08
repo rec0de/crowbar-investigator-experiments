@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String clientObject = null;
+		this.fb = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: this.fb
+		// Loop invariant: true
+		// while(this.fb) {
+		{
+			// Bool isLoaded = (this.ffb).get;
+			// Future value irrelevant or unavailable, using default:
+			Bool isLoaded = False;
+			Bool pauseToggle = (-957 == this.fint);
+			// this.fint = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			this.fint = 0;
+			if((652 <= -757)){}
+			else{
+				
+				// await this.ffb?;
+				// No heap modification info available at this point
+				
+				Int listAmount = 598;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientObject=0)
+		// Failed to show the following sub-obligations:
+		// !(clientObject=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

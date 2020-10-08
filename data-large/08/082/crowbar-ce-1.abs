@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((!hasLoaded || (!True == !False))){} 
+		// Known true:
+		// Negated loop guard: !((!hasLoaded || (!True == !False)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String ioNode = null;
+		Bool hasLoaded = True;
+		// End of setup
+		
+		this.fi = node;
+		// J packetRepresentation = new E();
+		String packetRepresentation = "object_1";
+		packetRepresentation = this.fj;
+		Bool hasDone = ((424 * this.fint) > 789);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(ioNode=0)
+		// Failed to show the following sub-obligations:
+		// !(ioNode=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

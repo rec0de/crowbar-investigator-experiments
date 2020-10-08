@@ -1,0 +1,234 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( this.fb) {
+	Int eventAmount = 910 * - this.fint;
+	
+}
+if((True )) {
+	this.ffb = this.ffb;
+	this.ff = this.fi!n();
+	if( True ||! True) {
+		this.fint = 806;
+		
+	}
+	await this.ffb?;
+	Int stackAmount = 315 - 796;
+	while( this.fb) {
+		stackAmount = 20;
+		this.ffb = this.ffb;
+		this.fj = new E();
+		this.fi = new D();
+		this.ff = this.ff;
+		stackAmount = stackAmount;
+		
+	}
+	stackAmount = 329 + 854;
+	
+}
+else {
+	this.ffb = this.ffb;
+	I serverUnit = new D();
+	this.fb = False == True && True && False;
+	
+}
+Int eventAmount = 228;
+Int k = eventAmount + 784;
+Bool pauseFlag = False;
+eventAmount = 698 + eventAmount;
+this.fb = 768 * 453 <=(958);
+k =(128);
+pauseFlag = this.fb;
+while((True)) {
+	k = 440;
+	this.fb =(False || True &&! False);
+	this.fj = this.fj;
+	
+}
+eventAmount = - 301 * k - 482 + 654;
+eventAmount = 772 * 940;
+this.fj = new E();
+Int listDepth = eventAmount;
+this.ffb = this.ffb;
+this.ffb = this.fi!b();
+this.ffb = this.ffb;
+this.ff = this.ff;
+eventAmount = eventAmount * 273;
+eventAmount =(472);
+this.fb = True && False || False;
+eventAmount = listDepth;
+pauseFlag = eventAmount > 122;
+listDepth = this.fint;
+Bool canWrite =! False == this.fb;
+while(! canWrite) {
+	if( True) {
+		await this.ffb?;
+		
+	}
+	listDepth =(this.ff ).get;
+	I tree = new D();
+	eventAmount = eventAmount;
+	
+}
+while( False && False) {
+	canWrite = - 583 == listDepth;
+	await this.ffb?;
+	Int l = 966 * eventAmount;
+	canWrite = canWrite;
+	this.fi = new D();
+	if( pauseFlag) {
+		Fut<Int> returnData = this.ff;
+		Bool isExec = False;
+		
+	}
+	else {
+		I clientRepresentation = new D();
+		canWrite =!(pauseFlag);
+		
+	}
+	eventAmount = 565 +(433 * 163);
+	Bool execFlag = True;
+	if(! canWrite) {
+		listDepth = 778;
+		Int res = - 302;
+		canWrite = this.fb && True;
+		k =(l - - 263) * 188;
+		Bool willWrite =(True || this.fb || True) && True;
+		
+	}
+	else {
+		I packetUnit = new D();
+		
+	}
+	Int systemDepth = 897;
+	I tree = this.fi;
+	while( False) {
+		I ioNode = new D();
+		while(!(this.fb) || True && True) {
+			Int queueAmount = 640;
+			
+		}
+		pauseFlag = this.ffb.get;
+		this.fb = canWrite;
+		
+	}
+	k = l;
+	if( False ||! False) {
+		Fut<Int> z =(this.ff);
+		this.ff = this.ff;
+		Fut<Int> resState = tree!n();
+		await z?;
+		
+	}
+	else {
+		if((984) == 304) {
+			I person = new D();
+			l = this.ff.get;
+			await this.ffb?;
+			Bool configToggle = execFlag;
+			this.ff = person!n();
+			await this.ffb?;
+			
+		}
+		I message = new D();
+		
+	}
+	J clientObject = this.fj;
+	
+}
+while( 668 == 916 * 333) {
+	this.ffb = this.fi!b();
+	this.ff = this.ff;
+	
+}
+Int stackDepth = eventAmount;
+this.fj = new E();
+this.fi = this.fi;
+Bool willWrite =! False && True;
+Bool canLoad = False && willWrite || True;
+stackDepth =(214);
+await this.ffb?;
+Fut<Int> q = this.fi!n();
+k = 135 * 92;
+this.ffb = this.ffb;
+while( canWrite ||! True) {
+	while( True) {
+		this.fj = new E();
+		await this.ffb?;
+		
+	}
+	await this.ffb?;
+	while( willWrite) {
+		Bool hasSaveed = willWrite;
+		Fut<Int> a = this.fi!n();
+		this.ff =(this.fi )!n();
+		stackDepth = this.ff.get;
+		this.ff = this.ff;
+		listDepth = - 914;
+		this.fint = 809;
+		if( True) {
+			await False;
+			Bool readyOverride = stackDepth - - 491 * this.fint == eventAmount;
+			a =(this.ff);
+			this.fj = new E();
+			willWrite =! False;
+			
+		}
+		else {
+			this.fb = hasSaveed && pauseFlag || canWrite;
+			await a?;
+			await True;
+			I person = new D();
+			await False && False;
+			await a?;
+			I serverStruct = person;
+			I dataStruct =(person);
+			canWrite =! True;
+			pauseFlag = True;
+			listDepth = 64;
+			
+		}
+		this.fb = False;
+		while( pauseFlag) {
+			this.fb = False;
+			this.fi = this.fi;
+			this.fj = new E();
+			willWrite = False ||! True;
+			eventAmount = 962;
+			
+		}
+		
+	}
+	listDepth = - 720;
+	this.fi = new D();
+	eventAmount = 635;
+	Fut<Bool> resInfo = this.fi!b();
+	
+}
+await True;
+I packet = this.fi;
+canLoad = this.fb;
+await this.ffb?;
+this.fi = this.fi;
+eventAmount = k;
+return 497 * 985;
+}
+}
+{}

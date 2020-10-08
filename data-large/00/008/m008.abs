@@ -1,0 +1,154 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+I serverNode = new D();
+this.fi = this.fi;
+J ioNode = this.fj;
+serverNode = new D();
+if( True) {
+	Fut<Bool> resData = this.fi!b();
+	this.fj = this.fj;
+	this.ffb = this.fi!b();
+	while( this.fb) {
+		I packetRepresentation = this.fi;
+		this.ff = packetRepresentation!n();
+		this.fint = 34;
+		Int queueAmount = 412;
+		J person = this.fj;
+		
+	}
+	this.ff = this.fi!n();
+	await this.ffb?;
+	this.fint =(485) - this.fint * 353 * 606;
+	Int systemAmount = 90 + 889;
+	Fut<Int> applyReload = serverNode!n();
+	this.fb = - systemAmount <= 433;
+	systemAmount = this.fint;
+	while( - 33 != 347) {
+		this.fint = - this.fint * 384;
+		Bool processOverride = - 59 < - 772;
+		systemAmount = 892;
+		await resData?;
+		Int arg = this.fint;
+		applyReload = applyReload;
+		J packetUnit = ioNode;
+		
+	}
+	this.fi = this.fi;
+	Bool isSaveed = False;
+	this.fj = new E();
+	
+}
+else {
+	this.fi = this.fi;
+	J ioStruct = new E();
+	this.fj = ioStruct;
+	ioStruct = this.fj;
+	this.fb = ioNode == ioNode;
+	Int k = this.fint;
+	J packetStruct = ioNode;
+	this.fj = ioStruct;
+	Fut<Bool> resolveData = this.fi!b();
+	if( False && False) {
+		I message = new D();
+		await this.ff?;
+		
+	}
+	else {
+		while(! False) {
+			Int stackDepth = 775;
+			resolveData = this.ffb;
+			J tree = this.fj;
+			await resolveData?;
+			
+		}
+		while( False && True) {
+			Int systemCounter = this.fint;
+			I tree = serverNode;
+			tree = new D();
+			serverNode = new D();
+			packetStruct = new E();
+			await resolveData?;
+			Bool readyOverride = k != 565;
+			ioNode = new E();
+			this.fi = serverNode;
+			ioStruct = packetStruct;
+			
+		}
+		serverNode = new D();
+		
+	}
+	ioNode = new E();
+	
+}
+while(! False) {
+	Fut<Int> applyUpdates = serverNode!n();
+	while( this.fb) {
+		Int stackCounter = -(- this.fint);
+		if( True &&! True || True && True) {
+			this.fint = 317;
+			
+		}
+		serverNode = new D();
+		stackCounter = 366 - 481 * 546 * 144 * 277;
+		serverNode = this.fi;
+		serverNode = new D();
+		await this.ff?;
+		
+	}
+	this.fi = this.fi;
+	this.fb = True &&! False;
+	this.fj = ioNode;
+	
+}
+this.ffb = this.fi!b();
+this.fb = False;
+this.fint = 268 - 855;
+while( this.fb) {
+	Bool storageEnabled = - this.fint * - 859 == - 868;
+	if( 908 * this.fint <= - 420 * - 304) {
+		this.fb = False;
+		while( this.fint + this.fint * - this.fint < this.fint) {
+			await this.ffb?;
+			Int stackDepth = 262 * 109;
+			Bool systemToggle = 310 - 648 - 473 * 486 == - 340;
+			storageEnabled = True;
+			
+		}
+		
+	}
+	else {
+		this.fi = this.fi;
+		serverNode = this.fi;
+		
+	}
+	storageEnabled = True;
+	this.ff = this.fi!n();
+	await this.ffb?;
+	ioNode = new E();
+	I tree = new D();
+	
+}
+serverNode = new D();
+J tree = ioNode;
+return this.fint;
+}
+}
+{}

@@ -1,0 +1,71 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_38";
+		this.fint = 6;
+		this.fi = "object_?(6)";
+		this.fb = True;
+		this.ffb = "fut_38";
+		// End of setup
+		
+		this.ff = this.ff;
+		// this.ff = this.fi!n();
+		this.ff = "fut_38";
+		this.fint = -475;
+		// Bool hasSaveed = (this.ffb).get;
+		Bool hasSaveed = False;
+		// I packetStruct = new D();
+		String packetStruct = "object_1";
+		hasSaveed = True;
+		this.ffb = this.ffb;
+		// Fut x = this.fi!b();
+		String x = "fut_39";
+		if((this.fb || True)){
+			// this.ff = packetStruct!n();
+			this.ff = "fut_40";
+			String message = this.fj;
+			Bool isSaveed = hasSaveed;
+			// packetStruct = new D();
+			packetStruct = "object_2";
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_41";
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.ff = "fut_?(9)";
+			this.fint = 11797;
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(9)";
+			// End assignments
+			
+			this.fb = ((this.fint * 599) < ((((-186 - this.fint) * 754) * 639) + 544));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(store(store(heap, this.ff, heap.ff), this.ff, fut_38), this.fint, -475), this.ffb, heap.ffb), this.ff, fut_40), this.ffb, fut_41)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

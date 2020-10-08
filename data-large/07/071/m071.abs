@@ -1,0 +1,249 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int j = - this.fint;
+Int listDepth = - 268;
+if( False) {
+	this.fi = this.fi;
+	await this.ffb?;
+	this.fi =(((this.fi)));
+	J packetObject = this.fj;
+	
+}
+else {
+	this.fint = j - 166;
+	this.fint = 607 * this.fint + 336 - 768;
+	listDepth = 951 *(413 - - 574) + 500 * 558;
+	
+}
+this.fj = this.fj;
+while( False) {
+	J packet = new E();
+	this.fb =! True;
+	while( True) {
+		this.ffb = this.fi!b();
+		await this.ffb?;
+		this.ffb = this.ffb;
+		j = - this.fint;
+		I node = new D();
+		
+	}
+	this.ff = this.fi!n();
+	if( False) {
+		while( 666 >= - 700) {
+			Bool canExec = this.ffb.get;
+			Bool isDone = this.ffb.get;
+			
+		}
+		this.ff = this.ff;
+		
+	}
+	else {
+		j = - listDepth;
+		j = 725;
+		Int i = - j;
+		this.fj = packet;
+		await this.ff?;
+		this.fj = packet;
+		
+	}
+	
+}
+await this.ff?;
+J ioObject = new E();
+while(! this.fb) {
+	while( False && this.fb || this.fb) {
+		J node = new E();
+		j = this.ff.get;
+		await True;
+		I ioStruct = this.fi;
+		this.fj = new E();
+		if( listDepth * j > 557) {
+			listDepth = this.ff.get;
+			this.fi = new D();
+			await this.ffb?;
+			Bool isSaveed = True;
+			
+		}
+		node = new E();
+		this.fj = this.fj;
+		
+	}
+	while( this.fb) {
+		ioObject = new E();
+		J serverUnit = this.fj;
+		this.ffb = this.fi!b();
+		this.fi = this.fi;
+		listDepth = 103 * listDepth;
+		Bool isLoad = False;
+		j = listDepth;
+		Fut<Bool> a = this.fi!b();
+		
+	}
+	
+}
+Bool readyToggle = False;
+I clientStruct = new D();
+readyToggle = True == False || this.fb;
+this.fj = new E();
+this.fj = new E();
+J packet = new E();
+clientStruct = this.fi;
+this.fb = 322 > this.fint;
+J tree = this.fj;
+this.ff = clientStruct!n();
+if(!(True )) {
+	this.fb = 46 != - 844 * 991 * 425;
+	clientStruct = clientStruct;
+	Int value = 359;
+	this.ffb = clientStruct!b();
+	Int res = - 739;
+	this.ff = clientStruct!n();
+	this.fj = new E();
+	res = - 487;
+	this.ff = this.fi!n();
+	ioObject = ioObject;
+	
+}
+else {
+	this.fj = new E();
+	Int stackCount = listDepth;
+	this.fint = 43;
+	stackCount = 818;
+	this.fb = 682 * 711 - - 297 + this.fint <=(565);
+	this.ffb = this.fi!b();
+	tree = new E();
+	
+}
+Bool isReady = this.ffb.get;
+while( True) {
+	J dataObject = this.fj;
+	while( True) {
+		dataObject = new E();
+		
+	}
+	
+}
+while( True) {
+	while( this.ffb == this.ffb) {
+		this.fb =(this.ffb ).get;
+		tree = tree;
+		if( readyToggle || isReady) {
+			packet = tree;
+			
+		}
+		else {
+			tree = new E();
+			await this.ff?;
+			ioObject = new E();
+			
+		}
+		Bool hasReady = False;
+		packet = new E();
+		Bool canLoad = this.ff == this.ff;
+		if( False) {
+			this.fint = j;
+			this.fj = new E();
+			
+		}
+		else {
+			await this.ff?;
+			Bool canWrite = False;
+			tree = new E();
+			Int eventCount = 350 - this.fint;
+			
+		}
+		this.fi = new D();
+		this.ff = clientStruct!n();
+		
+	}
+	if( True && True && True) {
+		await 446 == - 778 + 574 + 453;
+		this.fb =(True);
+		if( True || this.fb) {
+			clientStruct = new D();
+			j = 894 - 268;
+			Int k = j;
+			
+		}
+		else {
+			listDepth = 757;
+			clientStruct =(clientStruct);
+			Int value = 943;
+			Int systemCount = 589;
+			value = 28;
+			
+		}
+		
+	}
+	else {
+		this.ff = this.ff;
+		
+	}
+	Int systemCount = 672;
+	Bool willLoad = this.ffb.get;
+	while(! willLoad) {
+		packet = new E();
+		
+	}
+	await this.ffb?;
+	if( isReady) {
+		this.ffb =(this.fi )!b();
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		Int stackCount = 123 + - 537 + 46;
+		readyToggle =! False;
+		
+	}
+	while(! True) {
+		if( this.fb || False) {
+			Int eventDepth = - 626;
+			
+		}
+		else {
+			I packetNode = clientStruct;
+			await this.ff?;
+			packetNode = clientStruct;
+			packet = new E();
+			
+		}
+		
+	}
+	
+}
+this.fb =(238 * 864 != - 758) && False;
+ioObject = new E();
+this.ff = this.fi!n();
+if( True) {
+	readyToggle = this.ffb == this.ffb;
+	tree = new E();
+	j = 865 + listDepth * 772;
+	
+}
+else {
+	await this.ffb?;
+	
+}
+return 79;
+}
+}
+{}

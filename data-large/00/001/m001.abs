@@ -1,0 +1,154 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = this.ff.get;
+this.fj = this.fj;
+Fut<Bool> flushReload = this.ffb;
+while( - this.fint !=(this.fint)) {
+	await this.ff?;
+	Int systemAmount = 62;
+	flushReload = this.fi!b();
+	this.fb = True;
+	flushReload = this.ffb;
+	this.fb = 650 < this.fint;
+	await flushReload?;
+	
+}
+Int queueCounter = 216;
+this.fb = this.fi == this.fi;
+Bool isReady = False;
+while( True) {
+	Fut<Bool> resolveData =(this.fi )!b();
+	isReady = this.fj == this.fj;
+	this.ffb =(this.fi )!b();
+	this.fint = 680;
+	flushReload = this.fi!b();
+	Int arg = this.ff.get;
+	this.fj = this.fj;
+	if( isReady) {
+		while( this.fb) {
+			await flushReload?;
+			this.fj = new E();
+			this.fb = this.ffb.get;
+			
+		}
+		this.ffb = this.ffb;
+		arg = arg;
+		this.fj = this.fj;
+		while( 789 == 940 * 87 * this.fint) {
+			this.fb = True;
+			
+		}
+		isReady = True || True;
+		Bool readyFlag = 536 * 597 + 480 != queueCounter;
+		J dataObject = this.fj;
+		this.fint = 342;
+		Bool readyEnabled = readyFlag;
+		this.fint = - 123;
+		this.fj = new E();
+		
+	}
+	else {
+		Int res = - 743;
+		resolveData =(this.fi )!b();
+		res = 385 * 494;
+		Int k = this.fint;
+		while(! False) {
+			await! False;
+			arg = res;
+			Bool willRead =! isReady && True;
+			arg = - 70;
+			this.fi = new D();
+			await flushReload?;
+			Int value = - 294;
+			this.fint = this.ff.get;
+			
+		}
+		I packetUnit = new D();
+		this.ff = packetUnit!n();
+		this.fint = 237 * - queueCounter;
+		queueCounter = 494 + - 906;
+		Bool canSave = True;
+		if( False) {
+			queueCounter = 731 + - 814;
+			await this.ffb?;
+			this.ffb = this.fi!b();
+			await this.ff?;
+			this.fint = this.ff.get;
+			await this.ffb?;
+			await! True || this.fb && True;
+			await this.ff?;
+			k = 11;
+			this.fint = 391;
+			
+		}
+		else {
+			canSave =(resolveData ).get;
+			this.ffb = packetUnit!b();
+			this.fb =(this.fb);
+			k = 649;
+			flushReload = this.fi!b();
+			this.ff = this.fi!n();
+			arg = - 760;
+			this.fint = this.ff.get;
+			flushReload = flushReload;
+			Int queueCount = queueCounter;
+			
+		}
+		
+	}
+	I message = this.fi;
+	Int queueCount = 291;
+	isReady = True;
+	this.fint = 968 + - 264 - arg;
+	
+}
+while(! False) {
+	this.ff = this.fi!n();
+	queueCounter = this.fint - 620;
+	this.ff = this.fi!n();
+	if( True && this.fb) {
+		this.ffb = this.ffb;
+		await flushReload?;
+		flushReload = this.ffb;
+		
+	}
+	Bool execOverride = True;
+	this.fj = this.fj;
+	while(! False) {
+		J dataNode = this.fj;
+		this.fb =(isReady);
+		this.ff = this.fi!n();
+		Bool isLoaded =! this.fb;
+		isReady =! False;
+		isLoaded = True;
+		
+	}
+	execOverride =! False && execOverride && True ||! False == False;
+	queueCounter =(44 * 742 + 354 * - queueCounter);
+	this.fj = new E();
+	this.fb = False && False;
+	
+}
+Fut<Int> y = this.ff;
+return 371 - 744;
+}
+}
+{}

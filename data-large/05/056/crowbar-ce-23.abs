@@ -1,0 +1,64 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-2646 == this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((-2646 == this.fint))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isDone = True;
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(12)";
+		this.fint = 9;
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End of setup
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		Bool restoreFlag = ((hasDone || True) || !False);
+		if(False){}
+		else{
+			this.fi = this.fi;
+			if(this.fb){}
+			else{
+				this.fb = True;
+			}
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_57";
+			Bool systemOverride = systemOverride;
+			systemOverride = (isDone || False);
+			if((False && True)){}
+			else{
+				if(systemOverride){}
+				else{
+					// this.fint = (this.ff).get;
+					this.fint = 13;
+				}
+				this.fb = !False;
+			}
+			Int l = 467;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

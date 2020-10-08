@@ -1,0 +1,83 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_235";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False || !this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((False || !this.fb))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String clientStruct = null;
+		this.fint = 1;
+		this.fi = "object_1";
+		this.fb = True;
+		this.ffb = "fut_?(1)";
+		// End of setup
+		
+		// this.ffb = clientStruct!b();
+		this.ffb = "fut_235";
+		}
+		if(True){
+			Int k = 260;
+			// Bool isSave = (this.ffb).get;
+			Bool isSave = False;
+		}
+		// J packet = new E();
+		String packet = "object_1";
+		// J dataRepresentation = new E();
+		String dataRepresentation = "object_2";
+		Bool willSave = (False || False);
+		if((1 < k)){
+			Int k = k;
+			this.fb = ((True || !False) || this.fb);
+			Bool stateOverride = (k < -k);
+		}
+		Int j = 439;
+		this.fint = (736 + -k);
+		this.fint = 499;
+		this.fi = this.fi;
+		this.fi = clientStruct;
+		if((this.ffb == this.ffb)){
+			// packet = new E();
+			packet = "object_3";
+			dataRepresentation = dataRepresentation;
+			if((False && False)){}
+			else{
+				Int res = -17;
+				Bool isLoaded = (this.fj == packet);
+			}
+			if((k >= 533)){}
+			else{
+		
+			}
+			Int k = 277;
+			this.fi = clientStruct;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_259";
+		this.fj = this.fj;
+		// Fut resData = clientStruct!b();
+		String resData = "fut_260";
+		println(toString(j)); // return statement
+		// Evaluates to: 439
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (439=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

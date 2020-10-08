@@ -1,0 +1,117 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(8)";
+		this.fi = "object_?(8)";
+		this.fint = 8;
+		this.fb = True;
+		this.ffb = "fut_?(13)";
+		// End of setup
+		
+		this.fb = (this.fb || True);
+		// J clientUnit = new E();
+		String clientUnit = "object_1";
+		this.fj = this.fj;
+		this.fj = this.fj;
+		if(True){
+			// this.fb = (this.ffb).get;
+			this.fb = True;
+			this.ffb = this.ffb;
+			Int value = 68080;
+			// this.fi = new D();
+			this.fi = "object_2";
+			clientUnit = this.fj;
+		}
+		if((False && this.fb)){}
+		else{
+			// I dataRepresentation = new D();
+			String dataRepresentation = "object_3";
+			if(this.fb){}
+			else{
+		
+			}
+			// Fut q = this.fi!b();
+			String q = "fut_67";
+			if(!True){}
+			else{
+				if(!False){
+					// Int systemAmount = (this.ff).get;
+					// Future value irrelevant or unavailable, using default:
+					Int systemAmount = 0;
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.fj = "object_?(10)";
+					this.fi = "object_?(14)";
+					this.fint = 10;
+					this.fb = True;
+					this.ffb = "fut_?(10)";
+					// End assignments
+					
+					Int eventAmount = systemAmount;
+					q = q;
+					this.fint = 593;
+					
+					// await q?;
+					// Assume the following assignments while blocked:
+					this.fj = "object_?(11)";
+					this.fi = "object_?(11)";
+					this.fint = 11;
+					this.fb = True;
+					this.ffb = "fut_?(11)";
+					// End assignments
+					
+					// Fut resetReload = dataRepresentation!b();
+					String resetReload = "fut_81";
+				}
+			}
+			// q = this.fi!b();
+			q = "fut_82";
+			if(this.fb){}
+			else{
+		
+			}
+		}
+		this.fb = (False && True);
+		Bool isWrite = True;
+		this.ff = this.ff;
+		isWrite = this.fb;
+		this.fj = clientUnit;
+		this.fb = False;
+		Bool willWrite = !this.fb;
+		this.fj = clientUnit;
+		this.fi = this.fi;
+		this.ffb = this.ffb;
+		Int i = -367;
+		// this.ff = this.fi!n();
+		this.ff = "fut_90";
+		// this.fj = new E();
+		this.fj = "object_4";
+		// this.ff = this.fi!n();
+		this.ff = "fut_91";
+		willWrite = True;
+		println(toString(273)); // return statement
+		// Evaluates to: 273
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (273=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

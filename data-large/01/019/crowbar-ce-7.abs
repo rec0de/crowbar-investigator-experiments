@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String serverObject = null;
+		// End of setup
+		
+		this.ffb = this.ffb;
+		if((165061 < 34)){}
+		else{
+		
+		}
+		this.fj = this.fj;
+		// Int res = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int res = 0;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverObject=0)
+		// Failed to show the following sub-obligations:
+		// !(serverObject=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

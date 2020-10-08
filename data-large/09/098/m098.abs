@@ -1,0 +1,158 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.ff;
+if( this.fb && this.fb) {
+	await this.ffb?;
+	Int stackDepth = this.fint;
+	while( this.fb) {
+		Int l = 661;
+		if( this.fb) {
+			this.fint = this.fint;
+			Bool willRead = this.fb;
+			this.fi = this.fi;
+			this.fi = new D();
+			willRead = this.fb;
+			await this.ff?;
+			await this.ffb?;
+			
+		}
+		else {
+			Int k = 62 * - 807;
+			Bool hasReady = False;
+			Bool hasDone = False;
+			this.ffb = this.fi!b();
+			this.ffb = this.ffb;
+			
+		}
+		while( this.fj == this.fj) {
+			Bool isSaveed = this.fb;
+			Fut<Int> q = this.fi!n();
+			this.ffb = this.fi!b();
+			I tree = this.fi;
+			await this.fb;
+			tree = new D();
+			await this.ffb?;
+			this.fi = this.fi;
+			this.fint = 331;
+			this.ffb = this.fi!b();
+			q = tree!n();
+			
+		}
+		this.fb = this.fb;
+		
+	}
+	
+}
+else {
+	this.fj = new E();
+	Int processCount = this.fint;
+	this.ffb = this.fi!b();
+	while( True) {
+		this.ffb = this.fi!b();
+		this.fj = new E();
+		
+	}
+	while( False || True) {
+		this.fb = False || False || True;
+		Bool stateOverride = this.fb;
+		while( True) {
+			this.ffb = this.fi!b();
+			this.fi = this.fi;
+			Fut<Int> resetReload = this.ff;
+			I serverUnit =(this.fi);
+			await resetReload?;
+			I packetNode =(this.fi);
+			stateOverride = True && True;
+			await this.ff?;
+			
+		}
+		
+	}
+	await this.ffb?;
+	I person = this.fi;
+	if( this.fj ==(this.fj )) {
+		this.fb = this.fj == this.fj;
+		person = new D();
+		while( this.fb || False) {
+			this.fint = - 852 - 415;
+			
+		}
+		this.ff = this.ff;
+		this.fj = new E();
+		
+	}
+	else {
+		await this.ff?;
+		while( False) {
+			this.fint = 600;
+			await True;
+			this.fi = new D();
+			
+		}
+		Bool readyEnabled = True &&(False || this.fb && True);
+		readyEnabled =(readyEnabled);
+		await this.ff?;
+		if( True) {
+			await this.ff?;
+			
+		}
+		else {
+			readyEnabled = False || True;
+			this.ffb = person!b();
+			this.ffb = this.fi!b();
+			person = this.fi;
+			
+		}
+		if(! False) {
+			this.ffb = person!b();
+			
+		}
+		this.fb = False && False;
+		this.fi = new D();
+		Fut<Int> resultInfo = person!n();
+		
+	}
+	this.fint = this.fint * - 542;
+	this.fi = person;
+	this.ffb = this.ffb;
+	Int eventCount = this.fint + 421;
+	if( this.fb && False) {
+		this.fi = new D();
+		
+	}
+	else {
+		while( this.fb || False) {
+			this.ff = this.fi!n();
+			await this.ffb?;
+			
+		}
+		J tree = new E();
+		
+	}
+	Fut<Int> resolveData = this.ff;
+	
+}
+this.fi = this.fi;
+I node = this.fi;
+return - 25;
+}
+}
+{}

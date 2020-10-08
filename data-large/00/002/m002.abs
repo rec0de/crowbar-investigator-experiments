@@ -1,0 +1,178 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+this.ff =(this.fi )!n();
+this.fi = this.fi;
+this.ff = this.ff;
+this.fb = this.fb;
+this.ffb = this.fi!b();
+this.fj = new E();
+if( True) {
+	this.fi = this.fi;
+	this.ffb = this.ffb;
+	I serverObject = new D();
+	this.fj = this.fj;
+	
+}
+else {
+	I person = new D();
+	Fut<Int> returnInfo = this.ff;
+	Fut<Int> z = this.fi!n();
+	z = this.fi!n();
+	z = returnInfo;
+	
+}
+this.ffb = this.fi!b();
+this.fj = this.fj;
+J node = new E();
+await this.ffb?;
+node = node;
+if( False && False && False) {
+	if( False) {
+		if( True && True) {
+			node = node;
+			this.fi = new D();
+			await False && this.fb;
+			Bool configToggle = True;
+			
+		}
+		else {
+			await this.ffb?;
+			await True;
+			
+		}
+		this.ff = this.fi!n();
+		this.ffb = this.fi!b();
+		while( True) {
+			await this.ffb?;
+			
+		}
+		J dataRepresentation = new E();
+		this.fi =(this.fi);
+		dataRepresentation = new E();
+		this.ff = this.ff;
+		this.fint = this.fint;
+		
+	}
+	this.fj = new E();
+	await this.fb;
+	
+}
+else {
+	await this.ffb?;
+	this.ffb = this.fi!b();
+	this.ffb = this.fi!b();
+	this.fb = True;
+	this.fi = this.fi;
+	if(! this.fb) {
+		this.fint = 393;
+		this.fj = new E();
+		
+	}
+	else {
+		this.fi = this.fi;
+		I packetUnit = new D();
+		if(! this.fb) {
+			Bool isLoaded = this.fb && True || False &&! this.fb;
+			Int queueDepth = this.fint *(126);
+			
+		}
+		else {
+			this.ff = packetUnit!n();
+			
+		}
+		await False;
+		await 474 == - 688;
+		await(True);
+		while( 153 - - 837 <= 195) {
+			Int arg = - 983 * 546 -(954);
+			this.fj = new E();
+			Fut<Bool> applyUpdates = this.fi!b();
+			this.ff = this.fi!n();
+			Int value = this.fint * 70 - this.fint;
+			await this.ffb?;
+			
+		}
+		node = node;
+		Int l = 208;
+		J serverObject = new E();
+		this.fint = 199;
+		packetUnit = packetUnit;
+		this.fj = serverObject;
+		this.ffb = this.ffb;
+		this.ff = packetUnit!n();
+		J packetStruct = new E();
+		
+	}
+	
+}
+Fut<Int> applyRequest = this.fi!n();
+this.fi = new D();
+I packetObject = this.fi;
+this.ff = this.fi!n();
+while( this.fb) {
+	this.fj = new E();
+	while( False) {
+		this.fj = new E();
+		if(! False) {
+			this.fj = new E();
+			this.fb = this.fint * 237 == 903;
+			Bool isSaveed =! True;
+			await this.ffb?;
+			await this.ff?;
+			J tree = new E();
+			
+		}
+		else {
+			await applyRequest?;
+			this.fi = new D();
+			
+		}
+		
+	}
+	
+}
+Int queueAmount = 554 * 599;
+Int i = this.fint;
+while( False && True) {
+	I dataObject = packetObject;
+	while( - i ==(i) * 918) {
+		applyRequest = packetObject!n();
+		this.ff = this.fi!n();
+		Int systemCounter =(740);
+		Bool willExec = this.fb || True;
+		Int res = systemCounter * i;
+		this.ffb =(this.fi )!b();
+		
+	}
+	
+}
+packetObject = this.fi;
+Bool canExec = node == this.fj;
+this.ff =(applyRequest);
+packetObject = this.fi;
+canExec = False;
+applyRequest = packetObject!n();
+Int value = - 639;
+return 673;
+}
+}
+{}

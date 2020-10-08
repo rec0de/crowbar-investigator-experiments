@@ -1,0 +1,80 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+	String fj = null;
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-this.fint > eventCounter)){} 
+		// Known true:
+		// Negated loop guard: !((-this.fint > eventCounter))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int eventCounter = 1;
+		String serverUnit = null;
+		Bool sendEnabled = True;
+		this.fint = -1;
+		this.fb = True;
+		this.fj = "object_?(-1)";
+		// End of setup
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fb = False;
+		this.fj = null;
+		// End assignments
+		
+		if((((this.fint * -681) * this.fint) > 602)){}
+		else{
+		
+		}
+		// this.fj = new E();
+		this.fj = "object_1";
+		}
+		Bool isDone = !True;
+		this.fb = True;
+		}
+		// I person = new D();
+		String person = "object_2";
+		// Fut y = person!n();
+		String y = "fut_226";
+		if((182 == (this.fint * 659))){}
+		else{
+			Int value = 572;
+			String z = this.ffb;
+		}
+		Bool isSave = False;
+		isSave = True;
+		if(False){}
+		else{
+			person = person;
+			Bool willRead = True;
+			if(!sendEnabled){}
+			else{
+		
+			}
+			Bool sendEnabled = !False;
+			if(sendEnabled){
+				this.fi = serverUnit;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(serverUnit=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

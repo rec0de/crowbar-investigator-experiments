@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!systemEnabled){} 
+		// Known true:
+		// Negated loop guard: !(!systemEnabled)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool systemEnabled = True;
+		this.fint = 1;
+		this.ffb = "fut_185";
+		// End of setup
+		
+		// J ioRepresentation = new E();
+		String ioRepresentation = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_185";
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (heap.fint=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

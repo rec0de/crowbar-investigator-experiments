@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(7)";
+		this.fint = 7;
+		this.fi = "object_?(7)";
+		this.fb = True;
+		this.ffb = "fut_?(7)";
+		// End of setup
+		
+		this.fj = this.fj;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_53";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(12)";
+		this.fint = 12;
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(14)";
+		// End assignments
+		
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(13)";
+		this.fint = 13;
+		this.fi = "object_?(13)";
+		this.fb = True;
+		this.ffb = "fut_?(13)";
+		// End assignments
+		
+		if(False){}
+		else{
+			this.fb = False;
+			this.fint = 407;
+			this.ffb = this.ffb;
+			// this.fj = new E();
+			this.fj = "object_1";
+			// Fut resetRequest = this.fi!n();
+			String resetRequest = "fut_63";
+			// Fut returnData = this.fi!b();
+			String returnData = "fut_64";
+		}
+		// this.fi = new D();
+		this.fi = "object_2";
+		this.fj = this.fj;
+		String packet = this.fj;
+		this.fi = this.fi;
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 407
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (select(store(heap, this.fint, 407), this.fint)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

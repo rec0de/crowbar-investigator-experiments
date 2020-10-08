@@ -1,0 +1,55 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(hasSaveed){} 
+		// Known true:
+		// Negated loop guard: !(hasSaveed)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool hasSaveed = True;
+		// End of setup
+		
+		String packet = this.fi;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		// End assignments
+		
+		Int j = queueAmount;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		// End assignments
+		
+		String serverUnit = this.fi;
+		// I dataStruct = new D();
+		String dataStruct = "object_1";
+		if(False){}
+		else{
+		
+		}
+		// j = (applyRequest).get;
+		// Future value irrelevant or unavailable, using default:
+		j = 0;
+		j = (this.fint * 697);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

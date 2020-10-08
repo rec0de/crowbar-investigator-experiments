@@ -1,0 +1,144 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fj = null;
+	String ff = "fut_151";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_151";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((((4615 * stackCounter) - (queueDepth * 540)) < (((-stackCounter - -853) + 733) + -923))){} 
+		// Known true:
+		// Negated loop guard: !((((4615 * stackCounter) - (queueDepth * 540)) < (((-stackCounter - -853) + 733) + -923)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int queueDepth = -2;
+		Int stackCounter = 0;
+		this.fint = 24;
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(12)";
+		// End of setup
+		
+		Int arg = this.fint;
+		String resultState = this.ffb;
+		Int processAmount = -res;
+		Int queueCount = 382;
+		Int value = 250;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fint = 13;
+		this.fj = "object_?(13)";
+		this.ff = "fut_?(13)";
+		this.fi = "object_?(13)";
+		this.fb = True;
+		this.ffb = "fut_?(13)";
+		// End assignments
+		
+		this.fj = this.fj;
+		if((this.fb && True)){
+			Int queueCounter = 322;
+			String packet = person;
+			Bool isExec = (!True || (((False && !False) && True) && (False == False)));
+			// this.ff = packet!n();
+			this.ff = "fut_150";
+		}
+		value = 667;
+		this.fint = 475;
+		// this.ff = this.fi!n();
+		this.ff = "fut_151";
+		Bool isReady = True;
+		// this.ff = person!n();
+		this.ff = "fut_152";
+		// this.ffb = person!b();
+		this.ffb = "fut_153";
+		// arg = (this.ff).get;
+		arg = 0;
+		Bool hasSaveed = (True && True);
+		hasSaveed = True;
+		queueDepth = queueCount;
+		Bool hasLoaded = True;
+		// Int listDepth = (this.ff).get;
+		Int listDepth = 0;
+		// value = (this.ff).get;
+		value = 0;
+		Int res = 581;
+		if(!True){}
+		else{
+		
+		}
+		Int listCounter = queueCounter;
+		// J serverRepresentation = new E();
+		String serverRepresentation = "object_1";
+		stackCounter = 352;
+		this.fi = this.fi;
+		queueDepth = 42;
+		Bool hasDone = False;
+		this.fint = 932;
+		hasSaveed = (person == this.fi);
+		processAmount = 970;
+		// Int queueCounter = (this.ff).get;
+		Int queueCounter = 0;
+		arg = 146;
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fint = 23;
+		this.fj = "object_?(16)";
+		this.ff = "fut_?(16)";
+		this.fi = "object_?(16)";
+		this.fb = True;
+		this.ffb = "fut_?(16)";
+		// End assignments
+		
+		
+		// await resultState?;
+		// Assume the following assignments while blocked:
+		this.fint = 17;
+		this.fj = "object_?(17)";
+		this.ff = "fut_?(28)";
+		this.fi = "object_?(17)";
+		this.fb = True;
+		this.ffb = "fut_?(17)";
+		// End assignments
+		
+		queueDepth = 976;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 18;
+		this.fj = "object_?(18)";
+		this.ff = "fut_?(18)";
+		this.fi = "object_?(18)";
+		this.fb = True;
+		this.ffb = "fut_?(18)";
+		// End assignments
+		
+		if(this.fb){}
+		else{
+			queueDepth = 466;
+		}
+		listDepth = 419;
+		serverRepresentation = serverRepresentation;
+		println(toString(-253)); // return statement
+		// Evaluates to: -253
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-253=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

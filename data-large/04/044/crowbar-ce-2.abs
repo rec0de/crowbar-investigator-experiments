@@ -1,0 +1,61 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(7)";
+		this.fint = 21239;
+		this.fb = True;
+		this.ffb = "fut_28";
+		// End of setup
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_28";
+		Int queueAmount = 759;
+		// this.fi = new D();
+		this.fi = "object_1";
+		}
+		Int l = ((((this.fint * 106) * 640) * 259) * 355);
+		if(this.fb){
+			this.fi = this.fi;
+		}
+		this.fi = this.fi;
+		// Fut p = this.fi!b();
+		String p = "fut_29";
+		this.fb = ((-this.fint * 52) > -(678 - (l * 858)));
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fint = 8;
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End assignments
+		
+		String message = this.fj;
+		l = 443;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(store(store(heap, this.ffb, fut_28), this.fi, NEW3_0), this.fi, NEW3_0), this.fi, select(store(heap, this.fi, NEW3_0), this.fi)), this.fi, select(store(heap, this.fi, select(store(heap, this.fi, NEW3_0), this.fi)), this.fi)), this.fb, ((-(heap.fint)*52)>-((678-(((((heap.fint*106)*640)*259)*355)*858)))))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

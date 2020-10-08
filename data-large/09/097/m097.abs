@@ -1,0 +1,246 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( True) {
+	while( False && this.fb) {
+		this.ffb = this.fi!b();
+		Bool isExec =(666 * - 216) * 407 == 266 - - 108 - 59;
+		isExec = True;
+		this.fb = False;
+		this.ffb = this.fi!b();
+		this.fj = this.fj;
+		this.ff = this.fi!n();
+		
+	}
+	this.fint = 986;
+	await this.ff?;
+	this.fb = this.fb || this.fb || False;
+	await this.ffb?;
+	
+}
+else {
+	I message = new D();
+	I tree = new D();
+	this.ff = tree!n();
+	if(! this.fb) {
+		await this.ff?;
+		tree = tree;
+		Bool hasReady = this.fb;
+		tree = new D();
+		tree = tree;
+		this.fb = True &&(hasReady);
+		this.fint =(this.fint);
+		Int listCounter = 476;
+		this.fi = this.fi;
+		this.fb = this.fb;
+		message = new D();
+		await this.ff?;
+		while( True) {
+			await this.ffb?;
+			await this.ff?;
+			
+		}
+		
+	}
+	else {
+		message = new D();
+		I serverRepresentation = new D();
+		if( False) {
+			await True || False;
+			this.fint = this.fint;
+			serverRepresentation = new D();
+			this.fi = this.fi;
+			this.ffb = this.ffb;
+			
+		}
+		else {
+			message = new D();
+			
+		}
+		while(!(! False)) {
+			Int res = 255;
+			await this.ffb?;
+			message = new D();
+			
+		}
+		
+	}
+	message = this.fi;
+	if( this.fb == False) {
+		this.fint =(- 27);
+		if( False || this.fb) {
+			message = tree;
+			this.ff = tree!n();
+			this.fint = 248;
+			I packet = this.fi;
+			await this.ff?;
+			this.ffb = this.fi!b();
+			Bool isSave = False &&! this.fb;
+			this.fint = 215;
+			message = new D();
+			Int listDepth = this.ff.get;
+			this.fb = False || False && True || False;
+			Bool stateToggle =! this.fb;
+			
+		}
+		else {
+			this.fb = this.ffb.get;
+			await! True ||(False);
+			Bool hasDone = this.ff == this.ff;
+			
+		}
+		tree = new D();
+		this.ffb = this.ffb;
+		if(! False) {
+			await False;
+			
+		}
+		else {
+			this.ff = message!n();
+			this.fi = new D();
+			
+		}
+		tree = tree;
+		tree = message;
+		if(! False && True) {
+			this.ff = this.fi!n();
+			
+		}
+		else {
+			Int value = 406 - this.fint;
+			this.fb =! this.fb;
+			
+		}
+		await 278 *(646 - this.fint * 888) *(832) <= -(539);
+		this.fb = False ||! True && this.fb;
+		this.fi = tree;
+		this.fint = this.ff.get;
+		this.fint = - 798;
+		Bool processToggle =! False;
+		this.ff = this.ff;
+		
+	}
+	else {
+		if( True) {
+			await this.ffb?;
+			Int processDepth = this.fint;
+			this.fint = 373;
+			Fut<Bool> returnInfo = message!b();
+			Bool writeEnabled = processDepth * 839 == 879;
+			J node = this.fj;
+			await this.ffb?;
+			I ioUnit = new D();
+			await! False;
+			await returnInfo?;
+			message = new D();
+			this.fint = 477;
+			this.ff = this.ff;
+			this.fb = False;
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			message = new D();
+			this.ff = message!n();
+			this.fj = this.fj;
+			Bool restoreOverride = True;
+			
+		}
+		Bool systemFlag = this.fb;
+		this.ffb = tree!b();
+		while( True && False && True ==! False) {
+			this.ffb = tree!b();
+			
+		}
+		systemFlag = False && True;
+		this.fj = this.fj;
+		this.fi = new D();
+		this.fb = this.fb ||! False;
+		if( 335 + - 541 <(566 )) {
+			tree = this.fi;
+			
+		}
+		else {
+			this.fint = this.ff.get;
+			systemFlag = 517 == this.fint;
+			I dataNode =(message);
+			this.fj = new E();
+			this.ff = dataNode!n();
+			this.fj = new E();
+			await False;
+			
+		}
+		this.ff =(this.fi )!n();
+		message = new D();
+		I person = new D();
+		this.fj = this.fj;
+		
+	}
+	message = tree;
+	this.ff = this.ff;
+	this.fj = new E();
+	Int stackDepth = 476 * 346;
+	Int res = - 681;
+	Bool hasDone = False || False;
+	Int listDepth =(this.ff ).get;
+	Bool isReady =((False));
+	Bool pauseEnabled = False || True;
+	Int value = this.fint;
+	stackDepth = value;
+	Bool isLoaded = True;
+	Int processCount = - value;
+	this.fint =(631 - 717);
+	this.fj = this.fj;
+	Fut<Bool> resState =((tree) )!b();
+	message = new D();
+	stackDepth = - this.fint;
+	while( True) {
+		Fut<Bool> syncReload = this.ffb;
+		await resState?;
+		while( True &&(783 <= 334 + 842) || True) {
+			stackDepth =(660);
+			await! True && isLoaded && hasDone;
+			
+		}
+		if( False) {
+			Bool isSaveed = pauseEnabled;
+			await this.ff?;
+			Fut<Int> resetRequest = this.ff;
+			
+		}
+		
+	}
+	value = 516 * 764;
+	listDepth = this.fint;
+	processCount = - value;
+	this.fint = 407;
+	I clientObject = new D();
+	
+}
+this.ffb = this.fi!b();
+this.fb = True;
+this.fint = this.fint;
+Bool willExec = True;
+this.fb = True;
+Int eventDepth = this.fint;
+return 54;
+}
+}
+{}

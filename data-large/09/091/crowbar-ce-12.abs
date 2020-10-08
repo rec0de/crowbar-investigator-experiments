@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_715";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		
+		Int systemCount = this.fint;
+		this.ffb = this.ffb;
+		this.fi = this.fi;
+		if(False){}
+		else{
+			this.ffb = this.ffb;
+			String clientObject = this.fj;
+			Bool willSave = !True;
+			Int l = 969;
+			Int listAmount = 49;
+		}
+		if((!this.fb && False)){}
+		else{
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_715";
+			this.fint = this.fint;
+			this.fi = this.fi;
+		}
+		systemCount = this.fint;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, select(store(heap, this.fi, heap.fi), this.fi)), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

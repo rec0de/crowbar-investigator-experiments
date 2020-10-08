@@ -1,0 +1,101 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_295";
+	String fi = null;
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_295";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String resultInfo = "fut_?(9)";
+		String serverUnit = null;
+		this.ff = "fut_?(7)";
+		this.fi = "object_?(7)";
+		this.fb = True;
+		this.fint = 7;
+		this.ffb = "fut_?(7)";
+		// End of setup
+		
+		Int stackCount = this.fint;
+		// this.ff = this.fi!n();
+		this.ff = "fut_295";
+		this.ff = resultInfo;
+		String resState = this.ffb;
+		
+		// await resState?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.fint = 12;
+		this.ffb = "fut_?(10)";
+		// End assignments
+		
+		this.fb = True;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_296";
+		this.fi = serverUnit;
+		Bool isSaveed = (this.fint == 225);
+		Bool isLoaded = False;
+		String serverUnit = serverUnit;
+		// Fut q = serverUnit!n();
+		String q = "fut_297";
+		this.fi = serverUnit;
+		if(!isSaveed){
+			// q = serverUnit!n();
+			q = "fut_298";
+		}
+		String resState = this.ffb;
+		this.fi = this.fi;
+		// J person = new E();
+		String person = "object_1";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.fint = 12;
+		this.ffb = "fut_?(10)";
+		// End assignments
+		
+		
+		// await resultInfo?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.fint = 12;
+		this.ffb = "fut_?(10)";
+		// End assignments
+		
+		isLoaded = (person == this.fj);
+		String resultInfo = this.ff;
+		// this.fj = new E();
+		this.fj = "object_2";
+		q = this.ff;
+		this.fint = 102;
+		String resultState = q;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(serverUnit=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

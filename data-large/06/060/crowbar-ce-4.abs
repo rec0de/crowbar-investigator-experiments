@@ -1,0 +1,56 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	Bool fb = False;
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_?(6)";
+		this.fint = 21238;
+		this.fb = True;
+		// End of setup
+		
+		this.fint = ((this.fint * --130) * 789);
+		// I clientObject = new D();
+		String clientObject = "object_1";
+		Int listCounter = 439808;
+		// Bool canLoad = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool canLoad = False;
+		String clientUnit = clientUnit;
+		// this.ff = this.fi!n();
+		this.ff = "fut_38";
+		clientUnit = ioRepresentation;
+		Int k = 604;
+		canLoad = !canLoad;
+		// clientUnit = new E();
+		clientUnit = "object_2";
+		if(True){
+			// Int queueCount = (this.ff).get;
+			Int queueCount = 0;
+			Bool hasDone = (((False && False) && !True) && True);
+			queueCount = 679;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

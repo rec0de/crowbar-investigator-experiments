@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fb = True;
+		this.fj = "object_?(11)";
+		this.ffb = "fut_29";
+		// End of setup
+		
+		// Int stackCount = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int stackCount = 0;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_29";
+		stackCount = (977 - this.fint);
+		// this.fj = new E();
+		this.fj = "object_1";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_30";
+		if(!this.fb){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

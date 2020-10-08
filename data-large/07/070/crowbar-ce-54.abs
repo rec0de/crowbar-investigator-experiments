@@ -1,0 +1,63 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fj = null;
+	String ff = "fut_?(0)";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fi = "object_?(10)";
+		this.fint = 10;
+		this.ffb = "fut_366";
+		this.fj = "object_?(10)";
+		this.ff = "fut_366";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: ((True && True) || (!False && False))
+		// Loop invariant: true
+		// while(((True && True) || (!False && False))) {
+		{
+			this.ffb = this.ffb;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_366";
+			// this.ff = this.fi!n();
+			this.ff = "fut_367";
+			Bool hasLoaded = (618 == 44205799);
+			this.ffb = this.ffb;
+			Bool restoreFlag = this.fb;
+			Int listAmount = 406;
+			// Fut resetCall = this.fi!n();
+			String resetCall = "fut_368";
+			// this.fi = new D();
+			this.fi = "object_1";
+			this.fint = 355;
+			
+			// await (this.fj == this.fj);
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fint = 11;
+			this.ffb = "fut_?(11)";
+			this.fj = "object_?(11)";
+			this.ff = "fut_?(11)";
+			// End assignments
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(store(store(store(heap, this.ffb, heap.ffb), this.ffb, fut_366), this.ff, fut_367), this.ffb, select(store(heap, this.ffb, fut_366), this.ffb)), this.fi, NEW29_0), this.fi, NEW29_0), this.fint, 355)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

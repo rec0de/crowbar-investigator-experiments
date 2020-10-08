@@ -1,0 +1,159 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int i = 342 + this.fint;
+this.fb = False;
+i = 794 * 43;
+this.fb = False || True;
+this.ff = this.fi!n();
+Bool hasSaveed =(this.ffb ).get;
+J serverRepresentation = this.fj;
+serverRepresentation = serverRepresentation;
+J dataUnit = new E();
+Fut<Int> applyRequest = this.fi!n();
+serverRepresentation = this.fj;
+this.ff = this.fi!n();
+this.fi = new D();
+I packet = new D();
+Int j = 193;
+hasSaveed = False;
+applyRequest = this.fi!n();
+if( True) {
+	this.fi = new D();
+	Bool storageEnabled = this.ffb.get;
+	hasSaveed =! False;
+	dataUnit = new E();
+	i = 692;
+	dataUnit = this.fj;
+	this.fi = new D();
+	
+}
+else {
+	packet = this.fi;
+	
+}
+serverRepresentation = new E();
+Int queueAmount = 390;
+applyRequest = this.fi!n();
+this.fj = new E();
+Bool pauseEnabled = False;
+queueAmount = 100;
+while( hasSaveed) {
+	this.ffb = this.fi!b();
+	if( True || True) {
+		Int eventCount = 505;
+		while(! pauseEnabled) {
+			Bool storageFlag = this.ffb.get;
+			hasSaveed = False && False;
+			storageFlag = this.ffb.get;
+			await applyRequest?;
+			Int arg = 306;
+			
+		}
+		pauseEnabled = - i < this.fint - i;
+		
+	}
+	if(! True && pauseEnabled == True &&! False || False) {
+		if(! False) {
+			Fut<Int> p = applyRequest;
+			Fut<Int> resetReload = this.fi!n();
+			this.fb = True;
+			
+		}
+		applyRequest = this.ff;
+		while( False) {
+			I clientNode = new D();
+			packet = packet;
+			pauseEnabled = hasSaveed || True || True || False && True;
+			J clientStruct = new E();
+			clientStruct = new E();
+			I tree = packet;
+			
+		}
+		while( hasSaveed) {
+			pauseEnabled =! True;
+			J person = new E();
+			
+		}
+		packet = this.fi;
+		await this.ffb?;
+		j = queueAmount;
+		await True;
+		I serverUnit = this.fi;
+		I dataStruct = new D();
+		if( False) {
+			Bool willRead = False;
+			await this.ffb?;
+			packet = packet;
+			await this.ff?;
+			this.fi = dataStruct;
+			pauseEnabled = hasSaveed && hasSaveed;
+			serverRepresentation = new E();
+			this.ff = this.ff;
+			I tree = packet;
+			this.ffb = serverUnit!b();
+			await this.ff?;
+			Fut<Int> a = tree!n();
+			dataUnit = dataUnit;
+			I dataRepresentation = dataStruct;
+			this.fi = dataStruct;
+			this.fi = dataStruct;
+			serverUnit =(this.fi);
+			I node = this.fi;
+			
+		}
+		j = applyRequest.get;
+		j = this.fint * 697;
+		this.ffb = packet!b();
+		this.fj = new E();
+		this.ffb = serverUnit!b();
+		serverUnit = this.fi;
+		while( 757 == - 345) {
+			serverRepresentation = new E();
+			Bool stateToggle =! False && False;
+			packet = serverUnit;
+			
+		}
+		this.fj = new E();
+		i = - 807;
+		
+	}
+	else {
+		hasSaveed = True;
+		this.fi = this.fi;
+		this.ff = packet!n();
+		pauseEnabled = pauseEnabled;
+		this.fb = this.ffb.get;
+		packet = this.fi;
+		queueAmount = applyRequest.get;
+		this.ffb = this.fi!b();
+		
+	}
+	
+}
+Bool isDone = this.fb;
+await this.ff?;
+hasSaveed = True && pauseEnabled;
+await this.ffb?;
+hasSaveed = True;
+return 20;
+}
+}
+{}

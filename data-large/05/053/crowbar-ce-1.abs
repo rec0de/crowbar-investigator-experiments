@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		
+		// Known true:
+		// Loop guard: (False || !(False && ((False && True) && !this.fb)))
+		// Loop invariant: true
+		// while((False || !(False && ((False && True) && !this.fb)))) {
+		{
+			Int stackCounter = 630;
+			this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

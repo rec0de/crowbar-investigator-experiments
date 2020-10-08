@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		
+		this.fi = this.fi;
+		Bool hasReady = False;
+		}
+		Bool isReady = this.fb;
+		this.fint = 242;
+		String node = this.fj;
+		// J message = new E();
+		String message = "object_1";
+		Int processDepth = -this.fint;
+		this.fi = this.fi;
+		node = this.fj;
+		println(toString(processDepth)); // return statement
+		// Evaluates to: -242
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-(select(store(heap, this.fint, 242), this.fint))=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

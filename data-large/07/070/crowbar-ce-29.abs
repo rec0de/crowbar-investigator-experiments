@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_170";
+	String ffb = "fut_170";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		
+		// Known true:
+		// Loop guard: ((True && True) || (!False && False))
+		// Loop invariant: true
+		// while(((True && True) || (!False && False))) {
+		{
+			this.ffb = this.ffb;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_170";
+			// this.ff = this.fi!n();
+			this.ff = "fut_171";
+			Bool hasLoaded = (618 == 44205799);
+			this.ffb = this.ffb;
+			Bool restoreFlag = this.fb;
+			Int listAmount = 406;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

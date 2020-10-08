@@ -1,0 +1,207 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool hasLoaded = this.fb;
+this.ffb = this.fi!b();
+this.fint = 735;
+this.fj = new E();
+if( True) {
+	if( this.fint == - this.fint) {
+		this.ffb = this.fi!b();
+		this.fb = True;
+		
+	}
+	
+}
+I message = this.fi;
+Fut<Bool> p = this.fi!b();
+this.ff =(this.ff);
+if( this.fb && False) {
+	if( False) {
+		Bool readyOverride = False;
+		while( hasLoaded) {
+			Int listDepth = this.fint * 780;
+			this.fb = True;
+			this.fi = message;
+			Int eventCounter = 189;
+			listDepth =(this.fint);
+			hasLoaded = False && this.fb &&(hasLoaded);
+			readyOverride =(this.fb) == True;
+			await this.ff?;
+			J node = new E();
+			this.ff = this.fi!n();
+			
+		}
+		await this.ffb?;
+		await this.ff?;
+		p = this.fi!b();
+		if((! False) ||! False) {
+			await this.ff?;
+			Bool canLoad = True || True;
+			this.ff = message!n();
+			await this.ff?;
+			
+		}
+		else {
+			Fut<Int> flushUpdates = message!n();
+			readyOverride = readyOverride || False && False;
+			flushUpdates = flushUpdates;
+			this.ffb = p;
+			
+		}
+		
+	}
+	else {
+		p = this.fi!b();
+		await p?;
+		this.ffb = p;
+		this.fj = this.fj;
+		this.fb = this.fi == message;
+		message = message;
+		
+	}
+	await 579 <= this.fint;
+	while( this.fb ||(! True && False == False) || True) {
+		Int systemAmount = 318;
+		Bool configToggle = hasLoaded || this.fb && True &&! True;
+		J person = this.fj;
+		if( True) {
+			J packetRepresentation = person;
+			I packet = this.fi;
+			J packetObject = person;
+			await! True;
+			p =(this.ffb);
+			
+		}
+		else {
+			Int processCounter = systemAmount;
+			hasLoaded = 715 * 356 == 259;
+			this.fb =(True) && True;
+			I clientUnit = new D();
+			person = person;
+			hasLoaded = this.ffb.get;
+			
+		}
+		this.fi = new D();
+		Int queueDepth = - systemAmount * 533 * 273;
+		await configToggle && True == this.fb;
+		person = this.fj;
+		hasLoaded = 91 == queueDepth;
+		
+	}
+	Bool readyToggle = this.ff == this.ff;
+	this.fi = new D();
+	this.fj = new E();
+	this.fj = new E();
+	this.ffb =(message )!b();
+	if( True) {
+		if( 915 ==(- 77 )) {
+			await this.fb;
+			this.ffb = message!b();
+			J packet = new E();
+			this.ff = message!n();
+			packet =(this.fj);
+			await p?;
+			this.ff = this.ff;
+			packet = packet;
+			message = new D();
+			p = this.fi!b();
+			Int value = this.fint *(this.fint) - this.fint * this.fint;
+			this.fi = new D();
+			Bool hasSaveed = 651 * 48 == 939;
+			await p?;
+			J person = new E();
+			await - value >= 22 * 979;
+			I packetNode = new D();
+			
+		}
+		
+	}
+	message = this.fi;
+	
+}
+else {
+	this.fi = new D();
+	this.fb =! hasLoaded;
+	if( True) {
+		this.ff = message!n();
+		while(! False) {
+			Bool canLoad = hasLoaded;
+			Fut<Int> resultInfo = this.ff;
+			await resultInfo?;
+			this.ffb = message!b();
+			I packet = new D();
+			this.fi = new D();
+			Int res = 228 - this.fint;
+			this.fb = 873 - 89 >= 383;
+			
+		}
+		while( False) {
+			hasLoaded =(357) - - 789 *(- this.fint) ==(869);
+			this.fb =! False;
+			Int stackAmount = this.ff.get;
+			this.fi = this.fi;
+			this.fi = new D();
+			await this.ff?;
+			this.fi =(this.fi);
+			this.fb = - this.fint > stackAmount;
+			this.fint = 150;
+			Bool isSave = True;
+			await this.ff?;
+			this.ffb =(this.ffb);
+			I tree = message;
+			
+		}
+		this.fi = new D();
+		
+	}
+	else {
+		this.fi = new D();
+		this.ff = this.fi!n();
+		this.ff = this.fi!n();
+		Int res = this.fint;
+		
+	}
+	Fut<Int> resetReload = this.ff;
+	this.fi = new D();
+	Bool isReady = False;
+	Int systemDepth = - 977;
+	if( 639 <(536 * 84) * - systemDepth) {
+		while( False) {
+			isReady = this.fb &&(hasLoaded || True ||(False || hasLoaded));
+			this.ffb = this.fi!b();
+			Int l = - 503;
+			
+		}
+		
+	}
+	this.fb = this.ffb.get;
+	this.fint = - 580;
+	
+}
+J tree = new E();
+this.ff = message!n();
+await 868 == 367 * 896;
+tree = this.fj;
+tree = new E();
+return 777 * 74;
+}
+}
+{}

@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-stackCounter == ((processDepth * processDepth) * this.fint))){} 
+		// Known true:
+		// Negated loop guard: !((-stackCounter == ((processDepth * processDepth) * this.fint)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int processDepth = 0;
+		String returnInfo = "fut_?(8)";
+		Int stackCounter = -1;
+		this.fj = "object_?(7)";
+		this.fb = True;
+		// End of setup
+		
+		// this.fint = (returnInfo).get;
+		this.fint = 9;
+		Int arg = -3234;
+		arg = (stackCounter + (115 * this.fint));
+		Int listAmount = this.fint;
+		this.fb = this.fb;
+		this.fj = this.fj;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

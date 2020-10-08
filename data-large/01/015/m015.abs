@@ -1,0 +1,157 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int eventDepth = this.fint * 736;
+if(! True) {
+	I packet = this.fi;
+	
+}
+this.fj = new E();
+this.fj = new E();
+if( this.fb) {
+	while( False &&! True && this.fb) {
+		this.fint = 183;
+		Bool isRead = True == False;
+		await this.ffb?;
+		this.fi = this.fi;
+		this.fi = this.fi;
+		eventDepth = this.ff.get;
+		while( False) {
+			Int queueCounter = this.ff.get;
+			await this.ffb?;
+			isRead =(False || True);
+			eventDepth = 705;
+			Int stackCounter = this.ff.get;
+			Bool willWrite = isRead;
+			this.ff = this.ff;
+			this.fj = this.fj;
+			
+		}
+		Fut<Bool> flushReload =(this.ffb);
+		this.fint = - eventDepth;
+		J packetStruct =(this.fj);
+		Int value = this.ff.get;
+		
+	}
+	Int queueAmount = this.ff.get;
+	
+}
+else {
+	this.fi = new D();
+	await False &&! True && False;
+	
+}
+Bool execEnabled = True && True == this.fb;
+Int j =(378);
+Int systemDepth = 179 + 572;
+if( execEnabled) {
+	execEnabled = False;
+	this.fb = this.fb;
+	if( True) {
+		this.fint = 993 * 847 * 800;
+		
+	}
+	else {
+		this.fb = False;
+		this.ff = this.fi!n();
+		this.ffb = this.fi!b();
+		execEnabled = True ||! execEnabled;
+		
+	}
+	
+}
+while( True && False && True && False) {
+	this.fint = 11;
+	if( 853 >= - eventDepth) {
+		while( execEnabled) {
+			await this.ff?;
+			Bool willWrite = this.ffb.get;
+			
+		}
+		this.fint = -(- 447) - 281 * j * 922;
+		
+	}
+	else {
+		J ioObject = new E();
+		eventDepth = j;
+		while( False && True && False || False || False) {
+			this.ff = this.fi!n();
+			this.fi = new D();
+			eventDepth = 944 * j;
+			Bool hasLoaded = this.fb;
+			this.fi = new D();
+			execEnabled = hasLoaded && False;
+			
+		}
+		this.ffb = this.fi!b();
+		await this.ff?;
+		Int queueDepth = 138 + 607;
+		systemDepth = - 268;
+		Int queueCount = queueDepth;
+		Int i = 896;
+		
+	}
+	Bool isSave = True;
+	j = 378;
+	
+}
+await this.ffb?;
+I packetStruct = new D();
+systemDepth = 785 * 496;
+Fut<Int> applyRequest = packetStruct!n();
+this.fint = 409 - 514;
+packetStruct = packetStruct;
+if( False) {
+	j = this.fint;
+	Fut<Bool> a = packetStruct!b();
+	Int systemCount = 478;
+	a = this.fi!b();
+	a =(packetStruct )!b();
+	this.fj = new E();
+	if( 432 == 219 - systemCount) {
+		systemCount = 125;
+		systemDepth = 413;
+		systemDepth = 111;
+		this.fi = new D();
+		packetStruct = new D();
+		systemCount = systemCount;
+		
+	}
+	this.ff = packetStruct!n();
+	Fut<Bool> resolveInfo = packetStruct!b();
+	
+}
+else {
+	systemDepth = 224;
+	systemDepth = this.ff.get;
+	J packetObject = new E();
+	execEnabled = False;
+	eventDepth = this.fint - systemDepth;
+	
+}
+J packetNode = new E();
+Int value = this.ff.get;
+this.fi = new D();
+value = 538;
+J message = packetNode;
+return(735);
+}
+}
+{}

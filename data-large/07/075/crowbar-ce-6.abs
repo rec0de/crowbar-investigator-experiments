@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		if(this.fb){}
+		else{
+			Bool isRead = True;
+			Int systemCount = 951;
+			this.fi = this.fi;
+			if(False){}
+			else{
+				String dataStruct = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(dataStruct=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

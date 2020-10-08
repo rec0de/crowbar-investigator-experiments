@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((systemOverride || False)){} 
+		// Known true:
+		// Negated loop guard: !((systemOverride || False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int arg = 0;
+		Bool systemOverride = True;
+		this.fint = 1;
+		this.ff = "fut_59";
+		this.ffb = "fut_59";
+		// End of setup
+		
+		// this.ff = node!n();
+		this.ff = "fut_59";
+		// this.ffb = node!b();
+		this.ffb = "fut_60";
+		println(toString(((81 * arg) + this.fint))); // return statement
+		// Evaluates to: 1
+		// Detailed evaluation breakdown:
+		// arg: 0
+		// this.fint: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (((81*arg)+heap.fint)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

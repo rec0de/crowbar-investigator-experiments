@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		}
+		this.fb = ((False && !writeEnabled) && True);
+		// this.fj = new E();
+		this.fj = "object_1";
+		
+		// await True;
+		// No heap modification info available at this point
+		
+		// this.fj = new E();
+		this.fj = "object_2";
+		this.fb = !True;
+		println(toString(397)); // return statement
+		// Evaluates to: 397
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (397=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,212 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( this.fb) {
+	this.ff = this.fi!n();
+	this.fj = new E();
+	
+}
+else {
+	await this.ffb?;
+	this.ff = this.fi!n();
+	Int eventAmount = 223 * this.fint;
+	Int res = 626 - 427;
+	
+}
+if( this.fint > 981) {
+	await(319 - this.fint) != 108 * 744 * - 534;
+	
+}
+else {
+	await True && False;
+	
+}
+this.fi = new D();
+J node = new E();
+this.fb = this.fb ||! this.fb || True;
+Fut<Int> resolveInfo = this.fi!n();
+I dataRepresentation = new D();
+this.ff = this.fi!n();
+dataRepresentation = dataRepresentation;
+Bool processOverride =(False);
+if( this.fb && this.fb) {
+	this.fj = node;
+	if( False) {
+		if( True) {
+			this.fi = dataRepresentation;
+			this.fb = this.fint <= 570 * 485;
+			this.fint = this.fint * this.fint;
+			await resolveInfo?;
+			
+		}
+		else {
+			this.ff = dataRepresentation!n();
+			
+		}
+		this.fi = new D();
+		this.fb = True;
+		Int stackCount = 389;
+		this.fint = 195 * 60;
+		Fut<Int> syncReload = this.fi!n();
+		if( False) {
+			J serverNode = node;
+			await resolveInfo?;
+			await True ||! False;
+			this.fi = new D();
+			Bool restoreFlag = this.ffb.get;
+			stackCount = 906;
+			Fut<Int> q = dataRepresentation!n();
+			Bool hasLoaded = False && False;
+			Bool configFlag =! False;
+			await this.ffb?;
+			serverNode =(serverNode);
+			this.fint = 21 *(this.fint);
+			this.fj = node;
+			
+		}
+		else {
+			processOverride =(processOverride && False);
+			await syncReload?;
+			dataRepresentation = new D();
+			Bool writeToggle = this.ffb.get;
+			Bool willExec = False;
+			node = new E();
+			this.fb = writeToggle;
+			
+		}
+		this.fb =(False);
+		
+	}
+	Bool isDone = True;
+	dataRepresentation = this.fi;
+	this.fint =(973);
+	if(! True) {
+		I packet = new D();
+		processOverride = True || False;
+		
+	}
+	if( False) {
+		dataRepresentation = new D();
+		
+	}
+	await this.ffb?;
+	Bool isExec = this.ffb.get;
+	
+}
+else {
+	dataRepresentation = this.fi;
+	while( False || processOverride) {
+		this.fi = this.fi;
+		
+	}
+	if( False) {
+		if( 103 < 62 + this.fint) {
+			this.ff = resolveInfo;
+			await this.ffb?;
+			await 419 <= - 118;
+			
+		}
+		else {
+			this.ff = resolveInfo;
+			resolveInfo =(this.fi )!n();
+			this.fint = 624;
+			this.fb = this.ffb.get;
+			
+		}
+		Int value = 142;
+		if( False) {
+			dataRepresentation = new D();
+			value = resolveInfo.get;
+			this.fb = True;
+			this.fint = this.fint;
+			processOverride = True;
+			this.fj = new E();
+			resolveInfo = dataRepresentation!n();
+			Int processCount = 635;
+			this.ffb = this.ffb;
+			I person = new D();
+			processCount = 966;
+			
+		}
+		this.fj = new E();
+		node = this.fj;
+		resolveInfo = dataRepresentation!n();
+		
+	}
+	
+}
+this.fi = new D();
+resolveInfo = this.ff;
+this.ff = dataRepresentation!n();
+node = new E();
+I ioNode = new D();
+this.ff = ioNode!n();
+while( dataRepresentation == ioNode) {
+	processOverride = this.fi == ioNode;
+	
+}
+if( True) {
+	ioNode = dataRepresentation;
+	Fut<Bool> q = this.ffb;
+	await this.ff?;
+	Int eventDepth = 879;
+	Bool willLoad = True &&(False && False &&! processOverride && False);
+	
+}
+else {
+	this.fb =! True;
+	while( True) {
+		J clientNode = this.fj;
+		Fut<Int> syncUpdates =(dataRepresentation )!n();
+		Int queueAmount = - 534 * -(- 959);
+		Fut<Int> returnInfo =(this.fi )!n();
+		clientNode = new E();
+		clientNode = clientNode;
+		J tree = new E();
+		tree = tree;
+		
+	}
+	processOverride =(((713))) - this.fint + - 97 < this.fint;
+	dataRepresentation = new D();
+	this.fint = 483;
+	node = new E();
+	
+}
+processOverride = False;
+this.fj = new E();
+if( 691 <= 895) {
+	this.fj = new E();
+	node = new E();
+	
+}
+else {
+	this.fj = this.fj;
+	
+}
+resolveInfo = this.ff;
+this.fj = node;
+J clientNode = new E();
+node = new E();
+Int value = 754;
+Int res = this.fint;
+return 494;
+}
+}
+{}

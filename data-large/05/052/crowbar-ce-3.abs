@@ -1,0 +1,38 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(hasLoaded){} 
+		// Known true:
+		// Negated loop guard: !(hasLoaded)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool hasLoaded = True;
+		// End of setup
+		
+		Int stackDepth = this.fint;
+		this.fb = True;
+		if(False){}
+		else{
+		
+		}
+		println(toString(95)); // return statement
+		// Evaluates to: 95
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (95=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

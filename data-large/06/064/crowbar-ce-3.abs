@@ -1,0 +1,76 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(4)";
+		this.fb = True;
+		this.ff = "fut_28";
+		// End of setup
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_28";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(5)";
+		this.fb = True;
+		this.ff = "fut_?(5)";
+		// End assignments
+		
+		this.fb = False;
+		Int i = (listDepth - 432);
+		}
+		Bool isLoaded = (164 >= 350);
+		Int j = 24;
+		isLoaded = (842 == 597520);
+		// this.ff = this.fi!n();
+		this.ff = "fut_29";
+		
+		// await resultData?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(7)";
+		this.fb = True;
+		this.ff = "fut_?(13)";
+		// End assignments
+		
+		Int i = 727;
+		Int eventCounter = 130;
+		j = 467;
+		i = i;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = True;
+		this.ff = "fut_?(8)";
+		// End assignments
+		
+		// eventCounter = (syncFlag).get;
+		// Future value irrelevant or unavailable, using default:
+		eventCounter = 0;
+		if((318 >= -31)){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(anon(store(store(anon(store(heap, this.ff, fut_28)), this.fb, 0), this.ff, fut_29))), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

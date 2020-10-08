@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String fj = null;
+	String ffb = "fut_?(0)";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((True && False)){} 
+		// Known true:
+		// Negated loop guard: !((True && False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String flushCall = "fut_?(0)";
+		// End of setup
+		
+		this.fj = this.fj;
+		Int stackCounter = 166;
+		String returnState = flushCall;
+		this.ffb = returnState;
+		Bool canSave = this.fb;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((False && this.fb))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool readOverride = True;
+		this.fj = "object_?(6)";
+		this.fint = 6;
+		this.fb = True;
+		// End of setup
+		
+		// Fut resultData = node!n();
+		String resultData = "fut_45";
+		this.fint = 732;
+		Bool willLoad = (readOverride || True);
+		Int k = 759;
+		if(readOverride){}
+		else{
+			// J person = new E();
+			String person = "object_1";
+			// J packetRepresentation = new E();
+			String packetRepresentation = "object_2";
+		}
+		String node = this.fi;
+		this.fj = this.fj;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

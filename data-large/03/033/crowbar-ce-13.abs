@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_566";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && False)){} 
+		// Known true:
+		// Negated loop guard: !((False && False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int listAmount = 1;
+		// End of setup
+		
+		Int l = 55813640;
+		}
+		this.fb = (True == !True);
+		
+		// await applyFlag?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fb = False;
+		this.ffb = "fut_566";
+		// End assignments
+		
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fb = False;
+		this.ffb = "fut_566";
+		// End assignments
+		
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_566";
+		println(toString((listAmount - (this.fint * 468)))); // return statement
+		// Evaluates to: 1
+		// Detailed evaluation breakdown:
+		// listAmount: 1
+		// this.fint: 0
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// ((listAmount-(select(anon(anon(store(heap, this.fb, (1=!(1))))), this.fint)*468))=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

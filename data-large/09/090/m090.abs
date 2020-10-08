@@ -1,0 +1,247 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int eventCounter = this.fint;
+this.ff = this.fi!n();
+while( this.fi == this.fi) {
+	Int processDepth = 356;
+	
+}
+this.fb = 410 > this.fint - eventCounter;
+this.ffb = this.fi!b();
+this.fint = 309;
+await this.ffb?;
+if( True && this.fb || this.fb) {
+	this.fj = new E();
+	this.fb = True || this.fb && False;
+	if( False) {
+		await this.ff?;
+		J person = new E();
+		Bool hasDone = 698 + 203 - - 672 * 722 == 727 * eventCounter;
+		this.ff = this.ff;
+		
+	}
+	else {
+		this.fint = this.fint + - 397;
+		if( 824 + 816 > 619) {
+			this.fj =(this.fj);
+			
+		}
+		else {
+			this.fint = this.fint;
+			
+		}
+		this.fi = new D();
+		
+	}
+	this.fint = - 625;
+	Fut<Int> p = this.ff;
+	while( False && True) {
+		if( this.fb) {
+			await this.ff?;
+			this.ff = this.ff;
+			await this.ff?;
+			eventCounter = 331;
+			this.fint = p.get;
+			
+		}
+		else {
+			eventCounter = -(468);
+			this.fint = this.fint;
+			
+		}
+		Bool canLoad = this.ffb.get;
+		J packet = this.fj;
+		canLoad = this.fb;
+		canLoad =! False && canLoad;
+		
+	}
+	Bool hasLoaded = this.fb;
+	
+}
+this.fint = 932;
+Fut<Bool> z = this.ffb;
+eventCounter = - 411;
+I serverUnit = new D();
+Bool hasDone = False;
+I person = new D();
+Bool sendEnabled = this.ffb.get;
+if( hasDone) {
+	while(! sendEnabled) {
+		eventCounter = - eventCounter;
+		z = this.fi!b();
+		await this.ffb?;
+		this.ffb = this.fi!b();
+		I packetStruct = new D();
+		Bool willWrite = False;
+		Bool readyToggle = True || False;
+		
+	}
+	
+}
+else {
+	hasDone = sendEnabled && this.fb;
+	J dataRepresentation = this.fj;
+	hasDone = z.get;
+	if( True) {
+		sendEnabled = hasDone && True;
+		if( True) {
+			await this.ffb?;
+			J serverStruct = this.fj;
+			I packetObject = person;
+			serverUnit = new D();
+			dataRepresentation = this.fj;
+			person = this.fi;
+			Bool canExec =(serverStruct) == dataRepresentation;
+			serverStruct = new E();
+			
+		}
+		else {
+			z = z;
+			await this.ff?;
+			
+		}
+		while( True) {
+			this.fint = 577;
+			this.fi = new D();
+			this.fj = new E();
+			await z?;
+			this.fj = new E();
+			await this.ff?;
+			eventCounter =(382) * 103;
+			await hasDone;
+			Int queueAmount = - this.fint;
+			this.ff = serverUnit!n();
+			hasDone = 259 >= 756;
+			this.fj = new E();
+			
+		}
+		
+	}
+	else {
+		while( - this.fint >(eventCounter)) {
+			this.ffb = serverUnit!b();
+			Bool isReady =! False;
+			
+		}
+		await this.ff?;
+		if( this.fint * -(681) * this.fint > 602) {
+			sendEnabled = True;
+			person = new D();
+			z = this.ffb;
+			sendEnabled =! False || False;
+			Fut<Bool> resetChanges = serverUnit!b();
+			person = new D();
+			
+		}
+		this.fj = new E();
+		
+	}
+	Bool isDone =! True;
+	this.fb = True;
+	
+}
+person = new D();
+Fut<Int> y = person!n();
+if((182) == this.fint * 659) {
+	Fut<Int> resolveState =(serverUnit )!n();
+	J tree = new E();
+	this.fint = 998 * - 538;
+	this.ff = this.ff;
+	
+}
+else {
+	Int value = 572;
+	z =(this.ffb);
+	
+}
+Bool isSave = False;
+isSave = True;
+if( False) {
+	J node = new E();
+	
+}
+else {
+	person = person;
+	Bool willRead = True;
+	if(! sendEnabled) {
+		this.ff = person!n();
+		this.fint = this.fint;
+		this.ffb = z;
+		
+	}
+	sendEnabled =! False;
+	if( sendEnabled) {
+		this.fi = serverUnit;
+		y = serverUnit!n();
+		await y?;
+		willRead = True && True == hasDone && False || False;
+		this.fb =(False || False);
+		Bool hasLoaded = z.get;
+		await this.ffb?;
+		
+	}
+	else {
+		this.fj = this.fj;
+		person = new D();
+		
+	}
+	this.fint = this.ff.get;
+	eventCounter = 977;
+	Int stackAmount = this.fint;
+	Bool pauseOverride = True || False;
+	await this.ff?;
+	Bool canSave = pauseOverride && False || True;
+	Bool willSave = hasDone ||! False;
+	Bool willLoad = True;
+	stackAmount = eventCounter;
+	eventCounter = 976;
+	if( True) {
+		await z?;
+		
+	}
+	else {
+		person = person;
+		willRead = False;
+		Int l =(765);
+		sendEnabled = False;
+		
+	}
+	
+}
+I node = serverUnit;
+Int k = - 35;
+this.ffb =((((serverUnit))) )!b();
+node = person;
+serverUnit = new D();
+eventCounter = 815;
+isSave = True;
+Int queueCount = - 261 * 145;
+isSave = True;
+node = this.fi;
+this.fb = True;
+y = person!n();
+Fut<Int> applyReload =(y);
+I tree = new D();
+await y?;
+return - k;
+}
+}
+{}

@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	Int fint = 0;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String packet = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			if((packet == this.fi)){
+				this.fi = packet;
+				this.fb = (386 == this.fint);
+				Int processAmount = this.fint;
+				this.fb = False;
+				// this.fj = new E();
+				this.fj = "object_1";
+				processAmount = (67 + (271 * (((507 * this.fint) * 621) + 288271)));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(packet=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

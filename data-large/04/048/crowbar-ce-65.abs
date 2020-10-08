@@ -1,0 +1,110 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_195";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_195";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool hasDone = False;
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fint = 8;
+		this.fi = "object_?(8)";
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End of setup
+		
+		Bool isLoad = (!False && !this.fb);
+		if(this.fb){}
+		else{
+			Bool willWrite = (ioStruct == this.fi);
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(11)";
+			this.ff = "fut_?(11)";
+			this.fint = 11;
+			this.fi = "object_?(11)";
+			this.fb = True;
+			this.ffb = "fut_?(11)";
+			// End assignments
+			
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_193";
+		}
+		this.fb = (True || True);
+		// this.ff = this.fi!n();
+		this.ff = "fut_194";
+		String packet = ioStruct;
+		this.fint = 112;
+		if(((hasDone || True) || !False)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_195";
+			// this.ff = ioStruct!n();
+			this.ff = "fut_196";
+			if(True){
+				
+				// await this.ff?;
+				// Assume the following assignments while blocked:
+				this.fj = "object_?(15)";
+				this.ff = "fut_?(20)";
+				this.fint = 15;
+				this.fi = "object_?(15)";
+				this.fb = True;
+				this.ffb = "fut_?(15)";
+				// End assignments
+				
+				String dataStruct = ioStruct;
+				// this.fi = new D();
+				this.fi = "object_1";
+				// I message = new D();
+				String message = "object_2";
+				this.fj = this.fj;
+			}
+		}
+		Int systemAmount = ((734 * (-this.fint + 467)) * 205);
+		isLoad = (697 == systemAmount);
+		}
+		this.ff = this.ff;
+		if((False && hasDone)){}
+		else{
+		
+		}
+		if(False){}
+		else{
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(16)";
+			this.ff = "fut_?(16)";
+			this.fint = 16;
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(16)";
+			// End assignments
+			
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(anon(store(store(store(store(store(store(anon(heap), this.ffb, fut_193), this.fb, (1||1)), this.ff, fut_194), this.fint, 112), this.ff, fut_195), this.ff, fut_196)), this.fi, NEW21_0), this.fi, NEW21_0), this.fj, select(anon(store(store(store(store(store(store(anon(heap), this.ffb, fut_193), this.fb, (1||1)), this.ff, fut_194), this.fint, 112), this.ff, fut_195), this.ff, fut_196)), this.fj)), this.ff, select(anon(store(store(store(store(store(store(anon(heap), this.ffb, fut_193), this.fb, (1||1)), this.ff, fut_194), this.fint, 112), this.ff, fut_195), this.ff, fut_196)), this.ff))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

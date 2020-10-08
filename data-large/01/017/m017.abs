@@ -1,0 +1,159 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+this.fint = 690;
+await this.ff?;
+this.fj = this.fj;
+await - this.fint != 75 * - 279 * - 784;
+J packetObject = new E();
+while( this.fint ==(- this.fint * 140)) {
+	this.fi = new D();
+	
+}
+I tree = new D();
+this.ff = tree!n();
+Int processCounter = this.fint * this.fint;
+while( True) {
+	this.fb = True;
+	this.fj = new E();
+	this.fi = new D();
+	
+}
+this.ffb = this.ffb;
+while( True) {
+	packetObject = new E();
+	this.fb = True;
+	Int stackCounter = 77 - 474;
+	this.fint = processCounter * processCounter - 413;
+	Int eventAmount = 53;
+	this.fb =! False && True && True &&! this.fb;
+	
+}
+this.fi = this.fi;
+this.fi = tree;
+processCounter = this.ff.get;
+if( True) {
+	if(! this.fb) {
+		if( False && True) {
+			Fut<Bool> x = tree!b();
+			this.fj = this.fj;
+			
+		}
+		else {
+			packetObject = packetObject;
+			tree = new D();
+			await this.ff?;
+			await processCounter <= 909;
+			this.fb = this.ffb.get;
+			this.fb =! False;
+			await this.ffb?;
+			
+		}
+		
+	}
+	else {
+		tree = new D();
+		this.fint = this.fint - 298;
+		while(! this.fb) {
+			this.fi = this.fi;
+			
+		}
+		this.fj = new E();
+		
+	}
+	this.fint = 94;
+	this.fj = new E();
+	this.fint = this.ff.get;
+	while( False) {
+		Bool canExec = False;
+		I ioObject = tree;
+		I person = this.fi;
+		J serverObject = new E();
+		this.fb = True || True;
+		this.fint = 564;
+		
+	}
+	this.fj = new E();
+	Fut<Bool> resultState = this.fi!b();
+	while( this.fb &&!(False)) {
+		this.fb = this.fb;
+		
+	}
+	this.fb = True;
+	this.fb = this.fb;
+	this.fint = processCounter;
+	Int arg = 1;
+	this.fi = new D();
+	I node = new D();
+	arg = 698;
+	if( False) {
+		this.fi = this.fi;
+		this.fj = this.fj;
+		packetObject = this.fj;
+		Bool canRead = this.ff == this.ff;
+		this.fb = False && False;
+		await True || this.fb && this.fb || this.fb;
+		processCounter = - 468;
+		this.ffb = node!b();
+		this.ff = node!n();
+		Bool canSave = False;
+		I ioRepresentation = node;
+		
+	}
+	else {
+		packetObject = this.fj;
+		packetObject = new E();
+		while( False) {
+			this.fi = new D();
+			processCounter = 17;
+			this.fi = this.fi;
+			this.fj = packetObject;
+			
+		}
+		packetObject = this.fj;
+		await this.ff?;
+		if((! True )) {
+			this.fj = new E();
+			
+		}
+		Int listCounter =(972);
+		
+	}
+	this.fb = this.fb && False;
+	this.fj = packetObject;
+	this.ffb = node!b();
+	this.ffb = this.ffb;
+	arg = 285;
+	await resultState?;
+	
+}
+else {
+	Int processCount = 927;
+	
+}
+while((True && this.fb)) {
+	this.fb =! True;
+	
+}
+return 4;
+}
+}
+{}

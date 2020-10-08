@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-i == -261)){} 
+		// Known true:
+		// Negated loop guard: !((-i == -261))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int i = 262;
+		String clientNode = null;
+		// End of setup
+		
+		}
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientNode=0)
+		// Failed to show the following sub-obligations:
+		// !(clientNode=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

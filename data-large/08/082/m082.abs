@@ -1,0 +1,205 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool canExec = True;
+this.fint = - 824;
+I ioNode = new D();
+this.fint = 14 * 382;
+this.fb = False;
+this.ff = this.ff;
+while((868) - 630 != 716 * 298) {
+	this.ffb = this.ffb;
+	Bool isLoad =(True && canExec) &&! False;
+	
+}
+Int systemDepth = 977 * 146 * this.fint;
+this.fi = this.fi;
+this.fint = - 376;
+if( 27 < systemDepth) {
+	Bool execFlag = 943 * 279 == 978;
+	execFlag = this.fb;
+	J clientNode = new E();
+	if( False &&! True) {
+		systemDepth = 885;
+		this.fb = True;
+		ioNode = new D();
+		this.fint = 474;
+		canExec =((- this.fint * - systemDepth <= 499));
+		execFlag = canExec;
+		Bool pauseToggle =(! False);
+		systemDepth = 526;
+		
+	}
+	else {
+		if( this.ffb == this.ffb) {
+			this.ff = this.ff;
+			this.ffb = this.fi!b();
+			this.fb = - systemDepth + 405 *(systemDepth) * 280 <= 312 * - 538;
+			this.ff = this.ff;
+			systemDepth = 169 * 43;
+			
+		}
+		else {
+			Bool hasReady = True;
+			
+		}
+		this.ffb = ioNode!b();
+		this.fj = new E();
+		while( True) {
+			await this.ffb?;
+			
+		}
+		this.ff = this.ff;
+		Bool isDone = False || execFlag;
+		clientNode = new E();
+		this.fint = this.ff.get;
+		this.ffb = ioNode!b();
+		
+	}
+	Fut<Bool> flushRequest = this.ffb;
+	canExec = False;
+	systemDepth =(53);
+	while(! True) {
+		J person = clientNode;
+		this.fint = systemDepth * 992;
+		this.fi =(ioNode);
+		
+	}
+	
+}
+while( False &&! True || False) {
+	ioNode = new D();
+	this.ff = this.fi!n();
+	await canExec;
+	this.ffb = this.fi!b();
+	this.ffb = ioNode!b();
+	systemDepth = 714;
+	Int listCounter = 515;
+	
+}
+Bool hasLoaded = True;
+ioNode = new D();
+while( this.ffb == this.ffb) {
+	if(! hasLoaded) {
+		this.fb = canExec;
+		ioNode = ioNode;
+		
+	}
+	
+}
+this.fi = new D();
+this.ffb = ioNode!b();
+this.fb = True;
+I node = this.fi;
+await this.ff?;
+Int arg = this.ff.get;
+if( False) {
+	arg = this.ff.get;
+	ioNode = this.fi;
+	canExec = False;
+	I clientUnit = this.fi;
+	canExec = this.fb && canExec;
+	this.ff = this.fi!n();
+	
+}
+else {
+	I tree = new D();
+	systemDepth = this.ff.get;
+	canExec = this.ffb.get;
+	hasLoaded =(False &&!(True)) && True;
+	await this.ffb?;
+	hasLoaded = 475 >= - 619 + 870;
+	ioNode = new D();
+	canExec = False;
+	while( 152 == 811) {
+		this.ffb = ioNode!b();
+		hasLoaded = False &&! canExec;
+		
+	}
+	this.fi = ioNode;
+	
+}
+systemDepth = 486;
+systemDepth = 475;
+while(! hasLoaded ||! True ==! False) {
+	arg = arg;
+	this.ff = this.ff;
+	this.fint = this.ff.get;
+	systemDepth = 361 * 207;
+	Bool storageFlag = False;
+	canExec = False || canExec && False;
+	
+}
+this.fi = node;
+J packetRepresentation = new E();
+packetRepresentation = this.fj;
+Bool hasDone =(424 * this.fint) > 789;
+this.ff = ioNode!n();
+I ioRepresentation = ioNode;
+if( False) {
+	Bool restoreToggle = 844 - 578 == - systemDepth * 189;
+	
+}
+else {
+	Fut<Bool> resData = this.fi!b();
+	hasLoaded = True;
+	packetRepresentation = packetRepresentation;
+	while( True) {
+		systemDepth = this.fint;
+		systemDepth = systemDepth - 971;
+		await resData?;
+		I person = new D();
+		resData = this.fi!b();
+		this.fi = node;
+		this.ffb = ioRepresentation!b();
+		while(! True) {
+			Bool restoreOverride = this.ffb.get;
+			node = new D();
+			await this.ff?;
+			this.fint = - arg;
+			this.fb = True;
+			resData = person!b();
+			
+		}
+		Fut<Bool> resetChanges = this.fi!b();
+		I packetObject = person;
+		while( resetChanges == resetChanges) {
+			systemDepth =(527 * 495) + systemDepth * 374;
+			ioNode = new D();
+			
+		}
+		
+	}
+	Int value = 925;
+	resData = this.fi!b();
+	ioRepresentation = new D();
+	this.fi = new D();
+	Bool sendFlag = this.ffb.get;
+	I packet = new D();
+	Int listCount = 455 + - 883;
+	ioNode = new D();
+	systemDepth = 149;
+	
+}
+J tree = new E();
+return arg;
+}
+}
+{}

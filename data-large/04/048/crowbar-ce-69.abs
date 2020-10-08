@@ -1,0 +1,102 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fi = null;
+	String ffb = "fut_?(0)";
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool hasDone = False;
+		this.fb = True;
+		// End of setup
+		
+		Bool isLoad = (!False && !this.fb);
+		if(this.fb){}
+		else{
+			Bool willWrite = (ioStruct == this.fi);
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fb = False;
+			// End assignments
+			
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_193";
+		}
+		this.fb = (True || True);
+		// this.ff = this.fi!n();
+		this.ff = "fut_194";
+		String packet = ioStruct;
+		this.fint = 112;
+		if(((hasDone || True) || !False)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_195";
+			// this.ff = ioStruct!n();
+			this.ff = "fut_196";
+			if(True){
+				
+				// await this.ff?;
+				// No heap modification info available at this point
+				
+				String dataStruct = ioStruct;
+				// this.fi = new D();
+				this.fi = "object_1";
+				// I message = new D();
+				String message = "object_2";
+				this.fj = this.fj;
+			}
+		}
+		Int systemAmount = ((734 * (-this.fint + 467)) * 205);
+		isLoad = (697 == systemAmount);
+		}
+		this.ff = this.ff;
+		if((False && hasDone)){}
+		else{
+		
+		}
+		if(False){}
+		else{
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_216";
+		// this.ff = this.fi!n();
+		this.ff = "fut_217";
+		if((163254 == 353)){}
+		else{
+			Int arg = 179;
+			// this.ff = this.fi!n();
+			this.ff = "fut_220";
+			arg = 125;
+			arg = (465 + arg);
+		}
+		// this.fi = new D();
+		this.fi = "object_3";
+		println(toString(244)); // return statement
+		// Evaluates to: 244
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (244=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

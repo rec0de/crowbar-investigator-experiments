@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-95 <= this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((-95 <= this.fint))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = -96;
+		this.fi = "object_?(-96)";
+		this.fb = True;
+		// End of setup
+		
+		// J node = new E();
+		String node = "object_1";
+		
+		// await (this.fb || this.fb);
+		// Assume the following assignments while blocked:
+		this.fint = 1;
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

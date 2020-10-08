@@ -1,0 +1,217 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int systemCount = this.fint;
+this.ffb = this.ffb;
+this.fi = this.fi;
+if( False) {
+	this.fi = new D();
+	this.fb =! False;
+	this.fint = 657;
+	this.fj =(this.fj);
+	this.fi = new D();
+	
+}
+else {
+	this.ffb = this.ffb;
+	J clientObject = this.fj;
+	Bool willSave =! True;
+	Int l = 2 + 967;
+	Int listAmount =(91 - 42);
+	
+}
+if(! this.fb && False) {
+	this.ffb = this.ffb;
+	Bool hasSaveed = this.fb || this.fb;
+	if( hasSaveed) {
+		if(! False || False) {
+			Int l = systemCount;
+			
+		}
+		else {
+			this.fi = this.fi;
+			this.fi = new D();
+			this.fb =(False);
+			this.fb = this.fj == this.fj;
+			I packetNode = new D();
+			this.ffb = this.ffb;
+			
+		}
+		hasSaveed =!(True);
+		this.fj = this.fj;
+		
+	}
+	this.fb = False && True ||! this.fb;
+	this.fint = 65;
+	this.ffb = this.fi!b();
+	while( False && this.fb) {
+		systemCount = 384;
+		this.fb = hasSaveed;
+		this.fj = new E();
+		Int j = this.ff.get;
+		while((824 >=(this.fint +(503 * j)) * 928)) {
+			J dataNode = this.fj;
+			j = j * 260;
+			
+		}
+		j = 535;
+		while((False)) {
+			this.ffb = this.ffb;
+			I dataNode = this.fi;
+			
+		}
+		I packetObject = new D();
+		Int l = 777 + 176;
+		
+	}
+	if( True) {
+		await this.ff?;
+		
+	}
+	this.fj = new E();
+	this.ff = this.fi!n();
+	this.fint = this.fint * systemCount;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	this.fint = this.fint;
+	this.fi = this.fi;
+	
+}
+systemCount = this.fint;
+this.ff = this.fi!n();
+Bool isLoaded = False && False && False && this.fb || this.fb;
+if( isLoaded || this.fb) {
+	while(! False || this.fb && True) {
+		await this.ffb?;
+		
+	}
+	this.fj = this.fj;
+	
+}
+else {
+	I tree = new D();
+	if(!(True )) {
+		isLoaded =! False;
+		while( False &&! isLoaded) {
+			tree = this.fi;
+			
+		}
+		Int l = systemCount * - 904 + 275;
+		Fut<Int> resolveInfo =(tree )!n();
+		this.fb = True;
+		if( False) {
+			this.fint = - l;
+			this.ff = this.fi!n();
+			
+		}
+		J ioRepresentation = new E();
+		
+	}
+	else {
+		while(! isLoaded &&! False) {
+			this.fb = this.fb;
+			this.fi = this.fi;
+			
+		}
+		this.fint = - 998;
+		Bool restoreToggle = True && True;
+		this.fint = 293;
+		
+	}
+	tree = this.fi;
+	this.fb = isLoaded;
+	await this.ff?;
+	
+}
+if( isLoaded || False && False) {
+	await this.ffb?;
+	while((354) == 416) {
+		Int value = systemCount;
+		this.fint = 222;
+		J serverUnit = new E();
+		await this.ffb?;
+		
+	}
+	
+}
+this.fint = this.fint;
+if( False) {
+	isLoaded = False;
+	while( False &&! this.fb) {
+		this.ff = this.fi!n();
+		
+	}
+	this.ff = this.fi!n();
+	Int arg = this.fint;
+	isLoaded = False;
+	this.fint =(arg - 256 + 121 * - 833 - - 684 * arg);
+	
+}
+else {
+	J tree = new E();
+	this.fint = this.ff.get;
+	Bool sendFlag = True;
+	this.fb =! True;
+	this.fint = 310;
+	this.fj = tree;
+	
+}
+systemCount =(66);
+I dataObject = new D();
+Bool hasLoaded = True;
+this.fi = new D();
+hasLoaded = False;
+while( False) {
+	J ioUnit = new E();
+	Bool writeEnabled = True;
+	this.ffb = dataObject!b();
+	Bool canExec = True;
+	Fut<Int> x = this.fi!n();
+	await this.ffb?;
+	await this.ff?;
+	await this.ffb?;
+	Int arg = - 725 * systemCount;
+	ioUnit = new E();
+	Int eventCounter = 306 * 622;
+	this.fint = 743;
+	this.fint = this.fint;
+	await True;
+	isLoaded = False;
+	Int listDepth = systemCount + -(- arg);
+	
+}
+if( True) {
+	Fut<Bool> a = this.ffb;
+	Int listDepth = 294 * 683;
+	listDepth = - 63;
+	
+}
+else {
+	systemCount = systemCount - 496 *(systemCount) * 991 * - this.fint;
+	this.fint = systemCount;
+	
+}
+systemCount = 544;
+return 605;
+}
+}
+{}

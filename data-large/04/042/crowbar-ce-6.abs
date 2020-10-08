@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((364 == i)){} 
+		// Known true:
+		// Negated loop guard: !((364 == i))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int i = 365;
+		this.fint = 4;
+		this.fb = True;
+		// End of setup
+		
+		// Fut y = tree!b();
+		String y = "fut_56";
+		}
+		this.fb = True;
+		this.fint = this.fint;
+		Int arg = this.fint;
+		String packet = dataUnit;
+		Int queueCount = -402;
+		}
+		
+		// await this.fb;
+		// Assume the following assignments while blocked:
+		this.fint = 5;
+		this.fb = True;
+		// End assignments
+		
+		// Int processCount = (this.ff).get;
+		// Future value irrelevant or unavailable, using default:
+		Int processCount = 0;
+		println(toString(126)); // return statement
+		// Evaluates to: 126
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (126=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

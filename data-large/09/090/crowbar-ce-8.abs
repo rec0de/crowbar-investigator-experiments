@@ -1,0 +1,31 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Int eventCounter = -1;
+		String serverUnit = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (-this.fint > eventCounter)
+		// Loop invariant: true
+		// while((-this.fint > eventCounter)) {
+		{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(serverUnit=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

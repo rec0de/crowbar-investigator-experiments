@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = 218;
+		this.fj = "object_?(4)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (218 == this.fint)
+		// Loop invariant: true
+		// while((218 == this.fint)) {
+		{
+			// this.fj = new E();
+			this.fj = "object_1";
+			String x = this.ff;
+			// J node = new E();
+			String node = "object_2";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

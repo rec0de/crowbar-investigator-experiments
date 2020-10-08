@@ -1,0 +1,157 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( this.fb) {
+	this.ff = this.fi!n();
+	while( True) {
+		await 861 * 263 == 750 * 115 * this.fint * 627;
+		if( True || True) {
+			this.ff = this.fi!n();
+			this.fint = this.ff.get;
+			this.fint = 983 * 152;
+			await True;
+			this.fb = this.fi == this.fi;
+			this.fj = this.fj;
+			this.fb = True || True && False;
+			await True || True;
+			this.ff = this.ff;
+			this.ff = this.fi!n();
+			this.fj = new E();
+			this.fi = new D();
+			this.fi = this.fi;
+			
+		}
+		else {
+			this.fj = new E();
+			this.fj = new E();
+			this.fb = True;
+			
+		}
+		this.fb = this.fb;
+		
+	}
+	this.ff = this.ff;
+	while( this.fj == this.fj) {
+		this.fi = new D();
+		this.ff = this.fi!n();
+		
+	}
+	await this.ffb?;
+	this.fint = 626;
+	
+}
+this.ff = this.ff;
+while( True) {
+	I node = new D();
+	this.ff = this.ff;
+	J message = new E();
+	this.fi = new D();
+	Int res = - 449;
+	this.ffb = this.ffb;
+	
+}
+this.fint = this.fint;
+I message = this.fi;
+while((! True && True && False || this.fb) && False &&! False) {
+	message = new D();
+	if( this.fb) {
+		J dataStruct = this.fj;
+		
+	}
+	else {
+		await this.ff?;
+		this.ff = this.ff;
+		this.fint = 917 - 304;
+		while(! True) {
+			this.fint = 97 * this.fint;
+			Int processAmount = this.ff.get;
+			
+		}
+		this.fint = this.ff.get;
+		this.ffb = this.ffb;
+		Fut<Bool> applyState =(this.ffb);
+		if( this.fb || False) {
+			await this.ffb?;
+			this.fj = new E();
+			Int listAmount = - 730 * 17;
+			this.fi = new D();
+			this.fi = new D();
+			listAmount = 263;
+			listAmount = - 748;
+			this.fint = 143;
+			
+		}
+		else {
+			this.fint = 20;
+			message =(message);
+			message = new D();
+			
+		}
+		if( False) {
+			await this.ff?;
+			Int value = 858 *((862) + 858);
+			await applyState?;
+			await this.ff?;
+			this.fint = - 380;
+			this.fi = message;
+			await False;
+			await True || this.fb;
+			await this.ffb?;
+			this.fi = this.fi;
+			value = 996;
+			Fut<Bool> p = applyState;
+			applyState = this.fi!b();
+			Int k = - 914 +(127 * - this.fint - 48);
+			await applyState?;
+			this.ff = this.fi!n();
+			await this.ff?;
+			k = k;
+			this.fb = True;
+			k = - k;
+			I node = message;
+			this.fj = this.fj;
+			node = node;
+			Int listCounter = 88 + 823;
+			
+		}
+		else {
+			message = new D();
+			this.fint = 672;
+			applyState = this.fi!b();
+			
+		}
+		await this.ff?;
+		this.fj = new E();
+		message = new D();
+		await this.ffb?;
+		Bool restoreFlag =(22 == 189) ||! this.fb || False;
+		this.ff = this.fi!n();
+		this.ffb =(message )!b();
+		message = new D();
+		this.fj = this.fj;
+		
+	}
+	
+}
+this.fint = 378 * this.fint;
+return this.fint;
+}
+}
+{}

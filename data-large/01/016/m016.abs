@@ -1,0 +1,184 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.ffb;
+Int value = this.fint;
+this.fi =(this.fi);
+this.fint = 992;
+this.fj = new E();
+if( this.fb && this.fb) {
+	Int stackCount = 537;
+	this.fi = new D();
+	await this.ffb?;
+	this.fj = this.fj;
+	
+}
+else {
+	this.fb =(-(988 - 759) > 901) == False;
+	
+}
+Fut<Bool> returnState = this.ffb;
+this.fi = new D();
+this.ffb = this.fi!b();
+returnState = this.fi!b();
+this.ff = this.ff;
+returnState = returnState;
+returnState = this.fi!b();
+this.fint = this.fint;
+while( this.fb) {
+	this.ff = this.ff;
+	
+}
+if( this.fb) {
+	value = value;
+	await this.ff?;
+	returnState = this.fi!b();
+	await this.ffb?;
+	this.fi = new D();
+	this.ff = this.ff;
+	
+}
+else {
+	J node = this.fj;
+	this.fint = 457 * 751;
+	this.fi = this.fi;
+	if( this.fb) {
+		await True;
+		
+	}
+	else {
+		Bool systemEnabled = this.fb;
+		await returnState?;
+		this.ffb = this.ffb;
+		
+	}
+	I message = new D();
+	await this.fint != 457;
+	returnState = this.fi!b();
+	Int i = this.fint;
+	returnState = returnState;
+	if( this.fb) {
+		if( -(i) == - 700 * - 165) {
+			this.fj = new E();
+			this.fint = 760;
+			value = 456 - 263;
+			Fut<Int> a =(this.fi )!n();
+			
+		}
+		await returnState?;
+		I packetObject = new D();
+		
+	}
+	this.ff = this.ff;
+	this.fb = this.fb;
+	I packetObject = new D();
+	this.ffb = message!b();
+	
+}
+value = value;
+while( False) {
+	Int stackCount = - this.fint;
+	Int stackDepth = 90 - - 652 - - 947;
+	
+}
+if( 5 != 998) {
+	this.fb = False;
+	this.fint = 261;
+	returnState = this.fi!b();
+	
+}
+else {
+	I packetRepresentation = this.fi;
+	
+}
+Bool canSave =! False ||(596 * 179 <= 940);
+Bool isReady = canSave;
+canSave = True;
+await - 786 +(384 * value + - 896 * 675) != this.fint;
+Int res = this.fint;
+Bool processFlag = this.ffb.get;
+res = 726;
+Fut<Bool> flushCall = this.ffb;
+while( False && False) {
+	Int stackCount = - 273;
+	
+}
+value = 369 * this.fint;
+this.fb = False;
+processFlag = processFlag;
+Int stackCounter = - 614;
+this.fb = False || processFlag;
+while( 116 == 604) {
+	while( True ||! False) {
+		canSave = this.fb;
+		Bool hasDone = False;
+		this.fj = this.fj;
+		this.fint = stackCounter * 924;
+		
+	}
+	isReady = isReady;
+	returnState = this.fi!b();
+	isReady = 523 < -(this.fint);
+	this.fint = - 582 * - 116;
+	returnState = this.fi!b();
+	this.fb = - stackCounter >= 625 * 417;
+	res = this.ff.get;
+	while( True && False) {
+		this.fint = 733;
+		Fut<Int> resState = this.ff;
+		
+	}
+	this.fj = this.fj;
+	stackCounter = 166;
+	returnState = flushCall;
+	this.ffb = returnState;
+	canSave = this.fb;
+	flushCall = this.fi!b();
+	stackCounter = 299;
+	this.ff = this.ff;
+	J node = new E();
+	while( False &&(stackCounter * this.fint + 958 < - 899)) {
+		processFlag = False;
+		Bool willRead = 130 < 465;
+		
+	}
+	while( canSave) {
+		this.ff = this.fi!n();
+		
+	}
+	
+}
+flushCall = returnState;
+Int j = 577;
+returnState = this.fi!b();
+flushCall = this.fi!b();
+returnState = this.fi!b();
+this.fi = this.fi;
+this.fj = new E();
+this.fint = j;
+value = 305 - j;
+isReady = False && True && processFlag;
+Bool willRead = this.fi == this.fi;
+isReady = True || canSave;
+this.fi = this.fi;
+return 65;
+}
+}
+{}

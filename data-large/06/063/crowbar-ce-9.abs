@@ -1,0 +1,53 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ffb = "fut_?(0)";
+	String fj = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String node = null;
+		Bool isDone = True;
+		Bool readyToggle = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: readyToggle
+		// Loop invariant: true
+		// while(readyToggle) {
+		{
+			String ioUnit = message;
+			Bool systemFlag = (!True && isDone);
+			String clientUnit = this.fi;
+			Int processDepth = 419;
+			// Fut flushState = this.fi!n();
+			String flushState = "fut_65";
+			// I ioRepresentation = new D();
+			String ioRepresentation = "object_1";
+			Int value = (669 - (((473 * processDepth) * 632) * 310));
+			// Bool hasReady = (this.ffb).get;
+			// Future value irrelevant or unavailable, using default:
+			Bool hasReady = False;
+			Int systemAmount = 731;
+			if(isDone){
+				String message = this.fj;
+				processDepth = this.fint;
+				message = this.fj;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(node=0)
+		// Failed to show the following sub-obligations:
+		// !(node=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

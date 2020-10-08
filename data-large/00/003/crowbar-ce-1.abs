@@ -1,0 +1,37 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fi = "object_?(5)";
+		this.ffb = "fut_?(5)";
+		// End of setup
+		
+		this.ffb = this.ffb;
+		// this.fi = new D();
+		this.fi = "object_1";
+		
+		// await True;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.ffb = "fut_?(6)";
+		// End assignments
+		
+		String person = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(person=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(heap, this.ffb, heap.ffb), this.fi, NEW0_0), this.fi, NEW0_0)), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

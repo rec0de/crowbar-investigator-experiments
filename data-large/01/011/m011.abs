@@ -1,0 +1,206 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ff?;
+if( False) {
+	while( True || False) {
+		while( True ||! False) {
+			this.ffb = this.fi!b();
+			this.fb =! False;
+			this.fj = this.fj;
+			
+		}
+		this.fint = this.ff.get;
+		Int queueCount = 52;
+		Fut<Int> syncChanges = this.fi!n();
+		queueCount = 535 * this.fint;
+		if( True) {
+			syncChanges = this.fi!n();
+			
+		}
+		else {
+			syncChanges = this.fi!n();
+			I serverRepresentation = this.fi;
+			this.fi = this.fi;
+			await this.ffb?;
+			await this.ff?;
+			await syncChanges?;
+			this.fi = new D();
+			this.ff = serverRepresentation!n();
+			this.ff = this.ff;
+			J packetUnit = new E();
+			
+		}
+		await this.ffb?;
+		await False &&(! this.fb);
+		queueCount = 642;
+		await this.ff?;
+		while( this.fb == this.fb) {
+			this.fj = new E();
+			I clientNode = new D();
+			await this.ff?;
+			this.fb = this.fb;
+			await this.ff?;
+			
+		}
+		Bool hasDone = False &&(queueCount <= 249);
+		this.fi = new D();
+		
+	}
+	Bool willExec = True;
+	if( True && this.fb &&(True) && this.fb || this.fb) {
+		this.ff = this.fi!n();
+		this.ff = this.ff;
+		willExec = True;
+		Bool isWrite = 881 <= 627;
+		if( False && True) {
+			this.fi = this.fi;
+			this.fint = 332;
+			I clientStruct = new D();
+			
+		}
+		else {
+			this.fint = 406;
+			await this.ffb?;
+			
+		}
+		this.ffb = this.ffb;
+		while( True) {
+			this.fint = 443;
+			
+		}
+		
+	}
+	if( False) {
+		this.ff = this.fi!n();
+		this.fi = new D();
+		I serverNode = new D();
+		willExec = True;
+		
+	}
+	Int systemCount = 466;
+	
+}
+this.fi = new D();
+this.fi = new D();
+this.fint = 566;
+Fut<Bool> y = this.fi!b();
+this.ff = this.ff;
+this.fb = y.get;
+await this.ff == this.ff;
+Int processAmount = this.ff.get;
+while( this.fb) {
+	this.fi = this.fi;
+	I ioStruct = new D();
+	await True || this.fb;
+	processAmount = 489;
+	Bool isSaveed = False;
+	this.fb = isSaveed;
+	I packetObject = ioStruct;
+	
+}
+Bool canWrite = False &&!(this.fb);
+this.fi = new D();
+y = this.fi!b();
+this.fi = this.fi;
+this.fint = 191;
+canWrite =(False);
+y = this.fi!b();
+this.fj = this.fj;
+y = this.ffb;
+this.fi = new D();
+processAmount = 833;
+while(! this.fb) {
+	this.fi = new D();
+	if(! False) {
+		if( this.fb) {
+			this.fint = 340 * processAmount;
+			y = this.fi!b();
+			this.fi =((this.fi));
+			await this.ffb?;
+			this.ffb = this.fi!b();
+			
+		}
+		else {
+			this.fj = this.fj;
+			this.ffb = this.fi!b();
+			
+		}
+		
+	}
+	else {
+		await this.ff?;
+		this.fi = this.fi;
+		I packet = new D();
+		Bool writeEnabled = this.fb;
+		while( True) {
+			y =((this.fi) )!b();
+			this.fi = packet;
+			
+		}
+		y = y;
+		I clientObject = this.fi;
+		if( False) {
+			await this.ffb?;
+			await y?;
+			this.fi = new D();
+			packet = packet;
+			this.fint = 566;
+			await this.ffb?;
+			this.ffb = this.fi!b();
+			await this.ffb?;
+			await this.ffb?;
+			Int queueCounter = - 765;
+			
+		}
+		else {
+			Bool hasReady = True;
+			await this.ff?;
+			processAmount = 319;
+			await! False || this.fb;
+			
+		}
+		processAmount = this.fint * 633;
+		
+	}
+	this.fint = processAmount;
+	if( False) {
+		this.fint = this.fint * this.fint * 754;
+		
+	}
+	else {
+		this.fint = 770;
+		this.ffb = this.fi!b();
+		Bool canSave = True || False;
+		this.fint = 298;
+		canSave = canWrite;
+		this.ffb = this.fi!b();
+		
+	}
+	this.ff = this.fi!n();
+	this.fint = 483;
+	this.fb = this.fb;
+	
+}
+Fut<Int> resetReload = this.fi!n();
+return this.fint;
+}
+}
+{}

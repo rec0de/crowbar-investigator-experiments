@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String serverObject = null;
+		Bool canLoad = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: canLoad
+		// Loop invariant: true
+		// while(canLoad) {
+		{
+			this.fb = True;
+			String a = this.ff;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverObject=0)
+		// Failed to show the following sub-obligations:
+		// !(serverObject=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

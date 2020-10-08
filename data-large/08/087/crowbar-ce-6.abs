@@ -1,0 +1,29 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((!True || !True)){} 
+		// Known true:
+		// Negated loop guard: !((!True || !True))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String person = null;
+		// End of setup
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(person=0)
+		// Failed to show the following sub-obligations:
+		// !(person=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

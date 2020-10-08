@@ -1,0 +1,210 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ffb?;
+Int value = - 817;
+value = value;
+Bool hasDone = this.ffb.get;
+this.ffb = this.fi!b();
+J packet = this.fj;
+while(! this.fb) {
+	J dataStruct = packet;
+	this.fint = - this.fint + - 375;
+	
+}
+this.fint = 734;
+Bool isSave = this.fint > 667 * 125 - value;
+if( False &&! this.fb) {
+	Int i = this.ff.get;
+	packet = this.fj;
+	this.fi = this.fi;
+	
+}
+else {
+	Int eventCount = 957;
+	this.ffb = this.fi!b();
+	while( True) {
+		this.ff = this.fi!n();
+		value =((709));
+		
+	}
+	Int l = 792;
+	isSave = False;
+	this.fj = new E();
+	await this.ffb?;
+	Bool isLoaded = False;
+	value = -(-(853) * 609) * - 824;
+	isSave = this.fj == this.fj;
+	this.fi = new D();
+	eventCount = 467;
+	packet = this.fj;
+	value = - 873;
+	hasDone = False;
+	this.ff = this.fi!n();
+	Bool canLoad = True && True || False;
+	this.fb = this.ffb.get;
+	if((28) * value > eventCount * - 382) {
+		J tree = this.fj;
+		this.ff = this.ff;
+		eventCount = eventCount;
+		while( 317 >= eventCount * this.fint * 204) {
+			I person = new D();
+			isSave = this.ffb.get;
+			this.fint = eventCount;
+			this.ffb = person!b();
+			I serverNode = person;
+			
+		}
+		await True;
+		if( l == 931 * - 286 - 245) {
+			await this.ffb?;
+			
+		}
+		else {
+			canLoad = True;
+			this.fb = value * 638 != 455;
+			await this.ffb?;
+			Fut<Bool> a = this.fi!b();
+			Int systemCounter = 368;
+			Int listDepth = 447;
+			this.ffb = this.fi!b();
+			await this.ff?;
+			Bool hasSaveed = a.get;
+			listDepth = 79 - - 762;
+			
+		}
+		this.ff = this.fi!n();
+		this.fint = 420;
+		hasDone = True;
+		isLoaded = isSave;
+		
+	}
+	else {
+		Int j = 267;
+		eventCount = this.ff.get;
+		J ioUnit = new E();
+		ioUnit = new E();
+		Int processCounter = 825;
+		l = 59;
+		while(! True) {
+			this.ffb = this.fi!b();
+			eventCount = 161;
+			
+		}
+		Int processCount = eventCount;
+		Bool restoreEnabled = True;
+		this.fj = this.fj;
+		this.fint = 423;
+		this.ff = this.fi!n();
+		
+	}
+	await this.ffb?;
+	if( this.fb) {
+		Int j = - value;
+		this.ffb = this.fi!b();
+		
+	}
+	else {
+		this.fint = 353;
+		l = 667;
+		packet = this.fj;
+		
+	}
+	this.fi = this.fi;
+	if( True) {
+		this.fj =(this.fj);
+		while( hasDone) {
+			this.fint = eventCount - 989;
+			this.fj = new E();
+			
+		}
+		Int queueAmount = this.ff.get;
+		
+	}
+	else {
+		eventCount = eventCount;
+		
+	}
+	value = - eventCount;
+	
+}
+Int systemDepth = 903;
+isSave =! True;
+systemDepth = this.fint;
+this.fb = False;
+while( False) {
+	this.fj = packet;
+	Int eventCount = 283;
+	this.ff = this.ff;
+	while( True) {
+		packet = new E();
+		isSave = True;
+		systemDepth = 53;
+		if( True && this.fb) {
+			Int j = 166;
+			this.fj = new E();
+			
+		}
+		else {
+			Int arg = 985;
+			
+		}
+		await this.ffb?;
+		hasDone = True;
+		Bool canWrite = this.fb;
+		this.fj = this.fj;
+		Fut<Bool> applyUpdates = this.ffb;
+		Bool hasReady = applyUpdates.get;
+		this.ffb = this.fi!b();
+		
+	}
+	Bool willWrite = hasDone && True && True;
+	while(! True) {
+		Int listDepth = 142;
+		eventCount = 222;
+		systemDepth = systemDepth;
+		if(! True ||!(True) || True) {
+			eventCount = this.ff.get;
+			await this.ffb?;
+			this.fb = True;
+			hasDone = True;
+			listDepth = 5 - 472;
+			await this.ffb?;
+			
+		}
+		this.fint = listDepth + 535;
+		Bool hasSaveed = False;
+		value = 200 - 224 + 707;
+		this.fint = 837 * 301;
+		this.fj = new E();
+		listDepth = 351;
+		await this.ff?;
+		value = 454;
+		
+	}
+	Bool storageEnabled = True;
+	
+}
+this.fi = new D();
+I tree =(this.fi);
+return this.fint;
+}
+}
+{}

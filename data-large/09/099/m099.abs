@@ -1,0 +1,191 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = - this.fint;
+this.fi = this.fi;
+I clientStruct = new D();
+if((this.fb &&! this.fb )) {
+	this.fint = this.ff.get;
+	if( False || False) {
+		this.fj = this.fj;
+		clientStruct = clientStruct;
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		this.fi = this.fi;
+		Int processCount = this.ff.get;
+		if( this.fb) {
+			this.fb = this.fb && this.fb;
+			this.fj = new E();
+			await! True && True;
+			this.ffb = clientStruct!b();
+			I ioStruct = new D();
+			await this.ff?;
+			clientStruct = clientStruct;
+			await this.ffb?;
+			this.ffb = this.fi!b();
+			this.fi = this.fi;
+			I dataNode = clientStruct;
+			this.fb = False;
+			this.fb = False;
+			this.fint = - 504;
+			this.ffb = this.ffb;
+			
+		}
+		else {
+			await 597 * - processCount -(processCount * 363 - processCount) + 830 < this.fint *(574);
+			this.fint = 262;
+			processCount = - processCount;
+			await this.ff?;
+			this.fj = this.fj;
+			this.fj = new E();
+			processCount = processCount;
+			await True && True;
+			this.ff = clientStruct!n();
+			this.fint = 436;
+			Fut<Bool> x = this.ffb;
+			
+		}
+		
+	}
+	this.fint = - 503;
+	clientStruct = this.fi;
+	Int stackCount = 364 *(this.fint * 561);
+	while( True) {
+		while( False || this.fb) {
+			clientStruct = this.fi;
+			
+		}
+		clientStruct = new D();
+		stackCount = 358;
+		await this.ffb?;
+		this.ff = this.ff;
+		this.fint = 751;
+		J person = this.fj;
+		Int eventAmount = 237;
+		stackCount = 591;
+		await this.ffb?;
+		Bool willSave = this.fb;
+		eventAmount = eventAmount - stackCount * eventAmount * - this.fint + - 760;
+		this.fj = new E();
+		this.fi = new D();
+		willSave =! False;
+		if( this.fb) {
+			I packetRepresentation = new D();
+			clientStruct = this.fi;
+			this.fint = - 119;
+			await this.ff?;
+			
+		}
+		stackCount = 949;
+		willSave =! this.fb && this.fb;
+		await this.ffb?;
+		eventAmount = 906;
+		
+	}
+	
+}
+else {
+	this.ffb = this.ffb;
+	if(! False && True || False || True ||! this.fb) {
+		this.ff = this.ff;
+		clientStruct = clientStruct;
+		this.ffb = clientStruct!b();
+		Bool writeOverride = this.ffb.get;
+		this.fint = this.fint - 532;
+		writeOverride = True == writeOverride;
+		this.fj =(this.fj);
+		while( False) {
+			await this.ffb?;
+			I serverUnit = new D();
+			this.ffb = this.ffb;
+			Bool hasDone = True;
+			this.fj = this.fj;
+			this.ff = serverUnit!n();
+			this.ffb = clientStruct!b();
+			Int queueDepth = 747;
+			await this.ffb?;
+			
+		}
+		clientStruct = this.fi;
+		this.fi =(this.fi);
+		this.fb = True;
+		this.ffb = clientStruct!b();
+		this.ff = this.fi!n();
+		Int l = 453 - 627;
+		writeOverride = False && writeOverride;
+		if( this.fb) {
+			Int j = 406;
+			this.ff = this.fi!n();
+			
+		}
+		
+	}
+	else {
+		Bool isLoaded = 784 <=(this.fint) * 725 + 419 * 694;
+		this.ff = clientStruct!n();
+		Int listAmount = - 482;
+		clientStruct = new D();
+		this.fb = False;
+		if(! True) {
+			this.ffb = this.ffb;
+			
+		}
+		else {
+			this.ffb = this.ffb;
+			await this.ffb?;
+			await True || False && True || False || False;
+			this.fj = this.fj;
+			this.fj = this.fj;
+			this.fint = this.fint;
+			Fut<Bool> syncRequest = this.ffb;
+			await this.ffb?;
+			await this.ff?;
+			Bool isReady = isLoaded ||! isLoaded;
+			Bool willExec = False;
+			
+		}
+		this.ff = this.fi!n();
+		Bool storageFlag = 123 <= this.fint;
+		this.fj = this.fj;
+		
+	}
+	this.fi = clientStruct;
+	this.fint = 947;
+	J packet = new E();
+	this.fi = new D();
+	this.ff = this.ff;
+	await True && this.fb && this.fb ==!(this.fb);
+	this.fi = clientStruct;
+	this.fj = new E();
+	this.ffb = clientStruct!b();
+	
+}
+this.fint = 436;
+Fut<Int> flushCall =(clientStruct )!n();
+flushCall = clientStruct!n();
+Int processCounter = this.ff.get;
+Int stackCounter = - 616 - 463;
+this.ff = clientStruct!n();
+return 639;
+}
+}
+{}

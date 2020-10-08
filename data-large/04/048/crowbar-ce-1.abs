@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = -21238;
+		this.fj = "object_?(4)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.fint < 384)
+		// Loop invariant: true
+		// while((this.fint < 384)) {
+		{
+			Int systemCount = 1326;
+			// this.fj = new E();
+			this.fj = "object_1";
+			this.fi = this.fi;
+			this.fj = this.fj;
+			if((False && False)){}
+			else{
+				this.fint = systemCount;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

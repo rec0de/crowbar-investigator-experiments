@@ -1,0 +1,40 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = 6;
+		this.fb = True;
+		this.fj = "object_?(5)";
+		// End of setup
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fb = this.fb;
+		String y = y;
+		Bool configToggle = (this.fj == this.fj);
+		println(toString(this.fint)); // return statement
+		// Evaluates to: 6
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (heap.fint=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,148 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = this.fj;
+if(! True || False || True ||! True) {
+	this.fb = this.fb;
+	this.fi = new D();
+	this.fj = new E();
+	
+}
+else {
+	this.ff = this.ff;
+	await this.ffb?;
+	this.fj = this.fj;
+	
+}
+if( False) {
+	Int arg = - 749 * - 732;
+	while(! True) {
+		this.ff = this.fi!n();
+		this.fi = new D();
+		if( 984 >= 49) {
+			this.ffb = this.fi!b();
+			this.fi = new D();
+			arg = 839;
+			this.ff = this.fi!n();
+			Int systemAmount = 220;
+			
+		}
+		else {
+			await this.ffb?;
+			
+		}
+		
+	}
+	this.fj = new E();
+	this.ff = this.ff;
+	this.fi = new D();
+	this.fb = False;
+	I ioObject = this.fi;
+	arg = 400;
+	while(! True) {
+		this.ff = ioObject!n();
+		Bool hasReady = True || True && this.fb;
+		if( True || hasReady) {
+			await this.ff?;
+			
+		}
+		else {
+			this.fb = False;
+			
+		}
+		this.ffb = ioObject!b();
+		this.fb = this.fint == 495;
+		
+	}
+	await this.ff?;
+	
+}
+else {
+	this.fj = new E();
+	this.ffb =(this.fi )!b();
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	this.fint =(112);
+	this.fi = this.fi;
+	Fut<Int> z = this.ff;
+	this.ffb = this.fi!b();
+	this.fb = this.ffb.get;
+	this.fint = this.fint * 960 * 46;
+	this.fb =(True);
+	
+}
+J dataRepresentation = new E();
+Int listAmount =(this.fint);
+Bool isWrite = 959 * 984 > 170;
+I serverObject = new D();
+dataRepresentation = new E();
+this.ffb = this.ffb;
+this.ff = this.ff;
+isWrite = this.fb && isWrite;
+this.fint = this.ff.get;
+serverObject = this.fi;
+dataRepresentation = this.fj;
+Fut<Int> resultInfo = this.ff;
+isWrite =! this.fb;
+Int j = 952;
+await resultInfo?;
+this.fint = 847 - - 86;
+this.ff = serverObject!n();
+this.fj = this.fj;
+this.fj = new E();
+Bool hasDone = False;
+while( True) {
+	if( hasDone && False && False) {
+		j = - 869;
+		j = 678;
+		Int value = 826;
+		hasDone =(this.fi) == serverObject;
+		
+	}
+	else {
+		this.ff =(resultInfo);
+		Int stackCount = 54 - 105;
+		Fut<Bool> returnState = serverObject!b();
+		this.fb = True;
+		if( False || False) {
+			resultInfo = this.ff;
+			this.fi = new D();
+			
+		}
+		
+	}
+	j = this.fint;
+	
+}
+dataRepresentation = new E();
+Bool hasReady = False && False;
+isWrite =(True) || True && this.fb ||(False);
+hasDone = hasDone;
+I serverNode = serverObject;
+await this.fb;
+hasDone =! True || hasReady || False;
+Int queueAmount = j;
+hasReady = True;
+serverObject = serverObject;
+serverObject = serverObject;
+return 507;
+}
+}
+{}

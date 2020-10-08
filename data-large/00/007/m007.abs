@@ -1,0 +1,154 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Bool isSave = this.ffb.get;
+if( this.fb) {
+	this.fint = - 716 +(860) * - this.fint;
+	this.ff = this.fi!n();
+	isSave = this.ffb.get;
+	I packetUnit = new D();
+	this.ff = this.fi!n();
+	if(! isSave) {
+		Fut<Bool> resolveInfo = this.fi!b();
+		this.fint = this.fint;
+		Int systemAmount = 94;
+		this.fint = this.ff.get;
+		if( isSave) {
+			this.fi = new D();
+			this.fi = new D();
+			
+		}
+		else {
+			this.fj = this.fj;
+			
+		}
+		Fut<Bool> applyUpdates = packetUnit!b();
+		Int eventCount = 739;
+		if( True && False ||!(this.fi == this.fi) && False) {
+			await applyUpdates?;
+			await this.ff?;
+			applyUpdates = packetUnit!b();
+			systemAmount = 356;
+			
+		}
+		else {
+			await applyUpdates?;
+			
+		}
+		if( False) {
+			Int listCounter = 95;
+			isSave = this.fb || isSave && True;
+			this.fj = this.fj;
+			Bool isLoaded = True && isSave;
+			applyUpdates = this.fi!b();
+			
+		}
+		else {
+			Int queueDepth = 106;
+			await this.ff?;
+			packetUnit = new D();
+			this.fint = 218;
+			
+		}
+		if( isSave && isSave || True) {
+			systemAmount = 177;
+			resolveInfo =(applyUpdates);
+			eventCount = eventCount;
+			this.fj = this.fj;
+			this.ffb = resolveInfo;
+			
+		}
+		resolveInfo = this.fi!b();
+		this.fi = new D();
+		systemAmount = eventCount;
+		Int systemDepth = 893;
+		J packetRepresentation = this.fj;
+		eventCount = 620;
+		Fut<Bool> resData = packetUnit!b();
+		systemDepth = 75;
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		this.ffb = packetUnit!b();
+		isSave = - this.fint >= 577;
+		
+	}
+	Bool willRead = this.fb ==(isSave) && False;
+	this.ffb = packetUnit!b();
+	await this.ffb?;
+	this.fj = this.fj;
+	
+}
+else {
+	while( False || False) {
+		this.fb =! True == False;
+		
+	}
+	this.fb = isSave;
+	if((7 + this.fint) + 580 * this.fint >(565 )) {
+		this.ff = this.fi!n();
+		this.fj = new E();
+		this.fj = this.fj;
+		this.fj = this.fj;
+		this.fj = new E();
+		this.fj = new E();
+		this.fj = new E();
+		await this.ffb?;
+		this.ffb = this.ffb;
+		
+	}
+	else {
+		this.fi = new D();
+		this.ff = this.fi!n();
+		this.fj = this.fj;
+		J dataStruct = this.fj;
+		
+	}
+	isSave = False;
+	
+}
+Int k = this.ff.get;
+k =(244 * k);
+if( - 138 * k * this.fint < k) {
+	Fut<Int> resData = this.ff;
+	this.ff = this.fi!n();
+	this.fint = resData.get;
+	
+}
+else {
+	k = 664;
+	this.ffb = this.fi!b();
+	await this.ffb?;
+	this.ffb = this.ffb;
+	this.fj = new E();
+	this.fint = - 224;
+	I packet = this.fi;
+	k = 2;
+	this.fi = this.fi;
+	isSave = False;
+	this.fi = this.fi;
+	
+}
+k = 230;
+return - 776;
+}
+}
+{}

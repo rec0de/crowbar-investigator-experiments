@@ -1,0 +1,165 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ff?;
+this.fint = 255;
+I clientStruct = this.fi;
+clientStruct =((clientStruct));
+clientStruct = new D();
+Int k = 130;
+this.fi = clientStruct;
+J packet = new E();
+this.fb = False;
+if( this.fb &&! False) {
+	Bool hasReady = True;
+	this.ff = clientStruct!n();
+	k = this.fint;
+	
+}
+else {
+	while( False ||! this.fb) {
+		J packetRepresentation = packet;
+		
+	}
+	this.ffb = clientStruct!b();
+	
+}
+if( True) {
+	k = 260;
+	Bool isSave = this.ffb.get;
+	
+}
+else {
+	this.fj = new E();
+	if( False && this.fb || this.fb) {
+		clientStruct = clientStruct;
+		if( True || this.fb || False) {
+			this.fb = False;
+			
+		}
+		
+	}
+	else {
+		this.fi = this.fi;
+		Int i = 716;
+		
+	}
+	this.fi = clientStruct;
+	
+}
+packet = new E();
+J dataRepresentation = new E();
+Bool willSave = False || False;
+if( 1 < k) {
+	k = k;
+	this.fb = True ||! False || this.fb;
+	Bool stateOverride = k < - k;
+	
+}
+else {
+	this.fi = this.fi;
+	clientStruct = clientStruct;
+	dataRepresentation = packet;
+	J person = packet;
+	person = new E();
+	
+}
+Int j = 439;
+this.fint = 736 + - k;
+this.fint = 499;
+this.fi = this.fi;
+this.fi = clientStruct;
+if((this.ffb) == this.ffb) {
+	packet = new E();
+	dataRepresentation = dataRepresentation;
+	if( False && False) {
+		this.ffb = clientStruct!b();
+		this.fi = new D();
+		while( True && True) {
+			await this.ff?;
+			willSave = False || True;
+			Bool configToggle =! this.fb;
+			k = 334 + 441;
+			
+		}
+		k = 727;
+		
+	}
+	else {
+		Int res = 480 - 497;
+		Bool isLoaded = this.fj == packet;
+		
+	}
+	if( k >= 533) {
+		await this.ffb?;
+		if(! willSave) {
+			this.ff = this.fi!n();
+			this.ffb = this.fi!b();
+			packet = new E();
+			this.ff = clientStruct!n();
+			this.fb =(False && willSave);
+			
+		}
+		else {
+			Bool stateEnabled = False;
+			this.fj = dataRepresentation;
+			Int listDepth = 544;
+			Int l = 131;
+			this.fint = - 250;
+			this.ffb = clientStruct!b();
+			await this.ff?;
+			l = - 693;
+			this.fb = False;
+			l = - 905;
+			Bool pauseOverride = this.ffb.get;
+			Int processDepth = this.ff.get;
+			this.fj = this.fj;
+			I tree = clientStruct;
+			stateEnabled = this.fb && False;
+			J packetStruct = new E();
+			await this.ff?;
+			Int processCounter = listDepth;
+			Int i = 286;
+			Bool pauseToggle = True;
+			
+		}
+		this.ff = clientStruct!n();
+		I message = new D();
+		
+	}
+	k = 277;
+	this.fi = clientStruct;
+	
+}
+else {
+	k = 162 - 166;
+	I serverUnit = this.fi;
+	Int stackAmount = this.ff.get;
+	I node =(clientStruct);
+	j = j;
+	
+}
+this.ffb = this.fi!b();
+this.fj = this.fj;
+Fut<Bool> resData = clientStruct!b();
+return j;
+}
+}
+{}

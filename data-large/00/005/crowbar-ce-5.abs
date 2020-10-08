@@ -1,0 +1,34 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((this.fb && !True)){} 
+		// Known true:
+		// Negated loop guard: !((this.fb && !True))
+		// Loop invariant: true
+		
+		
+		this.fint = (this.fint * 831);
+		// I dataNode = new D();
+		String dataNode = "object_1";
+		String clientRepresentation = this.fi;
+		println(toString(-848)); // return statement
+		// Evaluates to: -848
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-848=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

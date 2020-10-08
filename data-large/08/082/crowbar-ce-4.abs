@@ -1,0 +1,42 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String ioRepresentation = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			Int systemDepth = this.fint;
+			systemDepth = (systemDepth - 971);
+			
+			// await resData?;
+			// No heap modification info available at this point
+			
+			// I person = new D();
+			String person = "object_1";
+			// Fut resData = this.fi!b();
+			String resData = "fut_42";
+			this.fi = node;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(ioRepresentation=0)
+		// Failed to show the following sub-obligations:
+		// !(ioRepresentation=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

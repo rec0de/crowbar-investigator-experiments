@@ -1,0 +1,176 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+await this.ff?;
+this.fint = 945;
+await this.ff?;
+J ioNode = this.fj;
+this.fint =(- 898 + - this.fint);
+if( this.fb || this.fb && this.fb) {
+	this.fj = new E();
+	
+}
+this.fi = new D();
+this.ff = this.fi!n();
+while( True) {
+	await this.ff?;
+	this.fb = True && False;
+	
+}
+this.fint = this.ff.get;
+I node = new D();
+ioNode = this.fj;
+this.fi = node;
+Bool execToggle = this.ffb.get;
+if( False) {
+	execToggle = this.ffb.get;
+	Fut<Int> syncFlag = this.ff;
+	Bool restoreToggle = this.ffb.get;
+	this.fb = True;
+	
+}
+else {
+	execToggle = execToggle || False;
+	this.fj = new E();
+	while( 854 != 730 - 406) {
+		I ioObject = this.fi;
+		J clientRepresentation = this.fj;
+		await this.ff?;
+		this.ffb =(this.ffb);
+		
+	}
+	
+}
+while( False) {
+	Int res = this.fint * - 692;
+	this.fi = this.fi;
+	execToggle =(this.fb);
+	this.ff = this.ff;
+	while( False) {
+		this.ffb = this.ffb;
+		while( execToggle) {
+			this.ff = this.ff;
+			Int eventCounter = 551;
+			I person = new D();
+			I packet = new D();
+			
+		}
+		if( False &&! True == True) {
+			this.fi = node;
+			res = 858;
+			
+		}
+		else {
+			Int listCount = - this.fint;
+			execToggle = True;
+			I tree = node;
+			res = this.ff.get;
+			tree = tree;
+			res = 164;
+			this.fint =(this.ff ).get;
+			await True &&(True) || True;
+			Bool isReady = this.fb;
+			I message = new D();
+			tree = tree;
+			
+		}
+		this.ff = this.fi!n();
+		node = new D();
+		this.fi = new D();
+		I clientStruct = this.fi;
+		node = new D();
+		this.ff = this.fi!n();
+		node = new D();
+		J person = ioNode;
+		J packet = new E();
+		clientStruct = new D();
+		this.fint = - 678 - 396;
+		
+	}
+	this.ffb = this.ffb;
+	
+}
+this.fj = new E();
+this.fb = False;
+this.fb = this.fb || False;
+execToggle =! this.fb;
+if( True) {
+	while( False) {
+		node = node;
+		
+	}
+	await this.ffb?;
+	await this.ff?;
+	Bool hasDone = False && True && True ||! True && True;
+	ioNode = new E();
+	Int j = this.fint * 365 + 517;
+	
+}
+else {
+	while( True && True) {
+		while(! execToggle) {
+			node = node;
+			this.fint = - 307 * 389;
+			Bool hasLoaded = this.ffb.get;
+			this.fb = hasLoaded && execToggle;
+			
+		}
+		
+	}
+	Fut<Bool> flushFlag = node!b();
+	await False;
+	Bool canLoad = True;
+	execToggle =! True;
+	this.fj = ioNode;
+	Fut<Bool> resolveData = node!b();
+	flushFlag = node!b();
+	Bool isWrite = False;
+	if( -(- 974 + 40) - 467 == 90) {
+		await False || False;
+		
+	}
+	canLoad = False;
+	isWrite = False;
+	J packetObject = this.fj;
+	canLoad = False && isWrite;
+	isWrite = execToggle;
+	
+}
+this.fb = this.fb;
+this.fi = this.fi;
+this.fi = this.fi;
+Int queueCount = this.fint;
+queueCount = - 319 * 179;
+execToggle = this.ffb.get;
+ioNode = new E();
+this.ffb = this.ffb;
+Int processDepth = - queueCount;
+await this.ff?;
+Int processCounter = - 448;
+this.ffb = this.fi!b();
+Int l = 897;
+this.fj = new E();
+await this.ff?;
+Bool hasReady = this.ffb.get;
+Int eventCounter = this.ff.get;
+return 461 - queueCount;
+}
+}
+{}

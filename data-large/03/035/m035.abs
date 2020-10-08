@@ -1,0 +1,218 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.ff;
+Bool pauseOverride = True;
+pauseOverride = False;
+while( this.fb) {
+	pauseOverride = True;
+	
+}
+this.fint = 293;
+this.ffb = this.fi!b();
+if((False )) {
+	this.ffb = this.ffb;
+	
+}
+else {
+	this.ffb =(this.fi )!b();
+	this.fj = this.fj;
+	this.fi = this.fi;
+	
+}
+this.ff = this.fi!n();
+if( pauseOverride) {
+	Fut<Bool> returnData = this.fi!b();
+	this.ff = this.ff;
+	await this.ff?;
+	this.fi = this.fi;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	J packetUnit = this.fj;
+	Bool isLoad =! False;
+	isLoad = this.ffb.get;
+	Int j = this.fint + this.fint * this.fint;
+	
+}
+while( False) {
+	this.fint = 241;
+	this.ffb = this.fi!b();
+	this.ff = this.ff;
+	if( False || True) {
+		pauseOverride = this.fb;
+		await this.ff?;
+		this.fj = new E();
+		this.fj = this.fj;
+		while(! True) {
+			await this.ffb?;
+			await this.ff?;
+			
+		}
+		while( False == False && False && this.fb && True) {
+			pauseOverride = this.ffb.get;
+			this.fint = this.ff.get;
+			Bool isSave = this.ffb.get;
+			this.ffb = this.fi!b();
+			await(True) &&! pauseOverride || True && False;
+			this.fj = this.fj;
+			
+		}
+		I ioObject = this.fi;
+		this.fj = new E();
+		this.fj =(this.fj);
+		Int listAmount = 797;
+		await this.ffb?;
+		
+	}
+	
+}
+this.fint = 116;
+this.fj =(this.fj);
+this.fj = new E();
+this.ff = this.fi!n();
+while( True) {
+	Int arg = - this.fint;
+	this.fj = new E();
+	
+}
+this.fint = 561;
+if( True) {
+	this.fb = True;
+	
+}
+else {
+	while(! True) {
+		Int listCounter = this.fint;
+		pauseOverride = this.ffb.get;
+		this.fi = new D();
+		this.fint = 116;
+		this.ff = this.fi!n();
+		while(! True) {
+			Int i = 577;
+			await this.ff?;
+			await 86 >= listCounter;
+			this.fj = this.fj;
+			listCounter = i;
+			await this.ff?;
+			
+		}
+		while( pauseOverride) {
+			await this.ffb?;
+			Int l = 421 * 860;
+			
+		}
+		
+	}
+	I dataStruct = new D();
+	this.ff = dataStruct!n();
+	
+}
+while(! this.fb) {
+	Int i = 85;
+	this.ff = this.ff;
+	Bool isDone = True;
+	
+}
+Int listDepth = this.ff.get;
+this.fj = new E();
+this.ff = this.ff;
+if( True) {
+	while(! False) {
+		while( this.fb) {
+			I message = new D();
+			
+		}
+		this.ffb = this.fi!b();
+		listDepth = 325;
+		
+	}
+	I person = this.fi;
+	pauseOverride =! False &&! False;
+	
+}
+else {
+	this.fj = this.fj;
+	this.fj = new E();
+	Fut<Bool> resInfo =(this.fi )!b();
+	
+}
+if( pauseOverride) {
+	this.fint = listDepth;
+	this.fj = new E();
+	this.fb = pauseOverride;
+	await this.ffb?;
+	this.ffb = this.ffb;
+	if( pauseOverride) {
+		Bool canExec =! True &&! False;
+		Fut<Int> y = this.ff;
+		if( False) {
+			this.ff = this.fi!n();
+			listDepth = this.fint + 777;
+			Int eventCounter = 662 *(52) +(679 * this.fint) * - 300 * 417;
+			await y?;
+			y = y;
+			canExec = this.fb;
+			
+		}
+		else {
+			Bool storageToggle = True;
+			
+		}
+		
+	}
+	this.fj = new E();
+	listDepth = 626;
+	listDepth = this.fint * 984;
+	pauseOverride = this.fint * listDepth * 676 < 660;
+	this.fb =! False;
+	Bool canExec = True;
+	this.fi = new D();
+	canExec = False &&! True;
+	pauseOverride = 933 + 411 - 943 * this.fint < 277;
+	this.fi = this.fi;
+	this.fi = new D();
+	while( False && this.fb) {
+		pauseOverride = this.fb;
+		
+	}
+	this.fint = 668 * 550;
+	pauseOverride =! False;
+	this.fi = new D();
+	
+}
+else {
+	if( False &&! True) {
+		await this.ffb?;
+		
+	}
+	else {
+		this.fint = 568 + 759;
+		I clientUnit = this.fi;
+		
+	}
+	Fut<Bool> resState = this.ffb;
+	
+}
+return 301;
+}
+}
+{}

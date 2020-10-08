@@ -1,0 +1,30 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && !hasReady)){} 
+		// Known true:
+		// Negated loop guard: !((False && !hasReady))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String packetRepresentation = null;
+		Bool hasReady = False;
+		// End of setup
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packetRepresentation=0)
+		// Failed to show the following sub-obligations:
+		// !(packetRepresentation=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

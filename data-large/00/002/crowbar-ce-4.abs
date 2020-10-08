@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_?(0)";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && True)){} 
+		// Known true:
+		// Negated loop guard: !((False && True))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String applyRequest = "fut_?(0)";
+		// End of setup
+		
+		String packetObject = this.fi;
+		Bool canExec = (node == this.fj);
+		this.ff = applyRequest;
+		packetObject = this.fi;
+		canExec = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packetObject=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

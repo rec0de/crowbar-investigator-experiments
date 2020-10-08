@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((canWrite || !True)){} 
+		// Known true:
+		// Negated loop guard: !((canWrite || !True))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool canWrite = True;
+		// End of setup
+		
+		
+		// await True;
+		// No heap modification info available at this point
+		
+		String packet = this.fi;
+		Bool canLoad = this.fb;
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		this.fi = this.fi;
+		Int eventAmount = k;
+		println(toString(489545)); // return statement
+		// Evaluates to: 489545
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (489545=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

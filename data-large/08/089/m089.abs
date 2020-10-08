@@ -1,0 +1,165 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = 914 < this.fint;
+await this.ffb?;
+this.ff = this.fi!n();
+this.fj = this.fj;
+this.ffb = this.fi!b();
+this.fj =(this.fj);
+this.fint = 882;
+while( this.fb) {
+	this.fb = False;
+	this.ff = this.fi!n();
+	
+}
+this.fb = True && this.fb;
+this.ff = this.fi!n();
+J person = new E();
+this.fint = this.ff.get;
+Int processCounter = this.fint * this.fint;
+await this.ffb?;
+processCounter = processCounter;
+I dataObject = this.fi;
+this.ffb = dataObject!b();
+await this.ffb?;
+this.fb = 82 - 531 > 812;
+Fut<Bool> resolveState = dataObject!b();
+if( True && True) {
+	if( True) {
+		this.ffb = dataObject!b();
+		processCounter = 102 + this.fint;
+		dataObject = new D();
+		this.ff = this.ff;
+		Fut<Int> flushReload = this.ff;
+		
+	}
+	J serverUnit = person;
+	while( False == False) {
+		this.fj = new E();
+		Int processCount = this.ff.get;
+		
+	}
+	this.ff = this.fi!n();
+	Int listCount = 457;
+	
+}
+while(! this.fb == True) {
+	Bool isSaveed =(False || this.fb);
+	processCounter = this.fint * this.fint;
+	this.fi = new D();
+	this.fb =(613 <=(this.fint)) && False;
+	Bool processOverride =! this.fb;
+	Int stackDepth = this.fint;
+	
+}
+person = this.fj;
+processCounter = this.fint * processCounter;
+Fut<Bool> resultState = this.ffb;
+if( True && True || True && True) {
+	this.fi =((this.fi));
+	await(this.fb);
+	dataObject = this.fi;
+	while( this.fb) {
+		if( False || False || False) {
+			Int j = 561;
+			
+		}
+		else {
+			dataObject = this.fi;
+			this.ff = this.fi!n();
+			await this.ffb?;
+			Bool isExec = True;
+			Bool isDone = isExec;
+			Bool hasDone = True;
+			await resolveState?;
+			Int value = this.fint;
+			await True;
+			Int l = -(value * - value);
+			this.ffb = dataObject!b();
+			await resultState?;
+			Bool processFlag = True;
+			resolveState = this.fi!b();
+			value = 953;
+			this.fi = new D();
+			
+		}
+		await True && True;
+		Bool canLoad = False;
+		this.fint = processCounter;
+		Bool configEnabled = False && False;
+		J dataNode = new E();
+		if( False) {
+			Bool readyToggle = resolveState.get;
+			await readyToggle;
+			readyToggle = False;
+			Int res = this.ff.get;
+			this.fb = True;
+			this.fi = new D();
+			
+		}
+		
+	}
+	
+}
+else {
+	J serverRepresentation = new E();
+	
+}
+if( 929 < 875) {
+	resultState = dataObject!b();
+	while( 394 * 574 ==(441)) {
+		await resolveState?;
+		
+	}
+	resolveState = resolveState;
+	person = new E();
+	
+}
+else {
+	this.fj = this.fj;
+	dataObject = new D();
+	this.fb = True ||! this.fb &&! this.fb;
+	this.fj = new E();
+	this.ffb = this.fi!b();
+	Int processCount = 982;
+	Int eventCount = 469;
+	this.ff = this.fi!n();
+	while( True) {
+		this.ff =(this.ff);
+		
+	}
+	this.ffb = this.fi!b();
+	Int l = 426 - 527;
+	
+}
+Bool writeFlag = True;
+resolveState = resolveState;
+this.fj = person;
+Bool writeOverride = True;
+this.fb =! True;
+processCounter = 240 *(466) *(923);
+dataObject = new D();
+Fut<Int> syncCall = dataObject!n();
+Int l = 851 * 227;
+return 511 - 338;
+}
+}
+{}

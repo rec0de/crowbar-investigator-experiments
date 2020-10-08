@@ -1,0 +1,36 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		
+		// Known true:
+		// Loop guard: !False
+		// Loop invariant: true
+		// while(!False) {
+		{
+			String node = this.fj;
+			// I person = new D();
+			String person = "object_1";
+			Int k = 510012;
+			this.fb = this.fb;
+			String packet = this.fi;
+			Bool hasReady = !!True;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

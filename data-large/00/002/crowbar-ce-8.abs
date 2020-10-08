@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(7)";
+		this.ff = "fut_?(7)";
+		this.fi = "object_?(7)";
+		this.fb = True;
+		this.ffb = "fut_?(7)";
+		// End of setup
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		// this.ff = this.fi!n();
+		this.ff = "fut_40";
+		this.fi = this.fi;
+		this.ff = this.ff;
+		this.fb = this.fb;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_41";
+		// this.fj = new E();
+		this.fj = "object_2";
+		if(True){
+			this.fi = this.fi;
+			this.ffb = this.ffb;
+			// I serverObject = new D();
+			String serverObject = "object_3";
+			this.fj = this.fj;
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_42";
+		this.fj = this.fj;
+		// J node = new E();
+		String node = "object_4";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(13)";
+		this.ff = "fut_?(11)";
+		this.fi = "object_?(11)";
+		this.fb = True;
+		this.ffb = "fut_?(11)";
+		// End assignments
+		
+		node = node;
+		if(((False && False) && False)){}
+		else{
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(12)";
+			this.ff = "fut_?(12)";
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(12)";
+			// End assignments
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(anon(store(store(store(store(store(store(store(store(store(store(store(store(store(store(heap, this.fi, NEW0_0), this.fi, NEW0_0), this.ff, fut_40), this.fi, select(store(heap, this.fi, NEW0_0), this.fi)), this.ff, select(store(heap, this.ff, fut_40), this.ff)), this.fb, heap.fb), this.ffb, fut_41), this.fj, NEW1_0), this.fj, NEW1_0), this.fi, select(store(heap, this.fi, select(store(heap, this.fi, NEW0_0), this.fi)), this.fi)), this.ffb, select(store(heap, this.ffb, fut_41), this.ffb)), this.fj, select(store(heap, this.fj, NEW1_0), this.fj)), this.ffb, fut_42), this.fj, select(store(heap, this.fj, select(store(heap, this.fj, NEW1_0), this.fj)), this.fj)))), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

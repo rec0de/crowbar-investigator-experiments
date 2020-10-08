@@ -1,0 +1,88 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		this.fi = "object_?(12)";
+		this.fb = True;
+		this.ffb = "fut_?(12)";
+		this.fint = 12;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.ffb == this.ffb)
+		// Loop invariant: true
+		// while((this.ffb == this.ffb)) {
+		{
+			this.ffb = this.ffb;
+			if(True){
+				this.fint = -670;
+				// this.fi = new D();
+				this.fi = "object_1";
+				// this.ff = this.fi!n();
+				this.ff = "fut_26";
+				
+				// await this.ffb?;
+				// Assume the following assignments while blocked:
+				this.fj = "object_?(14)";
+				this.ff = "fut_?(19)";
+				this.fi = "object_?(14)";
+				this.fb = True;
+				this.ffb = "fut_?(14)";
+				this.fint = 14;
+				// End assignments
+				
+				this.fj = this.fj;
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_27";
+				// Fut returnInfo = this.fi!n();
+				String returnInfo = "fut_28";
+				this.fint = 35;
+				this.fint = 151008;
+				String message = this.fj;
+				this.fb = False;
+				// this.fi = new D();
+				this.fi = "object_2";
+				this.fint = 314;
+				
+				// await this.ff?;
+				// Assume the following assignments while blocked:
+				this.fj = "object_?(16)";
+				this.ff = "fut_?(16)";
+				this.fi = null;
+				this.fb = True;
+				this.ffb = "fut_?(16)";
+				this.fint = 16;
+				// End assignments
+				
+				this.ffb = this.ffb;
+				// this.ff = this.fi!n();
+				this.ff = "fut_29";
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_30";
+			}
+			this.fi = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, select(anon(store(store(store(store(store(store(store(store(anon(store(store(store(store(store(heap, this.ffb, heap.ffb), this.fint, -670), this.fi, NEW13_0), this.fi, NEW13_0), this.ff, fut_26)), this.fj, select(anon(store(store(store(store(store(heap, this.ffb, heap.ffb), this.fint, -670), this.fi, NEW13_0), this.fi, NEW13_0), this.ff, fut_26)), this.fj)), this.ffb, fut_27), this.fint, 35), this.fint, 151008), this.fb, 0), this.fi, NEW15_0), this.fi, NEW15_0), this.fint, 314)), this.fi)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((535 == 605)){} 
+		// Known true:
+		// Negated loop guard: !((535 == 605))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool writeToggle = True;
+		String clientNode = null;
+		// End of setup
+		
+		this.fi = packet;
+		}
+		this.ff = this.ff;
+		
+		// await (False || !writeToggle);
+		// No heap modification info available at this point
+		
+		String packetUnit = tree;
+		}
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientNode=0)
+		// Failed to show the following sub-obligations:
+		// !(clientNode=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

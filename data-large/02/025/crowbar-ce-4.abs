@@ -1,0 +1,41 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fi = "object_1";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			// J clientRepresentation = new E();
+			String clientRepresentation = "object_1";
+			if(!False){
+				
+				// await this.ff?;
+				// Assume the following assignments while blocked:
+				this.fi = null;
+				// End assignments
+				
+				Bool hasSaveed = (True || (True == !isReady));
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

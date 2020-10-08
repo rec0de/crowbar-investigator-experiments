@@ -1,0 +1,183 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+this.fb = True;
+Bool isLoaded = 999 != 87 + - this.fint;
+this.fint = 356;
+this.fint = 693 + this.fint * - 812;
+Fut<Bool> resultData = this.fi!b();
+Int j = 195;
+resultData = this.fi!b();
+this.fj = this.fj;
+Fut<Int> syncFlag = this.fi!n();
+j = 240;
+resultData = this.ffb;
+j = j * - this.fint;
+this.fj = new E();
+Int listDepth = 375;
+syncFlag = this.fi!n();
+J message = this.fj;
+this.ffb = this.fi!b();
+while( 181 == listDepth) {
+	this.fb =(this.ff == syncFlag) == True;
+	Int i = 863;
+	Int eventCounter = this.fint;
+	if( this.fb || True && isLoaded && True ||! this.fb && this.fb) {
+		while( False) {
+			Bool stateFlag = this.ffb.get;
+			this.fb = stateFlag && False;
+			j = syncFlag.get;
+			Int processCount = - eventCounter * 195 * - 856;
+			j = 557;
+			i = 983;
+			syncFlag = syncFlag;
+			this.ff = syncFlag;
+			message = this.fj;
+			resultData = this.fi!b();
+			
+		}
+		this.ff = this.fi!n();
+		await this.ffb?;
+		this.fb = False;
+		i =(listDepth - 432);
+		
+	}
+	else {
+		this.fb = False;
+		while( 175 >= 491) {
+			this.ffb =(this.fi )!b();
+			
+		}
+		this.fi = new D();
+		Fut<Int> resolveState = this.fi!n();
+		Int arg = listDepth;
+		
+	}
+	isLoaded = 164 >= 350;
+	j = 24;
+	isLoaded = 842 == 970 * 616;
+	this.ff = this.fi!n();
+	await resultData?;
+	i = 727;
+	eventCounter = 130;
+	j = 467;
+	i = i;
+	await this.ffb?;
+	eventCounter = syncFlag.get;
+	if( 318 >= - 31) {
+		this.ff = this.fi!n();
+		this.fi =(this.fi);
+		Fut<Int> resultState = this.fi!n();
+		listDepth =(803 + 615);
+		Int arg = 862;
+		this.ff = syncFlag;
+		await! True;
+		Fut<Bool> y = this.fi!b();
+		
+	}
+	else {
+		resultData = this.fi!b();
+		Int stackDepth = 729;
+		syncFlag = this.fi!n();
+		this.fb = False && True && False;
+		this.fb = True || True || True;
+		Bool isRead =! True && True && True;
+		I tree = this.fi;
+		if( - j + i < 471) {
+			syncFlag = this.fi!n();
+			message = this.fj;
+			
+		}
+		else {
+			message = new E();
+			await this.ffb?;
+			I packet = this.fi;
+			this.ffb = packet!b();
+			isLoaded = resultData.get;
+			J ioNode = this.fj;
+			this.fb =! True || False;
+			await this.ffb?;
+			packet = this.fi;
+			J clientObject = ioNode;
+			this.ffb = resultData;
+			
+		}
+		this.fi = new D();
+		tree = new D();
+		while(! False) {
+			Fut<Int> resState = this.ff;
+			resState = resState;
+			Bool systemEnabled = - 368 + i * 577 != - 328;
+			Bool hasDone = True || True;
+			
+		}
+		
+	}
+	listDepth = 922 * - j * 849;
+	listDepth = - 974;
+	this.fi = this.fi;
+	this.ffb = this.fi!b();
+	Fut<Int> returnState = syncFlag;
+	Bool systemFlag = True;
+	if( False) {
+		Fut<Bool> q = resultData;
+		this.ffb =(this.fi )!b();
+		isLoaded = False;
+		this.ffb = this.fi!b();
+		await returnState?;
+		
+	}
+	Bool willLoad =((this.fi) == this.fi);
+	await this.ffb?;
+	
+}
+message = new E();
+j = 213 * listDepth + 496;
+Int stackCount = listDepth;
+if( True == False) {
+	Int listAmount = 665;
+	this.fj = this.fj;
+	this.ff = this.ff;
+	if(! False) {
+		Int listCounter = 576;
+		stackCount = - 116;
+		Bool readyFlag = this.fi == this.fi;
+		Int processAmount = listCounter;
+		await True;
+		
+	}
+	Fut<Bool> syncState = this.ffb;
+	while( True) {
+		Bool readyFlag =! True;
+		isLoaded = True;
+		this.fj = new E();
+		
+	}
+	this.ff = this.fi!n();
+	
+}
+Bool willExec = this.ffb.get;
+J clientStruct = message;
+Int eventDepth = - 792;
+return 282 * this.fint;
+}
+}
+{}

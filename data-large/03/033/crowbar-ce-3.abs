@@ -1,0 +1,46 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fint = 11797;
+		this.fb = True;
+		this.ffb = "fut_?(8)";
+		// End of setup
+		
+		if(this.fb){
+			// this.ff = this.fi!n();
+			this.ff = "fut_42";
+		}
+		this.fb = False;
+		Bool isSave = False;
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fi = this.fi;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_43";
+		this.fint = (136 * this.fint);
+		this.fint = this.fint;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

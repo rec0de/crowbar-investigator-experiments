@@ -1,0 +1,48 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	Int fint = 0;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String resolveState = "fut_?(1)";
+		Bool willLoad = True;
+		String packet = null;
+		this.fb = True;
+		this.ffb = "fut_?(1)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			Int i = (633998 - this.fint);
+			// Fut resetFlag = node!b();
+			String resetFlag = "fut_41";
+			// Int j = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			Int j = 0;
+			this.ffb = resolveState;
+			if(((((this.fb && willLoad) || !this.fb) || False) || (!False && False))){}
+			else{
+				this.fint = 281;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(packet=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

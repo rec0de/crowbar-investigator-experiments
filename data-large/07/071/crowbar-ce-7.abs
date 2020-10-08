@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!willLoad){} 
+		// Known true:
+		// Negated loop guard: !(!willLoad)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isReady = True;
+		Bool willLoad = True;
+		this.fi = "object_?(1)";
+		// End of setup
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		// End assignments
+		
+		if(isReady){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

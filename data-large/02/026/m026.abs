@@ -1,0 +1,175 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = new D();
+if( True || this.fb) {
+	Bool willLoad = True && this.fb &&! this.fb;
+	if( 955 >(926 * this.fint * 504) * this.fint) {
+		this.fb = this.fb ==! False;
+		this.fi = this.fi;
+		if((! willLoad )) {
+			this.ff = this.fi!n();
+			Int listCount = 818;
+			willLoad = this.fb;
+			
+		}
+		else {
+			J serverStruct = this.fj;
+			serverStruct = serverStruct;
+			Bool hasReady = 507 * this.fint == 643 - 647 *(this.fint);
+			Int arg = 349;
+			willLoad = True;
+			hasReady = True && True;
+			serverStruct = new E();
+			Bool execEnabled = True;
+			
+		}
+		
+	}
+	else {
+		while( willLoad && False) {
+			J ioStruct = this.fj;
+			this.fi = new D();
+			
+		}
+		if( True) {
+			willLoad = willLoad;
+			
+		}
+		else {
+			this.fb = True;
+			this.ff = this.fi!n();
+			this.fi = new D();
+			await False || False;
+			this.ffb = this.fi!b();
+			this.fb = willLoad;
+			Int listCounter = this.ff.get;
+			await this.ffb?;
+			I ioRepresentation = new D();
+			await this.ff?;
+			
+		}
+		
+	}
+	while(! True) {
+		I tree = this.fi;
+		Fut<Int> y = this.fi!n();
+		
+	}
+	if( willLoad) {
+		this.fj = this.fj;
+		this.fb = this.fint > 698;
+		while( True) {
+			Int arg = - 948;
+			arg = 988;
+			Int eventAmount = 313 - 203;
+			I node = new D();
+			arg = arg * eventAmount;
+			Int systemCounter = - 342;
+			await 937 < 233;
+			await this.ffb?;
+			await this.ffb?;
+			Int value = - 523;
+			Int stackDepth = -(systemCounter) * 542;
+			J packet = new E();
+			
+		}
+		willLoad =! True || False ||! willLoad;
+		
+	}
+	else {
+		while( True) {
+			this.ffb = this.fi!b();
+			this.fi = this.fi;
+			
+		}
+		this.fi = this.fi;
+		this.fb = 56 + this.fint * 2 != 898;
+		
+	}
+	willLoad = 968 == 427;
+	this.ffb = this.fi!b();
+	this.fint = 433;
+	this.fb = this.ffb.get;
+	willLoad = True;
+	willLoad = this.fb;
+	
+}
+else {
+	Bool execToggle = True;
+	
+}
+this.ffb = this.fi!b();
+Int arg = 101 - 959;
+await this.ffb?;
+Int stackAmount = 884 * this.fint;
+stackAmount = this.ff.get;
+this.fi = this.fi;
+J person = this.fj;
+while( True) {
+	this.fj = this.fj;
+	this.fj = this.fj;
+	this.fb = False;
+	person = new E();
+	this.fj = person;
+	this.fi = new D();
+	arg = this.ff.get;
+	Bool isDone = False;
+	isDone = isDone;
+	if( True) {
+		stackAmount =(755 * 841);
+		if( True) {
+			J serverRepresentation = new E();
+			Int j = - 214 * 721;
+			
+		}
+		else {
+			J packetStruct = new E();
+			Bool hasDone = False == isDone;
+			await this.ffb?;
+			
+		}
+		this.fint = 722;
+		isDone = False;
+		this.fb = this.fb;
+		this.fint = - arg * 525;
+		this.fi = new D();
+		
+	}
+	else {
+		I clientUnit = this.fi;
+		person = person;
+		Int listCount = this.fint * - 341;
+		
+	}
+	this.fj = new E();
+	arg = 512;
+	Int listDepth = this.ff.get;
+	
+}
+stackAmount = 539;
+this.fi = this.fi;
+await this.ffb?;
+this.ffb = this.fi!b();
+this.fi = new D();
+return 877;
+}
+}
+{}

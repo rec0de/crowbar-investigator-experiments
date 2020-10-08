@@ -1,0 +1,47 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Bool readyToggle = True;
+		this.fi = "object_?(4)";
+		this.fb = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: True
+		// Loop invariant: true
+		// while(True) {
+		{
+			
+			// await (this.fb || (False && False));
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fb = True;
+			// End assignments
+			
+			// Fut resetRequest = this.fi!b();
+			String resetRequest = "fut_61";
+			Int queueAmount = 143;
+			this.fb = False;
+			Bool isDone = False;
+			if(((True && readyToggle) || (isDone && True))){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

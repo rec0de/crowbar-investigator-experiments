@@ -1,0 +1,88 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(((947 - ((362 * this.fint) * 932)) >= this.fint)){} 
+		// Known true:
+		// Negated loop guard: !(((947 - ((362 * this.fint) * 932)) >= this.fint))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_?(6)";
+		this.fi = "object_?(6)";
+		this.fint = 21239;
+		this.fb = True;
+		// End of setup
+		
+		this.fi = this.fi;
+		// this.ff = this.fi!n();
+		this.ff = "fut_23";
+		Int queueDepth = this.fint;
+		this.fi = this.fi;
+		}
+		this.fb = (True && True);
+		this.fint = this.fint;
+		if(True){
+			String dataNode = this.fi;
+			// Bool processFlag = (this.ffb).get;
+			// Future value irrelevant or unavailable, using default:
+			Bool processFlag = False;
+			this.fint = 559;
+			dataNode = this.fi;
+			Bool hasReady = False;
+			hasReady = False;
+			// I clientRepresentation = new D();
+			String clientRepresentation = "object_1";
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.ff = "fut_?(8)";
+			this.fi = "object_?(8)";
+			this.fint = 11;
+			this.fb = True;
+			// End assignments
+			
+			
+			// await (this.fint != (851 * this.fint));
+			// Assume the following assignments while blocked:
+			this.ff = "fut_?(9)";
+			this.fi = "object_?(9)";
+			this.fint = 10;
+			this.fb = True;
+			// End assignments
+			
+			// this.fi = new D();
+			this.fi = "object_2";
+			hasReady = False;
+			hasReady = False;
+			this.ffb = this.ffb;
+		}
+		this.fi = this.fi;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_24";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_25";
+		Int arg = -this.fint;
+		arg = -225924;
+		println(toString(-891)); // return statement
+		// Evaluates to: -891
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-891=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

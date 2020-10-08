@@ -1,0 +1,158 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+I dataStruct = new D();
+this.fint = this.fint;
+await this.ffb?;
+while( False) {
+	Bool systemToggle = False;
+	
+}
+Fut<Bool> resolveState = this.fi!b();
+await this.ff?;
+this.ffb = this.ffb;
+while((this.fint) >=(- this.fint + 361) *(586 * - 583) - 9) {
+	await this.fi == dataStruct;
+	I node = new D();
+	if( this.fb) {
+		this.ff = this.ff;
+		this.fint = this.fint * - 135;
+		Int listAmount = 220 + - 2;
+		I packetRepresentation = dataStruct;
+		this.fb = True || True;
+		while(! True) {
+			dataStruct = node;
+			
+		}
+		Bool stateToggle = this.fb;
+		if(! True) {
+			await resolveState?;
+			await resolveState?;
+			dataStruct = new D();
+			Bool systemOverride = stateToggle;
+			J clientUnit = this.fj;
+			
+		}
+		else {
+			node = this.fi;
+			await False;
+			J packetObject = this.fj;
+			Bool hasLoaded = True;
+			stateToggle = True &&(False);
+			this.ffb = this.ffb;
+			await this.ffb?;
+			Fut<Bool> returnData = this.fi!b();
+			
+		}
+		
+	}
+	else {
+		await this.ffb?;
+		
+	}
+	this.fb = False;
+	Bool willLoad = True && False && True && True;
+	J person = new E();
+	node = new D();
+	Bool isDone = willLoad;
+	await this.ffb?;
+	I packet = new D();
+	dataStruct = new D();
+	await this.ff?;
+	packet = new D();
+	while( True) {
+		Int i = 643 * 986 - this.fint;
+		Fut<Bool> resetFlag = node!b();
+		Int j = this.ff.get;
+		this.ffb = resolveState;
+		if( this.fb && willLoad ||! this.fb || False ||! False && False) {
+			willLoad = this.fb;
+			resolveState = resolveState;
+			
+		}
+		else {
+			this.fint = 281;
+			resolveState = packet!b();
+			
+		}
+		j = 601;
+		
+	}
+	if( True || False) {
+		this.fi = node;
+		if(! willLoad) {
+			await this.ff?;
+			J dataRepresentation = new E();
+			this.fi = node;
+			this.fi = new D();
+			await this.ffb?;
+			await resolveState?;
+			this.fi = dataStruct;
+			isDone = 534 < 769;
+			willLoad = True && True;
+			dataStruct = new D();
+			dataRepresentation = dataRepresentation;
+			this.fi = node;
+			await this.ffb?;
+			dataRepresentation = new E();
+			await resolveState?;
+			await resolveState?;
+			this.fint = - this.fint;
+			Bool willSave =(resolveState ).get;
+			packet = packet;
+			this.fi = new D();
+			
+		}
+		else {
+			await this.ffb?;
+			this.fi = new D();
+			Bool isSaveed = True;
+			this.fb = True;
+			
+		}
+		await this.ff?;
+		dataStruct = this.fi;
+		Int queueAmount = 539;
+		isDone =!(False) && False;
+		this.fint = 976;
+		queueAmount = 75;
+		
+	}
+	else {
+		this.ff = this.ff;
+		
+	}
+	await True;
+	
+}
+Int arg = this.ff.get;
+arg = arg;
+this.fb = 839 >= 483;
+while( True) {
+	dataStruct = new D();
+	this.ffb = this.ffb;
+	
+}
+J clientUnit = new E();
+this.fb = False;
+return 322;
+}
+}
+{}

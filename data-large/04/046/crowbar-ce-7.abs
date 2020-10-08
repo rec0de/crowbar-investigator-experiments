@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+	String ff = "fut_72";
+	String ffb = "fut_72";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(7)";
+		this.fb = True;
+		this.fj = "object_?(7)";
+		this.ff = "fut_?(13)";
+		// End of setup
+		
+		// Bool pauseToggle = (this.ffb).get;
+		// Future value irrelevant or unavailable, using default:
+		Bool pauseToggle = False;
+		}
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(9)";
+		this.fb = True;
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(9)";
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		this.fb = this.fb;
+		// this.ff = this.fi!n();
+		this.ff = "fut_72";
+		// this.ff = this.fi!n();
+		this.ff = "fut_73";
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(11)";
+		this.fb = True;
+		this.fj = "object_?(17)";
+		this.ff = "fut_?(11)";
+		// End assignments
+		
+		Bool restoreToggle = (True && False);
+		Bool restoreEnabled = restoreToggle;
+		this.fb = this.fb;
+		Bool isReady = ((False || False) || True);
+		
+		// await y?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.fb = True;
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		// End assignments
+		
+		Bool isRead = False;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(anon(store(store(store(store(store(anon(heap), this.fj, NEW10_0), this.fj, NEW10_0), this.fb, select(anon(heap), this.fb)), this.ff, fut_72), this.ff, fut_73)), this.fb, select(anon(store(store(store(store(store(anon(heap), this.fj, NEW10_0), this.fj, NEW10_0), this.fb, select(anon(heap), this.fb)), this.ff, fut_72), this.ff, fut_73)), this.fb))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int listCounter = 1;
+		// End of setup
+		
+		Int queueDepth = listCounter;
+		}
+		Bool willSave = (False && False);
+		String clientRepresentation = message;
+		// this.ff = tree!n();
+		this.ff = "fut_59";
+		Bool configEnabled = ((True && False) && isLoaded);
+		}
+		println(toString(listCounter)); // return statement
+		// Evaluates to: 1
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (listCounter=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

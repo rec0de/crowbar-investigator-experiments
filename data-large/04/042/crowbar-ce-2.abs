@@ -1,0 +1,55 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_46";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_46";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		this.fb = True;
+		this.ffb = "fut_?(10)";
+		// End of setup
+		
+		// J packetRepresentation = new E();
+		String packetRepresentation = "object_1";
+		// this.fj = new E();
+		this.fj = "object_2";
+		this.fj = this.fj;
+		this.ff = this.ff;
+		// this.fj = new E();
+		this.fj = "object_3";
+		// J person = new E();
+		String person = "object_4";
+		this.fb = !False;
+		// this.ff = this.fi!n();
+		this.ff = "fut_46";
+		// person = new E();
+		person = "object_5";
+		// J message = new E();
+		String message = "object_6";
+		this.fb = (False && True);
+		this.ffb = this.ffb;
+		if(True){
+			Int processCount = 629;
+			Bool hasDone = ((False && True) && this.fb);
+		}
+		this.ffb = this.ffb;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

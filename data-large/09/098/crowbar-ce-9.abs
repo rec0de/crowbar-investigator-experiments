@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String person = null;
+		// End of setup
+		
+		Bool readyEnabled = (True && (False || (this.fb && True)));
+		readyEnabled = readyEnabled;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		if(True){
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+		}
+		if(!False){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(person=0)
+		// Failed to show the following sub-obligations:
+		// !(person=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

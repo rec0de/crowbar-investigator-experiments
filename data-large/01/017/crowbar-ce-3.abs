@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String node = null;
+		// End of setup
+		
+		String packetObject = this.fj;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		if(!True){}
+		else{
+		
+		}
+		Int listCounter = 972;
+		}
+		this.fb = (this.fb && False);
+		this.fj = packetObject;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(node=0)
+		// Failed to show the following sub-obligations:
+		// !(node=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,168 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = 991 < 244;
+this.fb = this.ff == this.ff;
+this.fi = new D();
+this.ffb =(this.fi )!b();
+this.fb = True || False;
+this.fb = this.fb && False;
+this.fb = True;
+Fut<Bool> applyFlag = this.ffb;
+this.ffb =(applyFlag);
+this.fi = this.fi;
+if( False) {
+	applyFlag = applyFlag;
+	this.ffb =(this.fi )!b();
+	this.fi = this.fi;
+	if((True )) {
+		Int queueAmount = this.fint;
+		Int k = 915;
+		while( False) {
+			await this.fb;
+			this.ffb = this.fi!b();
+			
+		}
+		this.ffb =(this.fi )!b();
+		queueAmount = 759;
+		this.fi = new D();
+		
+	}
+	else {
+		J ioStruct = new E();
+		while( True) {
+			Fut<Int> applyCall = this.fi!n();
+			await True || False;
+			await True;
+			Fut<Bool> resultData = this.fi!b();
+			await applyCall?;
+			Bool isDone = False && this.fb;
+			applyFlag =(resultData);
+			
+		}
+		J person = new E();
+		await applyFlag?;
+		Fut<Int> z = this.fi!n();
+		Bool isWrite = this.fint * this.fint < -(357);
+		Fut<Bool> resetCall = this.fi!b();
+		
+	}
+	Int l =((this.fint)) * 106 *(640) * 259 * 355;
+	if( this.fb) {
+		this.fi = this.fi;
+		
+	}
+	else {
+		Bool willRead = this.fb && this.fb || False && False;
+		this.fb =!(True) && True;
+		this.fb =(applyFlag ).get;
+		this.fi = this.fi;
+		Bool execOverride = this.ffb == this.ffb;
+		while( False) {
+			J person = this.fj;
+			person = this.fj;
+			await applyFlag?;
+			person = new E();
+			await applyFlag?;
+			willRead = this.fb || True;
+			await this.ff?;
+			willRead = this.fb;
+			this.fj = new E();
+			
+		}
+		willRead = False;
+		
+	}
+	this.fi = this.fi;
+	Fut<Bool> p = this.fi!b();
+	this.fb = - this.fint * 52 > -(((678 - l * 858)));
+	await this.ff?;
+	J message = this.fj;
+	l = 443;
+	p = this.fi!b();
+	applyFlag = this.fi!b();
+	
+}
+else {
+	this.fi = new D();
+	I clientNode = this.fi;
+	applyFlag = clientNode!b();
+	this.fj = new E();
+	
+}
+Int systemDepth = this.fint;
+if( True) {
+	this.ffb = this.ffb;
+	Int queueDepth = 820 * - 982;
+	if(! this.fb) {
+		systemDepth = 919 * - systemDepth * systemDepth;
+		while( True && False ||! True) {
+			queueDepth = 354;
+			await this.ff?;
+			this.ffb = this.fi!b();
+			Int processAmount = this.ff.get;
+			this.fint = - 255;
+			queueDepth = queueDepth * 354 * 844 * 857;
+			await! this.fb;
+			
+		}
+		this.fb =! True;
+		
+	}
+	else {
+		this.fint =(440 * - 525);
+		while( this.fb && False) {
+			this.ff = this.fi!n();
+			Int processDepth = this.ff.get;
+			queueDepth =(processDepth);
+			systemDepth = 101;
+			Bool restoreOverride = True ||!((False)) == this.fb;
+			this.ffb = this.fi!b();
+			
+		}
+		queueDepth = 879;
+		this.fint = 557;
+		
+	}
+	applyFlag = this.fi!b();
+	
+}
+else {
+	this.fi = this.fi;
+	if( this.fb) {
+		this.fj = new E();
+		
+	}
+	else {
+		this.fb = this.fb;
+		this.ffb = this.ffb;
+		Fut<Bool> returnData = this.fi!b();
+		this.ff = this.fi!n();
+		returnData = applyFlag;
+		this.fi = this.fi;
+		
+	}
+	this.fi = this.fi;
+	
+}
+return 750;
+}
+}
+{}

@@ -1,0 +1,61 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fi = "object_?(2)";
+		this.fb = True;
+		this.ff = "fut_?(2)";
+		// End of setup
+		
+		// this.fi = new D();
+		this.fi = "object_1";
+		Int listCount = this.fint;
+		Bool configOverride = (-105 == listCount);
+		listCount = (stackCounter + 493);
+		configOverride = ((774 * stackCounter) == (55 + this.fint));
+		this.ff = this.ff;
+		Int stackCounter = 933;
+		if((((this.fi == this.fi) && False) && False)){}
+		else{
+			// Fut flushState = this.fi!b();
+			String flushState = "fut_129";
+			Int eventCounter = stackCounter;
+			
+			// await flushState?;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fb = False;
+			this.ff = "fut_?(0)";
+			// End assignments
+			
+		}
+		// this.ff = this.fi!n();
+		this.ff = "fut_130";
+		Bool isSaveed = (True && !False);
+		println(toString(734)); // return statement
+		// Evaluates to: 734
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (734=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

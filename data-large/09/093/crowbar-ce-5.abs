@@ -1,0 +1,57 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_40";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_40";
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_38";
+		this.fint = 10;
+		this.fb = True;
+		this.ffb = "fut_38";
+		// End of setup
+		
+		this.ff = this.ff;
+		// this.ff = this.fi!n();
+		this.ff = "fut_38";
+		this.fint = -475;
+		// Bool hasSaveed = (this.ffb).get;
+		Bool hasSaveed = False;
+		// I packetStruct = new D();
+		String packetStruct = "object_1";
+		hasSaveed = True;
+		this.ffb = this.ffb;
+		// Fut x = this.fi!b();
+		String x = "fut_39";
+		if((this.fb || True)){
+			// this.ff = packetStruct!n();
+			this.ff = "fut_40";
+			String message = this.fj;
+			Bool isSaveed = hasSaveed;
+			// packetStruct = new D();
+			packetStruct = "object_2";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,175 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int stackCount = this.ff.get;
+this.ffb =((this.fi) )!b();
+stackCount = 977 - this.fint;
+this.fj = new E();
+this.ffb = this.fi!b();
+if(! this.fb) {
+	this.ff = this.fi!n();
+	Bool isRead = True && False;
+	Int k = 564;
+	
+}
+else {
+	Bool isDone = this.fb || True;
+	I packetUnit = new D();
+	
+}
+this.fb =! this.fb;
+this.ff = this.ff;
+this.fj = this.fj;
+Int listDepth = 250;
+I serverObject = new D();
+if( stackCount <= 209 - 378 - - 245) {
+	this.fint = 625;
+	
+}
+else {
+	this.ffb = this.fi!b();
+	await this.fj ==(this.fj);
+	this.ff = this.ff;
+	this.fb = True;
+	
+}
+listDepth =(this.fint) - listDepth;
+stackCount = listDepth;
+this.ff = this.ff;
+this.fi = this.fi;
+if((this.fb && this.fb )) {
+	Bool canLoad = this.fb;
+	this.fint = 131;
+	this.ffb = serverObject!b();
+	stackCount = 41;
+	await this.ffb?;
+	await this.ffb?;
+	Bool hasLoaded = this.fb;
+	stackCount = - 616;
+	Bool hasDone = hasLoaded;
+	while( canLoad) {
+		while( canLoad) {
+			this.fb = True;
+			Fut<Int> a = this.ff;
+			this.ffb = serverObject!b();
+			listDepth = this.fint;
+			
+		}
+		while( 174 >= - 443) {
+			await this.ff?;
+			hasDone =! False ||! False;
+			
+		}
+		listDepth = - 804 * listDepth * 510;
+		
+	}
+	this.ffb = serverObject!b();
+	
+}
+else {
+	serverObject = new D();
+	this.fint = 105;
+	
+}
+this.fj = this.fj;
+this.fint = - 592;
+this.ff = serverObject!n();
+J clientStruct = this.fj;
+serverObject = this.fi;
+this.ff = this.ff;
+J message = clientStruct;
+Bool isSaveed = this.fb;
+serverObject = new D();
+this.fb = False;
+this.ffb = this.fi!b();
+while( this.ffb == this.ffb) {
+	isSaveed = False;
+	if( this.fb) {
+		this.fj = new E();
+		listDepth = - stackCount;
+		this.fint = 242 * listDepth;
+		this.fb = False;
+		
+	}
+	else {
+		stackCount = 980;
+		serverObject = serverObject;
+		await this.ff?;
+		Bool restoreOverride = this.fb;
+		while(! True) {
+			this.fint = 235;
+			serverObject = new D();
+			Bool isRead = this.fb;
+			stackCount = -(listDepth);
+			Bool readEnabled = True;
+			
+		}
+		this.ffb = this.ffb;
+		if((327) * 505 - 74 < 34) {
+			serverObject = serverObject;
+			Bool readToggle = this.ffb.get;
+			
+		}
+		this.fj = this.fj;
+		Int res = this.ff.get;
+		this.ff = serverObject!n();
+		
+	}
+	Fut<Int> resInfo = this.ff;
+	isSaveed = False;
+	this.fj = new E();
+	
+}
+Bool hasDone = False;
+Bool willSave = hasDone && False;
+await this.ffb?;
+I packet = new D();
+while( isSaveed) {
+	J node = new E();
+	
+}
+stackCount = 774;
+Bool isRead =! False;
+packet = new D();
+Fut<Bool> x = this.fi!b();
+Int arg = 456;
+Bool pauseToggle = False && isRead && False;
+packet = this.fi;
+this.fj = new E();
+I person = new D();
+await x?;
+isRead = x.get;
+Bool hasReady = True;
+pauseToggle = - 723 * 586 - - 994 == 425;
+Fut<Bool> flushReload = person!b();
+isRead = this.fi == person;
+J tree = message;
+this.fi = new D();
+isRead =! False;
+listDepth = listDepth + 911;
+await True;
+await this.ff?;
+flushReload = this.fi!b();
+stackCount = 297 * arg;
+hasReady =(flushReload ).get;
+return - 294;
+}
+}
+{}

@@ -1,0 +1,76 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String fi = null;
+	Int fint = 0;
+	String fj = null;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!!False){} 
+		// Known true:
+		// Negated loop guard: !(!!False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String tree = null;
+		this.fb = True;
+		// End of setup
+		
+		}
+		String message = this.fi;
+		if((this.fb == False)){}
+		else{
+			if(True){
+				
+				// await this.ffb?;
+				// Assume the following assignments while blocked:
+				this.fb = False;
+				// End assignments
+				
+				Int processDepth = this.fint;
+				this.fint = 373;
+				// Fut returnInfo = message!b();
+				String returnInfo = "fut_123";
+				Bool writeEnabled = ((processDepth * 839) == 879);
+				String node = this.fj;
+				
+				// await this.ffb?;
+				// No heap modification info available at this point
+				
+				// I ioUnit = new D();
+				String ioUnit = "object_1";
+				
+				// await !False;
+				// No heap modification info available at this point
+				
+				
+				// await returnInfo?;
+				// No heap modification info available at this point
+				
+				// message = new D();
+				message = "object_2";
+				this.fint = 477;
+				this.ff = this.ff;
+				this.fb = False;
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_124";
+			}
+			Bool systemFlag = this.fb;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(tree=0)
+		// Failed to show the following sub-obligations:
+		// !(tree=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

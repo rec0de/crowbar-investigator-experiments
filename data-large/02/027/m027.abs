@@ -1,0 +1,195 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ffb = this.ffb;
+Bool storageFlag =(False);
+this.fb = True || this.fb || storageFlag;
+this.ff = this.fi!n();
+if( storageFlag && this.fb) {
+	Fut<Int> resetState = this.fi!n();
+	resetState = this.fi!n();
+	this.fi = this.fi;
+	await this.ffb?;
+	
+}
+else {
+	storageFlag = True == False || True || this.fb;
+	Fut<Int> z = this.fi!n();
+	I node = this.fi;
+	await z?;
+	this.fb = False;
+	storageFlag = 652 * 411 - this.fint < - 900;
+	Int i = this.fint * 575;
+	
+}
+await this.ffb?;
+this.ff = this.fi!n();
+this.fj = new E();
+storageFlag = storageFlag;
+this.fb = this.ff == this.ff;
+if( 43 >= 990) {
+	storageFlag =! False;
+	this.fi = new D();
+	Int arg = this.fint;
+	this.ff = this.ff;
+	this.ff = this.fi!n();
+	while(! this.fb && False == True) {
+		Bool hasReady = False;
+		
+	}
+	while(! this.fb || False) {
+		arg =(arg);
+		I person = new D();
+		
+	}
+	this.ff = this.fi!n();
+	if( True) {
+		if( True) {
+			this.fb = this.ffb.get;
+			this.fi = new D();
+			this.ffb = this.fi!b();
+			this.fint = - this.fint;
+			I node = this.fi;
+			Fut<Bool> returnData = node!b();
+			await this.ff?;
+			Bool readyFlag = this.fb;
+			
+		}
+		else {
+			arg = - 857;
+			Bool isLoaded = False;
+			Int i = arg;
+			this.ff = this.fi!n();
+			i = - 158;
+			Bool systemOverride =(891 * i) > i;
+			i = arg;
+			
+		}
+		await this.ff?;
+		while( this.fb) {
+			J dataStruct = this.fj;
+			
+		}
+		storageFlag = True;
+		this.ff = this.fi!n();
+		
+	}
+	else {
+		this.fb = this.fb;
+		J message = this.fj;
+		
+	}
+	
+}
+else {
+	Bool stateFlag = this.fj == this.fj;
+	Int processCounter = 858;
+	
+}
+if( False &&(False && False )) {
+	while(! True) {
+		storageFlag =! True;
+		storageFlag = False;
+		this.fb = this.fint >= 855;
+		while( 545 >= - 198) {
+			Bool isDone = False;
+			
+		}
+		this.fi = this.fi;
+		this.fint = this.fint + 91;
+		Int processCounter =(236);
+		this.fb = this.ffb.get;
+		Int queueCounter = 627;
+		
+	}
+	if( False) {
+		this.fi = new D();
+		this.ffb = this.fi!b();
+		this.fb = this.fb;
+		
+	}
+	else {
+		this.fj = this.fj;
+		
+	}
+	this.fi = this.fi;
+	this.fint = 125;
+	Fut<Bool> returnInfo = this.ffb;
+	if(! False && storageFlag) {
+		if(! this.fb) {
+			await this.fj == this.fj;
+			
+		}
+		else {
+			await this.ff?;
+			
+		}
+		while( True) {
+			Int value = 353 + 929;
+			storageFlag = False && True;
+			this.ff = this.fi!n();
+			value = 467;
+			I message = new D();
+			this.fj = new E();
+			
+		}
+		
+	}
+	else {
+		this.fb = True && this.fb;
+		if( False) {
+			Bool readOverride =! storageFlag && this.fb;
+			this.fi = new D();
+			await returnInfo?;
+			this.fj = new E();
+			await returnInfo?;
+			await False;
+			await this.fb;
+			this.fint = this.fint;
+			Bool hasDone =! storageFlag;
+			
+		}
+		Bool canRead = this.fint == 737;
+		this.fb = storageFlag;
+		
+	}
+	Bool willExec = 352 == - this.fint;
+	this.ffb = this.fi!b();
+	this.ffb = this.fi!b();
+	
+}
+else {
+	if( True) {
+		J ioStruct = this.fj;
+		Bool hasLoaded = this.fint + this.fint != 719 + 695;
+		this.fint = this.ff.get;
+		while( True) {
+			this.fi = new D();
+			
+		}
+		
+	}
+	Int stackAmount = 602 + - this.fint;
+	
+}
+return 405;
+}
+}
+{}

@@ -1,0 +1,150 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fj = new E();
+this.ff = this.fi!n();
+this.ffb =((this.fi) )!b();
+if((True &&(False) )) {
+	this.ffb = this.ffb;
+	this.fint = 3;
+	
+}
+await this.ffb?;
+this.fj = this.fj;
+this.fj = this.fj;
+while( False) {
+	this.fb = this.ffb.get;
+	this.fj = new E();
+	this.fi = this.fi;
+	
+}
+Fut<Bool> flushCall = this.fi!b();
+this.fint = 12 - - 940;
+flushCall = this.fi!b();
+Bool willSave =! True;
+await this.ffb?;
+flushCall = this.ffb;
+Int stackCount = this.ff.get;
+await this.ffb?;
+if(! True) {
+	I clientUnit = new D();
+	Bool configEnabled =! True;
+	this.fj = new E();
+	if(! False) {
+		if( 814 < - this.fint) {
+			I packet = clientUnit;
+			
+		}
+		Int queueDepth = 104;
+		
+	}
+	else {
+		this.ff = this.fi!n();
+		Bool hasReady = True;
+		if( True) {
+			Int listCount = 930;
+			await this.ffb?;
+			flushCall = this.fi!b();
+			await this.ffb?;
+			Bool hasDone = True;
+			
+		}
+		else {
+			this.ff = this.fi!n();
+			
+		}
+		this.fi = new D();
+		if( configEnabled && False) {
+			this.ff = this.ff;
+			hasReady = 924 -(958) == 362 -(69) + 949;
+			willSave = configEnabled;
+			this.ffb = clientUnit!b();
+			
+		}
+		this.fi = clientUnit;
+		clientUnit = new D();
+		
+	}
+	this.fint = 360;
+	this.ff = clientUnit!n();
+	this.ffb = clientUnit!b();
+	clientUnit = clientUnit;
+	clientUnit = new D();
+	this.fb = False;
+	this.fint = this.fint;
+	clientUnit = new D();
+	flushCall = this.fi!b();
+	J tree = this.fj;
+	Bool isExec = flushCall.get;
+	willSave = this.ffb.get;
+	this.fj = this.fj;
+	this.fb = configEnabled && True;
+	
+}
+Int arg =(395);
+arg = -(621 * - stackCount);
+this.fi = new D();
+Bool hasLoaded = False && False;
+while( willSave) {
+	flushCall =(this.fi )!b();
+	Int res =(stackCount);
+	Int processDepth = 928;
+	
+}
+while( True) {
+	await this.ff?;
+	willSave = stackCount == 977;
+	hasLoaded = True;
+	hasLoaded =! False;
+	this.fb = 112 * - 771 * stackCount >= this.fint * - 617;
+	if(! True) {
+		Fut<Int> resultInfo = this.ff;
+		stackCount = 723 - - 224;
+		flushCall = this.fi!b();
+		while(! False) {
+			hasLoaded = hasLoaded;
+			arg = 538;
+			this.fint = 767;
+			
+		}
+		
+	}
+	else {
+		await this.ff?;
+		I dataObject = new D();
+		this.fint = 995;
+		this.fint = this.ff.get;
+		while( False) {
+			await this.ff?;
+			this.fj = new E();
+			stackCount = this.fint * this.fint - 460;
+			willSave =! False || False && False;
+			Fut<Int> syncCall = this.fi!n();
+			
+		}
+		
+	}
+	
+}
+this.ffb = this.fi!b();
+return 28;
+}
+}
+{}

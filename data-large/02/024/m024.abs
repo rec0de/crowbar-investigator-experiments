@@ -1,0 +1,157 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = this.fb;
+this.fi = new D();
+this.fb = True;
+this.fj = new E();
+this.ff = this.fi!n();
+Fut<Int> resultState = this.fi!n();
+this.ff =(this.ff);
+resultState = this.ff;
+while((this.fb)) {
+	this.fj = this.fj;
+	await this.ffb?;
+	Bool hasLoaded = this.fb;
+	J packetObject = new E();
+	
+}
+await this.ff?;
+this.ffb = this.fi!b();
+this.fi = new D();
+this.ffb = this.ffb;
+this.fint = - 249;
+this.fi = new D();
+if( 851 <= this.fint * 35 * this.fint) {
+	I dataUnit = new D();
+	resultState = this.fi!n();
+	
+}
+else {
+	if(! True) {
+		Int listDepth = 542;
+		while( False) {
+			this.fint = this.fint;
+			listDepth = 298;
+			await this.ff?;
+			listDepth = this.fint * this.fint;
+			resultState = this.fi!n();
+			this.fi = this.fi;
+			Fut<Int> resultInfo = this.fi!n();
+			Fut<Int> resultData = this.fi!n();
+			
+		}
+		await this.ff?;
+		J person = this.fj;
+		listDepth = - this.fint;
+		this.ffb = this.ffb;
+		while( this.fb) {
+			this.ffb = this.fi!b();
+			resultState = resultState;
+			person =(this.fj);
+			
+		}
+		listDepth = - 833;
+		this.fi = this.fi;
+		
+	}
+	if( True && False) {
+		this.fb = this.ffb.get;
+		this.ff = this.fi!n();
+		while( False && this.fb) {
+			Int l =(- 389);
+			l = this.ff.get;
+			this.fi = this.fi;
+			Int listAmount = 805;
+			
+		}
+		this.fint = 569 + 189;
+		this.fj = new E();
+		if( True) {
+			Int listDepth =(this.fint);
+			Int arg = - 412;
+			
+		}
+		else {
+			await this.ff?;
+			await resultState?;
+			
+		}
+		this.ffb = this.fi!b();
+		
+	}
+	this.fb = True || False;
+	this.fint = this.fint;
+	
+}
+if( False) {
+	await resultState?;
+	Int eventCount = 597;
+	Bool willSave =(this.ffb ).get;
+	
+}
+else {
+	if((! True) &&! True) {
+		J dataStruct = this.fj;
+		dataStruct = dataStruct;
+		Int eventAmount = - 449;
+		this.fj = new E();
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		this.fi = this.fi;
+		this.ffb = this.fi!b();
+		Bool hasLoaded = 785 + this.fint * this.fint == 891;
+		this.fint = 899;
+		
+	}
+	this.fb = 879 <= 755;
+	Bool stateToggle = False == this.fb &&! True;
+	
+}
+while(! True) {
+	this.ff = this.fi!n();
+	this.ffb = this.ffb;
+	if(! this.fb) {
+		Int systemCount = 262;
+		this.fj = this.fj;
+		
+	}
+	this.fj = this.fj;
+	Fut<Bool> resultInfo = this.fi!b();
+	await(518) !=(841 * 593 * this.fint);
+	this.ff = this.fi!n();
+	this.fi = new D();
+	resultInfo = resultInfo;
+	
+}
+while( True) {
+	this.fi = this.fi;
+	Int j = 869;
+	this.ff = this.ff;
+	j = 121 * - 252;
+	
+}
+resultState = this.fi!n();
+return 720 - 258;
+}
+}
+{}

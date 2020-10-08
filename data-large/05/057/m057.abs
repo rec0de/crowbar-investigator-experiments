@@ -1,0 +1,195 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = this.fi;
+this.ffb = this.fi!b();
+this.ff = this.ff;
+this.fj = this.fj;
+Int stackCount = - 428;
+while( this.fb) {
+	while( 166 * 783 >= - 683) {
+		this.fi = new D();
+		this.fj = this.fj;
+		await this.ffb?;
+		this.fj = new E();
+		if( this.fb && this.fb) {
+			this.fint = 957;
+			this.fi = new D();
+			Bool hasLoaded = False;
+			this.fint = 586 * this.fint;
+			this.fb = this.fb;
+			this.fi = new D();
+			Int i = - 990 * this.fint;
+			Bool canSave =! True || True;
+			
+		}
+		else {
+			this.fi = new D();
+			this.fi = this.fi;
+			
+		}
+		this.fi = new D();
+		this.ffb = this.fi!b();
+		
+	}
+	Fut<Int> flushFlag = this.fi!n();
+	await this.ff?;
+	this.fj = this.fj;
+	while(!(False || False)) {
+		Bool writeOverride = this.fb && True && True;
+		this.fi = this.fi;
+		
+	}
+	Bool hasSaveed = True;
+	this.fi = new D();
+	this.ffb = this.fi!b();
+	await this.fb;
+	Int processCounter = flushFlag.get;
+	processCounter = 32;
+	this.ff = this.ff;
+	
+}
+Fut<Int> resolveData =(this.fi )!n();
+I packet = this.fi;
+while( True && this.fb) {
+	this.fj = this.fj;
+	this.ffb =(this.fi )!b();
+	resolveData = this.fi!n();
+	
+}
+this.fi = this.fi;
+resolveData = this.fi!n();
+packet = this.fi;
+Bool isLoaded = True;
+I packetObject = new D();
+Fut<Bool> q = packet!b();
+await resolveData?;
+packetObject = new D();
+isLoaded = True;
+this.ff = this.fi!n();
+stackCount = this.fint;
+I serverNode = packet;
+Int value = 922 - 369 - 473;
+this.fj = new E();
+resolveData = serverNode!n();
+Fut<Bool> syncChanges =(q);
+syncChanges = q;
+Bool isWrite = this.ffb.get;
+this.ff = packetObject!n();
+if( True) {
+	packet = new D();
+	while( stackCount >= 932) {
+		Fut<Bool> p = syncChanges;
+		this.ff = serverNode!n();
+		I ioStruct = serverNode;
+		q = syncChanges;
+		this.fj = this.fj;
+		p = packet!b();
+		stackCount = 33;
+		this.ff = serverNode!n();
+		while( isWrite) {
+			await q?;
+			isWrite = p.get;
+			Bool pauseEnabled =((syncChanges) ).get;
+			packet = new D();
+			
+		}
+		while( value - stackCount > - value) {
+			this.fb = False;
+			J packetStruct = this.fj;
+			
+		}
+		
+	}
+	isWrite = False;
+	
+}
+else {
+	I node = this.fi;
+	
+}
+packet = packet;
+I packetNode = new D();
+J person = this.fj;
+Fut<Int> resInfo = resolveData;
+if(((False) || True )) {
+	syncChanges = syncChanges;
+	stackCount = resInfo.get;
+	if( False) {
+		Int queueCounter = 391;
+		
+	}
+	else {
+		this.ffb = serverNode!b();
+		I node = new D();
+		serverNode = new D();
+		
+	}
+	syncChanges = packet!b();
+	
+}
+else {
+	isLoaded = - 282 -(157) * 71 >= - 694;
+	q = q;
+	this.fb = 619 >= 88 * 883;
+	person = person;
+	await this.ff?;
+	this.ff = resolveData;
+	Int j = 356 - 334;
+	if( True) {
+		isLoaded =! False;
+		stackCount = 739;
+		q = q;
+		Int i = 656;
+		isLoaded = False;
+		resInfo = packetNode!n();
+		serverNode = new D();
+		
+	}
+	while( isWrite && this.fb) {
+		q = syncChanges;
+		if( isWrite) {
+			q = packet!b();
+			stackCount = 79 * j;
+			
+		}
+		else {
+			Int res = 491 * - 576;
+			packetNode = packetNode;
+			await q?;
+			Bool restoreOverride = isLoaded;
+			await resolveData?;
+			await False && True;
+			resInfo = packetNode!n();
+			packetNode = packetObject;
+			Int listDepth = 777;
+			await q?;
+			
+		}
+		packetObject = this.fi;
+		
+	}
+	person = new E();
+	
+}
+return 336;
+}
+}
+{}

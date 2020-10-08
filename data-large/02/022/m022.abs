@@ -1,0 +1,205 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.ff = this.fi!n();
+this.fint = 117;
+Int stackAmount = 845;
+this.fint = this.ff.get;
+Int j = this.fint -(this.fint * 975) * 603 * this.fint;
+this.ff = this.ff;
+this.fb = True;
+Bool willRead = True;
+if( willRead && True) {
+	Bool pauseToggle = True;
+	pauseToggle = True ||! False && pauseToggle;
+	I tree = this.fi;
+	
+}
+else {
+	this.ffb = this.ffb;
+	this.fint = stackAmount;
+	this.fj = new E();
+	this.ffb = this.fi!b();
+	J dataNode = new E();
+	dataNode = this.fj;
+	this.fi = this.fi;
+	
+}
+this.ffb = this.ffb;
+this.ffb = this.fi!b();
+await this.ffb?;
+while( this.fb) {
+	this.ff = this.fi!n();
+	if( 97 != - stackAmount) {
+		this.ffb =(this.fi )!b();
+		
+	}
+	while( True) {
+		while( True) {
+			this.fi = new D();
+			await this.ffb?;
+			this.fj = this.fj;
+			stackAmount = - 763;
+			this.ff = this.ff;
+			this.ff =(this.fi )!n();
+			
+		}
+		this.fj = new E();
+		if( True) {
+			this.fj = new E();
+			j = 267;
+			Bool isWrite = this.fb;
+			
+		}
+		
+	}
+	I node = new D();
+	j = j;
+	this.fb = willRead;
+	this.fj = new E();
+	Int stackDepth = 948 *(j);
+	if( True) {
+		stackAmount = stackAmount * - stackDepth;
+		J packet = new E();
+		await! True;
+		this.fb = 98 > 210 -(790 + j);
+		j =(571);
+		this.fj = new E();
+		node = new D();
+		willRead = this.fj == packet;
+		
+	}
+	else {
+		stackAmount = stackDepth;
+		this.ffb = this.ffb;
+		stackAmount = 950;
+		
+	}
+	await this.ffb?;
+	
+}
+Fut<Int> p = this.fi!n();
+while( True ==! True || willRead && this.fb || True) {
+	willRead = False || False;
+	Fut<Bool> resetFlag = this.ffb;
+	j = this.ff.get;
+	
+}
+this.ff =(this.fi )!n();
+await this.ff?;
+Int i = this.fint;
+await this.ff?;
+if( True) {
+	Int processCounter = 564;
+	this.ffb = this.fi!b();
+	
+}
+else {
+	this.fi = new D();
+	while( this.fb) {
+		p = this.fi!n();
+		willRead =(True);
+		this.ff = this.fi!n();
+		Bool configToggle = this.fj == this.fj;
+		if( True) {
+			await(845 == - 386) && this.fb;
+			j = 763 - 496 +(stackAmount);
+			
+		}
+		else {
+			this.fint = - 312 * 931;
+			Int eventDepth = 823 * 663;
+			eventDepth = 865 * - 330;
+			this.fj = this.fj;
+			await p?;
+			eventDepth = eventDepth;
+			
+		}
+		this.ffb = this.fi!b();
+		
+	}
+	
+}
+this.ffb = this.fi!b();
+this.fi = new D();
+stackAmount = stackAmount * 743;
+await p?;
+Bool canRead =(793) >= 627;
+p = this.fi!n();
+this.fb = this.fj == this.fj;
+while( this.fi == this.fi) {
+	if( False) {
+		j = 858;
+		Int listCount =(p ).get;
+		j = j;
+		this.fj = this.fj;
+		this.fint = this.ff.get;
+		this.ff = this.fi!n();
+		this.ffb = this.ffb;
+		
+	}
+	else {
+		this.fj = new E();
+		Int stackDepth =(294);
+		stackDepth = 255 - 38 * 784 * this.fint;
+		
+	}
+	
+}
+this.fi = new D();
+i = this.fint;
+j =(458) * 274;
+Fut<Int> returnState = this.fi!n();
+while( willRead || canRead) {
+	this.fj = this.fj;
+	stackAmount = 331 - 424 * this.fint - - i;
+	if( this.fb && False) {
+		while( False) {
+			canRead =(False) &&! True;
+			I clientUnit = this.fi;
+			returnState = clientUnit!n();
+			Bool restoreFlag =! False || this.fb && True && True;
+			canRead = 971 == 752 * 717 * this.fint;
+			Bool willExec = False && True &&! True || False;
+			this.ffb = this.fi!b();
+			willRead = True ||(this.ffb == this.ffb);
+			Fut<Int> x =(this.fi )!n();
+			
+		}
+		Bool canSave = 478 < 830;
+		this.fb = this.ffb.get;
+		
+	}
+	else {
+		willRead = this.ffb.get;
+		this.fb =! True;
+		
+	}
+	
+}
+Bool hasReady = True;
+stackAmount = 18 * this.fint;
+i = this.fint + 503;
+j = 514;
+this.fint = i;
+return this.fint;
+}
+}
+{}

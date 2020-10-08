@@ -1,0 +1,165 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+I node = new D();
+while( True) {
+	J packet = new E();
+	this.ffb = this.fi!b();
+	while((True)) {
+		this.ffb = this.ffb;
+		this.ff = this.ff;
+		
+	}
+	node = this.fi;
+	Int processCounter = 287 - 804 * this.fint;
+	this.fi = new D();
+	J packetUnit = new E();
+	this.ffb = this.fi!b();
+	this.ffb =(this.ffb);
+	J ioStruct = new E();
+	this.fj = new E();
+	
+}
+this.fi = new D();
+await this.ffb?;
+this.fint = this.fint * 512;
+this.fb = 36 < - 297;
+node = node;
+Int systemAmount = this.fint;
+systemAmount = 811;
+this.fi = new D();
+Fut<Bool> applyState = node!b();
+this.ffb = this.fi!b();
+this.fj = new E();
+systemAmount = this.fint * this.fint - 355 * 197;
+this.fint = 352;
+this.fi = new D();
+Bool hasLoaded = False;
+if( True || False) {
+	systemAmount = 568;
+	Bool execToggle = False &&(this.ff ==(this.ff));
+	Fut<Bool> resState = this.fi!b();
+	while( True) {
+		systemAmount = 506;
+		Int arg = 966;
+		
+	}
+	await resState?;
+	resState = this.fi!b();
+	if( True) {
+		this.ffb = resState;
+		Int stackAmount = - 501;
+		hasLoaded = execToggle || False;
+		if( True) {
+			Int res = 844;
+			
+		}
+		else {
+			await resState?;
+			await applyState?;
+			
+		}
+		
+	}
+	else {
+		await resState?;
+		resState = this.fi!b();
+		execToggle = - 967 != 876;
+		
+	}
+	this.fint = this.fint;
+	Fut<Int> resInfo = this.ff;
+	Int arg = 378;
+	while(! False) {
+		Int l = 17;
+		this.fint = 682;
+		Int listCounter = arg;
+		hasLoaded = resState.get;
+		await resState?;
+		Bool configEnabled = True;
+		applyState = this.fi!b();
+		Fut<Bool> y = this.fi!b();
+		Int i = 71;
+		hasLoaded = False;
+		
+	}
+	J packetRepresentation =(this.fj);
+	applyState = this.fi!b();
+	packetRepresentation = new E();
+	
+}
+else {
+	this.ffb = this.fi!b();
+	this.fint = 108;
+	hasLoaded = hasLoaded;
+	if(! True) {
+		Bool hasReady = True || hasLoaded;
+		
+	}
+	else {
+		applyState = this.fi!b();
+		
+	}
+	this.fint = this.fint;
+	node = new D();
+	this.fi = this.fi;
+	applyState =(applyState);
+	this.fint = systemAmount;
+	
+}
+this.ff = this.fi!n();
+systemAmount = this.fint -(- 155 + 801);
+if(! False && True) {
+	Fut<Int> y = this.ff;
+	
+}
+else {
+	node = new D();
+	Int j = 705;
+	hasLoaded = False;
+	
+}
+Int stackDepth = systemAmount - this.fint;
+this.fint = 195;
+stackDepth = 526 - this.fint;
+this.fj = this.fj;
+node = node;
+while( hasLoaded) {
+	this.ffb =(applyState);
+	Bool restoreFlag = hasLoaded;
+	stackDepth = 688;
+	this.fb = False && restoreFlag || False ||! True;
+	
+}
+stackDepth = this.fint;
+this.fb = True;
+if( False) {
+	this.fi = node;
+	Int listCounter = 186 * 945 * - 721 * 772;
+	stackDepth = 940;
+	this.fb = applyState.get;
+	this.ff =(node )!n();
+	hasLoaded = True || True;
+	
+}
+return 245 + - 150;
+}
+}
+{}

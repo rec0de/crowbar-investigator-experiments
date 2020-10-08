@@ -1,0 +1,69 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_29";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_29";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(((True && False) || False)){} 
+		// Known true:
+		// Negated loop guard: !(((True && False) || False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		this.fint = 10;
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.ffb = "fut_?(10)";
+		// End of setup
+		
+		}
+		this.fint = 66;
+		if(True){
+			// this.fj = new E();
+			this.fj = "object_1";
+			// this.fi = new D();
+			this.fi = "object_2";
+			Int listAmount = this.fint;
+			this.fb = (listAmount == listAmount);
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_28";
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_29";
+			this.ff = this.ff;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_30";
+		}
+		if((False || (True && !this.fb))){}
+		else{
+			this.fint = this.fint;
+			Int eventDepth = this.fint;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_37";
+			Bool hasReady = ((False && True) || (!True && False));
+			this.ff = this.ff;
+		}
+		// this.fi = new D();
+		this.fi = "object_3";
+		println(toString(125)); // return statement
+		// Evaluates to: 125
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (125=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

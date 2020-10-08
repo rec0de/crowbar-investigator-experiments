@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String packet = null;
+		Bool isWrite = True;
+		this.fb = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (isWrite && this.fb)
+		// Loop invariant: true
+		// while((isWrite && this.fb)) {
+		{
+			String q = syncChanges;
+			if(isWrite){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(packet=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

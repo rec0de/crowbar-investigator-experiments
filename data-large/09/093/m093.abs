@@ -1,0 +1,169 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+while( False) {
+	while( this.fb) {
+		if( True) {
+			this.fb = False;
+			await this.ff?;
+			
+		}
+		else {
+			this.ffb = this.fi!b();
+			Int systemAmount = this.fint;
+			this.ffb = this.fi!b();
+			
+		}
+		this.ff = this.fi!n();
+		
+	}
+	this.ffb = this.ffb;
+	J node = this.fj;
+	this.fb =! this.fb;
+	await this.ffb?;
+	Int j = this.ff.get;
+	Fut<Bool> resInfo = this.fi!b();
+	this.fb = False;
+	
+}
+this.ff = this.ff;
+this.ff = this.fi!n();
+this.fint = - 475;
+Bool hasSaveed = this.ffb.get;
+I packetStruct = new D();
+hasSaveed = True;
+this.ffb = this.ffb;
+Fut<Bool> x = this.fi!b();
+if( this.fb || True) {
+	this.ff = packetStruct!n();
+	J message = this.fj;
+	Bool isSaveed = hasSaveed;
+	packetStruct = new D();
+	this.ffb = this.fi!b();
+	await this.ff?;
+	this.fb = this.fint * 599 <(- 186 - this.fint) * 754 * 639 + 544;
+	this.ffb = this.fi!b();
+	packetStruct = this.fi;
+	this.ff = this.fi!n();
+	while(! this.fb) {
+		this.ff = this.fi!n();
+		I tree = new D();
+		Bool isLoaded = False || this.fb;
+		hasSaveed = - 500 > 794;
+		this.fj = new E();
+		
+	}
+	
+}
+else {
+	while( hasSaveed ==! False) {
+		this.ff = packetStruct!n();
+		J ioStruct = new E();
+		
+	}
+	while( hasSaveed) {
+		this.ff =(this.fi )!n();
+		J clientObject = new E();
+		
+	}
+	Int eventDepth = - 645 + 44;
+	if( True) {
+		this.ffb = this.fi!b();
+		I clientRepresentation = new D();
+		
+	}
+	else {
+		eventDepth = 309;
+		x = this.ffb;
+		hasSaveed = this.fb && True;
+		this.fb = this.ff == this.ff;
+		this.ffb = packetStruct!b();
+		await this.ff?;
+		while( hasSaveed &&(True || False)) {
+			this.fb =(this.fb);
+			
+		}
+		Int stackDepth = - 496;
+		I tree = this.fi;
+		this.fint = 830;
+		
+	}
+	Int processCounter = eventDepth;
+	await x?;
+	J ioRepresentation = this.fj;
+	J ioObject =(this.fj);
+	this.fb = this.fb;
+	while( False) {
+		this.fi = new D();
+		ioObject = this.fj;
+		this.fi = new D();
+		this.fi = new D();
+		
+	}
+	await this.ff?;
+	packetStruct = packetStruct;
+	
+}
+while( this.fint == 959) {
+	J dataNode = new E();
+	if( False) {
+		this.fi = new D();
+		packetStruct = new D();
+		Bool willSave = x.get;
+		if( False) {
+			this.fj = new E();
+			await this.ffb?;
+			Fut<Int> resolveInfo = this.ff;
+			willSave = True;
+			
+		}
+		else {
+			J packetRepresentation = new E();
+			x =(packetStruct )!b();
+			willSave =(- 715) > this.fint * - 733;
+			dataNode = this.fj;
+			packetStruct = this.fi;
+			Fut<Bool> flushChanges = packetStruct!b();
+			this.fb =! False;
+			J dataUnit = dataNode;
+			Bool execToggle =! False || True && True || this.fb;
+			dataUnit = dataUnit;
+			
+		}
+		
+	}
+	else {
+		Int processCount =(96) * 456;
+		
+	}
+	
+}
+this.fint =(this.ff ).get;
+Int value = - 615;
+this.ff = this.ff;
+await x?;
+this.fj = new E();
+this.ffb = packetStruct!b();
+J message = new E();
+J packetRepresentation = message;
+return - value;
+}
+}
+{}

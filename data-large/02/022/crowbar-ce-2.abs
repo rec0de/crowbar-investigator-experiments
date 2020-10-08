@@ -1,0 +1,47 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fint = 7;
+		this.fb = True;
+		this.ff = "fut_31";
+		this.ffb = "fut_?(7)";
+		// End of setup
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_31";
+		this.fint = 117;
+		Int stackAmount = 845;
+		// this.fint = (this.ff).get;
+		this.fint = 8;
+		Int j = (this.fint - (((this.fint * 975) * 603) * this.fint));
+		this.ff = this.ff;
+		this.fb = True;
+		Bool willRead = True;
+		if((willRead && True)){
+			Bool pauseToggle = True;
+			pauseToggle = (True || (!False && pauseToggle));
+			String tree = this.fi;
+		}
+		this.ffb = this.ffb;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

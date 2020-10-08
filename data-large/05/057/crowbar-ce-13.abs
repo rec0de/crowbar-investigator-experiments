@@ -1,0 +1,56 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((stackCount >= 932)){} 
+		// Known true:
+		// Negated loop guard: !((stackCount >= 932))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int stackCount = 931;
+		// End of setup
+		
+		Bool isWrite = False;
+		}
+		String packet = packet;
+		// I packetNode = new D();
+		String packetNode = "object_1";
+		String person = this.fj;
+		String resInfo = resolveData;
+		if((False || True)){
+			String syncChanges = syncChanges;
+			// Int stackCount = (resInfo).get;
+			// Future value irrelevant or unavailable, using default:
+			Int stackCount = 0;
+			if(False){}
+			else{
+				// this.ffb = serverNode!b();
+				this.ffb = "fut_52";
+				// I node = new D();
+				String node = "object_2";
+				// I serverNode = new D();
+				String serverNode = "object_3";
+			}
+			// syncChanges = packet!b();
+			syncChanges = "fut_53";
+		}
+		println(toString(336)); // return statement
+		// Evaluates to: 336
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (336=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

@@ -1,0 +1,192 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fi = this.fi;
+Fut<Bool> y = this.ffb;
+this.ffb = y;
+if( this.ff == this.ff) {
+	this.fj = new E();
+	this.fi = this.fi;
+	Bool isReady = True;
+	y = this.fi!b();
+	Bool execToggle = isReady;
+	this.ff = this.fi!n();
+	Bool configFlag = True || False;
+	this.fj = new E();
+	
+}
+y = this.fi!b();
+while( True) {
+	Int k = this.ff.get;
+	Int processCounter = k;
+	this.fj = this.fj;
+	Bool isSaveed = False;
+	this.fi = new D();
+	Bool isRead = 774 >= processCounter;
+	if(!(isRead )) {
+		this.fint = this.fint;
+		await y?;
+		isSaveed = False;
+		isRead = False || True;
+		if( True) {
+			this.fb = False;
+			isRead = True || True;
+			k = 660;
+			await this.ffb?;
+			
+		}
+		Int i = 625 - k * 679;
+		I person = this.fi;
+		Bool hasReady = isRead;
+		I message = this.fi;
+		person = message;
+		this.ffb = message!b();
+		message = new D();
+		Int stackCounter = - 698;
+		
+	}
+	else {
+		isSaveed = False || True;
+		processCounter = 44 * 738;
+		if( this.fint == 871 * 500) {
+			this.fi = new D();
+			isRead =! True;
+			await this.ff?;
+			isSaveed = isSaveed;
+			Bool execEnabled = isRead;
+			
+		}
+		
+	}
+	J clientUnit = new E();
+	this.fint = 66;
+	if( isSaveed && False) {
+		Bool isLoaded =! isRead;
+		Bool willWrite = isSaveed && isLoaded;
+		this.fb = k < 735;
+		this.fj = new E();
+		if( False || isLoaded && isLoaded) {
+			isRead = - 249 * 572 * 3 < 677 * - 218;
+			await this.ff?;
+			await this.ff?;
+			await y?;
+			isRead = True && True;
+			Bool hasLoaded = True;
+			isSaveed = True;
+			hasLoaded = False && False;
+			willWrite = False;
+			Bool hasSaveed =!((True));
+			J tree = new E();
+			
+		}
+		await y?;
+		this.fj = clientUnit;
+		
+	}
+	this.ffb = this.fi!b();
+	this.fi = new D();
+	
+}
+await! True;
+I packet = new D();
+while(! True) {
+	while( True) {
+		this.fb = y.get;
+		this.ffb = this.ffb;
+		this.fint = this.fint;
+		await this.ff?;
+		this.ffb = this.fi!b();
+		this.fint = 402 * 264;
+		
+	}
+	Bool canLoad = True;
+	while( canLoad) {
+		J person = this.fj;
+		this.fj = new E();
+		
+	}
+	I packetUnit = new D();
+	packet = packetUnit;
+	if( this.fb && canLoad) {
+		I tree = new D();
+		canLoad =!(298 > 416);
+		tree = new D();
+		Bool hasReady = canLoad && False;
+		packetUnit = new D();
+		
+	}
+	Bool willSave = False || this.fb &&! False == False;
+	while( True || True && True) {
+		I message = packetUnit;
+		if( packet == packet) {
+			this.ffb = packet!b();
+			this.fint = this.fint * - 959;
+			
+		}
+		else {
+			Int listDepth = 514;
+			Fut<Bool> z = y;
+			await y?;
+			Bool readyEnabled = this.fint <= 958;
+			canLoad =(! willSave);
+			J dataStruct = this.fj;
+			this.fi = packet;
+			willSave = this.fint >= 485;
+			readyEnabled = False || False;
+			dataStruct = new E();
+			packetUnit = new D();
+			this.fj = this.fj;
+			this.fb = True;
+			Fut<Int> q = packetUnit!n();
+			message = new D();
+			await z?;
+			Bool hasLoaded = False;
+			this.ff = packetUnit!n();
+			await willSave;
+			dataStruct = this.fj;
+			await q?;
+			await False;
+			canLoad = this.ffb.get;
+			await z?;
+			message = new D();
+			
+		}
+		willSave = False;
+		
+	}
+	if(! True || True) {
+		this.fint = this.ff.get;
+		
+	}
+	this.fi = this.fi;
+	await this.ffb?;
+	this.fb = True;
+	Bool canExec = False;
+	J person = new E();
+	
+}
+this.fj = new E();
+this.fb = this.fb;
+y = y;
+Bool configToggle = this.fj == this.fj;
+return this.fint;
+}
+}
+{}

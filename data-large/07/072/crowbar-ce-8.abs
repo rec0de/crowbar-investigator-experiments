@@ -1,0 +1,61 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String ffb = "fut_73";
+	String fj = null;
+	String ff = "fut_73";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((person == this.fj)){} 
+		// Known true:
+		// Negated loop guard: !((person == this.fj))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String node = "object_?(9)";
+		String person = "object_?(10)";
+		this.fint = 9;
+		this.ffb = "fut_72";
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(10)";
+		// End of setup
+		
+		// this.ffb = ioObject!b();
+		this.ffb = "fut_72";
+		}
+		}
+		if(True){
+			this.fj = node;
+			String person = person;
+			Bool hasSaveed = this.fb;
+			hasSaveed = ((-this.fint + (-this.fint * 613)) == -625);
+			String node = this.fj;
+			// this.fint = (this.ff).get;
+			this.fint = 11;
+			this.ffb = this.ffb;
+			this.ff = this.ff;
+			hasSaveed = False;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_73";
+			String packetNode = node;
+			hasSaveed = hasSaveed;
+			if((846 >= 244)){
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

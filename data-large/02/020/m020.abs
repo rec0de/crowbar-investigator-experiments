@@ -1,0 +1,168 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fb = this.fb || True;
+J clientUnit = new E();
+this.fj = this.fj;
+this.fj = this.fj;
+if( True) {
+	this.fb = this.ffb.get;
+	this.ffb = this.ffb;
+	Int value =(80 * 851);
+	this.fi = new D();
+	clientUnit = this.fj;
+	
+}
+else {
+	Fut<Int> returnInfo = this.fi!n();
+	Int listCounter = this.fint;
+	Fut<Bool> applyFlag = this.fi!b();
+	Bool hasDone = True;
+	listCounter = listCounter;
+	applyFlag = this.fi!b();
+	while((783) == 558 + 854) {
+		this.ffb = applyFlag;
+		
+	}
+	while( 492 >= 264 - 811) {
+		Bool isSaveed = True;
+		clientUnit = new E();
+		
+	}
+	hasDone = listCounter != 31;
+	this.ff =(this.fi )!n();
+	this.fj = this.fj;
+	
+}
+if( False && this.fb) {
+	J ioStruct = new E();
+	Bool restoreOverride = True;
+	Int listCounter = 245;
+	if( False) {
+		ioStruct = ioStruct;
+		this.fj = new E();
+		
+	}
+	await True &&! True == this.fb;
+	restoreOverride = this.fi == this.fi;
+	await this.ffb?;
+	Fut<Int> resetUpdates = this.fi!n();
+	this.fj = new E();
+	
+}
+else {
+	I dataRepresentation = new D();
+	if( this.fb) {
+		this.fint = 214;
+		while( False) {
+			this.fint = 50;
+			Bool sendOverride = False;
+			await this.ffb?;
+			this.ffb = dataRepresentation!b();
+			Int eventCount = 638;
+			
+		}
+		this.ff = dataRepresentation!n();
+		dataRepresentation = new D();
+		Bool stateOverride = True ||! True || this.fb &&! False || False;
+		Int j = this.ff.get;
+		j = 989;
+		Int k = - 978 * - 709;
+		clientUnit = clientUnit;
+		
+	}
+	Fut<Bool> q = this.fi!b();
+	if(! True) {
+		this.ffb = this.fi!b();
+		clientUnit = new E();
+		this.ffb = dataRepresentation!b();
+		this.fint = this.fint;
+		await this.ffb?;
+		Int listDepth = 4;
+		this.fi = new D();
+		this.ffb = dataRepresentation!b();
+		Bool execFlag = q.get;
+		clientUnit = clientUnit;
+		
+	}
+	else {
+		if(! False) {
+			Int systemAmount = this.ff.get;
+			await this.ff?;
+			Int eventAmount = systemAmount;
+			q = q;
+			this.fint = 593;
+			await q?;
+			Fut<Bool> resetReload = dataRepresentation!b();
+			
+		}
+		else {
+			this.fi = this.fi;
+			
+		}
+		
+	}
+	q = this.fi!b();
+	if( this.fb) {
+		q = this.fi!b();
+		Fut<Int> syncCall = this.fi!n();
+		this.ff = this.ff;
+		Int queueDepth = - this.fint;
+		this.fb = - 521 < 218;
+		q = this.fi!b();
+		this.fb = True;
+		this.fint = 784 -(226);
+		this.fb = this.ffb == this.ffb;
+		Int processAmount = syncCall.get;
+		this.fint = 288 * - processAmount;
+		await syncCall?;
+		Fut<Int> resultState = syncCall;
+		Fut<Int> resInfo = dataRepresentation!n();
+		resInfo = dataRepresentation!n();
+		while(! True) {
+			I tree = new D();
+			Fut<Bool> returnData = q;
+			
+		}
+		await False;
+		Int j = 807;
+		
+	}
+	
+}
+this.fb = False && True;
+Bool isWrite = True;
+this.ff = this.ff;
+isWrite = this.fb;
+this.fj = clientUnit;
+this.fb = False;
+Bool willWrite =! this.fb;
+this.fj = clientUnit;
+this.fi = this.fi;
+this.ffb = this.ffb;
+Int i = - 367;
+this.ff = this.fi!n();
+this.fj = new E();
+this.ff =(this.fi )!n();
+willWrite =(True);
+return 273;
+}
+}
+{}

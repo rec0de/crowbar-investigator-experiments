@@ -1,0 +1,101 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(17)";
+		this.ff = "fut_?(9)";
+		this.fi = "object_?(8)";
+		this.fb = True;
+		this.fint = 8;
+		this.ffb = "fut_?(8)";
+		// End of setup
+		
+		// this.fint = (this.ff).get;
+		this.fint = 10;
+		this.ffb = this.ffb;
+		String applyState = this.ffb;
+		if((this.fb || False)){
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(14)";
+			this.ff = "fut_?(14)";
+			this.fi = "object_?(14)";
+			this.fb = True;
+			this.fint = 14;
+			this.ffb = "fut_?(14)";
+			// End assignments
+			
+			// this.fj = new E();
+			this.fj = "object_1";
+			Int listAmount = -12410;
+			// this.fi = new D();
+			this.fi = "object_2";
+			// this.fi = new D();
+			this.fi = "object_3";
+			listAmount = 263;
+			listAmount = -748;
+			this.fint = 143;
+		}
+		if(False){}
+		else{
+			// I message = new D();
+			String message = "object_4";
+			this.fint = 672;
+			// applyState = this.fi!b();
+			applyState = "fut_47";
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(15)";
+		this.ff = "fut_?(15)";
+		this.fi = "object_?(15)";
+		this.fb = True;
+		this.fint = 15;
+		this.ffb = "fut_?(15)";
+		// End assignments
+		
+		// this.fj = new E();
+		this.fj = "object_5";
+		// I message = new D();
+		String message = "object_6";
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(16)";
+		this.ff = "fut_?(16)";
+		this.fi = null;
+		this.fb = True;
+		this.fint = 16;
+		this.ffb = "fut_?(16)";
+		// End assignments
+		
+		Bool restoreFlag = (((22 == 189) || !this.fb) || False);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(anon(store(store(store(store(store(store(store(store(anon(store(store(heap, this.fint, valueOf(heap.ff)), this.ffb, heap.ffb)), this.fj, NEW20_0), this.fj, NEW20_0), this.fi, NEW21_0), this.fi, NEW21_0), this.fi, NEW22_0), this.fi, NEW22_0), this.fint, 143), this.fint, 672)), this.fj, NEW34_0), this.fj, NEW34_0)), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

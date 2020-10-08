@@ -1,0 +1,100 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(this.fb){} 
+		// Known true:
+		// Negated loop guard: !(this.fb)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fj = "object_?(8)";
+		this.ff = "fut_?(8)";
+		this.fint = 24;
+		this.fi = "object_?(8)";
+		this.fb = True;
+		this.ffb = "fut_?(23)";
+		// End of setup
+		
+		Bool configToggle = (this.fi == this.fi);
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(11)";
+		this.ff = "fut_?(12)";
+		this.fint = 11;
+		this.fi = "object_?(11)";
+		this.fb = True;
+		this.ffb = "fut_?(11)";
+		// End assignments
+		
+		}
+		// this.fint = (this.ff).get;
+		this.fint = 13;
+		// this.fi = new D();
+		this.fi = "object_1";
+		// this.fint = (this.ff).get;
+		this.fint = 13;
+		this.fj = this.fj;
+		if((-553 >= -805)){
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(14)";
+			this.ff = "fut_?(14)";
+			this.fint = 14;
+			this.fi = "object_?(14)";
+			this.fb = True;
+			this.ffb = "fut_?(19)";
+			// End assignments
+			
+			this.ffb = this.ffb;
+			
+			// await this.ff?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(15)";
+			this.ff = "fut_?(15)";
+			this.fint = 15;
+			this.fi = "object_?(15)";
+			this.fb = True;
+			this.ffb = "fut_?(15)";
+			// End assignments
+			
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_32";
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(17)";
+		this.ff = "fut_?(17)";
+		this.fint = 17;
+		this.fi = null;
+		this.fb = True;
+		this.ffb = "fut_?(17)";
+		// End assignments
+		
+		if(((this.fb && False) || this.fb)){}
+		else{
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(anon(store(anon(store(store(store(store(store(anon(heap), this.fint, valueOf(select(anon(heap), this.ff))), this.fi, NEW5_0), this.fi, NEW5_0), this.fint, valueOf(select(anon(heap), this.ff))), this.fj, select(anon(heap), this.fj))), this.ffb, select(anon(store(store(store(store(store(anon(heap), this.fint, valueOf(select(anon(heap), this.ff))), this.fi, NEW5_0), this.fi, NEW5_0), this.fint, valueOf(select(anon(heap), this.ff))), this.fj, select(anon(heap), this.fj))), this.ffb))), this.ffb, fut_32)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

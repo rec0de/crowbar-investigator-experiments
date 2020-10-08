@@ -1,0 +1,35 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		String packet = null;
+		Bool willWrite = True;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (True && willWrite)
+		// Loop invariant: true
+		// while((True && willWrite)) {
+		{
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(packet=0)
+		// Failed to show the following sub-obligations:
+		// !(packet=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

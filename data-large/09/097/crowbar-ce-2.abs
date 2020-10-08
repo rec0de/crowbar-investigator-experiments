@@ -1,0 +1,49 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False && this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((False && this.fb))
+		// Loop invariant: true
+		
+		
+		this.fint = 986;
+		
+		// await this.ff?;
+		// No heap modification info available at this point
+		
+		this.fb = ((this.fb || this.fb) || False);
+		
+		// await this.ffb?;
+		// No heap modification info available at this point
+		
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_52";
+		this.fb = True;
+		this.fint = this.fint;
+		Bool willExec = True;
+		this.fb = True;
+		Int eventDepth = this.fint;
+		println(toString(54)); // return statement
+		// Evaluates to: 54
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (54=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

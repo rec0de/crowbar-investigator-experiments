@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((False || this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((False || this.fb))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fb = True;
+		// End of setup
+		
+		Int j = this.fint;
+		}
+		// J tree = new E();
+		String tree = "object_1";
+		println(toString(((j * -this.fint) - 495))); // return statement
+		// Evaluates to: -495
+		// Detailed evaluation breakdown:
+		// j: 0
+		// this.fint: 0
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (((heap.fint*-(heap.fint))-495)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

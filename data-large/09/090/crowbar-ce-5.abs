@@ -1,0 +1,97 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!sendEnabled){} 
+		// Known true:
+		// Negated loop guard: !(!sendEnabled)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String serverUnit = null;
+		Bool sendEnabled = True;
+		// End of setup
+		
+		}
+		// I person = new D();
+		String person = "object_1";
+		// Fut y = person!n();
+		String y = "fut_46";
+		if((182 == (this.fint * 659))){}
+		else{
+			Int value = 572;
+			String z = this.ffb;
+		}
+		Bool isSave = False;
+		isSave = True;
+		if(False){}
+		else{
+			person = person;
+			Bool willRead = True;
+			if(!sendEnabled){}
+			else{
+		
+			}
+			Bool sendEnabled = !False;
+			if(sendEnabled){
+				this.fi = serverUnit;
+				// y = serverUnit!n();
+				y = "fut_81";
+				
+				// await y?;
+				// No heap modification info available at this point
+				
+				willRead = (((True && (True == hasDone)) && False) || False);
+				this.fb = (False || False);
+				// Bool hasLoaded = (z).get;
+				// Future value irrelevant or unavailable, using default:
+				Bool hasLoaded = False;
+				
+				// await this.ffb?;
+				// No heap modification info available at this point
+				
+			}
+			// this.fint = (this.ff).get;
+			// Future value irrelevant or unavailable, using default:
+			this.fint = 0;
+			Int eventCounter = 977;
+			Int stackAmount = this.fint;
+			Bool pauseOverride = (True || False);
+			
+			// await this.ff?;
+			// No heap modification info available at this point
+			
+			Bool canSave = ((pauseOverride && False) || True);
+			Bool willSave = (hasDone || !False);
+			Bool willLoad = True;
+			stackAmount = eventCounter;
+			eventCounter = 976;
+			if(True){
+				
+				// await z?;
+				// No heap modification info available at this point
+				
+			}
+		}
+		String node = serverUnit;
+		Int k = -35;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(serverUnit=0)
+		// Failed to show the following sub-obligations:
+		// !(serverUnit=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

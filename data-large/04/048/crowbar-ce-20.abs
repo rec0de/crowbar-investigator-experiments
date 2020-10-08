@@ -1,0 +1,95 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	String fi = null;
+	Int fint = 0;
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((isLoad && this.fb)){} 
+		// Known true:
+		// Negated loop guard: !((isLoad && this.fb))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isLoad = True;
+		Bool hasDone = False;
+		this.fb = True;
+		// End of setup
+		
+		// I packet = new D();
+		String packet = "object_1";
+		// this.ff = this.fi!n();
+		this.ff = "fut_36";
+		}
+		this.fb = (True || True);
+		// this.ff = this.fi!n();
+		this.ff = "fut_37";
+		String packet = ioStruct;
+		this.fint = 112;
+		if(((hasDone || True) || !False)){
+			// this.ff = this.fi!n();
+			this.ff = "fut_38";
+			// this.ff = ioStruct!n();
+			this.ff = "fut_39";
+			if(True){
+				
+				// await this.ff?;
+				// No heap modification info available at this point
+				
+				String dataStruct = ioStruct;
+				// this.fi = new D();
+				this.fi = "object_2";
+				// I message = new D();
+				String message = "object_3";
+				this.fj = this.fj;
+			}
+		}
+		Int systemAmount = ((734 * (-this.fint + 467)) * 205);
+		Bool isLoad = (697 == systemAmount);
+		}
+		this.ff = this.ff;
+		if((False && hasDone)){}
+		else{
+		
+		}
+		if(False){}
+		else{
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+		}
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_59";
+		// this.ff = this.fi!n();
+		this.ff = "fut_60";
+		if((163254 == 353)){}
+		else{
+			Int arg = 179;
+			// this.ff = this.fi!n();
+			this.ff = "fut_63";
+			arg = 125;
+			arg = (465 + arg);
+		}
+		// this.fi = new D();
+		this.fi = "object_4";
+		println(toString(244)); // return statement
+		// Evaluates to: 244
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (244=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

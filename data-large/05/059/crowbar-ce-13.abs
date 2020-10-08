@@ -1,0 +1,74 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+	String fj = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.ffb = "fut_?(10)";
+		this.fj = "object_?(10)";
+		this.fint = 10;
+		// End of setup
+		
+		Bool execEnabled = (615 == -607);
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(11)";
+		this.fi = null;
+		this.fb = True;
+		this.ffb = "fut_?(11)";
+		this.fj = "object_?(11)";
+		this.fint = 11;
+		// End assignments
+		
+		this.fint = 214359;
+		// this.fj = new E();
+		this.fj = "object_1";
+		// J person = new E();
+		String person = "object_2";
+		this.fb = False;
+		this.fj = person;
+		execEnabled = (814 == 919);
+		// this.fj = new E();
+		this.fj = "object_3";
+		// I tree = new D();
+		String tree = "object_4";
+		this.fb = execEnabled;
+		// this.ff = this.fi!n();
+		this.ff = "fut_111";
+		// this.ffb = tree!b();
+		this.ffb = "fut_112";
+		Int value = -684;
+		// this.fj = new E();
+		this.fj = "object_5";
+		this.fj = this.fj;
+		// Fut resetCall = tree!n();
+		String resetCall = "fut_113";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

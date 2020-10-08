@@ -1,0 +1,45 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_?(0)";
+	String fi = null;
+	String fj = null;
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(((False || systemToggle) || False)){} 
+		// Known true:
+		// Negated loop guard: !(((False || systemToggle) || False))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool systemToggle = True;
+		// End of setup
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_35";
+		String tree = this.fi;
+		tree = tree;
+		this.ff = this.ff;
+		// J serverObject = new E();
+		String serverObject = "object_1";
+		// this.fj = new E();
+		this.fj = "object_2";
+		Bool isExec = ((529 * -(eventCount - 365)) >= this.fint);
+		}
+		println(toString(179)); // return statement
+		// Evaluates to: 179
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (179=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

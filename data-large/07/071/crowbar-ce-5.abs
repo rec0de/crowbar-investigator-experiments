@@ -1,0 +1,59 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Bool isReady = True;
+		Bool readyToggle = True;
+		String clientStruct = null;
+		// End of setup
+		
+		// Known true:
+		// Loop guard: (this.ffb == this.ffb)
+		// Loop invariant: true
+		// while((this.ffb == this.ffb)) {
+		{
+			// this.fb = (this.ffb).get;
+			this.fb = False;
+			String tree = tree;
+			if((readyToggle || isReady)){
+				String packet = tree;
+			}
+			Bool hasReady = False;
+			// J packet = new E();
+			String packet = "object_1";
+			Bool canLoad = (this.ff == this.ff);
+			if(False){}
+			else{
+				
+				// await this.ff?;
+				// No heap modification info available at this point
+				
+				Bool canWrite = False;
+				// tree = new E();
+				tree = "object_2";
+				Int eventCount = (350 - this.fint);
+			}
+			// this.fi = new D();
+			this.fi = "object_3";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(clientStruct=0)
+		// Failed to show the following sub-obligations:
+		// !(clientStruct=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

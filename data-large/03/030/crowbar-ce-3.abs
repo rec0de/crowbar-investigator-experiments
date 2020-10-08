@@ -1,0 +1,93 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Bool fb = False;
+	String fj = null;
+	String ff = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		Bool readyEnabled = True;
+		this.fi = "object_?(11)";
+		this.fb = True;
+		this.fj = "object_?(7)";
+		this.ff = "fut_?(7)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: readyEnabled
+		// Loop invariant: true
+		// while(readyEnabled) {
+		{
+			String packet = this.fi;
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fi = "object_?(8)";
+			this.fb = True;
+			this.fj = "object_?(17)";
+			this.ff = "fut_?(8)";
+			// End assignments
+			
+			// Fut resultInfo = this.fi!n();
+			String resultInfo = "fut_22";
+			this.ff = resultInfo;
+			this.fb = True;
+			readyEnabled = False;
+			
+			// await resultInfo?;
+			// Assume the following assignments while blocked:
+			this.fi = "object_?(10)";
+			this.fb = True;
+			this.fj = "object_?(10)";
+			this.ff = "fut_?(10)";
+			// End assignments
+			
+			this.fi = packet;
+			readyEnabled = (hasDone || False);
+			Bool hasLoaded = hasDone;
+			Int stackDepth = 589065;
+			packet = this.fi;
+			// this.fj = new E();
+			this.fj = "object_1";
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fi = "object_?(12)";
+			this.fb = True;
+			this.fj = "object_?(19)";
+			this.ff = "fut_?(12)";
+			// End assignments
+			
+			String clientRepresentation = this.fi;
+			// resultInfo = this.fi!n();
+			resultInfo = "fut_23";
+			String resInfo = this.ff;
+			Bool canSave = ((True || False) || True);
+			
+			// await resultInfo?;
+			// Assume the following assignments while blocked:
+			this.fi = null;
+			this.fb = True;
+			this.fj = "object_?(13)";
+			this.ff = "fut_?(13)";
+			// End assignments
+			
+			canSave = False;
+			readyEnabled = (readyEnabled && canSave);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(anon(store(store(store(anon(store(store(anon(heap), this.ff, fut_22), this.fb, 1)), this.fi, heap.fi), this.fj, NEW4_0), this.fj, NEW4_0))), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

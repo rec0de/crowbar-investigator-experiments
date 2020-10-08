@@ -1,0 +1,189 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 639;
+this.fb = this.fb && False;
+if( this.fb) {
+	this.fj = new E();
+	this.fi = this.fi;
+	
+}
+else {
+	Bool willWrite = this.ff == this.ff;
+	this.ffb = this.ffb;
+	this.fint = 971 - - 798;
+	this.fj = this.fj;
+	this.ffb = this.ffb;
+	Bool readEnabled = 942 < 887;
+	
+}
+this.ff = this.ff;
+this.ff =(this.ff);
+Fut<Int> y = this.fi!n();
+this.fj = this.fj;
+if(! True) {
+	this.fint = 954 * - this.fint;
+	
+}
+else {
+	this.fi = new D();
+	await this.ffb?;
+	Int stackAmount = this.fint;
+	J tree = this.fj;
+	this.fint = 154;
+	this.fint = 246;
+	while( False) {
+		await y?;
+		I packet = new D();
+		
+	}
+	y = this.fi!n();
+	await this.ff?;
+	Bool pauseToggle =! True;
+	Int queueCount = 96;
+	while( this.fb) {
+		Bool hasDone = this.fb;
+		await True;
+		
+	}
+	pauseToggle = this.ffb.get;
+	
+}
+await this.ffb?;
+this.fj = new E();
+this.fb = this.fb;
+this.ff = this.fi!n();
+this.ff = this.fi!n();
+await this.ff?;
+Bool restoreToggle = True && False;
+Bool restoreEnabled = restoreToggle;
+this.fb = this.fb;
+Bool isReady = False || False || True;
+await y?;
+Bool isRead = False;
+this.ff = this.fi!n();
+isRead = 98 * 920 >(701);
+J message = this.fj;
+J clientUnit = new E();
+if( restoreEnabled && this.fb && restoreEnabled) {
+	if( True) {
+		while( 660 * 769 == 69 - this.fint) {
+			Bool isLoaded = isReady ||!(! False);
+			this.fb = False;
+			isReady = this.fint - 320 - - 930 == 121;
+			this.fj = clientUnit;
+			this.fb =(True) ||! True;
+			await - 247 == - this.fint;
+			await this.ff?;
+			await this.ffb?;
+			isRead = 741 >= 140;
+			this.fj = new E();
+			I dataUnit = this.fi;
+			y = this.fi!n();
+			
+		}
+		isRead =!(message == clientUnit);
+		Int processCount = this.ff.get;
+		this.fint = 243;
+		Fut<Int> applyState = this.ff;
+		y = this.fi!n();
+		await y?;
+		await y?;
+		Bool isSaveed = True;
+		processCount = - processCount;
+		
+	}
+	else {
+		clientUnit = clientUnit;
+		this.fj = clientUnit;
+		
+	}
+	restoreToggle =!(this.fint >= 59) ||(701 > - 200) ==! False;
+	
+}
+else {
+	restoreToggle =! True;
+	this.fb = isReady;
+	await y?;
+	J dataObject = new E();
+	Bool systemFlag =! False;
+	Bool canSave = isReady;
+	Int systemDepth = this.fint;
+	restoreEnabled = this.ffb.get;
+	restoreEnabled = False;
+	isReady = False;
+	
+}
+if( 422 * 604 * this.fint == this.fint * 963 + 144) {
+	this.fb = isRead;
+	restoreEnabled = False;
+	this.ffb = this.fi!b();
+	Bool sendToggle = this.fb;
+	I packetStruct = new D();
+	restoreToggle = 336 >= 662;
+	while( True && this.fb) {
+		y = this.fi!n();
+		
+	}
+	
+}
+else {
+	await this.ffb?;
+	J dataRepresentation = new E();
+	
+}
+isRead = True;
+await False && True;
+this.fint = 462;
+if( 834 <= 455) {
+	this.ff = this.fi!n();
+	this.ff = y;
+	if( this.fb || False) {
+		Bool hasLoaded = False &&! True;
+		Bool hasDone = this.ffb == this.ffb;
+		await y?;
+		I node = new D();
+		restoreToggle = True;
+		clientUnit = new E();
+		this.fb = this.ffb.get;
+		
+	}
+	else {
+		Int arg = 273 * 767;
+		message = new E();
+		
+	}
+	
+}
+else {
+	restoreEnabled = restoreToggle;
+	
+}
+this.fi = this.fi;
+isReady = this.ffb.get;
+restoreEnabled = this.fj == this.fj;
+this.ffb = this.fi!b();
+this.fi = new D();
+clientUnit = new E();
+await this.ff?;
+return this.fint * this.fint;
+}
+}
+{}

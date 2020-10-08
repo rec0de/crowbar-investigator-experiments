@@ -1,0 +1,43 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String fj = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((this.fint == 34656)){} 
+		// Known true:
+		// Negated loop guard: !((this.fint == 34656))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		this.fint = 6;
+		this.fb = True;
+		// End of setup
+		
+		Bool processToggle = False;
+		String tree = this.fj;
+		}
+		this.fi = this.fi;
+		this.fb = (False || True);
+		Bool willWrite = (514 <= (19 - this.fint));
+		if(this.fb){
+			this.fint = 394;
+			String tree = this.fi;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

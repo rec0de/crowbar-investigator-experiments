@@ -1,0 +1,79 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(9)";
+		this.fint = 9;
+		this.fi = "object_?(9)";
+		this.fb = True;
+		this.ffb = "fut_?(9)";
+		// End of setup
+		
+		this.fj = this.fj;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		this.fint = 8855;
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.ffb = "fut_?(10)";
+		// End assignments
+		
+		Bool isDone = ((!True || True) || this.fb);
+		this.fint = -this.fint;
+		this.fj = this.fj;
+		Bool readyToggle = False;
+		String message = this.fj;
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(11)";
+		this.ff = "fut_?(11)";
+		this.fint = 11;
+		this.fi = null;
+		this.fb = True;
+		this.ffb = "fut_?(11)";
+		// End assignments
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_54";
+		this.fint = 687;
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_55";
+		if(((!False || True) || this.fb)){
+			message = this.fj;
+			this.fj = this.fj;
+			// this.fj = new E();
+			this.fj = "object_1";
+			Int j = this.fint;
+			if(this.fb){}
+			else{
+				String returnInfo = this.ffb;
+				j = 176;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(anon(store(heap, this.fj, heap.fj)), this.fint, -(select(anon(store(heap, this.fj, heap.fj)), this.fint))), this.fj, select(anon(store(heap, this.fj, heap.fj)), this.fj))), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

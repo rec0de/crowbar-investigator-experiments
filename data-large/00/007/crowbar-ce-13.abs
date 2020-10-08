@@ -1,0 +1,92 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_111";
+	Int fint = 0;
+	Bool fb = False;
+	String ffb = "fut_111";
+	String fi = null;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(9)";
+		this.ff = "fut_?(9)";
+		this.fb = True;
+		this.ffb = "fut_?(14)";
+		// End of setup
+		
+		// Bool isSave = (this.ffb).get;
+		Bool isSave = True;
+		if(this.fb){
+			this.fint = (-716 + (860 * -this.fint));
+			// this.ff = this.fi!n();
+			this.ff = "fut_19";
+			// isSave = (this.ffb).get;
+			isSave = True;
+			// I packetUnit = new D();
+			String packetUnit = "object_1";
+			// this.ff = this.fi!n();
+			this.ff = "fut_20";
+			if(!isSave){}
+			else{
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_110";
+				// this.ffb = packetUnit!b();
+				this.ffb = "fut_111";
+				isSave = (-this.fint >= 577);
+			}
+			Bool willRead = ((this.fb == isSave) && False);
+			// this.ffb = packetUnit!b();
+			this.ffb = "fut_112";
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(17)";
+			this.ff = "fut_?(18)";
+			this.fint = 0;
+			this.fb = True;
+			this.ffb = "fut_?(17)";
+			// End assignments
+			
+			this.fj = this.fj;
+		}
+		// Int k = (this.ff).get;
+		Int k = 0;
+		k = (244 * k);
+		if((((-138 * k) * this.fint) < k)){}
+		else{
+			k = 664;
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_114";
+			
+			// await this.ffb?;
+			// No heap modification info available at this point
+			
+			this.ffb = this.ffb;
+			// this.fj = new E();
+			this.fj = "object_2";
+			this.fint = -224;
+			String packet = this.fi;
+			k = 2;
+			this.fi = this.fi;
+			isSave = False;
+			this.fi = this.fi;
+		}
+		k = 230;
+		println(toString(-776)); // return statement
+		// Evaluates to: -776
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (-776=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

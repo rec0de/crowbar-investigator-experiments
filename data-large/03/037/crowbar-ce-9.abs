@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	Int fint = 0;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!pauseEnabled){} 
+		// Known true:
+		// Negated loop guard: !(!pauseEnabled)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool pauseEnabled = True;
+		Int i = 0;
+		this.fint = 6;
+		this.fb = True;
+		this.ff = "fut_81";
+		this.ffb = "fut_?(7)";
+		// End of setup
+		
+		pauseEnabled = (-i < (this.fint - i));
+		}
+		if((((!True && (pauseEnabled == True)) && !False) || False)){}
+		else{
+			Bool hasSaveed = True;
+			this.fi = this.fi;
+			// this.ff = packet!n();
+			this.ff = "fut_81";
+			Bool pauseEnabled = pauseEnabled;
+			// this.fb = (this.ffb).get;
+			this.fb = True;
+			String packet = this.fi;
+			// Int queueAmount = (applyRequest).get;
+			// Future value irrelevant or unavailable, using default:
+			Int queueAmount = 0;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(store(heap, this.fi, heap.fi), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

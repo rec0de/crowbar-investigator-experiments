@@ -1,0 +1,158 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+Int j = this.fint;
+this.fb = False;
+Int processDepth = 234;
+while( this.fb == False) {
+	j = 714;
+	I dataObject =(this.fi);
+	J ioObject = new E();
+	Bool willWrite =(! False);
+	processDepth = processDepth;
+	
+}
+processDepth = this.fint - - processDepth;
+while((True) ||!(False)) {
+	this.ffb = this.fi!b();
+	I node = new D();
+	
+}
+if( False) {
+	this.ffb = this.fi!b();
+	while( True) {
+		Bool isSaveed = this.fb &&(this.fb);
+		this.fj = new E();
+		
+	}
+	processDepth = - 92;
+	Fut<Bool> returnState = this.fi!b();
+	this.fint = this.fint;
+	
+}
+else {
+	this.ff = this.fi!n();
+	while( True && True) {
+		this.fj = new E();
+		Bool willWrite = False;
+		while(! True) {
+			Fut<Int> z = this.ff;
+			Bool willSave =! this.fb;
+			processDepth = 393;
+			Bool readEnabled =(601) - 976 == this.fint;
+			this.fb = willWrite;
+			willWrite =! False;
+			J clientStruct = new E();
+			this.fj = new E();
+			this.ff = this.fi!n();
+			this.ff = this.fi!n();
+			clientStruct = clientStruct;
+			Int stackDepth =(611);
+			willWrite = True && False;
+			willSave = False;
+			this.fj = new E();
+			
+		}
+		this.ff = this.ff;
+		this.ff =(this.fi )!n();
+		Int value = - 164 * processDepth;
+		this.fi = new D();
+		this.fint = 44 + - processDepth;
+		if(! this.fb && False || True) {
+			this.fj = this.fj;
+			
+		}
+		else {
+			value =(448);
+			await this.ff?;
+			Bool sendFlag = False;
+			Bool hasSaveed = this.ffb.get;
+			
+		}
+		
+	}
+	
+}
+while( this.fb) {
+	j = 410;
+	j = processDepth * 656;
+	await this.ff?;
+	if( j + j < 17) {
+		await this.ffb?;
+		j =(processDepth);
+		j = - 32;
+		this.ffb = this.ffb;
+		while( this.fb) {
+			this.ffb = this.fi!b();
+			Bool isWrite = True || this.fb && this.fb;
+			
+		}
+		
+	}
+	else {
+		Bool isRead = False;
+		Fut<Int> applyChanges = this.ff;
+		I message = this.fi;
+		processDepth = 638;
+		
+	}
+	this.ffb = this.ffb;
+	this.fi = new D();
+	if( True) {
+		Fut<Bool> q = this.fi!b();
+		this.ff = this.fi!n();
+		
+	}
+	else {
+		this.ffb = this.fi!b();
+		Bool hasSaveed = this.fb || True;
+		this.ffb = this.fi!b();
+		Int systemCount = -(703);
+		systemCount = 910;
+		Bool isSaveed =(this.ffb ).get;
+		processDepth = 695;
+		this.fint = 499 + 743;
+		
+	}
+	if( False) {
+		while( True == False) {
+			this.ff = this.fi!n();
+			
+		}
+		
+	}
+	Bool willRead = False;
+	
+}
+this.ffb = this.fi!b();
+Fut<Int> resState = this.ff;
+this.fint = 229;
+while(! this.fb) {
+	this.ffb = this.fi!b();
+	J tree = new E();
+	tree = new E();
+	
+}
+Bool hasDone = True;
+I clientNode = new D();
+return 844;
+}
+}
+{}

@@ -1,0 +1,39 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fj = null;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(False){} 
+		// Known true:
+		// Negated loop guard: !(False)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String dataObject = null;
+		// End of setup
+		
+		Int processAmount = 169;
+		}
+		Bool hasSaveed = (processAmount <= ((processAmount * this.fint) * -63));
+		// this.fj = new E();
+		this.fj = "object_1";
+		String tree = this.fj;
+		String syncState = this.ffb;
+		Bool processFlag = ((False || processFlag) || !False);
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(dataObject=0)
+		// Failed to show the following sub-obligations:
+		// !(dataObject=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

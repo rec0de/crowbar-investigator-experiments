@@ -1,0 +1,54 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fi = null;
+	String ff = "fut_45";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((535 == 605)){} 
+		// Known true:
+		// Negated loop guard: !((535 == 605))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		String packet = "object_?(4)";
+		Bool writeToggle = True;
+		this.fi = "object_?(4)";
+		this.ff = "fut_?(4)";
+		// End of setup
+		
+		this.fi = packet;
+		}
+		this.ff = this.ff;
+		
+		// await (False || !writeToggle);
+		// Assume the following assignments while blocked:
+		this.fi = "object_?(5)";
+		this.ff = "fut_?(5)";
+		// End assignments
+		
+		String packetUnit = tree;
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fi = null;
+		this.ff = "fut_45";
+		// End assignments
+		
+		// this.ff = clientNode!n();
+		this.ff = "fut_45";
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(anon(store(store(heap, this.fi, packet), this.ff, heap.ff))), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

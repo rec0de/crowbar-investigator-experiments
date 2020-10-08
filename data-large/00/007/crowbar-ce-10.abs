@@ -1,0 +1,75 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_111";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_111";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.fj = "object_?(10)";
+		this.ff = "fut_?(10)";
+		this.fi = "object_?(10)";
+		this.fb = True;
+		this.ffb = "fut_?(15)";
+		// End of setup
+		
+		// Bool isSave = (this.ffb).get;
+		Bool isSave = True;
+		if(this.fb){
+			this.fint = (-716 + (860 * -this.fint));
+			// this.ff = this.fi!n();
+			this.ff = "fut_19";
+			// isSave = (this.ffb).get;
+			isSave = True;
+			// I packetUnit = new D();
+			String packetUnit = "object_1";
+			// this.ff = this.fi!n();
+			this.ff = "fut_20";
+			if(!isSave){}
+			else{
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_110";
+				// this.ffb = packetUnit!b();
+				this.ffb = "fut_111";
+				isSave = (-this.fint >= 577);
+			}
+			Bool willRead = ((this.fb == isSave) && False);
+			// this.ffb = packetUnit!b();
+			this.ffb = "fut_112";
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fj = "object_?(18)";
+			this.ff = "fut_?(19)";
+			this.fint = 0;
+			this.fi = null;
+			this.fb = True;
+			this.ffb = "fut_?(18)";
+			// End assignments
+			
+			this.fj = this.fj;
+		}
+		// Int k = (this.ff).get;
+		Int k = 1;
+		k = (244 * k);
+		if((((-138 * k) * this.fint) < k)){
+			String resData = this.ff;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(store(store(store(heap, this.fint, (-716+(860*-(heap.fint)))), this.ff, fut_19), this.ff, fut_20), this.ffb, fut_110), this.ffb, fut_111), this.ffb, fut_112)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

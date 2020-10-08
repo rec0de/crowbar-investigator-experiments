@@ -1,0 +1,219 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+if( this.fb) {
+	this.ff = this.fi!n();
+	
+}
+else {
+	this.fj = new E();
+	await this.ffb?;
+	this.fj = new E();
+	I dataNode = this.fi;
+	while( this.fb || False) {
+		this.fj = new E();
+		Bool sendFlag = this.ffb.get;
+		this.fj = new E();
+		this.fb = this.fint < - 129;
+		while( True) {
+			this.fb = 91 - 81 * 930 >= 149;
+			await this.ff?;
+			dataNode = new D();
+			this.fi = new D();
+			Bool willWrite = this.ffb.get;
+			Bool hasReady = False;
+			await this.ffb?;
+			this.ff = dataNode!n();
+			
+		}
+		dataNode = new D();
+		
+	}
+	dataNode = this.fi;
+	I tree = new D();
+	await this.ff?;
+	Bool sendFlag = this.ffb.get;
+	
+}
+this.fb = False;
+Bool isSave = False;
+this.fj = new E();
+this.fi = this.fi;
+this.ffb = this.fi!b();
+this.fint = 136 * this.fint;
+this.fint = this.fint;
+this.ffb = this.fi!b();
+while( True) {
+	this.ff =(this.ff);
+	this.fi = new D();
+	Int k = 357;
+	
+}
+isSave = this.fb && True;
+Int listCount = 448;
+this.ffb = this.fi!b();
+isSave = this.fb;
+J packet = new E();
+packet = this.fj;
+listCount = this.fint *(((this.fint)) * this.fint) * 969 - listCount;
+if( True) {
+	listCount = 490;
+	listCount = 328 * 275;
+	Int value = 225;
+	while((! isSave || isSave)) {
+		this.fi = this.fi;
+		
+	}
+	value = this.fint;
+	I node = new D();
+	while((isSave && isSave) || True) {
+		await this.ffb?;
+		this.fint = 777;
+		Fut<Int> applyReload = node!n();
+		
+	}
+	
+}
+isSave = this.fb;
+this.fi = new D();
+this.ffb = this.fi!b();
+this.fint = this.fint;
+this.ffb = this.fi!b();
+await this.ffb?;
+this.fi = this.fi;
+Int listAmount = 154;
+this.ff = this.ff;
+await this.ffb?;
+if( True) {
+	listCount = 32;
+	
+}
+else {
+	J message = new E();
+	Bool canSave =!(839 + 218 <= - listAmount * 24);
+	
+}
+listCount = 177;
+await this.ff?;
+this.fj = this.fj;
+if( this.fj == this.fj) {
+	this.ff = this.ff;
+	Bool hasReady = False;
+	listCount = - 587;
+	await True;
+	this.fint = listCount * 115;
+	isSave = this.fb;
+	
+}
+else {
+	this.ff = this.fi!n();
+	this.fint = 398;
+	listAmount = 748;
+	
+}
+this.ff = this.fi!n();
+Fut<Int> applyFlag = this.ff;
+isSave = False;
+J serverNode = packet;
+J ioObject = this.fj;
+ioObject = new E();
+applyFlag = this.fi!n();
+listCount = 89;
+this.ff = this.fi!n();
+if( - 788 == - 674 * listAmount * -(867 )) {
+	serverNode = serverNode;
+	
+}
+else {
+	this.ff = applyFlag;
+	while( False && False) {
+		ioObject = this.fj;
+		if( True) {
+			this.fb = False && True;
+			Bool stateFlag = 854 * listAmount < this.fint;
+			Bool hasSaveed =! stateFlag;
+			await True;
+			this.ffb = this.fi!b();
+			ioObject = ioObject;
+			listAmount = 78 * 101;
+			
+		}
+		else {
+			await this.ffb?;
+			serverNode = new E();
+			listAmount = 629;
+			this.fj = ioObject;
+			
+		}
+		if( True || False) {
+			this.ffb = this.fi!b();
+			
+		}
+		this.fi = new D();
+		ioObject = ioObject;
+		serverNode = new E();
+		await this.ffb?;
+		if( False) {
+			Int value = 233;
+			
+		}
+		else {
+			await 150 > - 52;
+			J clientUnit = ioObject;
+			
+		}
+		applyFlag = this.fi!n();
+		this.fj = ioObject;
+		Fut<Int> resInfo = this.fi!n();
+		if(! True) {
+			await this.ff?;
+			listAmount = - listAmount;
+			this.fi = new D();
+			listCount = 57 * 357;
+			Bool restoreFlag = False && isSave && True;
+			applyFlag = this.ff;
+			Fut<Int> y = this.fi!n();
+			resInfo = applyFlag;
+			
+		}
+		this.fint = 229;
+		ioObject = serverNode;
+		Fut<Bool> resolveState = this.fi!b();
+		this.fint = 815;
+		Bool canSave =! True;
+		Bool isSaveed = isSave;
+		this.fb = True;
+		resolveState = this.fi!b();
+		I message = new D();
+		Int res = - 928;
+		listAmount = 281;
+		
+	}
+	Int l = 206 *(437 *(620));
+	
+}
+this.fb = True ==! True;
+await applyFlag?;
+await True;
+this.ffb = this.fi!b();
+return(listAmount - this.fint * 468);
+}
+}
+{}

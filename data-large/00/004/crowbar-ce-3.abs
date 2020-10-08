@@ -1,0 +1,59 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ff = "fut_31";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.ff = "fut_?(6)";
+		this.fint = 6;
+		this.fi = "object_?(6)";
+		this.fb = True;
+		// End of setup
+		
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.ff = "fut_?(7)";
+		this.fint = 7;
+		this.fi = "object_?(7)";
+		this.fb = True;
+		// End assignments
+		
+		// this.ff = this.fi!n();
+		this.ff = "fut_31";
+		this.fint = this.fint;
+		this.fi = this.fi;
+		this.ff = this.ff;
+		Int j = 111320;
+		// this.ff = this.fi!n();
+		this.ff = "fut_32";
+		// I node = new D();
+		String node = "object_1";
+		this.fb = this.fb;
+		if(this.fb){
+			// this.ff = node!n();
+			this.ff = "fut_33";
+		}
+		this.fint = (j - 18);
+		// node = new D();
+		node = "object_2";
+		println(toString(92)); // return statement
+		// Evaluates to: 92
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (92=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

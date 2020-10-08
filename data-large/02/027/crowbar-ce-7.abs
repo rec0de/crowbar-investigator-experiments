@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String fi = null;
+	Int fint = 0;
+	String ffb = "fut_?(0)";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while(!True){} 
+		// Known true:
+		// Negated loop guard: !(!True)
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool storageFlag = True;
+		// End of setup
+		
+		if(False){}
+		else{
+			this.fj = this.fj;
+		}
+		this.fi = this.fi;
+		this.fint = 125;
+		String returnInfo = this.ffb;
+		if((!False && storageFlag)){}
+		else{
+			this.fb = (True && this.fb);
+			if(False){}
+			else{
+		
+			}
+			Bool canRead = (this.fint == 737);
+			this.fb = storageFlag;
+		}
+		Bool willExec = (352 == -this.fint);
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_56";
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_57";
+		}
+		println(toString(405)); // return statement
+		// Evaluates to: 405
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (405=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

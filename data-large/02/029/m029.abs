@@ -1,0 +1,211 @@
+module MockABS;
+
+data Spec = Ensures(Bool) | Requires(Bool);
+
+// Static base definitions
+interface I { Int n(); Bool b(); }
+interface J { Unit m(Int v); I getI(Bool flag, Int c); }
+class D implements I { Int n() { return 0; } Bool b() { return False; } }
+class E implements J { Unit m(Int v) { } I getI(Bool flag, Int c) { I res = new D(); return res; } }
+
+class Generated {
+Int fint = 0;
+Bool fb = True;
+Fut<Int> ff;
+Fut<Bool> ffb;
+I fi = null;
+J fj = null;
+
+[Spec : Ensures(result == 0)]
+Int gen() {
+this.fint = 354 * 960;
+while( 888 == 636 * 765) {
+	this.fi = this.fi;
+	this.fint = this.fint * this.fint;
+	J node = new E();
+	
+}
+this.fj =(this.fj);
+Fut<Int> resultInfo = this.fi!n();
+this.ff = this.fi!n();
+this.fj = this.fj;
+this.ffb = this.fi!b();
+while(! this.fb) {
+	this.fj = new E();
+	this.fi = this.fi;
+	this.ff = this.fi!n();
+	this.ffb = this.fi!b();
+	this.fint = 294 * 958;
+	if( True) {
+		this.fb = True;
+		Bool sendEnabled = this.fint != - 395;
+		Int systemDepth = 11;
+		
+	}
+	else {
+		this.fj = this.fj;
+		await 868 == 172;
+		resultInfo = resultInfo;
+		this.fj = new E();
+		this.fj = this.fj;
+		
+	}
+	
+}
+this.ffb = this.fi!b();
+this.fi = this.fi;
+this.fb =(this.ffb ).get;
+this.ff = this.fi!n();
+resultInfo = this.fi!n();
+if(! True) {
+	this.ff = this.ff;
+	this.ffb = this.fi!b();
+	this.fint = - 163;
+	
+}
+else {
+	resultInfo = this.fi!n();
+	await resultInfo?;
+	while( False) {
+		this.fj = new E();
+		
+	}
+	this.ffb =(this.fi )!b();
+	this.fb = True;
+	this.ffb = this.fi!b();
+	resultInfo = this.fi!n();
+	
+}
+I serverUnit = this.fi;
+if( False) {
+	J packetUnit = new E();
+	I clientStruct = new D();
+	
+}
+Fut<Bool> resState =((serverUnit) )!b();
+resState = serverUnit!b();
+this.fb = this.fb;
+while( this.fb) {
+	await this.ff?;
+	
+}
+resState = serverUnit!b();
+await resultInfo?;
+this.ff = serverUnit!n();
+if( False && True == True) {
+	Fut<Int> resInfo = this.fi!n();
+	while( 156 * 277 <= 947 + 390) {
+		this.fi = new D();
+		resState = resState;
+		while( False) {
+			this.ffb =(this.fi )!b();
+			
+		}
+		this.fj = new E();
+		
+	}
+	resultInfo = resultInfo;
+	this.ff = serverUnit!n();
+	resultInfo = this.fi!n();
+	await resState?;
+	this.fb =(this.ffb ).get;
+	if( True) {
+		while( True || this.fb) {
+			Bool willRead = 914 >= 139;
+			resInfo = serverUnit!n();
+			
+		}
+		this.ffb = serverUnit!b();
+		this.fb = False && True;
+		resInfo = serverUnit!n();
+		this.ffb = this.fi!b();
+		this.ffb = this.fi!b();
+		this.ff = this.fi!n();
+		if( True && this.fb) {
+			this.fb = True;
+			resInfo = serverUnit!n();
+			
+		}
+		else {
+			await resState?;
+			
+		}
+		this.ffb = this.fi!b();
+		
+	}
+	Int k = this.fint;
+	Int eventAmount = k;
+	Bool isSaveed = False;
+	await this.ff?;
+	if((this.fj) == this.fj) {
+		resState = serverUnit!b();
+		Bool isRead = False ||! False;
+		
+	}
+	else {
+		this.fi = new D();
+		
+	}
+	resInfo = this.fi!n();
+	isSaveed = this.fb;
+	while( this.fb) {
+		eventAmount = this.ff.get;
+		I packet = new D();
+		this.fint = 839;
+		this.fi = new D();
+		this.fj = this.fj;
+		
+	}
+	Bool isLoad = 697 > 546;
+	this.ff =(resInfo);
+	
+}
+else {
+	this.fj = this.fj;
+	resultInfo = serverUnit!n();
+	this.ff = this.fi!n();
+	while( this.fb) {
+		this.fint = this.fint - - 57 - 346;
+		
+	}
+	Int stackCount = this.fint;
+	this.ff = this.fi!n();
+	this.ff = resultInfo;
+	resState = this.ffb;
+	await resState?;
+	this.fb = True;
+	
+}
+this.ffb =(this.fi )!b();
+this.fi = serverUnit;
+Bool isSaveed = this.fint == 225;
+Bool isLoaded = False;
+serverUnit = serverUnit;
+Fut<Int> q = serverUnit!n();
+this.fi = serverUnit;
+if(! isSaveed) {
+	q = serverUnit!n();
+	
+}
+else {
+	I packetNode = this.fi;
+	this.ffb = resState;
+	I serverRepresentation =(this.fi);
+	
+}
+resState = this.ffb;
+this.fi = this.fi;
+J person = new E();
+await this.ff?;
+await resultInfo?;
+isLoaded = person == this.fj;
+resultInfo = this.ff;
+this.fj = new E();
+q = this.ff;
+this.fint = 760 - 658;
+Fut<Int> resultState = q;
+q = serverUnit!n();
+return 721 * - 238;
+}
+}
+{}

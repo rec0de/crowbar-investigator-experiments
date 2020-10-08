@@ -1,0 +1,87 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fi = null;
+	Bool fb = False;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// Assume the following pre-state:
+		this.ffb = "fut_?(6)";
+		this.fi = "object_?(6)";
+		this.fb = True;
+		this.ff = "fut_?(6)";
+		// End of setup
+		
+		// Known true:
+		// Loop guard: this.fb
+		// Loop invariant: true
+		// while(this.fb) {
+		{
+			if(((False || False) || False)){}
+			else{
+				String dataObject = this.fi;
+				// this.ff = this.fi!n();
+				this.ff = "fut_53";
+				
+				// await this.ffb?;
+				// Assume the following assignments while blocked:
+				this.ffb = "fut_?(26)";
+				this.fi = "object_?(8)";
+				this.fb = True;
+				this.ff = "fut_?(8)";
+				// End assignments
+				
+				Bool isExec = True;
+				Bool isDone = isExec;
+				Bool hasDone = True;
+				
+				// await resolveState?;
+				// Assume the following assignments while blocked:
+				this.ffb = "fut_?(16)";
+				this.fi = "object_?(9)";
+				this.fb = True;
+				this.ff = "fut_?(9)";
+				// End assignments
+				
+				Int value = this.fint;
+				
+				// await True;
+				// Assume the following assignments while blocked:
+				this.ffb = "fut_?(10)";
+				this.fi = "object_?(10)";
+				this.fb = True;
+				this.ff = "fut_?(10)";
+				// End assignments
+				
+				Int l = -(value * -value);
+				// this.ffb = dataObject!b();
+				this.ffb = "fut_54";
+				
+				// await resultState?;
+				// Assume the following assignments while blocked:
+				this.ffb = "fut_?(12)";
+				this.fi = null;
+				this.fb = True;
+				this.ff = "fut_?(12)";
+				// End assignments
+				
+				Bool processFlag = True;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(anon(anon(anon(store(heap, this.ff, fut_53)))), this.ffb, fut_54)), this.fi)=0)	
+			}
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

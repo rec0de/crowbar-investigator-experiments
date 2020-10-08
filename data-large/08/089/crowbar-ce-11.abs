@@ -1,0 +1,44 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((226156 == 441)){} 
+		// Known true:
+		// Negated loop guard: !((226156 == 441))
+		// Loop invariant: true
+		
+		
+		String resolveState = resolveState;
+		// J person = new E();
+		String person = "object_1";
+		}
+		Bool writeFlag = True;
+		String resolveState = resolveState;
+		this.fj = person;
+		Bool writeOverride = True;
+		this.fb = !True;
+		Int processCounter = 103228320;
+		// I dataObject = new D();
+		String dataObject = "object_2";
+		// Fut syncCall = dataObject!n();
+		String syncCall = "fut_41";
+		Int l = 193177;
+		println(toString(173)); // return statement
+		// Evaluates to: 173
+		// Proof failed here. Trying to show:
+		// Method postcondition: (result=0)
+		// Object invariant: true
+		// Failed to show the following sub-obligations:
+		// (173=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

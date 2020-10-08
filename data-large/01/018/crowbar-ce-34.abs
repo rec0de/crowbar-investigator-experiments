@@ -1,0 +1,58 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	Int fint = 0;
+	String fi = null;
+	String ffb = "fut_43";
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		
+		Bool hasLoaded = (874 == 784);
+		// this.ffb = this.fi!b();
+		this.ffb = "fut_43";
+		// J serverRepresentation = new E();
+		String serverRepresentation = "object_1";
+		serverRepresentation = serverRepresentation;
+		String person = this.fi;
+		if((3363 == (this.fint * -this.fint))){}
+		else{
+			hasLoaded = ((False && False) || False);
+		}
+		
+		// await this.ff?;
+		// Assume the following assignments while blocked:
+		this.fint = 0;
+		this.fi = null;
+		this.ffb = "fut_43";
+		// End assignments
+		
+		Int queueCount = 936;
+		hasLoaded = this.fb;
+		if((659 < queueCount)){
+			Int j = 738;
+			
+			// await this.ffb?;
+			// Assume the following assignments while blocked:
+			this.fint = 0;
+			this.fi = null;
+			this.ffb = "fut_43";
+			// End assignments
+			
+			// this.fb = (this.ffb).get;
+			this.fb = False;
+		}
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(person=0)
+		// Failed to show the following sub-obligations:
+		// !(heap.fi=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

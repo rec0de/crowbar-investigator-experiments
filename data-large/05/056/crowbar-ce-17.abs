@@ -1,0 +1,92 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String ffb = "fut_?(0)";
+	String fj = null;
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((-2646 == this.fint)){} 
+		// Known true:
+		// Negated loop guard: !((-2646 == this.fint))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Bool isDone = True;
+		this.ffb = "fut_?(7)";
+		this.fj = "object_?(7)";
+		this.fint = 8;
+		this.fi = "object_?(7)";
+		this.fb = True;
+		// End of setup
+		
+		// this.fj = new E();
+		this.fj = "object_1";
+		Bool restoreFlag = ((hasDone || True) || !False);
+		if(False){}
+		else{
+			this.fi = this.fi;
+			if(this.fb){
+				Bool hasDone = ((!True && (-778 == 215)) && isDone);
+				// this.ffb = this.fi!b();
+				this.ffb = "fut_52";
+				Int listCounter = systemAmount;
+				// this.fj = new E();
+				this.fj = "object_2";
+				String flushUpdates = this.ffb;
+				Int processCount = 404;
+			}
+			// this.ffb = this.fi!b();
+			this.ffb = "fut_53";
+			Bool systemOverride = systemOverride;
+			systemOverride = (isDone || False);
+			if((False && True)){}
+			else{
+				if(systemOverride){
+					Bool isWrite = True;
+					
+					// await this.ffb?;
+					// Assume the following assignments while blocked:
+					this.ffb = "fut_?(16)";
+					this.fj = "object_?(14)";
+					this.fint = 14;
+					this.fi = "object_?(14)";
+					this.fb = True;
+					// End assignments
+					
+					this.fj = this.fj;
+					Bool execOverride = (systemAmount <= 89);
+					// this.fj = new E();
+					this.fj = "object_3";
+					
+					// await this.ff?;
+					// Assume the following assignments while blocked:
+					this.ffb = "fut_?(15)";
+					this.fj = "object_?(15)";
+					this.fint = 15;
+					this.fi = null;
+					this.fb = True;
+					// End assignments
+					
+					Int queueDepth = (664 * systemAmount);
+				}
+				this.fb = !False;
+			}
+			Int l = 467;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(store(store(store(anon(store(store(store(store(store(store(store(heap, this.fj, NEW23_0), this.fj, NEW23_0), this.fi, heap.fi), this.ffb, fut_52), this.fj, NEW24_0), this.fj, NEW24_0), this.ffb, fut_53)), this.fj, select(anon(store(store(store(store(store(store(store(heap, this.fj, NEW23_0), this.fj, NEW23_0), this.fi, heap.fi), this.ffb, fut_52), this.fj, NEW24_0), this.fj, NEW24_0), this.ffb, fut_53)), this.fj)), this.fj, NEW26_0), this.fj, NEW26_0)), this.fi)=0)
+		}
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}

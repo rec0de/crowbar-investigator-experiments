@@ -1,0 +1,65 @@
+module Counterexample;
+interface Ce { Unit ce(); }
+
+class CeFrame implements Ce {
+	String fj = null;
+	String ff = "fut_?(0)";
+	Int fint = 0;
+	String fi = null;
+	Bool fb = False;
+	String ffb = "fut_?(0)";
+
+	Unit ce() {
+		// Snippet from: unknown
+		// while((((4615 * stackCounter) - (queueDepth * 540)) < (((-stackCounter - -853) + 733) + -923))){} 
+		// Known true:
+		// Negated loop guard: !((((4615 * stackCounter) - (queueDepth * 540)) < (((-stackCounter - -853) + 733) + -923)))
+		// Loop invariant: true
+		
+		// Assume the following pre-state:
+		Int queueDepth = -2;
+		Int stackCounter = 0;
+		this.fj = "object_?(11)";
+		this.ff = "fut_?(11)";
+		this.fint = 11;
+		this.fi = "object_?(11)";
+		this.fb = True;
+		// End of setup
+		
+		Int arg = this.fint;
+		String resultState = this.ffb;
+		Int processAmount = -res;
+		Int queueCount = 382;
+		Int value = 250;
+		
+		// await this.ffb?;
+		// Assume the following assignments while blocked:
+		this.fj = "object_?(12)";
+		this.ff = "fut_?(12)";
+		this.fint = 12;
+		this.fi = null;
+		this.fb = True;
+		// End assignments
+		
+		this.fj = this.fj;
+		if((this.fb && True)){
+			Int queueCounter = 322;
+			String packet = person;
+			Bool isExec = (!True || (((False && !False) && True) && (False == False)));
+			// this.ff = packet!n();
+			this.ff = "fut_50";
+		}
+		value = 667;
+		this.fint = 475;
+		
+		// Proof failed here. Trying to show:
+		// Null-check: !(heap.fi=0)
+		// Failed to show the following sub-obligations:
+		// !(select(anon(heap), this.fi)=0)
+	}
+}
+
+{
+	Ce x = new CeFrame();
+	x.ce();
+}
