@@ -78,10 +78,10 @@ slocpairs = sizes.map { |e|
 }.flatten()
 
 cecount = sizes.map { |e| 
-	{ "x" => e["size"], "y" => e["ces"].length }
+	{ "x" => e["loc"], "y" => e["ces"].length }
 }
 
 File.open("#{basepath}/bytePairs.json", 'w') { |file| file.write(JSON.dump(bytepairs)) }
 File.open("#{basepath}/locPairs.json", 'w') { |file| file.write(JSON.dump(locpairs)) }
 File.open("#{basepath}/slocPairs.json", 'w') { |file| file.write(JSON.dump(slocpairs)) }
-File.open("#{basepath}/ceCounts.json", 'w') { |file| file.write(JSON.dump(cecount)) }
+File.open("#{basepath}/ceCountsLoc.json", 'w') { |file| file.write(JSON.dump(cecount)) }
